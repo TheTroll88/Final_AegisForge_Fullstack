@@ -1,0 +1,16 @@
+# ============================================================================
+#  AEGISFORGE MASTER VAULT — SHA / PPK / SIGNING KEYS
+#  Last Updated: 2026-04-20 06:12
+# ============================================================================
+
+[GPG Ed25519 Signing Key]
+Fingerprint: FB7F3003265935931325C5844A53CB60DE63A58B
+Key ID:      4A53CB60DE63A58B
+Sub Key ID:  294E51C103BB36A3
+User:        Nathaniel Crigger <nathanielcrigger66@gmail.com>
+Created:     2026-04-09
+Usage:       Git commit/tag signing
+
+[RSA Public Key - rsa-key-20260406]
+Bits:     2048
+Exponent: 65537

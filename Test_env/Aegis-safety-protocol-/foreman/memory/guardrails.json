@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "generated_by": "Foreman",
+  "never_touch": [
+    "C:\\Users\\natha\\LITCOIN_Miner"
+  ],
+  "never_expose": [
+    "private_key",
+    "seed_phrase",
+    "mnemonic",
+    "secret_key",
+    "api_secret",
+    "access_secret",
+    "password"
+  ],
+  "rate_limits": {
+    "twitter_posts_per_hour": 2,
+    "shell_commands_per_minute": 5,
+    "rpc_calls_per_minute": 30
+  },
+  "auto_generated": [
+    {
+      "rule": "no_test_rule",
+      "reason": "just testing",
+      "added": "2026-03-29T20:55:32.309723+00:00",
+      "trigger_count": 1
+    }
+  ],
+  "last_updated": "2026-03-29T20:55:32.309732+00:00"
+}

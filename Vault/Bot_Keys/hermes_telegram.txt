@@ -1,0 +1,22 @@
+# ============================================================================
+#  AEGISFORGE VAULT — TELEGRAM BOT TOKEN
+#  Bot Name:    Hermes
+#  Role:        Telegram Messenger Bot
+#  Added:       2026-04-20
+# ============================================================================
+
+[Hermes — Telegram Messenger Bot]
+Bot Token:  8421483697:AAHqbLwY1np8V-yAemoucSQeFuRRQpq2w3A
+Bot ID:     8421483697
+Status:     active
+Platform:   Telegram Bot API
+Use:        AegisForge family messenger / notification relay
+
+[Telegram Bot API Base URL]
+https://api.telegram.org/bot8421483697:AAHqbLwY1np8V-yAemoucSQeFuRRQpq2w3A/
+
+[Notes]
+- Token format: {bot_id}:{secret}
+- Set as env var:  HERMES_TELEGRAM_TOKEN
+- BotFather handle: @BotFather to regenerate if compromised
+- Rotate immediately if this file is ever committed or exposed

@@ -1,0 +1,30 @@
+from flask import Flask, jsonify, Response
+import subprocess
+import os
+
+app = Flask(__name__)
+
+LOG_PATH = "/root/gatekeeper_cron.log"
+GATEKEEPER_SCRIPT = "/root/gatekeeper_core.py"
+
+@app.route("/api/status")
+def status():
+    # You can customize this as needed
+    message = "Kratos and Gatekeeper are secure and operational."
+    return jsonify({"message": message})
+
+@app.route("/api/log")
+def log():
+    if os.path.exists(LOG_PATH):
+        with open(LOG_PATH, "r") as f:
+            content = f.read()
+        return Response(content, mimetype="text/plain")
+    return Response("No log file found.", mimetype="text/plain")
+
+@app.route("/api/scan", methods=["POST"])
+def scan():
+    subprocess.Popen(["python3", GATEKEEPER_SCRIPT])
+    return jsonify({"message": "Scan triggered."})
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)

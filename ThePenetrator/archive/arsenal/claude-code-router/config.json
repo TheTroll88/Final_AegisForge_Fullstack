@@ -1,0 +1,49 @@
+{
+    "APIKEY": "",
+    "LOG": true,
+    "LOG_LEVEL": "info",
+    "API_TIMEOUT_MS": 600000,
+    "HOST": "127.0.0.1",
+    "Providers": [
+        {
+            "name": "venice",
+            "api_base_url": "https://api.venice.ai/api/v1/chat/completions",
+            "api_key": "$VENICE_API_KEY",
+            "models": [
+                "claude-opus-4-6",
+                "claude-sonnet-4-6",
+                "claude-opus-45",
+                "claude-sonnet-45",
+                "venice-uncensored",
+                "deepseek-v3.2",
+                "zai-org-glm-4.7",
+                "qwen3-coder-480b-a35b-instruct",
+                "grok-4-20-beta",
+                "hermes-3-llama-3.1-405b"
+            ],
+            "transformer": {
+                "use": [
+                    "anthropic"
+                ]
+            }
+        }
+    ],
+    "Router": {
+        "default": "venice,claude-opus-4-6",
+        "think": "venice,claude-opus-4-6",
+        "background": "venice,claude-sonnet-4-6",
+        "longContext": "venice,claude-opus-4-6",
+        "longContextThreshold": 100000,
+        "webSearch": "venice,venice-uncensored:enable_web_search=auto"
+    },
+    "_venice_notes": {
+        "venice_parameters": "Inject into any chat request body to control Venice features",
+        "system_prompt_control": "Set include_venice_system_prompt=false to keep full prompt authority",
+        "web_search": "enable_web_search: off|on|auto — or use model suffix syntax: model:enable_web_search=auto",
+        "web_scraping": "enable_web_scraping=true scrapes up to 5 URLs from the user message",
+        "x_search": "enable_x_search=true for Grok models — uses xAI native web+Twitter search",
+        "thinking_control": "strip_thinking_response removes <think> blocks; disable_thinking turns reasoning off entirely",
+        "prompt_caching": "prompt_cache_key routes to same backend for cache hits across turns",
+        "cursor_prefix": "Prefix claude-* models with venice- in Cursor to prevent Anthropic format rewrite"
+    }
+}

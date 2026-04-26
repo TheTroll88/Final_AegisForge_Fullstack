@@ -1,0 +1,131 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Agent Status",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}\\anvil\\scripts\\status_tracker.ps1"
+            ],
+            "isBackground": true,
+            "runOptions": {
+                "instanceLimit": 1
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Health Check",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}\\anvil\\scripts\\health_check.ps1"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Gateway Start",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}\\anvil\\scripts\\gateway_ctl.ps1",
+                "start"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Gateway Stop",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}\\anvil\\scripts\\gateway_ctl.ps1",
+                "stop"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Gateway Status",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}\\anvil\\scripts\\gateway_ctl.ps1",
+                "status"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Snapshot Logos",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}\\anvil\\scripts\\snapshot.ps1"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Vault Inspect",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}\\anvil\\scripts\\vault_inspect.ps1"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Start Logos",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-Command",
+                "Remove-Item \"$env:TEMP\\logos.pid\" -ErrorAction SilentlyContinue; Get-NetTCPConnection -LocalPort 11435 -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }; Set-Location '${workspaceFolder}'; python -m logos"
+            ],
+            "isBackground": true,
+            "runOptions": {
+                "instanceLimit": 1
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Stop Logos",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-Command",
+                "$lock = \"$env:TEMP\\logos.pid\"; if (Test-Path $lock) { $pid = Get-Content $lock; Stop-Process -Id $pid -Force -ErrorAction SilentlyContinue; Remove-Item $lock -Force; Write-Output 'Logos stopped.' } else { Get-Process python* -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -match 'logos' } | Stop-Process -Force -ErrorAction SilentlyContinue; Write-Output 'Logos stopped (by process match).' }; Get-NetTCPConnection -LocalPort 11435 -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

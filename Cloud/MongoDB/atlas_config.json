@@ -1,0 +1,12 @@
+{
+  "aegis_service": "MongoDB Atlas",
+  "cluster": "cluster0",
+  "cluster_host": "cluster0.q66ar7a.mongodb.net",
+  "connection_string": "mongodb+srv://cluster0.q66ar7a.mongodb.net/",
+  "username": "nathanielcrigger66_db_user",
+  "api_key_public": "sug3mBfKH5lcKg",
+  "api_version": "1",
+  "atlas_api_base": "https://cloud.mongodb.com/api/atlas/v2",
+  "terraform_provider": "MongoDBAtlas/mongodbatlas",
+  "notes": "Credentials stored in Vault/Api_keys.txt. Load via connect.ps1 — do not hardcode."
+}

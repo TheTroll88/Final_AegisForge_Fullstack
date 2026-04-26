@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Build output
+dist/
+
+# Environment & secrets
+.env
+*.env.*
+*.pem
+*.key
+*.crt
+
+# VS Code workspace (user-specific)
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Editor temp
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Lock files
+package-lock.json
+
+# Archive (historical, not needed in public repo)
+Kratos_Aegis_Master_Archive/
+
+# Personal / sensitive data
+gatekeeper/rootgatekeeper_api.py/basic profile info.txt
+gatekeeper/rootgatekeeper_api.py/discord.txt
+
+# Dev containers (user-specific)
+.devcontainer/
+
+# Frontend IDE files
+Frontend/launch.json

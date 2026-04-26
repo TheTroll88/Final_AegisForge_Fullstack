@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "kind": "evm_wallet",
+      "name": "Rainbow Primary EVM",
+      "secret_type": "private_key",
+      "secret_env": "RAINBOW_PRIMARY_PRIVATE_KEY",
+      "expected_address": "0x30Cbd5ffb18B38cC77Cca71B609259547cB3be5B",
+      "required": true
+    },
+    {
+      "kind": "solana_wallet",
+      "name": "Primary Solana",
+      "secret_env": "SOLANA_PRIMARY_SECRET",
+      "expected_address": "A5x55fr2BzVS31WRmRc7okJ4utCkqkTJKBAiqoAxQy6",
+      "required": true
+    },
+    {
+      "kind": "web_session",
+      "name": "X/Twitter",
+      "site": "x.com",
+      "session_file": "session_auth/sessions/twitter.json",
+      "required": true
+    },
+    {
+      "kind": "web_session",
+      "name": "Galxe",
+      "site": "app.galxe.com",
+      "session_file": "session_auth/sessions/galxe.json",
+      "required": false
+    },
+    {
+      "kind": "web_session",
+      "name": "Layer3",
+      "site": "app.layer3.xyz",
+      "session_file": "session_auth/sessions/layer3.json",
+      "required": false
+    },
+    {
+      "kind": "web_session",
+      "name": "TaskOn",
+      "site": "taskon.xyz",
+      "session_file": "session_auth/sessions/taskon.json",
+      "required": false
+    },
+    {
+      "kind": "web_session",
+      "name": "Intract",
+      "site": "intract.io",
+      "session_file": "session_auth/sessions/intract.json",
+      "required": false
+    }
+  ]
+}

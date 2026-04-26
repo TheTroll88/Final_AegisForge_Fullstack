@@ -1,0 +1,130 @@
+================================================================================
+  GIT GPG SIGNING CHEAT SHEET — AEGISFORGE / THETROLL88
+  Key: FB7F3003265935931325C5844A53CB60DE63A58B
+  Email: nathanielcrigger66@gmail.com
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SECTION 1 — ONE-TIME GLOBAL SETUP (already done — don't redo)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  git config --global user.name "TheTroll88"
+  git config --global user.email "nathanielcrigger66@gmail.com"
+  git config --global user.signingkey FB7F3003265935931325C5844A53CB60DE63A58B
+  git config --global commit.gpgsign true
+  git config --global tag.gpgsign true
+  git config --global gpg.program "C:/Program Files/GnuPG/bin/gpg.exe"
+
+  ✅ These are set. You never need to run them again unless you reinstall Git.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SECTION 2 — PULL LATEST VERSION OF A REPO (get the freshest copy)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  cd into the repo folder first, then:
+
+  git fetch origin          ← download latest without touching your files
+  git pull                  ← download + merge into your current branch
+
+  Check if you're behind:
+  git status                ← shows "Your branch is behind origin/main by X commits"
+
+  See what changed remotely:
+  git log HEAD..origin/main --oneline
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SECTION 3 — CREATE A SIGNED TAG (the main thing we do here)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Full command:
+  git tag -s "signed-snapshot-2026-04-21" -m "Admin signed snapshot 2026-04-21"
+
+    -s  = sign with your GPG key
+    -m  = message (like a commit message for the tag)
+    The name after those flags = the tag name
+
+  Verify the tag was created correctly:
+  git tag -v "signed-snapshot-2026-04-21"
+
+  ✅ Good output looks like:
+       gpg: Good signature from "Nathaniel Crigger <nathanielcrigger66@gmail.com>" [ultimate]
+
+  ❌ Bad output (signing failed):
+       gpg: skipped "...": No secret key
+       → Fix: run the LOCAL CONFIG FIX below
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SECTION 4 — LOCAL CONFIG FIX (run if signing fails in a specific repo)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Sometimes a repo's local config overrides your global config. Fix it:
+
+  git config --local user.signingkey FB7F3003265935931325C5844A53CB60DE63A58B
+  git config --local gpg.program "C:/Program Files/GnuPG/bin/gpg.exe"
+
+  Then retry the tag command from Section 3.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SECTION 5 — LIST / DELETE TAGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  List all tags:
+  git tag -l
+
+  Delete a bad/broken tag locally:
+  git tag -d "bad-tag-name"
+
+  Delete a tag from GitHub (remote):
+  git push origin --delete "bad-tag-name"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SECTION 6 — PUSH THE SIGNED TAG TO GITHUB
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Push a single tag:
+  git push origin "signed-snapshot-2026-04-21"
+
+  Push ALL tags at once:
+  git push origin --tags
+
+  ⚠️  NOTE ON VENICEAI/API-DOCS:
+  You do NOT have write access to veniceai/api-docs (it's their org repo).
+  Your signed tag lives safely in your local clone. That is the proof of snapshot.
+  If you need it on GitHub under your account:
+    → Fork the repo on github.com first, then:
+    git remote add myfork git@github.com:TheTroll88/api-docs.git
+    git push myfork "signed-snapshot-2026-04-21"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SECTION 7 — FULL WORKFLOW START TO FINISH (copy-paste this every time)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Step 1 — Go to the repo
+  cd "C:\Users\natha\OneDrive\Desktop\Final_AegisForge_Fullstack\Github_Repos\api-docs"
+
+  Step 2 — Pull latest
+  git pull
+
+  Step 3 — Sign it
+  git tag -s "signed-snapshot-2026-04-21" -m "Admin signed snapshot 2026-04-21"
+
+  Step 4 — Verify
+  git tag -v "signed-snapshot-2026-04-21"
+
+  Step 5 — Done ✅ (tag is on your machine, GPG signed, timestamped, verified)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  QUICK REFERENCE — YOUR KEYS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  GPG Key Fingerprint : FB7F3003265935931325C5844A53CB60DE63A58B
+  GPG Key Short ID    : 4A53CB60DE63A58B
+  Key Type            : ed25519 (EDDSA)
+  Created             : 2026-04-09
+  Expires             : Never
+
+  SSH Key             : rsa-key-20260406 (2048-bit RSA, on GitHub as public key)
+  GitHub Username     : TheTroll88
+  GitHub Email        : nathanielcrigger66@gmail.com
+
+================================================================================

@@ -1,0 +1,114 @@
+{
+  "name": "vscode-ollama",
+  "displayName": "VSCode Ollama",
+  "description": "VSCode Ollama is a powerful Visual Studio Code extension that seamlessly integrates Ollama's local LLM capabilities into your development environment.",
+  "version": "1.2.1",
+  "publisher": "warm3snow",
+  "author": {
+    "name": "warm3snow"
+  },
+  "license": "MIT",
+  "icon": "resources/logo.png",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Machine Learning",
+    "Other"
+  ],
+  "keywords": [
+    "ollama",
+    "llm",
+    "ai",
+    "chat",
+    "local"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-ollama.openChat",
+        "title": "Ollama: Open Chat"
+      },
+      {
+        "command": "vscode-ollama.settings",
+        "title": "Ollama: Settings"
+      }
+    ],
+    "configuration": {
+      "title": "VSCode Ollama",
+      "properties": {
+        "vscode-ollama.baseUrl": {
+          "type": "string",
+          "default": "http://127.0.0.1:11434",
+          "description": "Ollama server base URL"
+        },
+        "vscode-ollama.model": {
+          "type": "string",
+          "default": "deepseek-r1:32b",
+          "description": "Default model to use"
+        },
+        "vscode-ollama.maxTokens": {
+          "type": "number",
+          "default": 4096,
+          "description": "Maximum tokens for response"
+        },
+        "vscode-ollama.keepAlive": {
+          "type": "string",
+          "default": "5 minutes",
+          "description": "Keep-alive duration"
+        },
+        "vscode-ollama.performanceMode": {
+          "type": "string",
+          "default": "Base (Default)",
+          "enum": [
+            "Base (Default)",
+            "Performance",
+            "Low Latency"
+          ],
+          "description": "Performance mode setting"
+        },
+        "vscode-ollama.systemPrompt": {
+          "type": "string",
+          "default": "Given the following conversation, relevant context, and a follow up question, reply with an answer to the current question the user is asking. Return only your response to the question given the above information following the users instructions as needed.",
+          "description": "The system prompt to use for chat conversations"
+        }
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/warm3snow/vscode-ollama"
+  },
+  "bugs": {
+    "url": "https://github.com/warm3snow/vscode-ollama/issues"
+  },
+  "homepage": "https://github.com/warm3snow/vscode-ollama#readme",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/node": "^16.x.x",
+    "@types/node-fetch": "^2.6.1",
+    "@types/vscode": "^1.60.0",
+    "@typescript-eslint/eslint-plugin": "^5.x.x",
+    "@typescript-eslint/parser": "^5.x.x",
+    "@vscode/vsce": "^2.24.0",
+    "eslint": "^8.x.x",
+    "typescript": "^4.x.x"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "whatwg-url": "^11.0.0",
+    "web-streams-polyfill": "^3.2.1",
+    "marked": "^9.0.0"
+  }
+}

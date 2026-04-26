@@ -1,0 +1,155 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "ollama/glm4"
+      },
+      "workspace": "C:\\Users\\natha\\.openclaw\\workspace"
+    }
+  },
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "token": "30a6e986f9fd831c50f594ab068a0def6df9eeadb692b729"
+    },
+    "bind": "loopback",
+    "mode": "local",
+    "port": 18789,
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "meta": {
+    "lastTouchedAt": "2026-04-20T22:53:58.049Z",
+    "lastTouchedVersion": "2026.4.15"
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "ollama": {
+        "api": "ollama",
+        "apiKey": "ollama-local",
+        "baseUrl": "http://127.0.0.1:11434",
+        "models": [
+          {
+            "id": "glm4",
+            "name": "glm4",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 8192,
+            "api": "ollama"
+          },
+          {
+            "id": "gemma4",
+            "name": "gemma4",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 8192,
+            "api": "ollama"
+          },
+          {
+            "id": "glm-5.1:cloud",
+            "name": "glm-5.1:cloud",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 202752,
+            "maxTokens": 8192,
+            "api": "ollama"
+          },
+          {
+            "id": "gemma3:4b",
+            "name": "gemma3:4b",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 8192,
+            "api": "ollama"
+          }
+        ]
+      }
+    }
+  },
+  "plugins": {
+    "allow": [
+      "openclaw-web-search",
+      "ollama",
+      "memory-core"
+    ],
+    "entries": {
+      "ollama": {
+        "enabled": true
+      },
+      "openclaw-web-search": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "openclaw-web-search": {
+        "installPath": "C:\\Users\\natha\\.openclaw\\extensions\\openclaw-web-search",
+        "source": "npm",
+        "spec": "@ollama/openclaw-web-search"
+      }
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "tools": {
+    "alsoAllow": [
+      "ollama_web_search",
+      "ollama_web_fetch"
+    ],
+    "profile": "coding",
+    "web": {
+      "fetch": {
+        "enabled": false
+      },
+      "search": {
+        "enabled": false
+      }
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-20T22:43:23.759Z",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local",
+    "lastRunVersion": "2026.4.15"
+  }
+}

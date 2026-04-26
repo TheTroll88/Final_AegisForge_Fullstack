@@ -1,0 +1,32 @@
+# ============================================================================
+#  AEGISFORGE MASTER VAULT — SEED PHRASES / RECOVERY WORDS
+#  Last Updated: 2026-04-20 06:10
+#  WARNING: SEED PHRASES = FULL WALLET ACCESS — GUARD WITH YOUR LIFE
+# ============================================================================
+
+# ---- BRAVO (from SeedPhrases/Bravo.txt) ----
+[Bravo - 12 words]
+caught later vocal uphold explain aim radar dirt grunt certain poverty give
+
+# ---- FRAME WALLET (from PassPhrases.txt) ----
+[Frame Wallet - 12 words]
+region return inform engine banner orphan basic brief room frame special palm
+Password: AegisVault0412**
+
+# ---- RAINBOW WALLET ----
+[Rainbow Wallet - 12 words]
+transfer crack visit danger aware cause device attract biology amused copper machine
+Password: LyannaStark0829**
+Note:    Where ASIG coin was created
+
+# ---- TRUST WALLET ----
+[Trust Wallet - 12 words]
+medal slam rifle bread toward put demand frog despair snake property surge
+
+# ---- TELEGRAM WALLET #1 (24 words) ----
+[Telegram Wallet 1 - 24 words]
+slam creek swallow behind rich together stay clean arena gossip mixture avoid sick coach easily pluck embark glove pistol road wall minute audi glad
+
+# ---- TELEGRAM WALLET #2 (24 words) ----
+[Telegram Wallet 2 - 24 words]
+odor body bacon obscure swap eagle brief embark what area lucky taste rotate absorb view cactus purchase six joy question like skirt render ceiling

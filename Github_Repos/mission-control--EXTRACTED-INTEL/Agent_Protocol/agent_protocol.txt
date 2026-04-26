@@ -1,0 +1,111 @@
+# ============================================================================
+#  MISSION CONTROL — AGENT COMMUNICATION PROTOCOL
+#  How agents talk to Mission Control and report their work
+# ============================================================================
+
+## CORE CONCEPT
+Every agent action MUST be reflected via MC API calls. The dashboard shows
+all task status, activities, and deliverables in real-time.
+
+## TASK LIFECYCLE (status transitions)
+  INBOX → ASSIGNED → IN_PROGRESS → TESTING → REVIEW → VERIFICATION → DONE
+                ↑                      |                     |
+                └──────────────────────┘                     |
+                       (fail → rework)                       |
+                ↑                                            |
+                └────────────────────────────────────────────┘
+                         (verification fail → rework)
+
+Also: BLOCKED, CANCELLED, MAYBE (parking lot)
+
+## MESSAGE FORMATS
+
+### TASK_COMPLETE (agent finished work)
+```json
+{
+  "activity_type": "completed",
+  "message": "Builder completed: Created responsive landing page",
+  "agent_id": "builder-001",
+  "metadata": {
+    "sessionId": "openclaw-session-uuid",
+    "files_created": 3,
+    "lines_of_code": 247
+  }
+}
+```
+POST /api/tasks/{task_id}/activities
+
+### PROGRESS_UPDATE (in-progress report)
+```json
+{
+  "activity_type": "updated",
+  "message": "Working on component layout — 60% complete",
+  "agent_id": "builder-001"
+}
+```
+POST /api/tasks/{task_id}/activities
+
+### BLOCKED (can't proceed)
+```json
+{
+  "status": "blocked"
+}
+```
+PATCH /api/tasks/{task_id}
++ log activity explaining why
+
+### DELIVERABLE REGISTRATION
+Every file/artifact an agent creates MUST be registered:
+```json
+{
+  "deliverable_type": "file",
+  "title": "Landing Page HTML",
+  "path": "/workspace/project/index.html",
+  "description": "Responsive landing page with hero section"
+}
+```
+POST /api/tasks/{task_id}/deliverables
+
+### SESSION MANAGEMENT
+When spawning a sub-agent:
+```json
+{
+  "openclaw_session_id": "uuid-from-openclaw",
+  "agent_name": "Builder Agent"
+}
+```
+POST /api/tasks/{task_id}/subagent
+
+When completing:
+```json
+{
+  "status": "completed",
+  "ended_at": "2026-04-20T12:00:00.000Z"
+}
+```
+PATCH /api/openclaw/sessions/{session_id}
+
+## ORCHESTRATION HELPER FUNCTIONS (TypeScript)
+Import from '@/lib/orchestration':
+  logActivity(params)              → log to activity feed
+  logDeliverable(params)           → register file/url/artifact
+  registerSubAgentSession(params)  → register openclaw session
+  completeSubAgentSession(id, summary)
+  getDeliverables(taskId)          → fetch deliverables list
+  verifyTaskHasDeliverables(taskId)→ boolean check before approval
+  onSubAgentSpawned(params)        → convenience: log + register
+  onSubAgentCompleted(params)      → convenience: log + complete + deliverables
+
+## AUTO-TEST ENDPOINT
+POST /api/tasks/{task_id}/test
+  → Loads HTML deliverables in headless Playwright browser
+  → Checks: JavaScript console errors, CSS syntax (css-tree), broken resources
+  → Takes screenshots
+  → If PASS: moves to REVIEW with success log
+  → If FAIL: moves to ASSIGNED with error log (rework loop)
+
+## REVIEW / VERIFICATION
+PATCH /api/tasks/{task_id}/review
+  Body: { decision: 'approved' | 'changes_requested', comment? }
+  'approved' → VERIFICATION (or DONE if no verifier)
+  'changes_requested' → ASSIGNED (back to builder)

@@ -1,0 +1,88 @@
+# Thin wrapper around docker/cagent-action's reusable review workflow.
+# Fork detection, org-membership gating, and review posting are all handled
+# by the reusable workflow, so no additional guards are needed here.
+#
+# Triggers:
+#   issue_comment               — `/review` slash command (works for fork contributors).
+#   pull_request_review_comment — captures feedback for agent learning.
+name: PR Review
+
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+  pull_request:
+    types: [ready_for_review, opened]
+
+permissions:
+  contents: read
+
+jobs:
+  review:
+    uses: docker/cagent-action/.github/workflows/review-pr.yml@d98096f432f2aea5091c811852c4da804e60623a # v1.4.1
+    # Scoped to the job so other jobs in this workflow aren't over-permissioned
+    permissions:
+      contents: read # Read repository files and PR diffs
+      pull-requests: write # Post review comments and approve/request changes
+      issues: write # Create security incident issues if secrets are detected in output
+      checks: write # (Optional) Show review progress as a check run on the PR
+      id-token: write # Required for OIDC authentication to AWS Secrets Manager
+    with:
+      add-prompt-files: STYLE.md,COMPONENTS.md
+      additional-prompt: |
+        ## Documentation Review Focus
+
+        This is Docker's official documentation.
+        You are reviewing **DOCUMENTATION**, not code. Focus on documentation quality, not software bugs.
+
+        **Style guides are available via prompt files (STYLE.md, COMPONENTS.md)** - reference them when evaluating changes.
+
+        ## Priority Issues
+
+        ### 1. Vendored/Generated Content (CRITICAL - Auto-reject)
+        Flag if changes touch:
+        - Any file in `_vendor/` directory (vendored from upstream repos)
+        - Any YAML file in `data/*/*.yaml` subdirectories (CLI reference data generated from upstream)
+          - Examples: `data/engine-cli/*.yaml`, `data/buildx/*.yaml`, `data/scout-cli/*.yaml`
+          - Exception: root-level data/ files are manually maintained (allow edits)
+
+        ### 2. Missing Redirects When Removing/Moving Pages (HIGH)
+        When a PR removes or moves a page:
+        - Check if the PR adds an `aliases:` entry in the front matter of the target/replacement page
+        - Example: If `/old/path.md` is removed, there should be `aliases: ["/old/path/"]` in the new page
+
+        ### 3. Markdown Formatting
+        - Poor markdown syntax (unclosed code blocks, broken lists, indentation issues, etc.)
+        - Line wrapping over 80 characters (except links, code blocks, tables)
+
+        ### 4. AI-Generated Patterns (HIGH PRIORITY)
+        Flag AI-isms from STYLE.md:
+        - Hedge words: simply, just, easily, quickly, seamlessly
+        - Redundant phrases: "in order to", "allows you to"
+        - Meta-commentary: "it's worth noting that"
+        - Marketing speak: "robust", "powerful", "cutting-edge"
+        - Passive voice: "is used by" → "uses"
+
+        ### 5. Scope Preservation
+        Does the change match existing document's length and tone?
+        Check STYLE.md "Scope preservation".
+
+        ### 6. Content Accuracy
+        - Factually incorrect information (wrong commands, wrong API endpoints)
+        - Broken links or references
+        - Contradictory content
+        - Mismatched information (e.g., code example shows X but text says Y)
+        - Security issues in example code
+
+        ### 7. Front Matter & Hugo Syntax
+        - Missing required fields: `title`, `description`, `keywords`
+        - Incorrect shortcode syntax (check COMPONENTS.md)
+        - Invalid component usage
+
+        ## Severity
+        - **high**: Will mislead users or break things (incorrect commands, wrong APIs, security issues, editing vendored files, missing redirects)
+        - **medium**: Could confuse users or violates style guide (AI-isms, scope inflation, unclear instructions, markdown formatting)
+        - **low**: Minor suggestions (rarely report)
+
+        Most issues should be MEDIUM. HIGH is for critical problems only.

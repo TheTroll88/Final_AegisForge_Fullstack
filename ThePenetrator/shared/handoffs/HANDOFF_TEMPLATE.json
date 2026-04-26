@@ -1,0 +1,14 @@
+{
+  "$schema": "Agent-to-agent handoff",
+  "id": "HO-0000",
+  "from": "agent_name",
+  "to": "agent_name",
+  "created_at": "2026-04-09T00:00:00Z",
+  "subject": "What this handoff is about",
+  "context": "Everything the receiving agent needs to pick this up cold.",
+  "files_involved": [],
+  "action_needed": "What the receiving agent should do",
+  "urgency": "low | medium | high",
+  "acknowledged": false,
+  "acknowledged_at": null
+}

@@ -1,0 +1,167 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "ollama/glm4"
+      },
+      "models": {
+        "openai/gpt-4o": {
+          "alias": "GPT-4o"
+        },
+        "venice/kimi-k2-5": {
+          "alias": "Kimi K2.5"
+        },
+        "venice/olafangensan-glm-4.7-flash-heretic": {},
+        "vercel-ai-gateway/anthropic/claude-opus-4.6": {
+          "alias": "Vercel AI Gateway"
+        }
+      },
+      "workspace": "C:\\Users\\natha\\.openclaw\\workspace"
+    }
+  },
+  "auth": {
+    "profiles": {
+      "custom-1": {
+        "mode": "api_key",
+        "provider": "aegis_d49993c5792a58f0828bf7b87527c5dbbff6e37efdabbc8422e91aeedd96235582d7764abb466949accce861219e90af1507d7a5f4cf7835795f4ff91e48b897"
+      },
+      "openai:default": {
+        "mode": "api_key",
+        "provider": "openai"
+      },
+      "venice:default": {
+        "mode": "api_key",
+        "provider": "venice"
+      },
+      "vercel-ai-gateway:default": {
+        "mode": "api_key",
+        "provider": "vercel-ai-gateway"
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "allowFrom": [
+        "7568633306"
+      ],
+      "botToken": "8421483697:AAHqbLwY1np8V-yAemoucSQeFuRRQpq2w3A",
+      "dmPolicy": "allowlist",
+      "enabled": true,
+      "groups": {
+        "*": {
+          "requireMention": true
+        }
+      }
+    }
+  },
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "token": "fc319c3d6efb314630c38b9d289413ebffa8011591acf6fd"
+    },
+    "bind": "loopback",
+    "controlUi": {
+      "allowInsecureAuth": true
+    },
+    "mode": "local",
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send",
+        "sms.search"
+      ]
+    },
+    "port": 18789,
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "meta": {
+    "lastTouchedAt": "2026-04-21T00:56:45.791Z",
+    "lastTouchedVersion": "2026.4.15"
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "ollama": {
+        "baseUrl": "http://127.0.0.1:11434"
+      }
+    }
+  },
+  "plugins": {
+    "allow": [
+      "openclaw-web-search",
+      "ollama",
+      "zalouser",
+      "telegram",
+      "memory-core"
+    ],
+    "entries": {
+      "ollama": {
+        "enabled": true
+      },
+      "openai": {
+        "enabled": false
+      },
+      "openclaw-web-search": {
+        "enabled": true
+      },
+      "venice": {
+        "enabled": false
+      },
+      "vercel-ai-gateway": {
+        "enabled": false
+      },
+      "zalouser": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "openclaw-web-search": {
+        "installPath": "C:\\Users\\natha\\.openclaw\\extensions\\openclaw-web-search",
+        "source": "npm",
+        "spec": "@ollama/openclaw-web-search"
+      }
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "tools": {
+    "alsoAllow": [
+      "ollama_web_search",
+      "ollama_web_fetch"
+    ],
+    "profile": "coding",
+    "web": {
+      "fetch": {
+        "enabled": false
+      },
+      "search": {
+        "enabled": false
+      }
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-09T19:51:16.494Z",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local",
+    "lastRunVersion": "2026.4.9"
+  }
+}

@@ -1,0 +1,28 @@
+# ============================================================================
+#  AEGISFORGE MASTER VAULT — BOT KEYS (KeyMint Registry)
+#  Last Updated: 2026-04-20 06:11
+#  Source: C:\Users\natha\v4w_website\🦙\keys\registry.json
+#  Total: 15 keys (12 active, 3 inactive)
+# ============================================================================
+
+# ---- GATEWAY KEY (issued this session) ----
+[Gateway - bot-home]
+Key:     aegis_ca201af0a4b26251807eae9c324d6a71b32d93817261466a4d86c6ebd3d50686945e60af5eb3acde5e6866199e4dbe11238efa2d9a6cf1b0aa08d24e895b151e
+Status:  active
+Issued:  2026-04-20
+Scope:   bot-home HTTP API (port 8080)
+
+# ---- KEYMINT AUTHORITY ----
+[KeyMint Path]
+C:\Users\natha\v4w_website\🦙\keymint.py
+
+[Registry Path]
+C:\Users\natha\v4w_website\🦙\keys\registry.json
+
+[How Keys Work]
+- HMAC-SHA256 signed by keymint
+- All bots must get keys from keymint before talking to bot-home
+- Keys are verified on each request to bot-home (port 8080)
+
+# Note: Full registry (15 keys) lives at the Registry Path above.
+# Do NOT duplicate all 15 keys here — reference the source of truth.

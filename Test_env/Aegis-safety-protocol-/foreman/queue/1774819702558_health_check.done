@@ -1,0 +1,10 @@
+{
+  "id": "1774819702558",
+  "type": "health_check",
+  "payload": {
+    "scheduled": true
+  },
+  "priority": 6,
+  "created": "2026-03-29T21:28:22.558240+00:00",
+  "status": "in_progress"
+}

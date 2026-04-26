@@ -1,0 +1,6 @@
+{
+  "proxy_enabled": false,
+  "proxy_url": "http://127.0.0.1:9050",
+  "rpc_url": "https://solana-mainnet.g.alchemy.com/v2/ZOho1BvxkQjPOjOsnZYFn",
+  "main_wallet": "3rXDxRFqZuNKnysrdYNktUmiNaSfm5aGL91ide2XczVXbQPVfsGSX8mtx9NhFnH72Uf2zJNoL6yef2KuCK1C5BDj"
+}

@@ -1,0 +1,116 @@
+# ============================================================================
+#  AEGISFORGE MASTER VAULT — API KEYS
+#  Last Updated: 2026-04-21 05:23
+#  WARNING: SENSITIVE — DO NOT COMMIT TO ANY REPO
+# ============================================================================
+
+# ---- VENICE AI KEYS ----
+[Venice - Logos]
+VENICE_ADMIN_KEY_FlzvqfBE67dmX-xDLQOF5itQAjdb03rUIWD4aa0G-H
+
+[Venice - Vixen]
+VENICE_ADMIN_KEY_tMEeoSH6vYPCygH0maJHMR0POWSHcK2G10l7Ua8dJG
+
+[Venice - Inference]
+VENICE_INFERENCE_KEY_nwySoIIwdf9ibbwZvK0nbyBmpILJ7yawba6Wlwq0oG
+
+[Venice - Unnamed/4th]
+VENICE_ADMIN_KEY_QnsHH8PdMZSPr8vnG7xtzPJzw7rMe0-23NTDXH40tu
+
+# ---- OPENAI KEYS ----
+[OpenAI - Primary (clipboard)]
+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
+
+[OpenAI - Personal Vault]
+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
+
+[OpenAI - CodeGPT]
+sk-proj-54Az2Qwo75ynugvCfe3TBouMWSSEhAuD2bqaz4ipo-DSjq68jxJeSlaPz9-kol8yHa49_UrepmT3BlbkFJIOOFtMwwnIJaVr7t0jMkm-TMuZ3SUk
+
+[OpenAI - Account ID (Aegis Digital Forge)]
+0e7d72e0-cf44-45ec-9872-bf8221983357
+
+[OpenAI - Codex Refresh Token]
+rt_iU58eiOzXwHtIxo6pcKXTbhld-XtFHDRyUc_F4Losho.YFd5MnsI3yoM5qMwU2qx9Mvza20B2JFOG-fkktEEedk
+
+[OpenAI - New Project Key (2026-04-21)] # STATUS: ACTIVE
+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
+
+[OpenAI - Service Account Key (2026-04-21)] # STATUS: ACTIVE
+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
+
+# ---- OPENROUTER KEYS ----
+[OpenRouter - Primary (conversation audit)]
+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
+
+[OpenRouter - Secondary (clipboard)]
+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
+
+# ---- GROQ ----
+[Groq]
+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
+
+# ---- LLMNX ----
+[LLMNX]
+llmnx_4a86396a0d794348aefc66c8aa0b3a05
+
+# ---- HUGGING FACE ----
+[HuggingFace]
+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
+
+# ---- GITHUB ----
+[GitHub PAT]
+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
+
+# ---- BLOCKCHAIN EXPLORERS ----
+[Alchemy]
+ZOho1BvxkQjPOjOsnZYFn
+
+[Basescan]
+918RZSKK7KKP1JBPEUD11U4FDP7HP7JCKY
+
+[Etherscan]
+SIBMYTDZC6W7JAJ2NR62KVK8M6GYUY7UEB
+
+# ---- RARIBLE ----
+[Rarible - Main]
+94403950-c297-4a9a-8c4f-b1035d951083
+
+[Rarible - Testnet]
+8c9bccb5-372f-45f9-9c71-5be3148a79bd
+
+# ---- GATEWAY / VCK ----
+[Gateway Key (VCK)]
+vck_6FypvopAHJuLefDAUzn1guZQnuE0BxSWs2ESiG4PtDZe4RQoDp3FYL5b
+
+[Ollama Gate (VCK)]
+vck_6FypvopAHJuLefDAUzn1guZQnuE0BxSWs2ESiG4PtDZe4RQoDp3FYL5b
+
+# ---- MYSTERY / UNIDENTIFIED ----
+[Maybe-a-key (clipboard)]
+gwoQFNye30Kk7NrExj8zm3zFtrGPqOkzFMLuQZg1DtQ
+
+[Ollama Random Key (clipboard - long base64)]
+AQAGCT2QJRwx5y4sNbJOSm80ZH2kBC8Y6FGPTAJQSDO2OpmtZcTWM1VzYphfGjUqonx7eoRvS+YRLJ5rc4ggSAxOpBfSKU8ae4veS2JdjGCxEPNM6tP9qM7sIdm7AqJIzMgGvQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjJclj04kifG7PRApFI4NgwtaE5na/xCEBI572Nvp+FmWP4Y0m05WkKLYKPIGq2OHkWIpMiRw91z1Se2uMr0yUAMGRm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAAyMO0a7vx2b+FYxv8S9VywIAKkmBP02VFc9N46tGHeyQG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqSwZhu+Y2tpKPu1i6adAIU7U8WIcy48eXc1Mr2m8+ZxbAwYACQOghgEAAAAAAAQGAAIHBQMIAAgDAQIACQP4EGoTAAAAAA==
+
+# ---- MONGODB ATLAS ----
+[MongoDB Atlas - API Key]
+sug3mBfKH5lcKg.atlasv1.bpwBkSwZr2wLcAfmYQv9Mkmc9mqrylE6c2MShkiJUnsIzMdMC0VqeQnWVT0K165J7bE
+
+# ---- TERRAFORM CLOUD ----
+[Terraform Cloud Token - 2026-04-20 16:36]
+0vo9kS3NNswfUQ.atlasv1.2sdjDhYzAxK16YNmZXsF44QIuRKCvBEpd78v1MglyWSYwIoMbTmQO52VApVGS5Y67RY
+
+# ---- MONGODB ATLAS CLUSTER ----
+[Atlas Cluster - Connection String (2026-04-20 16:49)]
+URI: mongodb+srv://cluster0.q66ar7a.mongodb.net/
+Username: nathanielcrigger66_db_user
+Password: XvG096nfxO77ESUh
+mongosh: mongosh "mongodb+srv://cluster0.q66ar7a.mongodb.net/" --apiVersion 1 --username nathanielcrigger66_db_user --password XvG096nfxO77ESUh
+
+mongosh: mongosh "mongodb+srv://cluster0.q66ar7a.mongodb.net/" --apiVersion 1 --username nathanielcrigger66_db_user --password XvG096nfxO77ESUh
+
+# ---- ANTHROPIC / CLAUDE ----
+[Anthropic - Claude Opus Org ID (2026-04-21)] # STATUS: ACTIVE — new account
+acc72f7f-2aad-4f94-baef-8c1b69d10a63
+

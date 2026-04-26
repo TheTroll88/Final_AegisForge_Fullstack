@@ -1,0 +1,3 @@
+version=4
+opts=dversionmangle=s/\+ds//,pgpsigurlmangle=s/$/.asc/,repacksuffix=+ds \
+https://launchpad.net/launchpadlib/+download .*/launchpadlib-(.+).tar.gz

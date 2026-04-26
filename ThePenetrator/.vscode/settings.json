@@ -1,0 +1,34 @@
+{
+    "snyk.advanced.autoSelectOrganization": true,
+    "python-envs.pythonProjects": [
+        {
+            "path": "logos",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ],
+    "python.analysis.showOnlyDirectDependenciesInAutoImport": true,
+    "yaml.schemas": {
+        "file:///c%3A/Users/natha/.vscode/extensions/continue.continue-1.2.21-win32-x64/config-yaml-schema.json": [
+            ".continue/**/*.yaml"
+        ],
+        "file:///c%3A/Users/natha/.vscode/extensions/continue.continue-1.2.22-win32-x64/config-yaml-schema.json": [
+            ".continue/**/*.yaml"
+        ],
+        "https://www.schemastore.org/sourcehut-build-0.65.0.json": "file:///c%3A/Users/natha/.continue/config.yaml"
+    },
+    "files.exclude": {},
+    "DockerRun.DisableDockerrc": true,
+    "cloude-code-toolbox.thinkingMachineMode.enabled": true,
+    "cloude-code-toolbox.thinkingMachineMode.runAwarenessScan": true,
+    "cloude-code-toolbox.thinkingMachineMode.mergeAwarenessIntoClaudeMd": true,
+    "cloude-code-toolbox.thinkingMachineMode.showConfirmationModal": true,
+    "cloude-code-toolbox.thinkingMachineMode.useSeparateContextPackDefaults": true,
+    "cloude-code-toolbox.thinkingMachineMode.includeGit": true,
+    "cloude-code-toolbox.thinkingMachineMode.includeDiagnostics": true,
+    "cloude-code-toolbox.thinkingMachineMode.appendNotepad": true,
+    "cloude-code-toolbox.thinkingMachineMode.openChat": true,
+    "fileShield.excludePatterns": [
+        
+    ]
+}

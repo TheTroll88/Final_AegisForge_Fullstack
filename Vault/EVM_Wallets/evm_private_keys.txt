@@ -1,0 +1,63 @@
+# ============================================================================
+#  AEGISFORGE MASTER VAULT — EVM WALLETS (Private Keys)
+#  Last Updated: 2026-04-20 06:09
+#  WARNING: PRIVATE KEYS — NEVER SHARE, NEVER COMMIT
+# ============================================================================
+
+# ---- PRIMARY WALLET (MetaMask / PhasePort) ----
+[MetaMask-PhasePort]
+Address:     0x30Cbd5ffb18B38cC77Cca71B609259547cB3be5B
+Private Key: 0xb2c37bb55d0bd888120affcae4270a5f0ae9b46c708c18f9cc676e3211d93543
+Source:      PhasePort .env / MetaMask
+Notes:       Main trading wallet, PhasePort micro-trading config
+
+# ---- ADDITIONAL EVM KEYS (from ChatGPT/VSCode session exports) ----
+[EVM-Key-2]
+Address:     0xdA9203Dd91D0704fB55e80eE164e78B3bC5f9667
+Private Key: 0xd0d1d63fa89c34ab0bbf5e3b97a88c57d7eab6ef3b9c60d9bdffe012e94d0bf3
+
+[EVM-Key-3]
+Address:     0x81BE3495A6CF04d41C8eF289a03f6F108DB1D3D0
+Private Key: 0x7bb80f61f6c997469e9bbbc1d3de2d2a4c6db38dc99af1cf6b5835124e3a6a78
+
+[EVM-Key-4]
+Address:     0xBf7792D8e4Fa10CC2Edc70De68F49a6e8B6e60C3
+Private Key: 0x83296a1c3db7b9c40fed3036a1ed24f3be89b0f04c26bd7f14a73412d35dd6e1
+
+[EVM-Key-5]
+Address:     0x5E234d3C0a11C987D3c94b4d0a2dE75B3f7F35b5
+Private Key: 0x1d3a15b76be2f4f82c02b27ea0bf8e1fdd8c0ad42e6b5a6c39d1e2f580497c31
+
+[EVM-Key-6]
+Address:     0x9AE12f7C4D8e5b0a1B2c3D4E5F60718293a4B5c6
+Private Key: 0x6e5d4c3b2a19087f6e5d4c3b2a19087f6e5d4c3b2a19087f6e5d4c3b2a190870
+
+[EVM-Key-7]
+Address:     0x1234567890aBcDeF1234567890aBcDeF12345678
+Private Key: 0xa1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90
+
+[EVM-Key-8]
+Address:     0xFeDcBa0987654321FeDcBa0987654321FeDcBa09
+Private Key: 0xf0e1d2c3b4a59687f0e1d2c3b4a59687f0e1d2c3b4a59687f0e1d2c3b4a59680
+
+[EVM-Key-9]
+Address:     0xAaBbCcDdEeFf00112233445566778899aAbBcCdD
+Private Key: 0x0011223344556677889900aabbccddeeff0011223344556677889900aabbccdd
+
+[EVM-Key-10]
+Address:     0x99887766554433221100fFeEdDcCbBaA99887766
+Private Key: 0xffeeddccbbaa99887766554433221100ffeeddccbbaa99887766554433221100
+
+# ---- TRUST WALLET (scrypt-encrypted on disk) ----
+[Trust Wallet — Encrypted Keystore]
+BTC:  bc1qsssq65wr5dmzgzl68rx7uv48prhmapxtvz77xz
+ETH:  0x21Ba20F2984AE99152c1f8C2a86df359aDf09956
+BNB:  bnb138fyzgalz2g5aqxuylc43vamwhuzdhaue723nh
+Notes: Keystore JSON at D:\SecureVault\encrypted_wallets\ (scrypt-encrypted)
+
+# ---- PROPOY TOKEN INFO ----
+[Propoy (PRO) on Base]
+Token Contract: 0x18dD5B087bCA9920562aFf7A0199b96B9230438b
+Holder Wallet:  0xb9427751ecd8020E6dc4F1260da1871e06224708
+Balance:        33.334 PRO
+Chain:          Base

@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Hardhat build outputs
+artifacts/
+cache/
+
+# Environment — NEVER commit real keys
+.env
+
+# Coverage
+coverage/
+coverage.json
+
+# TypeScript
+typechain-types/
+
+# OS noise
+.DS_Store
+Thumbs.db

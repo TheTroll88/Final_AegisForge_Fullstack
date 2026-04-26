@@ -1,0 +1,31 @@
+{
+  "7a0d8bb4f973b480718c3c7b8b157510ad97fda5e964c6618af02ba6f7aa8a82": {
+    "deviceId": "7a0d8bb4f973b480718c3c7b8b157510ad97fda5e964c6618af02ba6f7aa8a82",
+    "publicKey": "bh_lVfaWtSBrXpV77rMBLPVxWwA3gJnFVBZHZPqXem0",
+    "platform": "win32",
+    "clientId": "cli",
+    "clientMode": "probe",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.read"
+    ],
+    "approvedScopes": [
+      "operator.read"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "zmyAbYMbvRX2a5QE2wtTJZlJPxtU5Z9QqbpJ6bJ_BL0",
+        "role": "operator",
+        "scopes": [
+          "operator.read"
+        ],
+        "createdAtMs": 1776725058337
+      }
+    },
+    "createdAtMs": 1776725058336,
+    "approvedAtMs": 1776725058336
+  }
+}

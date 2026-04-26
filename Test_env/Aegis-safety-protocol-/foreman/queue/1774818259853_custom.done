@@ -1,0 +1,11 @@
+{
+  "id": "1774818259853",
+  "type": "custom",
+  "payload": {
+    "command": "shell: python -V",
+    "source": "cli"
+  },
+  "priority": 5,
+  "created": "2026-03-29T21:04:19.853857+00:00",
+  "status": "in_progress"
+}

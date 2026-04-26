@@ -1,0 +1,46 @@
+# ============================================================================
+#  AEGISFORGE MASTER VAULT — DPAPI ENCRYPTED FILES (References)
+#  Last Updated: 2026-04-20 06:11
+#  These files are DPAPI-encrypted (Windows CurrentUser scope)
+#  They can ONLY be decrypted on this machine, by this Windows user
+# ============================================================================
+
+# ---- FOREMAN CHAIN WALLET (EVM) ----
+[Foreman EVM Key]
+Path:    D:\AegisForge\chain\.vault\foreman\key.enc
+Size:    294 bytes
+Decrypt: Windows DPAPI CurrentUser scope
+Notes:   Foreman agent's EVM private key for Aegis Chain (ID 808080)
+
+# ---- FOREMAN SOLANA KEY ----
+[Foreman Solana Key]
+Path:    D:\AegisForge\chain\.vault\solana\key.enc
+Size:    310 bytes
+Decrypt: Windows DPAPI CurrentUser scope
+Notes:   Foreman agent's Solana keypair
+
+# ---- BASE EXPLORER WALLET ----
+[Base Explorer Wallet]
+Path:    C:\Users\natha\base-explorer\.vault\wallet.enc
+Size:    392 bytes
+Decrypt: Windows DPAPI CurrentUser scope
+
+# ---- DATAVAULT SEAL/UNSEAL SCRIPTS ----
+[DataVault Seal Script]
+Path:    D:\DataVault\Vault\seal_vault.ps1
+Notes:   Prompts for 15 secrets (Venice x4, Gateway, OpenAI, Groq, OpenRouter,
+         GitHub PAT, HuggingFace, Rarible x2, Telegram x2, LLMNX, Mystery)
+         DPAPI-encrypts to aegis_vault.enc — NEVER BEEN RUN YET
+
+[DataVault Unseal Script]
+Path:    D:\DataVault\Vault\unseal_vault.ps1
+Notes:   Decrypts and returns individual keys by name
+
+[DataVault Rotate Venice]
+Path:    D:\DataVault\Vault\rotate_venice.ps1
+Notes:   Venice AI key rotation with vault integration
+
+# ---- SECURE VAULT (Engine) ----
+[Engine Secure Vault]
+Path:    D:\AegisForge\engine\secure_vault.ps1
+Notes:   DPAPI credential vault for trading engine

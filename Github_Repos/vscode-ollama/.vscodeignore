@@ -1,0 +1,12 @@
+.vscode/**
+.gitignore
+.yarnrc
+vsc-extension-quickstart.md
+**/tsconfig.json
+**/eslint.config.mjs
+**/*.map
+**/*.ts
+node_modules/**
+!node_modules/node-fetch/**
+!node_modules/whatwg-url/**
+!node_modules/web-streams-polyfill/**

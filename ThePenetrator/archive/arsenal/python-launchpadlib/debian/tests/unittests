@@ -1,0 +1,16 @@
+#!/bin/sh
+set -efu
+
+# Launchpadlib tries to keep a cache in HOME
+HOME="$AUTOPKGTEST_TMP/home"
+mkdir "$HOME"
+
+pythons3="$(py3versions -s)"
+
+cd "$AUTOPKGTEST_TMP"
+
+for py in $pythons3; do
+	echo "=== $py ==="
+	$py -m pytest /usr/lib/python3/dist-packages/launchpadlib/tests \
+	              /usr/lib/python3/dist-packages/launchpadlib/testing
+done

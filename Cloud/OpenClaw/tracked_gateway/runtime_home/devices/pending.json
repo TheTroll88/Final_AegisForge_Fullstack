@@ -1,0 +1,21 @@
+{
+  "45883a45-c9f6-45bf-aec9-bbbc772ff21b": {
+    "requestId": "45883a45-c9f6-45bf-aec9-bbbc772ff21b",
+    "deviceId": "7a0d8bb4f973b480718c3c7b8b157510ad97fda5e964c6618af02ba6f7aa8a82",
+    "publicKey": "bh_lVfaWtSBrXpV77rMBLPVxWwA3gJnFVBZHZPqXem0",
+    "displayName": "Telegram Native Approvals (default)",
+    "platform": "win32",
+    "clientId": "gateway-client",
+    "clientMode": "backend",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.approvals"
+    ],
+    "silent": false,
+    "isRepair": true,
+    "ts": 1776733582896
+  }
+}

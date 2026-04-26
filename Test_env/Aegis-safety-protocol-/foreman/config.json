@@ -1,0 +1,62 @@
+{
+    "identity": {
+        "name": "Foreman",
+        "represents": "Nathaniel Crigger",
+        "authority_level": "full"
+    },
+    "openai": {
+        "api_key": "YOUR_OPENAI_KEY_HERE",
+        "model": "gpt-4o"
+    },
+    "twitter": {
+        "mode": "playwright",
+        "api_key": "",
+        "api_secret": "",
+        "access_token": "",
+        "access_secret": "",
+        "session_file": "session_auth/sessions/twitter.json"
+    },
+    "solana": {
+        "wallet": "A5x55fr2BzVS31WRmRc7okJ4utCkqkTJKBAiqoAxQy6",
+        "rpc": "https://solana-rpc.publicnode.com"
+    },
+    "schedule": {
+        "signal_posts_per_day": 4,
+        "signal_post_hours": [
+            9,
+            14,
+            18,
+            22
+        ],
+        "airdrop_check_interval_minutes": 60,
+        "health_check_interval_minutes": 15
+    },
+    "shell": {
+        "allowed_commands": [
+            "python",
+            "pip",
+            "pwsh",
+            "node",
+            "git"
+        ],
+        "working_directory": "C:\\Users\\natha"
+    },
+    "flags": {
+        "post_to_twitter": false,
+        "execute_shell_commands": true,
+        "autonomous_mode": true,
+        "self_memory": true,
+        "coin_treasury": true,
+        "airdrop_farming": true
+    },
+    "account_verification": {
+        "inventory_file": "account_inventory.json",
+        "keepass": {
+            "enabled": false,
+            "database": "",
+            "password_env": "KEEPASS_MASTER_PASSWORD",
+            "group": "Foreman/Account Audit",
+            "store_mode": "metadata"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+2026/04/08-13:50:40.850 5200 Reusing MANIFEST C:\Users\natha\LogosBrowser\Default\IndexedDB\https_venice.ai_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/08-13:50:40.850 5200 Recovering log #10
+2026/04/08-13:50:40.850 5200 Reusing old log C:\Users\natha\LogosBrowser\Default\IndexedDB\https_venice.ai_0.indexeddb.leveldb/000010.log 
+2026/04/08-13:50:40.851 5200 Delete type=2 #8
+2026/04/08-13:50:40.854 70d0 Level-0 table #15: started
+2026/04/08-13:50:40.856 70d0 Level-0 table #15: 3404 bytes OK
+2026/04/08-13:50:40.857 70d0 Delete type=0 #10
+2026/04/08-13:50:40.857 480c Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x00\x00\x05' @ 5958 : 1
+2026/04/08-13:50:40.857 480c Compacting 1@0 + 1@1 files
+2026/04/08-13:50:40.862 480c Generated table #16@0: 3565 keys, 63565 bytes
+2026/04/08-13:50:40.862 480c Compacted 1@0 + 1@1 files => 63565 bytes
+2026/04/08-13:50:40.863 480c compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/08-13:50:40.863 480c Delete type=2 #15
+2026/04/08-13:50:40.864 480c Manual compaction at level-0 from '\x00\x06\x00\x00\x05' @ 5958 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)

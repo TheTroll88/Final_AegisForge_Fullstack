@@ -1,0 +1,12 @@
+{
+  "lastClaim": {},
+  "balances": {
+    "holesky": "0.0000 ETH",
+    "basesep": "0.0000 ETH",
+    "arbsep": "0.0000 ETH",
+    "sepolia": "0.0000 ETH",
+    "amoy": "0.0000 ETH",
+    "opsep": "0.0000 ETH"
+  },
+  "claimHistory": []
+}

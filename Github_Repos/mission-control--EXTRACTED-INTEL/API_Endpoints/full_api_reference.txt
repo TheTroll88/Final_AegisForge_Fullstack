@@ -1,0 +1,169 @@
+# ============================================================================
+#  MISSION CONTROL — FULL API REFERENCE
+#  Base URL: http://localhost:4000   (or whatever PORT env is set to)
+#  Auth: Bearer token via MC_API_TOKEN env var (optional in dev)
+# ============================================================================
+
+## AUTHENTICATION
+- Set MC_API_TOKEN env var to require auth
+- Send: Authorization: Bearer <token>
+- SSE streams accept ?token=<token> query param
+- Same-origin browser requests bypass auth (UI fetches)
+- Webhook routes (/api/webhooks/*) use their own HMAC validation
+- Health endpoints bypass auth (/api/health)
+
+## DEMO MODE
+- Set DEMO_MODE=true to block all writes (GET/HEAD/OPTIONS only)
+- Returns 403 for mutations with helpful message
+
+# ─── TASKS ──────────────────────────────────────────────────────
+# Tasks are the core unit of work in Mission Control
+
+GET    /api/tasks                        → List all tasks (filterable)
+  ?status=inbox|assigned|in_progress|testing|review|verification|done|blocked|cancelled|maybe
+  ?product_id=<id>                       → Filter by product
+  ?workspace_id=<id>                     → Filter by workspace
+  ?priority=low|medium|high|critical     → Filter by priority
+
+POST   /api/tasks                        → Create a new task
+  Body: { title, description?, status?, priority?, product_id?, assignee_id?,
+          tags?, spec_url?, pr_url?, estimated_hours?, workspace_id? }
+
+GET    /api/tasks/:id                    → Get single task with full details
+PATCH  /api/tasks/:id                    → Update task fields
+  Body: { status?, title?, description?, priority?, assignee_id?, tags?,
+          spec_url?, pr_url?, estimated_hours?, estimated_cost? }
+DELETE /api/tasks/:id                    → Delete a task
+
+# ─── TASK SUB-RESOURCES ─────────────────────────────────────────
+
+GET    /api/tasks/:id/activities         → Get activity feed for a task
+POST   /api/tasks/:id/activities         → Log an activity
+  Body: { activity_type: 'spawned'|'updated'|'completed'|'file_created'|'status_changed',
+          message, agent_id?, metadata? }
+
+GET    /api/tasks/:id/deliverables       → List deliverables
+POST   /api/tasks/:id/deliverables       → Register a deliverable
+  Body: { deliverable_type: 'file'|'url'|'artifact', title, path?, description? }
+
+POST   /api/tasks/:id/subagent           → Register a sub-agent session
+  Body: { openclaw_session_id, agent_name? }
+
+POST   /api/tasks/:id/test               → Run automated tests on task deliverables
+  → Loads HTML in headless Playwright
+  → Checks JS console errors, CSS syntax, broken resources
+  → Takes screenshots
+  → Returns pass/fail, moves task accordingly
+
+PATCH  /api/tasks/:id/review             → Submit review decision
+  Body: { decision: 'approved'|'changes_requested', comment? }
+
+# ─── AGENTS ─────────────────────────────────────────────────────
+# Agents are the workers — Builder, Tester, Reviewer, Learner, etc.
+
+GET    /api/agents                       → List all agents
+  ?workspace_id=<id>                     → Filter by workspace
+POST   /api/agents                       → Create agent
+  Body: { name, role, emoji?, soul_md?, user_md?, agents_md?, workspace_id? }
+
+GET    /api/agents/:id                   → Get agent details
+PATCH  /api/agents/:id                   → Update agent
+  Body: { name?, role?, emoji?, status?, soul_md?, user_md?, agents_md? }
+DELETE /api/agents/:id                   → Remove agent
+
+POST   /api/agents/reorder               → Reorder agents on board
+  Body: { agent_ids: [ordered list of IDs] }
+
+# ─── PRODUCTS ───────────────────────────────────────────────────
+# Products represent the projects/apps being improved
+
+GET    /api/products                     → List all products
+POST   /api/products                     → Create product
+  Body: { name, description?, repo_url?, health_check_url?, settings? }
+
+GET    /api/products/:id                 → Get product details
+PATCH  /api/products/:id                 → Update product
+DELETE /api/products/:id                 → Remove product
+
+# ─── WORKSPACES ─────────────────────────────────────────────────
+# Workspaces isolate agents & tasks per project/team
+
+GET    /api/workspaces                   → List all workspaces
+POST   /api/workspaces                   → Create workspace
+  Body: { name, slug?, description?, settings? }
+
+GET    /api/workspaces/:slug             → Get workspace by slug
+PATCH  /api/workspaces/:slug             → Update workspace
+DELETE /api/workspaces/:slug             → Delete workspace
+
+# ─── OPENCLAW / SESSIONS ────────────────────────────────────────
+# OpenClaw Gateway integration — tracks agent sessions
+
+GET    /api/openclaw/sessions            → List sessions
+  ?task_id=<id>                          → Filter by task
+POST   /api/openclaw/sessions            → Create session record
+PATCH  /api/openclaw/sessions/:id        → Update session (status, ended_at)
+  Body: { status: 'active'|'completed'|'failed', ended_at? }
+
+# ─── EVENTS / REALTIME ─────────────────────────────────────────
+# Server-Sent Events for live dashboard updates
+
+GET    /api/events/stream                → SSE event stream
+  ?token=<MC_API_TOKEN>                  → Auth for SSE
+  Events: task_created, task_updated, task_deleted,
+          agent_updated, activity_logged, deliverable_logged,
+          session_created, session_updated
+
+POST   /api/events/broadcast             → Broadcast custom event
+  Body: { type, data }
+
+# ─── AUTOPILOT ──────────────────────────────────────────────────
+# Autonomous product improvement pipeline
+
+POST   /api/autopilot/start              → Start autopilot cycle
+  Body: { product_id, workspace_id?, max_tasks? }
+GET    /api/autopilot/status             → Current autopilot state
+POST   /api/autopilot/stop               → Stop autopilot
+GET    /api/autopilot/history            → Past autopilot runs
+
+# ─── PREFERENCES / LEARNING ────────────────────────────────────
+# User preference learning system
+
+GET    /api/preferences                  → Get learned preferences
+POST   /api/preferences/feedback         → Submit feedback on a decision
+  Body: { task_id, decision, feedback: 'positive'|'negative', reason? }
+
+# ─── CONVOY MODE ────────────────────────────────────────────────
+# Parallel multi-agent task execution
+
+POST   /api/convoy/start                 → Start convoy (parallel build)
+  Body: { task_ids: [...], workspace_id? }
+GET    /api/convoy/status                → Convoy progress
+POST   /api/convoy/stop                  → Stop convoy
+
+# ─── COST TRACKING ─────────────────────────────────────────────
+# API token usage & cost monitoring
+
+GET    /api/costs                        → Cost summary
+GET    /api/costs/breakdown              → Per-task cost breakdown
+GET    /api/costs/agents                 → Per-agent API costs
+
+# ─── UPLOADS ────────────────────────────────────────────────────
+# File upload for agent deliverables (when agent is on different machine)
+
+POST   /api/upload                       → Upload file
+  Body: multipart/form-data { file, task_id?, path? }
+
+# ─── WEBHOOKS (INCOMING) ───────────────────────────────────────
+# External service hooks
+
+POST   /api/webhooks/github              → GitHub webhook receiver
+  Headers: X-Hub-Signature-256, X-GitHub-Event
+  Events: pull_request (merged → health monitor),
+          check_suite/check_run (failed → rollback),
+          status (failed → rollback)
+
+# ─── HEALTH ────────────────────────────────────────────────────
+
+GET    /api/health                       → Basic health check (no auth)
+GET    /api/health/detailed              → Detailed health (DB, OpenClaw, etc.)

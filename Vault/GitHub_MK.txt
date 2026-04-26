@@ -1,0 +1,258 @@
+>> Key-Type: eddsa
+>> Key-Curve: ed25519
+>> Key-Usage: sign
+>> Subkey-Type: ecdh
+>> Subkey-Curve: cv25519
+>> Subkey-Usage: encrypt
+>> Name-Real: Nathaniel Crigger
+>> Name-Email: nathanielcrigger66@gmail.com
+>> Expire-Date: 0
+-------------------------------------------------------------------------------------------------
+
+Public: rsa-key-20260406
+2048 65537 25492689346787907831294409947335795481009208198885894314520468690945914849423227141638284731898192858988244660446963263697546877651338943820619726139050802547245705237027570246133501821808373828541199164640520985309240876676174968831622048792740612141401457082117053537030119269893713991147950057148407117014642050961530903132606382867179016110252374703661162540894538838761960641541134862180589591026860572555080597469997100025574486479579013053400077356991893376822602366134502905879110630961616415725297501263464708313474781624693250228154144300424054495193429875165463179532277320677186114717359141069206965433243 rsa-key-20260406
+
+
+sec   ed25519/4A53CB60DE63A58B 2026-04-09 [SC]
+      FB7F3003265935931325C5844A53CB60DE63A58B
+uid                 [ultimate] Nathaniel Crigger <nathanielcrigger66@gmail.com> 
+ssb   cv25519/294E51C103BB36A3 2026-04-09 [E]
+      25232E8967630BF3CD58B447294E51C103BB36A3
+
+EDDSA key FB7F3003265935931325C5844A53CB60DE63A58B
+-----------------------------------------------------------------------------------------------
+					Example on How to Use:
+-----------------------------------------------------------------------------------------------
+
+Public: rsa-key-20260406
+2048 65537 25492689346787907831294409947335795481009208198885894314520468690945914849423227141638284731898192858988244660446963263697546877651338943820619726139050802547245705237027570246133501821808373828541199164640520985309240876676174968831622048792740612141401457082117053537030119269893713991147950057148407117014642050961530903132606382867179016110252374703661162540894538838761960641541134862180589591026860572555080597469997100025574486479579013053400077356991893376822602366134502905879110630961616415725297501263464708313474781624693250228154144300424054495193429875165463179532277320677186114717359141069206965433243 rsa-key-20260406
+
+>> Key-Type: eddsa
+>> Key-Curve: ed25519
+>> Key-Usage: sign
+>> Subkey-Type: ecdh
+>> Subkey-Curve: cv25519
+>> Subkey-Usage: encrypt
+>> Name-Real: Nathaniel Crigger
+>> Name-Email: nathanielcrigger66@gmail.com
+>> Expire-Date: 0
+>> %no-protection
+>> %commit
+>> "@ | Out-File -Encoding ascii "$env:TEMP\gpg_keygen.txt"; gpg --batch --gen-key "$env:TEMP\gpg_keygen.txt"
+gpg: directory 'C:\\Users\\natha\\AppData\\Roaming\\gnupg\\openpgp-revocs.d' created
+gpg: revocation certificate stored as 'C:\\Users\\natha\\AppData\\Roaming\\gnupg\\openpgp-revocs.d\\FB7F3003265935931325C5844A53CB60DE63A58B.rev'
+PS C:\Users\natha> gpg --list-secret-keys --keyid-format=long
+gpg: checking the trustdb
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+[keyboxd]
+---------
+sec   ed25519/4A53CB60DE63A58B 2026-04-09 [SC]
+      FB7F3003265935931325C5844A53CB60DE63A58B
+uid                 [ultimate] Nathaniel Crigger <nathanielcrigger66@gmail.com> 
+ssb   cv25519/294E51C103BB36A3 2026-04-09 [E]
+      25232E8967630BF3CD58B447294E51C103BB36A3
+
+git config --local user.signingkey FB7F3003265935931325C5844A53CB60DE63A58B; git config --local --get user.signingkey
+
+Venice Git + Signing Quick Fix (PowerShell)
+
+Clone real repo:
+cd C:\Users\natha\OneDrive
+git clone https://github.com/veniceai/api-docs.git
+cd api-docs
+
+Verify:
+git rev-parse --is-inside-work-tree
+git remote -v
+
+Set signing globally (once):
+git config --global user.signingkey FB7F3003265935931325C5844A53CB60DE63A58B
+git config --global commit.gpgsign true
+
+Check:
+git config --global --get user.signingkey
+git config --global --get commit.gpgsign
+
+If you see “--local can only be used inside a git repository”, you’re in the wrong folder (no .git).
+
+
+PS C:\Users\natha> 
+
+
+git config --local user.signingkey <sec   ed25519/4A53CB60DE63A58B 2026-04-09 [SC]
+      FB7F3003265935931325C5844A53CB60DE63A58B>
+
+
+PS C:\Users\natha\OneDrive\api-docs> Select-String -Path repo_paths_all.txt -Pattern "swagger\.yaml|docs\.json|openapi|api-reference" | ForEach-Object { $_.Line }
+api-reference/api-spec.mdx
+api-reference/endpoint/api_keys/create.mdx
+api-reference/endpoint/api_keys/delete.mdx
+api-reference/endpoint/api_keys/generate_web3_key/get.mdx
+api-reference/endpoint/api_keys/generate_web3_key/post.mdx
+api-reference/endpoint/api_keys/get.mdx
+api-reference/endpoint/api_keys/list.mdx
+api-reference/endpoint/api_keys/rate_limit_logs.mdx
+api-reference/endpoint/api_keys/rate_limits.mdx
+api-reference/endpoint/api_keys/update.mdx
+api-reference/endpoint/audio/complete.mdx
+api-reference/endpoint/audio/queue.mdx
+api-reference/endpoint/audio/quote.mdx
+api-reference/endpoint/audio/retrieve.mdx
+api-reference/endpoint/audio/speech.mdx
+api-reference/endpoint/audio/transcriptions.mdx
+api-reference/endpoint/billing/balance.mdx
+api-reference/endpoint/billing/usage-analytics.mdx
+api-reference/endpoint/billing/usage.mdx
+api-reference/endpoint/characters/get.mdx
+api-reference/endpoint/characters/list.mdx
+api-reference/endpoint/characters/reviews.mdx
+api-reference/endpoint/chat/completions.mdx
+api-reference/endpoint/chat/model_feature_suffix.mdx
+api-reference/endpoint/embeddings/generate.mdx
+api-reference/endpoint/image/background-remove.mdx
+api-reference/endpoint/image/edit.mdx
+api-reference/endpoint/image/generate.mdx
+api-reference/endpoint/image/generations.mdx
+api-reference/endpoint/image/multi-edit.mdx
+api-reference/endpoint/image/styles.mdx
+api-reference/endpoint/image/upscale.mdx
+api-reference/endpoint/models/compatibility_mapping.mdx
+api-reference/endpoint/models/list.mdx
+api-reference/endpoint/models/traits.mdx
+api-reference/endpoint/video/complete.mdx
+api-reference/endpoint/video/queue.mdx
+api-reference/endpoint/video/quote.mdx
+api-reference/endpoint/video/retrieve.mdx
+api-reference/endpoint/video/transcriptions.mdx
+api-reference/endpoint/x402/balance.mdx
+api-reference/endpoint/x402/top-up.mdx
+api-reference/endpoint/x402/transactions.mdx
+api-reference/error-codes.mdx
+api-reference/rate-limiting.mdx
+docs.json
+swagger.yaml
+PS C:\Users\natha\OneDrive\api-docs> 
+
+PS C:\Users\natha\OneDrive\api-docs> Select-String -Path repo_paths_all.txt -Pattern "swagger\.yaml|docs\.json|openapi|api-reference" | ForEach-Object { $_.Line }
+api-reference/api-spec.mdx
+api-reference/endpoint/api_keys/create.mdx
+api-reference/endpoint/api_keys/delete.mdx
+api-reference/endpoint/api_keys/generate_web3_key/get.mdx
+api-reference/endpoint/api_keys/generate_web3_key/post.mdx
+api-reference/endpoint/api_keys/get.mdx
+api-reference/endpoint/api_keys/list.mdx
+api-reference/endpoint/api_keys/rate_limit_logs.mdx
+api-reference/endpoint/api_keys/rate_limits.mdx
+api-reference/endpoint/api_keys/update.mdx
+api-reference/endpoint/audio/complete.mdx
+api-reference/endpoint/audio/queue.mdx
+api-reference/endpoint/audio/quote.mdx
+api-reference/endpoint/audio/retrieve.mdx
+api-reference/endpoint/audio/speech.mdx
+api-reference/endpoint/audio/transcriptions.mdx
+api-reference/endpoint/billing/balance.mdx
+api-reference/endpoint/billing/usage-analytics.mdx
+api-reference/endpoint/billing/usage.mdx
+api-reference/endpoint/characters/get.mdx
+api-reference/endpoint/characters/list.mdx
+api-reference/endpoint/characters/reviews.mdx
+api-reference/endpoint/chat/completions.mdx
+api-reference/endpoint/chat/model_feature_suffix.mdx
+api-reference/endpoint/embeddings/generate.mdx
+api-reference/endpoint/image/background-remove.mdx
+api-reference/endpoint/image/edit.mdx
+api-reference/endpoint/image/generate.mdx
+api-reference/endpoint/image/generations.mdx
+api-reference/endpoint/image/multi-edit.mdx
+api-reference/endpoint/image/styles.mdx
+api-reference/endpoint/image/upscale.mdx
+api-reference/endpoint/models/compatibility_mapping.mdx
+api-reference/endpoint/models/list.mdx
+api-reference/endpoint/models/traits.mdx
+api-reference/endpoint/video/complete.mdx
+api-reference/endpoint/video/queue.mdx
+api-reference/endpoint/video/quote.mdx
+api-reference/endpoint/video/retrieve.mdx
+api-reference/endpoint/video/transcriptions.mdx
+api-reference/endpoint/x402/balance.mdx
+api-reference/endpoint/x402/top-up.mdx
+api-reference/endpoint/x402/transactions.mdx
+api-reference/error-codes.mdx
+api-reference/rate-limiting.mdx
+docs.json
+swagger.yaml
+PS C:\Users\natha\OneDrive\api-docs> $files = @('api-reference/error-codes.mdx','api-reference/rate-limiting.mdx','docs.json','swagger.yaml','api-reference/api-spec.mdx','api-reference/endpoint/x402/balance.mdx'); Write-Host 'Existence check:'; foreach ($f in $files) { if (Test-Path $f) { Write-Host "OK  $f" } else { Write-Host "MISS $f" } }; git add -- $files; Write-Host '--- Staged status for selected files ---'; git status --short -- $files
+Existence check:
+OK  api-reference/error-codes.mdx
+OK  api-reference/rate-limiting.mdx
+OK  docs.json
+OK  swagger.yaml
+OK  api-reference/api-spec.mdx
+OK  api-reference/endpoint/x402/balance.mdx
+--- Staged status for selected files ---
+PS C:\Users\natha\OneDrive\api-docs> git fetch origin; Write-Host '--- Compare selected files: working tree vs HEAD ---'; git diff -- api-reference/error-codes.mdx api-reference/rate-limiting.mdx docs.json swagger.yaml api-reference/api-spec.mdx api-reference/endpoint/x402/balance.mdx; Write-Host '--- Compare selected files: HEAD vs origin/main ---'; git diff --name-status HEAD..origin/main -- api-reference/error-codes.mdx api-reference/rate-limiting.mdx docs.json swagger.yaml api-reference/api-spec.mdx api-reference/endpoint/x402/balance.mdx; Write-Host '--- Branch tracking ---'; git status --short --branch
+--- Compare selected files: working tree vs HEAD ---
+--- Compare selected files: HEAD vs origin/main ---
+--- Branch tracking ---
+## main...origin/main
+?? repo_paths_all.txt
+PS C:\Users\natha\OneDrive\api-docs> $date = Get-Date -Format 'yyyy-MM-dd'; $tag = "signed-snapshot-$date"; $i = 1; while ((git tag --list $tag) -or (git tag --list "$tag-$i")) { if (git tag --list $tag) { $tag = "$tag-1" } else { $i++; $tag = "signed-snapshot-$date-$i" } }; git tag -s $tag -m "Signed snapshot of api-docs on $date"; Write-Host "Created tag: $tag"; git tag -v $tag
+error: gpg failed to sign the data:
+gpg: skipped "4A53CB60DE63A58B": No secret key
+[GNUPG:] INV_SGNR 9 4A53CB60DE63A58B
+[GNUPG:] FAILURE sign 17
+gpg: signing failed: No secret key
+
+error: unable to sign the tag
+The tag message has been left in .git/TAG_EDITMSG
+Created tag: signed-snapshot-2026-04-09
+error: tag 'signed-snapshot-2026-04-09' not found.
+PS C:\Users\natha\OneDrive\api-docs> gpg --list-secret-keys --keyid-format LONG; git config --global --get user.signingkey; git config --local --get user.signingkey
+[keyboxd]
+---------
+sec   ed25519/4A53CB60DE63A58B 2026-04-09 [SC]
+      FB7F3003265935931325C5844A53CB60DE63A58B
+uid                 [ultimate] Nathaniel Crigger <nathanielcrigger66@gmail.com>
+ssb   cv25519/294E51C103BB36A3 2026-04-09 [E]
+      25232E8967630BF3CD58B447294E51C103BB36A3
+
+4A53CB60DE63A58B
+PS C:\Users\natha\OneDrive\api-docs> git config --global --get gpg.program; where.exe gpg; gpgconf --list-dirs         
+gpg
+C:\Program Files\GnuPG\bin\gpg.exe
+sysconfdir:C%3a\ProgramData\GNU\etc\gnupg
+bindir:C%3a\Program Files\GnuPG\bin
+libexecdir:C%3a\Program Files\GnuPG\bin
+libdir:C%3a\Program Files\GnuPG\lib\gnupg
+datadir:C%3a\Program Files\GnuPG\share\gnupg
+localedir:C%3a\Program Files\GnuPG\share\locale
+socketdir:C%3a\Users\natha\AppData\Local\gnupg
+dirmngr-socket:C%3a\Users\natha\AppData\Local\gnupg\S.dirmngr
+keyboxd-socket:C%3a\Users\natha\AppData\Local\gnupg\S.keyboxd
+agent-ssh-socket:C%3a\Users\natha\AppData\Local\gnupg\S.gpg-agent.ssh
+agent-extra-socket:C%3a\Users\natha\AppData\Local\gnupg\S.gpg-agent.extra
+agent-browser-socket:C%3a\Users\natha\AppData\Local\gnupg\S.gpg-agent.browser
+agent-socket:C%3a\Users\natha\AppData\Local\gnupg\S.gpg-agent
+homedir:C%3a\Users\natha\AppData\Roaming\gnupg
+PS C:\Users\natha\OneDrive\api-docs> git config --local user.signingkey FB7F3003265935931325C5844A53CB60DE63A58B; git config --local gpg.program "C:/Program Files/GnuPG/bin/gpg.exe"; git config --local --get user.signingkey; Set-Content -Path .git/sign-test.txt -Value "sign test"; gpg --local-user FB7F3003265935931325C5844A53CB60DE63A58B --armor --detach-sign .git/sign-test.txt; if (Test-Path .git/sign-test.txt.asc) { Write-Host 'SIGN_TEST_OK' }
+FB7F3003265935931325C5844A53CB60DE63A58B
+SIGN_TEST_OK
+PS C:\Users\natha\OneDrive\api-docs> $date = Get-Date -Format 'yyyy-MM-dd'; $base = "signed-snapshot-$date"; $tag = $base; $n = 1; while (git rev-parse -q --verify "refs/tags/$tag" *> $null) { $n++; $tag = "$base-$n" }; git tag -s $tag -m "Signed snapshot of api-docs on $date"; git tag -v $tag; Write-Host "TAG_CREATED=$tag"
+object 6fcd22396712e78a7876b4395caf1446b32a31f6
+type commit
+tag signed-snapshot-2026-04-09
+tagger TheTroll88 <nathanielcrigger66@gmail.com> 1775750277 -0500
+
+Signed snapshot of api-docs on 2026-04-09
+gpg: Signature made 04/09/26 10:57:57 Central Daylight Time
+gpg:                using EDDSA key FB7F3003265935931325C5844A53CB60DE63A58B
+gpg: Good signature from "Nathaniel Crigger <nathanielcrigger66@gmail.com>" [ultimate]
+TAG_CREATED=signed-snapshot-2026-04-09
+PS C:\Users\natha\OneDrive\api-docs> 
+-----------------------------------------------------------------------------------------------
+					Notes:
+-----------------------------------------------------------------------------------------------
+1.Might want to change my names visibility or create a different secret account to keep privacy. Talk to Partner and see what is actually shown when getting signed docs.
+
+2,

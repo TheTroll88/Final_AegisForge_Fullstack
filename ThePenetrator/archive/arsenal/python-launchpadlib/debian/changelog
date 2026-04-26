@@ -1,0 +1,583 @@
+python-launchpadlib (2.0.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Use pybuild-plugin-pyproject.
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 19 Jul 2024 11:59:30 +0100
+
+python-launchpadlib (1.11.0-6) unstable; urgency=medium
+
+  * Correct mistake in user unit.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 24 Feb 2024 19:33:49 -0400
+
+python-launchpadlib (1.11.0-5) unstable; urgency=medium
+
+  * Add a ConditionPathExists to the user unit. (Closes: #1064543)
+  * Build-Depend and Depend on python3-six, previously installed indirectly.
+  * Bump copyright years.
+  * Add missing ${misc:Depends} to python3-launchpadlib-desktop.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 24 Feb 2024 19:25:38 -0400
+
+python-launchpadlib (1.11.0-4) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 15 Feb 2024 17:21:36 -0400
+
+python-launchpadlib (1.11.0-3) experimental; urgency=medium
+
+  * Upload to experimental for NEW processing.
+  * Install a systemd user timer to periodically clean the launchpadlib cache.
+    Thanks Steve Langasek. (Closes: #1061224)
+  * Add a new binary package, python3-launchpadlib-desktop, that can depend on
+    python3-keyring. The change in 1.11.0-2 to drop it broke desktop clients.
+    (LP: #2049217)
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 11 Feb 2024 10:23:17 -0400
+
+python-launchpadlib (1.11.0-2) unstable; urgency=medium
+
+  [ Chris Peterson ]
+  * Drop python3-keyring from Recommends to Suggests (Closes: #1056553)
+    + The default behavior should be to not install this package
+
+  [ Stefano Rivera ]
+  * Bump Standards-Version to 4.6.2, no changes needed.
+  * Bump copyright years.
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 26 Dec 2023 10:53:57 -0400
+
+python-launchpadlib (1.11.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 10 Jan 2023 11:14:37 +0000
+
+python-launchpadlib (1.10.17-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bumpy copyright years.
+
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 19 Oct 2022 08:35:05 +0200
+
+python-launchpadlib (1.10.16-2) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.6.1, no changes needed.
+  * Support the nocheck build profile.
+
+ -- Stefano Rivera <stefanor@debian.org>  Mon, 17 Oct 2022 16:30:40 +0200
+
+python-launchpadlib (1.10.16-1.1) unstable; urgency=medium
+
+  * Drop python3-keyring from Depends to Recommends.
+    + launchpadlib is perfectly usable without it, and it pulls in a large
+      number of packages on non-desktop machines.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Tue, 30 Aug 2022 11:00:59 +0100
+
+python-launchpadlib (1.10.16-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update upstream metadata to point at new readthedocs docs.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 21 Jan 2022 22:40:07 -0400
+
+python-launchpadlib (1.10.15.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop python3-wadllib from Depends, it's only needed by the test suite.
+  * Run the test suite from the packaged module, now that its WSDL is
+    included.
+  * Run launchpadlib.testing suite during build, too.
+  * Don't ship doc source as launchpadlib.docs (as the new upstream release
+    does).
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 29 Oct 2021 19:27:21 -0700
+
+python-launchpadlib (1.10.14-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on python3-all, python3-keyring
+      and python3-lazr.restfulclient.
+    + python3-launchpadlib: Drop versioned constraint on python3-httplib2,
+      python3-keyring, python3-lazr.restfulclient and python3-lazr.uri in
+      Depends.
+
+  [ Stefano Rivera ]
+  * Replace nose with pytest (see: #997758).
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 24 Oct 2021 18:01:20 -0700
+
+python-launchpadlib (1.10.14-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Stefano Rivera ]
+  * New upstream release.
+  * d/control: Update Uploaders field with new Debian Python Team
+    contact address.
+  * Update upstream metadata.
+  * Bump copyright years.
+  * Bump Standards-Version to 4.6.0, no changes needed.
+  * Bump debhelper compat level to 13.
+  * Drop explicit python3-simplejson dependency, no longer needed.
+  * Bump watch file version to 4.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 17 Sep 2021 14:36:16 -0700
+
+python-launchpadlib (1.10.13-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Fix test runs under sudo.
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 19 Apr 2020 10:35:39 +0100
+
+python-launchpadlib (1.10.12-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Postpone keyring.errors import in the same way that we postpone
+      importing keyring itself.  (This should fix autopkgtest failures on
+      Ubuntu.)
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 17 Apr 2020 10:34:55 +0100
+
+python-launchpadlib (1.10.11-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Don't store credentials or open a browser window when running under
+      sudo (LP: #1825014, #1862948).
+    - Fall back to in-memory credentials store if no keyring backend is
+      available (LP: #1864204).
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 14 Apr 2020 12:42:47 +0100
+
+python-launchpadlib (1.10.10-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set upstream metadata fields: Repository, Repository-Browse.
+
+  [ Colin Watson ]
+  * New upstream release.
+    - Fix AccessToken.from_string crash on Python 3.8 (LP: #1861873).
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 04 Feb 2020 14:59:12 +0000
+
+python-launchpadlib (1.10.9-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop patch version-data, superseded upstream.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 28 Nov 2019 00:46:16 +0000
+
+python-launchpadlib (1.10.8-2) unstable; urgency=medium
+
+  * Replace patch no_package_data with version-data, we need version.txt.
+  * Bump Standards-Version to 4.4.1, no changes needed.
+  * Bump copyright years.
+  * Declare Rules-Requires-Root: no.
+
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 27 Nov 2019 11:55:41 -0800
+
+python-launchpadlib (1.10.8-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 26 Nov 2019 17:40:07 +0000
+
+python-launchpadlib (1.10.7-2) unstable; urgency=medium
+
+  * Team upload.
+  * Use debhelper-compat instead of debian/compat.
+  * d/control: Fix wrong Vcs-*.
+  * Drop Python 2 support (Closes: #937879).
+
+ -- Ondřej Nový <onovy@debian.org>  Wed, 09 Oct 2019 11:48:38 +0200
+
+python-launchpadlib (1.10.7-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Colin Watson <cjwatson@debian.org>  Thu, 27 Jun 2019 10:06:39 +0100
+
+python-launchpadlib (1.10.6-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/tests: Use AUTOPKGTEST_TMP instead of ADTTMP
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+  * Convert git repository from git-dpm to gbp layout
+
+  [ Stefano Rivera ]
+  * Bump Standards-Version to 4.2.0, no changes needed.
+  * Bump copyright years.
+  * Bump debhelper compat level to 11.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 26 Aug 2018 20:25:08 +0100
+
+python-launchpadlib (1.10.6-1) unstable; urgency=medium
+
+  [ Colin Watson ]
+  * Team upload.
+  * New upstream release:
+    - Fix saving of credentials in python3 with gnome-keyring (closes:
+      #882166, LP: #1685962).
+  * Move VCS to salsa.debian.org.
+
+  [ Ondřej Nový ]
+  * d/copyright: Use https protocol in Format field
+
+ -- Colin Watson <cjwatson@debian.org>  Thu, 08 Mar 2018 11:43:11 +0000
+
+python-launchpadlib (1.10.5-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release:
+    - Fix fallback if authorizing a token with a browser raises
+      webbrowser.Error (LP: #1685549).
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 05 Sep 2017 12:36:21 +0100
+
+python-launchpadlib (1.10.4-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+  [ Dimitri John Ledkov ]
+  * New upstream release
+  * Drop deprecated warnings patch, applied upstream
+  * Cherrypick upstream patch to fix LP: #1471927
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Sat, 13 Aug 2016 04:18:24 +0100
+
+python-launchpadlib (1.10.3-3) unstable; urgency=medium
+
+  * Fix test suite on Python 3.5 by ignoring PendingDeprecationWarnings from
+    lazr.restfulclient. (Closes: #802136).
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 18 Oct 2015 17:04:51 -0700
+
+python-launchpadlib (1.10.3-2) unstable; urgency=medium
+
+  * Upload to unstable.
+  * Bump copyright years.
+  * Drop XS-Testsuite header, now unnecessary.
+  * Bump Standards-Version to 3.9.6, no changes needed.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 03 Jul 2015 21:49:10 -0700
+
+python-launchpadlib (1.10.3-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Drop using Files-Excluded, new upstream release tarball is cruft-less.
+  * Python 3 support.
+  * Switch to debhelper 9.
+  * Switch to pybuild.
+  * Drop patches accepted upstream
+  * Add python3 support to the auto-package test.
+
+ -- Dimitri John Ledkov <dimitri.j.ledkov@linux.intel.com>  Fri, 19 Dec 2014 22:12:36 +0000
+
+python-launchpadlib (1.10.2+ds-2) unstable; urgency=low
+
+  [ Stefano Rivera ]
+  * Upload to unstable.
+  * Bump Standards-Version to 3.9.5, no changes needed.
+  * Export HOME in the autopkgtest, cache is stored there.
+  * Verify upstream GPG signatures in watch file.
+
+  [ Jakub Wilk ]
+  * Use canonical URIs for Vcs-* fields.
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 21 Jan 2014 19:13:37 +0200
+
+python-launchpadlib (1.10.2+ds-1) experimental; urgency=low
+
+  * New upstream release.
+    - Supports disabling SSL validation, by exporting
+      LP_DISABLE_SSL_CERTIFICATE_VALIDATION=1.
+  * Refresh patches.
+  * Repack to drop eggs directory (Filed LP#1098878)
+  * Upload to experimental, as wheezy is frozen.
+  * Bump Standards-Version to 3.9.4.
+    - Bump debhelper dependency to 8.1 for build-{arch,indep} support.
+  * Add autopkgtest to run test suite.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 12 Jan 2013 16:34:27 +0200
+
+python-launchpadlib (1.9.12-2) unstable; urgency=low
+
+  * New maintainer.
+  * Clean properly (Closes: #671328).
+    - Remove egg-info.
+  * Bump Standards-Version to 3.9.3, no changes needed.
+  * Build-Depend on python-all rather than python.
+  * Make all versioned dependencies more backport-friendly, by stripping
+    debian-revisions or appending ~.
+  * Make watch file a little more robust.
+  * Wrap long lines in debian/control.
+  * Use machine readable copyright format.
+  * begone-ez_setup.patch: Friends don't let friends use ez_setup.
+  * Run unit tests during build.
+    - python-unittest2.patch: Use unittest backport package on Python <2.7.
+    - B-D on python-keyring, python-lazr.restfulclient, python-oauth,
+      python-simplejson, python-testresources, python-unittest2, and
+      python-wadllib.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 03 May 2012 17:07:26 +0200
+
+python-launchpadlib (1.9.12-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches/auth_message.patch:
+    - Refresh for new upstream release.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Mon, 19 Dec 2011 21:43:08 +0100
+
+python-launchpadlib (1.9.11-1) unstable; urgency=low
+
+  * New upstream release.
+    - No longer use HOME environment variable to determine path of the
+      home directory (Closes: #644678).
+  * debian/patches/auth_message.patch:
+    - Refresh for new upstream release.
+  * debian/control:
+    - Suggest python-pkg-resources and python-testresources.
+    - Drop Breaks: ${python:Breaks} field, no longer needed.
+  * debian/rules:
+    - Pass --no-guessing-deps to dh_python2 to avoid listing unneeded
+      dependencies, they are added manually instead.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Sat, 26 Nov 2011 10:51:46 +0100
+
+python-launchpadlib (1.9.9-2) unstable; urgency=low
+
+  * debian/patches/auth_message.patch:
+    - Add a delay before attempting to launch browser (Closes: #584556).
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Sun, 02 Oct 2011 00:24:04 +0200
+
+python-launchpadlib (1.9.9-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/docs:
+    - Do not install NEWS.txt, already provided as changelog.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Thu, 11 Aug 2011 18:30:25 +0200
+
+python-launchpadlib (1.9.8-2) unstable; urgency=low
+
+  * Python transition:
+    - Add support for python2.7 (Closes: #623211)
+  * debian/control:
+    - Bump Standards-Version to 3.9.2, no changes required.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Mon, 18 Apr 2011 22:46:51 +0200
+
+python-launchpadlib (1.9.8-1) unstable; urgency=low
+
+  * New upstream release.
+    - Restore compatibility with login_with() API (Closes: #616484).
+  * debian/control:
+    - Bump X-Python-Version to >= 2.6 (Closes: #615100).
+    - Explicitly require minimun versions for python-lazr.uri and
+      python-lazr.restfulclient dependencies (Closes: #616483).
+    - Bump python-keyring minimum version to be at least 0.5.
+  * debian/NEWS:
+    - Document major issues with newer launchpadlib versions, shamelessly
+      taken from ubuntu-dev-tools, and provided by Stefano Rivera.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Sun, 06 Mar 2011 00:45:13 +0100
+
+python-launchpadlib (1.8.0-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Thu, 24 Feb 2011 21:20:57 +0100
+
+python-launchpadlib (1.8.0-1) experimental; urgency=low
+
+  * New upstream release.
+  * Switch to dh_python2.
+  * debian/control:
+    - Depend on python-keyring.
+    - Bump Standards-Version to 3.9.1, no changes required.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Sat, 04 Dec 2010 11:59:09 +0100
+
+python-launchpadlib (1.6.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches/no_package_data.patch:
+    - Do not install documentation files in Python module directory.
+  * debian/control:
+    - Tighten python-lazr.restfulclient dependency to be >= 0.9.19.
+    - Bump Standards-Version to 3.9.0, no changes required.
+  * debian/docs:
+    - Install documentation files under /usr/share/doc (Closes: #580324).
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Mon, 28 Jun 2010 23:36:51 +0200
+
+python-launchpadlib (1.6.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - Tighten python-lazr.restfulclient dependency to be >= 0.9.18.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Thu, 17 Jun 2010 20:35:14 +0200
+
+python-launchpadlib (1.6.0-1) unstable; urgency=low
+
+  * New upstream version.
+  * debian/control:
+    - Add Breaks field listing packages not yet compatible with new
+      Launchpad API 1.0.
+  * debian/preinst:
+    - Remove it, useful for Ubuntu Lucid only.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Thu, 13 May 2010 21:05:20 +0200
+
+python-launchpadlib (1.5.7-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switch to format 3.0 (quilt).
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Tue, 23 Mar 2010 21:21:00 +0100
+
+python-launchpadlib (1.5.6-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - Move myself as Maintainer, DPMT as Uploaders.
+  * debian/rules:
+    - Install upstream changelog.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Sat, 06 Mar 2010 15:27:48 +0100
+
+python-launchpadlib (1.5.5-1) unstable; urgency=low
+
+  * New upstream version.
+  * debian/control:
+    - Tighten python-lazr.restfulclient dependency to be >= 0.9.11.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Wed, 17 Feb 2010 21:49:35 +0100
+
+python-launchpadlib (1.5.4-2) unstable; urgency=low
+
+  * Always depend on python-simplejson, drop the alternative python2.6
+    dependency, as launchpadlib explicitly needs simplejson, not json
+    provided by python2.6, thanks Martin Pitt! (Closes: #566795).
+  * Bump Standards-Version to 3.8.4, no changes required.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Sat, 13 Feb 2010 14:12:53 +0100
+
+python-launchpadlib (1.5.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * lazr.restfulclient must be at least 0.9.10.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Fri, 25 Dec 2009 15:47:59 +0100
+
+python-launchpadlib (1.5.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Tue, 03 Nov 2009 22:13:38 +0100
+
+python-launchpadlib (1.5.2-1) unstable; urgency=low
+
+  * Initial Debian release (Closes: #551273).
+  * Package taken from Ubuntu, major changes introduced are:
+    - Switch to debhelper 7.
+    - Switch to python-support, also providing preinst script to handle
+      removal of stale .pyc files to ease transition.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Sun, 18 Oct 2009 22:32:34 +0200
+
+python-launchpadlib (1.5.1-0ubuntu1) karmic; urgency=low
+
+  * New upstream release.
+
+ -- James Westby <james.westby@ubuntu.com>  Tue, 25 Aug 2009 11:51:36 +0100
+
+python-launchpadlib (0.2~bzr35-0ubuntu1) jaunty; urgency=low
+
+  * New upstream snapshot.
+    - Optimise PATCH by not sending a GET afterwards, and using the object
+      returned in the body of the response to the PATCH.
+
+ -- James Westby <james.westby@ubuntu.com>  Tue, 17 Feb 2009 21:09:34 +0000
+
+python-launchpadlib (0.2~bzr34-0ubuntu1) jaunty; urgency=low
+
+  * New upstream snapshot.
+    - Handle datetime parameters, converting them to string format before
+      sending them out.
+    - Make the error message if not using keyword args more understandable.
+
+ -- James Westby <james.westby@ubuntu.com>  Mon, 16 Feb 2009 15:46:06 +0000
+
+python-launchpadlib (0.2~bzr29-0ubuntu1) jaunty; urgency=low
+
+  * New upstream snapshot.
+    - Some fixes to the XSL.
+    - Make launchpadlib take advantage of 'http_etag' information embedded
+      in entry representations.
+    - Make launchpadlib JSON-encode all outgoing strings that will be
+      used as named operation arguments.
+    - Make IPerson.archive available.
+
+ -- James Westby <james.westby@canonical.com>  Sun, 04 Jan 2009 01:09:05 +0000
+
+python-launchpadlib (0.2~bzr25-0ubuntu1) intrepid; urgency=low
+
+  * New upstream snapshot.
+    - Add support for hosted file resources, e.g. bug attachments.
+    - Add support for indexing of collections that aren't top-level
+      collections, so you don't have to slice and then index.
+    - For hosted file resources expose filename and date uploaded.
+      Take filename as an argument when uploading a file.
+    - Automatically encode non-string parameters to named operations as JSON.
+  * Increase dependency on python-httplib2 to (>= 0.4.0) as the new version
+    uses some of its new features.
+
+ -- James Westby <james.westby@canonical.com>  Tue, 07 Oct 2008 13:23:46 +0100
+
+python-launchpadlib (0.2~bzr17-0ubuntu1) intrepid; urgency=low
+
+  * New upstream snapshot.
+    - Use the webbrowser module instead of trying to guess the user's browser.
+    - dir() on a Resource object now shows all Launchpad attributes and
+      operations. (bug 253407)
+    - Sign all HTTP requests with the OAuth credentials (previously, requests
+      triggered by redirects were not being signed.)
+    - Make it possible to load a resource from a stored URL. (bug 251497)
+    - Fix "A link attribute that's None gives an error instead of returning
+      None". (bug 255364)
+    - Do not fetch a collection's content when only requested to call a named
+      operation on that collection (bug 253635)
+    - Add support for slices on Collection objects (bug 251523)
+    - Make it possible to look up projects by name.
+    - Implement client-side conditional GET and PUT.
+    - Request compressed data in the TE header, not the Accept-Encoding header.
+      (bug 261619)
+
+ -- James Westby <james.westby@canonical.com>  Sun, 31 Aug 2008 18:57:01 +0100
+
+python-launchpadlib (0.1~bzr7-0ubuntu1) intrepid; urgency=low
+
+  * Initial release (LP: #254592)
+  * Disable setuptools_bzr in setup.py as we are building from a tarball,
+    and this breaks the detection of data files, meaning that important
+    data files are not included in the package.
+
+ -- James Westby <james.westby@canonical.com>  Mon, 04 Aug 2008 13:50:55 +0100

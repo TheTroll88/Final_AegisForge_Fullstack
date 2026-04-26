@@ -1,0 +1,48 @@
+1c2c app_context::start_logger  476 ---- 2026/04/21 07:14:42.924 -------------------------------------------------
+1c2c app_context::start_logger  479 Host process is 'cmd.exe' (pid 7212)
+1c2c app_context::start_logger  483 DLL path is 'C:\Users\natha\OneDrive\Desktop\Final_AegisForge_Fullstack\Github_Repos\BunkerBuster\vendor\clink'
+1c2c app_context::start_logger  498 Windows version 10.0.26200 (x64)
+1c2c app_context::start_logger  500 Clink version 1.6.14.93b83f (x64)
+1c2c hook_setter::hook_setter  159 >>> Started hook transaction.
+1c2c hook_setter::attach_iat   316 Attempting to hook SetEnvironmentVariableW in IAT for module 00007FF77C160000.
+1c2c pe_info::iterate_imports  195 Found import in 'api-ms-win-core-processenvironment-l1-1-0.dll'
+1c2c find_iat                  124 Found import at 00007FF77C19AE70 (value is 00007FFA422437F0).
+1c2c hook_setter::attach_iat   316 Attempting to hook SetEnvironmentStringsW in IAT for module 00007FF77C160000.
+1c2c pe_info::iterate_imports  195 Found import in 'api-ms-win-core-processenvironment-l1-1-0.dll'
+1c2c find_iat                  124 Found import at 00007FF77C19AE78 (value is 00007FFA42256C80).
+1c2c hook_setter::attach_iat   316 Attempting to hook WriteConsoleW in IAT for module 00007FF77C160000.
+1c2c pe_info::iterate_imports  195 Found import in 'api-ms-win-core-console-l1-1-0.dll'
+1c2c find_iat                  124 Found import at 00007FF77C19AAB8 (value is 00007FFA4223DC60).
+1c2c hook_setter::attach_iat   316 Attempting to hook GetEnvironmentVariableW in IAT for module 00007FF77C160000.
+1c2c pe_info::iterate_imports  195 Found import in 'api-ms-win-core-processenvironment-l1-1-0.dll'
+1c2c find_iat                  124 Found import at 00007FF77C19AE50 (value is 00007FFA42224060).
+1c2c hook_setter::commit       207 <<< Hook transaction committed.
+1c2c hook_setter::hook_setter  159 >>> Started hook transaction.
+1c2c hook_setter::detach_iat   359 Attempting to unhook 00007FF99CB85200 from GetEnvironmentVariableW in IAT for module 00007FF77C160000.
+1c2c pe_info::iterate_imports  195 Found import in 'api-ms-win-core-processenvironment-l1-1-0.dll'
+1c2c find_iat                  124 Found import at 00007FF77C19AE50 (value is 00007FF99CB85200).
+1c2c hook_setter::commit       207 <<< Hook transaction committed.
+1c2c hook_setter::hook_setter  159 >>> Started hook transaction.
+1c2c hook_setter::attach_iat   316 Attempting to hook ReadConsoleW in IAT for module 00007FF77C160000.
+1c2c pe_info::iterate_imports  195 Found import in 'api-ms-win-core-console-l1-1-0.dll'
+1c2c find_iat                  124 Found import at 00007FF77C19AAC8 (value is 00007FFA42224880).
+1c2c hook_setter::commit       207 <<< Hook transaction committed.
+1c2c hook_setter::hook_setter  159 >>> Started hook transaction.
+1c2c hook_setter::attach_iat   316 Attempting to hook SetConsoleTitleW in IAT for module 00007FF77C160000.
+1c2c pe_info::iterate_imports  195 Found import in 'api-ms-win-core-console-l2-2-0.dll'
+1c2c find_iat                  124 Found import at 00007FF77C19AB30 (value is 00007FFA42232FD0).
+1c2c hook_setter::commit       207 <<< Hook transaction committed.
+1c2c win_screen_buffer::begin  366 Using native terminal support (auto mode found 'ConEmuHk64.dll').
+1c2c reset_handle              144 resetting mismatched stdin handle
+1c2c reset_handle              144 resetting mismatched stderr handle
+1c2c reset_handle              144 resetting mismatched stdout handle
+1c2c reset_handle              144 resetting mismatched stderr handle
+1c2c host_lua::load_scripts    192 Loaded 2 Lua scripts in 131 ms
+1c2c @~clink~/app/update.lua   356 Clink updater: updating because there is no record of having updated before.
+1c2c extract_ctag              931 read 0 bytes
+1c2c extract_ctag              931 read 0 bytes
+1c2c history_db::initialise   1321 master bank ctag: |CTAG_1776773685_30473859_7212_0
+1c2c history_db::compact      1599 History:  0 active, 0 deleted
+1c2c @~clink~/app/update.lua   425 Clink updater: latest release is v1.9.19; install type is zip.
+1c2c @~clink~/app/update.lua   451 Clink updater: downloading https://github.com/chrisant996/clink/releases/download/v1.9.19/clink.1.9.19.77e487.zip to C:\Users\natha\AppData\Local\Temp\clink\updater\v1.9.19.zip.
+1c2c @~clink~/app/update.lua   577 Clink updater: update in C:\Users\natha\AppData\Local\Temp\clink\updater\v1.9.19.zip is ready to be applied.

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official AegisSignal (ASIG) token information: contract address, chain, supply, and verified links.">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta property="og:title" content="AegisSignal (ASIG)">
+  <meta property="og:description" content="Official AegisSignal (ASIG) token information on Base: contract address, supply, and verified links.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aegissignal.io/">
+  <meta property="og:image" content="https://aegissignal.io/logo.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AegisSignal (ASIG)">
+  <meta name="twitter:description" content="Official AegisSignal (ASIG) token information on Base.">
+  <meta name="twitter:image" content="https://aegissignal.io/logo.png">
+  <title>AegisSignal - ASIG Token</title>
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --card: #1a1a1a;
+      --text: #dddddd;
+      --muted: #a8a8a8;
+      --bronze: #d4af37;
+      --bronze-dark: #b8962e;
+      --line: #2d2d2d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      text-align: center;
+      background:
+        radial-gradient(circle at 50% -20%, rgba(212, 175, 55, 0.16), transparent 40%),
+        var(--bg);
+      padding: 22px 16px 30px;
+    }
+    .container { max-width: 680px; margin: 0 auto; }
+    .logo {
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      border: 3px solid var(--bronze);
+      margin: 24px 0 14px;
+      object-fit: cover;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.5);
+    }
+    h1 { color: var(--bronze); margin: 6px 0 8px; font-size: 2rem; }
+    .subtitle { font-size: 1.05rem; color: var(--muted); margin: 0 0 16px; }
+    p { font-size: 1.05rem; color: var(--muted); line-height: 1.55; }
+    .info {
+      background: var(--card);
+      padding: 18px;
+      border-radius: 12px;
+      margin: 16px 0;
+      border: 1px solid var(--line);
+    }
+    .info h2 { margin: 2px 0 12px; }
+    ul { list-style: none; padding: 0; margin: 0; }
+    li { margin: 12px 0; font-size: 1rem; }
+    code {
+      background: #2d2d2d;
+      padding: 5px 8px;
+      border-radius: 6px;
+      color: var(--bronze);
+      word-break: break-all;
+      display: inline-block;
+    }
+    .contract-line { display: block; margin-top: 8px; }
+    .copy-btn {
+      margin-top: 10px;
+      background: #2b2b2b;
+      color: var(--text);
+      border: 1px solid #444;
+      border-radius: 6px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .copy-btn:hover { border-color: #666; }
+    .status { display: block; font-size: 0.85rem; margin-top: 6px; color: #8f8f8f; min-height: 1.1em; }
+    .links li { margin: 10px 0; }
+    .links a { color: var(--bronze); text-decoration: none; }
+    .links a:hover { text-decoration: underline; }
+    .btn {
+      display: inline-block;
+      background: var(--bronze);
+      color: #000;
+      padding: 12px 28px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      margin: 22px 0;
+    }
+    .btn:hover { background: var(--bronze-dark); }
+    .note { font-size: 0.92rem; color: #8f8f8f; margin-top: 8px; }
+    .small-links {
+      margin-top: 10px;
+      font-size: 0.92rem;
+      color: #8f8f8f;
+    }
+    .small-links a {
+      color: var(--bronze);
+      text-decoration: none;
+    }
+    .small-links a:hover { text-decoration: underline; }
+    footer { margin-top: 26px; font-size: 0.88rem; color: #707070; }
+    @media (max-width: 640px) {
+      .logo { width: 112px; height: 112px; }
+      h1 { font-size: 1.7rem; }
+      p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="AegisSignal Logo" class="logo">
+
+    <h1>AegisSignal (ASIG)</h1>
+    <p class="subtitle">Guardian Token on Base Chain</p>
+
+    <div class="info">
+      <h2>Token Details</h2>
+      <ul>
+        <li>
+          <strong>Contract Address:</strong>
+          <span class="contract-line"><code id="contractAddress">0x30610a21764bb38c43a2e532cfba91c9db927994</code></span>
+          <button class="copy-btn" type="button" onclick="copyContract()">Copy Contract</button>
+          <span id="copyStatus" class="status">Click to copy</span>
+        </li>
+        <li><strong>Chain:</strong> Base</li>
+        <li><strong>Total Supply:</strong> 1,000,000 ASIG</li>
+        <li><strong>Decimals:</strong> 18</li>
+        <li><strong>Verified:</strong> Yes on <a href="https://basescan.org/token/0x30610a21764bb38c43a2e532cfba91c9db927994" target="_blank" rel="noopener noreferrer">BaseScan</a></li>
+      </ul>
+      <p class="note">This page is the official reference website for ASIG token details.</p>
+    </div>
+
+    <div class="info links">
+      <h2>Official Links</h2>
+      <ul>
+        <li><a href="https://aegissignal.io/" target="_blank" rel="noopener noreferrer">Official Website</a></li>
+        <li><a href="https://aegissignal.io/whitepaper.html" target="_blank" rel="noopener noreferrer">Whitepaper</a></li>
+        <li><a href="https://basescan.org/token/0x30610a21764bb38c43a2e532cfba91c9db927994" target="_blank" rel="noopener noreferrer">BaseScan Token Page</a></li>
+        <li><a href="https://app.uniswap.org/#/swap?outputCurrency=0x30610a21764bb38c43a2e532cfba91c9db927994" target="_blank" rel="noopener noreferrer">Uniswap (Base)</a></li>
+        <li><a href="https://github.com/TheTroll88/asig-token-site" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+        <li><a href="mailto:contact@aegissignal.io">Official Contact: contact@aegissignal.io</a></li>
+      </ul>
+    </div>
+
+    <p>AegisSignal: Protecting the chain with unbreakable signal strength. Community-driven guardian token. DYOR - Not financial advice.</p>
+
+    <a href="https://app.uniswap.org/#/swap?outputCurrency=0x30610a21764bb38c43a2e532cfba91c9db927994" target="_blank" rel="noopener noreferrer" class="btn">
+      Buy on Uniswap (Base)
+    </a>
+
+    <div class="small-links">
+      <a href="https://aegissignal.io/" target="_blank" rel="noopener noreferrer">Live Site</a>
+      |
+      <a href="https://github.com/TheTroll88/asig-token-site" target="_blank" rel="noopener noreferrer">Source Repo</a>
+    </div>
+
+    <footer>
+      <div>&copy; 2026 AegisSignal • Official token reference page</div>
+      <div>Official Contact: <a href="mailto:contact@aegissignal.io">contact@aegissignal.io</a></div>
+    </footer>
+  </div>
+
+  <script>
+    function fallbackCopy(text) {
+      var temp = document.createElement("textarea");
+      temp.value = text;
+      temp.setAttribute("readonly", "");
+      temp.style.position = "absolute";
+      temp.style.left = "-9999px";
+      document.body.appendChild(temp);
+      temp.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(temp);
+      return ok;
+    }
+
+    function copyContract() {
+      var text = document.getElementById("contractAddress").textContent;
+      var status = document.getElementById("copyStatus");
+      status.textContent = "Copying...";
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () {
+          status.textContent = "Copied";
+        }).catch(function () {
+          status.textContent = fallbackCopy(text) ? "Copied" : "Copy failed - copy manually";
+        });
+      } else {
+        status.textContent = fallbackCopy(text) ? "Copied" : "Copy failed - copy manually";
+      }
+
+      setTimeout(function () {
+        status.textContent = "Click to copy";
+      }, 2500);
+    }
+  </script>
+</body>
+</html>

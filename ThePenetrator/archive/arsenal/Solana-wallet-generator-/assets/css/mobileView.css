@@ -1,0 +1,60 @@
+/*
+/////////////////////////////////////
+toast message copied to clipboard
+/////////////////////////////////////
+*/
+
+
+
+.mobile-view div {
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+  padding: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mobile-view img {
+  height: auto;
+  width: 70%;
+}
+
+.mobile-view p {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  color: var(--white-color);
+  background: rgba(18, 18, 18, 0.7);
+  border-radius: 1.6rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.mobile-view {
+  padding: 2rem;
+  border: 5px solid transparent;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: linear-gradient(60deg, #ff7f50, #ff1493, #1e90ff, #32cd32);
+  background-size: 400% 400%;
+  animation: move-border 5s linear infinite;
+  border-radius: 15px;
+}
+
+@keyframes move-border {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

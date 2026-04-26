@@ -1,0 +1,70 @@
+# ============================================================================
+#  MISSION CONTROL (Autensa v2.5.0) — EXTRACTED INTEL
+#  Source: https://github.com/crshdn/mission-control.git
+#  Extracted: 2026-04-20 06:33
+#  Original (read-only): ..\mission-control\
+# ============================================================================
+
+## WHAT THIS IS
+The world's first autonomous product improvement engine. It's a Next.js 14
+dashboard that orchestrates AI agents through OpenClaw Gateway to:
+  Research → Ideate → Swipe → Build → Test → Review → PR — fully automated.
+
+## WHY IT MATTERS TO AEGISFORGE
+- It connects directly to YOUR OpenClaw/Chief at ws://127.0.0.1:18789
+- It uses the SAME agent orchestration pattern as your Foreman/Logos
+- It gives you a VISUAL DASHBOARD for all agent activity
+- It has a full REST API your agents can call to report work
+- PM2 process management (you need pm2 installed — on your todo list)
+
+## TECH STACK
+- Next.js 14 (React 18, TypeScript 5)
+- SQLite via better-sqlite3 (no external DB needed)
+- Zustand state management
+- Tailwind CSS
+- Playwright (browser testing by agents)
+- OpenClaw Gateway WebSocket client
+- PM2 for production process management
+- Docker support (Dockerfile + docker-compose.yml)
+
+## PORTS
+- Mission Control: 4000 (configurable via PORT env)
+- OpenClaw Gateway: 18789 (YOUR Chief is already running here!)
+- Ollama: 11434 (already running on your machine)
+
+## KEY INSIGHT: YOUR CHIEF IS ALREADY THE GATEWAY
+Mission Control connects to ws://127.0.0.1:18789 — that's your OpenClaw/Chief
+instance that's already running. This dashboard is literally built to sit
+on top of what you already have.
+
+## FOLDER STRUCTURE (this extraction)
+  _OVERVIEW.txt               ← You are here
+  API_Endpoints/
+    full_api_reference.txt    ← Every endpoint, method, payload
+    webhook_integration.txt   ← GitHub webhook setup
+  Agent_Protocol/
+    agent_protocol.txt        ← How agents talk to MC
+    pipeline_workflow.txt     ← Builder→Tester→Reviewer→Verifier→Done
+    heartbeat_orchestration.txt ← Orchestrator heartbeat loop
+    agent_definitions.txt     ← Core agent souls (Builder, Tester, Reviewer, Learner)
+  Architecture/
+    system_architecture.txt   ← Full system design
+    openclaw_client.txt       ← WebSocket client details
+    database_schema.txt       ← All tables and migrations
+    middleware_auth.txt       ← Auth/security model
+  Config_Templates/
+    env_example.txt           ← Full .env.example (ready to customize)
+    ecosystem_pm2.txt         ← PM2 config (adapted for Windows)
+    docker_compose.txt        ← Docker setup
+    next_config.txt           ← Next.js config
+  Deploy/
+    production_setup.txt      ← Full production deployment guide
+    docker_deploy.txt         ← Docker deployment
+    quickstart.txt            ← Fast local setup
+  Scripts/
+    mc_bridge_py.txt          ← Python bridge script (agent↔MC)
+    mc_bridge_sh.txt          ← Bash bridge (lightweight)
+    aria_hook.txt             ← ARIA integration hook
+  Database/
+    schema_overview.txt       ← Table definitions
+    migration_summary.txt     ← What each migration does

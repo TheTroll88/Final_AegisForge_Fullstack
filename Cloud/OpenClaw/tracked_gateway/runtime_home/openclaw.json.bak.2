@@ -1,0 +1,80 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "ollama/glm4"
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "ollama": {
+        "api": "ollama",
+        "apiKey": "ollama-local",
+        "baseUrl": "http://127.0.0.1:11434",
+        "models": [
+          {
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "glm4",
+            "input": [
+              "text"
+            ],
+            "name": "glm4"
+          },
+          {
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "gemma4",
+            "input": [
+              "text",
+              "image"
+            ],
+            "name": "gemma4",
+            "reasoning": true
+          },
+          {
+            "contextWindow": 202752,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "glm-5.1:cloud",
+            "input": [
+              "text"
+            ],
+            "name": "glm-5.1:cloud",
+            "reasoning": true
+          },
+          {
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "gemma3:4b",
+            "input": [
+              "text",
+              "image"
+            ],
+            "name": "gemma3:4b"
+          }
+        ]
+      }
+    }
+  }
+}

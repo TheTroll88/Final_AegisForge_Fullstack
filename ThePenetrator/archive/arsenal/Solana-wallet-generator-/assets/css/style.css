@@ -1,0 +1,354 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* button {
+  cursor: pointer;
+}
+
+:root {
+  --text-color: #d0d0dc;
+  --black-color: #121212;
+  --font-family: 'inter', sans-serif;
+  --border-color: #1d1a23;
+  --black-grey-color: #3d3d3d;
+  --white-color: rgb(255, 255, 255);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  padding: 3.2rem 4.8rem 1rem 4.8rem;
+  color: var(--black-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(60deg, #9945ff, #64a8f2, #14F195);
+
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 7.2rem;
+  font-weight: 700;
+  padding-top: 2.0rem;
+}
+
+header h3 {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #3d3d3d;
+  font-weight: none;
+}
+
+
+main {
+  margin: 5.2rem 0 2.2rem 0;
+  width: 100%;
+  flex: 1;
+}
+
+.walletContainer {
+  background: rgba(18, 18, 18, 0.7);
+  border-radius: 1.6rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* for Safari */
+}
+
+
+
+.btn--div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 1.2rem;
+}
+
+.btn--div button {
+  display: block;
+  background-color: var(--black-color);
+  color: var(--text-color);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 0.8rem;
+  transition: all 0.3s;
+}
+
+.btn--div button:hover {
+  background-color: rgb(18, 18, 18, 0.8);
+  color: var(--white-color);
+}
+
+#walletDetails {
+  display: none;
+  border-top: 1px solid var(--black-color);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  max-height: 50rem;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  transform: translateY(-10px);
+}
+
+
+#walletDetails.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  max-height: 50rem;
+  transform: translateY(0);
+}
+
+
+
+.public {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 1.2rem;
+}
+
+.pub--1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: #fff;
+}
+
+.pub--copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7.2rem;
+}
+
+.pub--copy h3 {
+  font-size: 2.0rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: underline;
+}
+
+.btn--public {
+  background-color: var(--black-color);
+  color: var(--text-color);
+  border: 0.3px solid var(--text-color);
+  padding: 0.6rem 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 0.8rem;
+  transition: all 0.3s;
+}
+
+.btn--public:hover {
+  background-color: var(--black-grey-color);
+  color: var(--white-color);
+  border: 0.3px solid var(--white-color);
+  transform: translateY(-2.5px);
+}
+
+
+
+#publicKey {
+  font-size: 1.4rem;
+  letter-spacing: 0.3px;
+  padding-top: 1.2rem;
+  font-weight: 300;
+}
+
+.pub--note {
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-top: auto;
+  color: #14F195;
+}
+
+.private {
+  padding: 4.8rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--white-color);
+}
+
+.p--details {
+  flex: 1;
+}
+
+.p--details h3 {
+  font-size: 2.0rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: underline;
+}
+
+.private-key {
+  max-width: 80%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  padding-top: 2.4rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 300;
+
+}
+
+
+.p--instruct {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+
+
+.p--btn {
+  display: flex;
+  gap: 2.4rem;
+  align-self: flex-end;
+}
+
+.btn--view {
+  background-color: var(--black-color);
+  color: var(--text-color);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 0.8rem;
+  transition: all 0.3s;
+}
+
+.btn--view:hover {
+  background-color: rgb(18, 18, 18, 0.8);
+  color: var(--white-color);
+
+}
+
+.p--instruct p {
+  margin-top: auto;
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-top: auto;
+  color: #ff4d4d;
+  align-self: flex-end;
+}
+
+/*
+/////////////////////////////////////
+footer
+/////////////////////////////////////
+*/
+footer {
+  display: flex;
+  padding: 2.4rem 0 0 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+
+
+footer p,
+footer div {
+  font-size: 1.2rem;
+  color: #3d3d3d;
+  font-weight: 500;
+}
+
+footer p a:link,
+footer p a:visited {
+  color: var(--black-color);
+  text-decoration: none;
+  padding-bottom: 0.02rem;
+  border-bottom: 1px solid var(--black-color);
+}
+
+footer p a:hover,
+footer p a:active {
+  border-bottom: 1px solid transparent;
+}
+
+
+/*
+/////////////////////////////////////
+toast message copied to clipboard
+/////////////////////////////////////
+*/
+
+.toast {
+  visibility: hidden;
+  min-width: 20rem;
+  background-color: #3d3d3d;
+  color: var(--text-color);
+  text-align: center;
+  border-radius: 0.8rem;
+  padding: 1.2rem;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  bottom: 3.0rem;
+  transform: translateX(-50%);
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: opacity 0.5s ease, bottom 0.5s ease;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 5.0rem;
+}
+
+.toast.error {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Keep print button always visible except when printing */
+.no-print {
+  display: inline-block !important;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+
+
+/* private key hidden */
+.private--key {
+  filter: blur(8px);
+  user-select: none;
+  transition: filter 0.3s ease;
+}
+
+.private--key.revealed {
+  filter: none;
+  user-select: none;
+}
+
+.btn--view.warning {
+  background-color: #dc3545 !important;
+  color: white !important;
+}

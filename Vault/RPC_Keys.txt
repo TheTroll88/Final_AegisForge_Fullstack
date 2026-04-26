@@ -1,0 +1,18 @@
+# ============================================================================
+#  AEGISFORGE MASTER VAULT — RPC / BLOCKCHAIN KEYS
+#  Last Updated: 2026-04-20 06:12
+# ============================================================================
+
+[Alchemy]
+ZOho1BvxkQjPOjOsnZYFn
+
+[Basescan]
+918RZSKK7KKP1JBPEUD11U4FDP7HP7JCKY
+
+[Etherscan]
+SIBMYTDZC6W7JAJ2NR62KVK8M6GYUY7UEB
+
+[Aegis Chain RPC]
+Endpoint: http://localhost:8545
+Chain ID: 808080
+Symbol:   AEGIS

@@ -1,0 +1,37 @@
+# ============================================================================
+#  AEGISFORGE MASTER VAULT — KEEPASS DATABASE INDEX
+#  Last Updated: 2026-04-20 06:11
+#  Master Password: 0725LyannaStark0829
+#  Alternate Password: AegisVault0412**
+# ============================================================================
+
+# ---- KEEPASS DATABASES (6 unique .kdbx files) ----
+
+[AegisForge.kdbx]
+Path:  D:\SecureVault\KeePassDB\AegisForge.kdbx
+Notes: Main AegisForge credentials
+
+[Crypto_Wallets.kdbx]
+Path:  D:\SecureVault\KeePassDB\Crypto_Wallets.kdbx
+Notes: Wallet keys and addresses
+
+[Development.kdbx]
+Path:  D:\SecureVault\KeePassDB\Development.kdbx
+Notes: Dev environment credentials
+
+[Infrastructure.kdbx]
+Path:  D:\SecureVault\KeePassDB\Infrastructure.kdbx
+Notes: Server/infra credentials
+
+[Personal.kdbx]
+Path:  D:\SecureVault\KeePassDB\Personal.kdbx
+Notes: Personal accounts
+
+[Services.kdbx]
+Path:  D:\SecureVault\KeePassDB\Services.kdbx
+Notes: Third-party service credentials
+
+# ---- BACKUP COPIES ----
+[Backup Location]
+Path:  D:\CRITICAL_BACKUP\keepass\
+Notes: Mirror of all 6 .kdbx files

@@ -1,0 +1,26 @@
+Foreman Combined Layout (No Code Changes)
+Generated: 2026-04-20
+
+Purpose
+- Keep Foreman repos in one family hub.
+- Separate operational instance logic from core/labs logic.
+- Avoid naming collisions and role confusion.
+
+Folders
+- foreman-instance
+  Role: operational instance runtime, identity bootstrap, proof bundle, social checkpoint tooling.
+  Branch: master
+  Commit: a8232ea
+
+- foreman-labs-core
+  Role: core/labs product direction, daemon roadmap, tooling utilities.
+  Branch: master
+  Commit: d3bd9f1
+
+- foreman-labs
+  Role: legacy-name duplicate of foreman-labs-core retained because rename was blocked by filesystem ACL.
+  Action: treat as compatibility copy; use foreman-labs-core as canonical name.
+
+Working rule
+- Canonical references should use foreman-labs-core going forward.
+- No source code merged yet; structural unification only.

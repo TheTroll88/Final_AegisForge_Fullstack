@@ -1,0 +1,17 @@
+DataVault — Persistent Data Storage Layer
+==========================================
+Real path: D:\DataVault\
+
+Structure:
+  AegisForge\    - Engine runtime logs and state files
+    logs\        - Trading engine logs
+    state\       - Engine state snapshots
+  Logs\          - System-level logs (OCR runs, scheduled task output)
+  OCR_Output\    - Tesseract OCR processed output files
+  Vault\         - Vault management scripts
+    rotate_venice.ps1
+    seal_vault.ps1
+    unseal_vault.ps1
+
+This folder (Cloud/DataVault/) is a workspace reference only.
+Do NOT store live data here — the canonical location is D:\DataVault\.

@@ -1,0 +1,4070 @@
+[2026-03-28 16:10:13] started http://127.0.0.1:7788/
+[2026-03-28 16:10:25] cmd: status
+[2026-03-28 16:10:25] cmd: remember mode continuity
+[2026-03-28 16:10:25] cmd: recall mode
+[2026-03-28 16:10:25] cmd: task add wire-vscode-bridge
+[2026-03-28 16:10:25] cmd: task list
+[2026-03-28 16:11:38] cmd: self check
+[2026-03-28 16:11:38] cmd: brain show
+[2026-03-28 16:11:44] started http://127.0.0.1:7788/
+[2026-03-28 16:12:00] cmd: self check
+[2026-03-28 16:12:00] cmd: brain show
+[2026-03-28 16:12:00] cmd: brain set ollama http://127.0.0.1:11434 llama3.1
+[2026-03-28 16:12:00] cmd: brain show
+[2026-03-28 16:12:06] cmd: brain ask Give one short line to confirm you're online.
+[2026-03-28 16:13:31] cmd: brain ask Say online in one word.
+[2026-03-28 16:14:45] started http://127.0.0.1:7788/
+[2026-03-28 16:14:50] cmd: brain show
+[2026-03-28 16:14:50] cmd: brain ask Say online in one short line.
+[2026-03-28 16:16:00] started http://127.0.0.1:7788/
+[2026-03-28 16:16:05] cmd: status
+[2026-03-28 16:16:05] cmd: brain ask Dashboard is online in one line
+[2026-03-28 16:16:37] cmd: brain show
+[2026-03-28 16:16:37] cmd: status
+[2026-03-28 16:16:45] cmd: brain show
+[2026-03-28 16:16:45] cmd: status
+[2026-03-28 16:16:53] cmd: brain show
+[2026-03-28 16:16:53] cmd: status
+[2026-03-28 16:17:01] cmd: brain show
+[2026-03-28 16:17:01] cmd: status
+[2026-03-28 16:17:10] cmd: brain show
+[2026-03-28 16:17:10] cmd: status
+[2026-03-28 16:17:18] cmd: brain show
+[2026-03-28 16:17:18] cmd: status
+[2026-03-28 16:17:25] cmd: brain show
+[2026-03-28 16:17:25] cmd: status
+[2026-03-28 16:17:28] cmd: self check
+[2026-03-28 16:17:33] cmd: brain show
+[2026-03-28 16:17:33] cmd: status
+[2026-03-28 16:17:41] cmd: brain show
+[2026-03-28 16:17:41] cmd: status
+[2026-03-28 16:17:49] cmd: brain show
+[2026-03-28 16:17:49] cmd: status
+[2026-03-28 16:17:58] cmd: brain show
+[2026-03-28 16:17:58] cmd: status
+[2026-03-28 16:18:05] cmd: brain show
+[2026-03-28 16:18:05] cmd: status
+[2026-03-28 16:18:13] cmd: brain show
+[2026-03-28 16:18:13] cmd: status
+[2026-03-28 16:18:21] cmd: brain show
+[2026-03-28 16:18:21] cmd: status
+[2026-03-28 16:18:29] cmd: brain show
+[2026-03-28 16:18:29] cmd: status
+[2026-03-28 16:18:37] cmd: brain show
+[2026-03-28 16:18:37] cmd: status
+[2026-03-28 16:18:45] cmd: brain show
+[2026-03-28 16:18:45] cmd: status
+[2026-03-28 16:18:53] cmd: brain show
+[2026-03-28 16:18:53] cmd: status
+[2026-03-28 16:19:01] cmd: brain show
+[2026-03-28 16:19:01] cmd: status
+[2026-03-28 16:19:09] cmd: brain show
+[2026-03-28 16:19:09] cmd: status
+[2026-03-28 16:19:17] cmd: brain show
+[2026-03-28 16:19:17] cmd: status
+[2026-03-28 16:19:25] cmd: brain show
+[2026-03-28 16:19:25] cmd: status
+[2026-03-28 16:19:33] cmd: brain show
+[2026-03-28 16:19:33] cmd: status
+[2026-03-28 16:19:41] cmd: brain show
+[2026-03-28 16:19:41] cmd: status
+[2026-03-28 16:19:42] cmd: brain ask hello seems claude forgot to wire in the mic that allows me to here you and make the conversation feel more natural but ig this will be a good moment to see what your sled writting and governing of your own code will be like
+[2026-03-28 16:19:49] cmd: brain show
+[2026-03-28 16:19:49] cmd: status
+[2026-03-28 16:19:57] cmd: brain show
+[2026-03-28 16:19:57] cmd: status
+[2026-03-28 16:20:05] cmd: brain show
+[2026-03-28 16:20:05] cmd: status
+[2026-03-28 16:20:13] cmd: brain show
+[2026-03-28 16:20:13] cmd: status
+[2026-03-28 16:20:13] cmd: brain show
+[2026-03-28 16:20:13] cmd: status
+[2026-03-28 16:20:15] cmd: brain show
+[2026-03-28 16:20:15] cmd: status
+[2026-03-28 16:20:21] cmd: brain show
+[2026-03-28 16:20:21] cmd: status
+[2026-03-28 16:20:29] cmd: brain show
+[2026-03-28 16:20:29] cmd: status
+[2026-03-28 16:20:37] cmd: brain show
+[2026-03-28 16:20:37] cmd: status
+[2026-03-28 16:20:45] cmd: brain show
+[2026-03-28 16:20:45] cmd: status
+[2026-03-28 16:20:52] cmd: brain ask hello
+[2026-03-28 16:20:53] cmd: brain show
+[2026-03-28 16:20:53] cmd: status
+[2026-03-28 16:21:01] cmd: brain show
+[2026-03-28 16:21:01] cmd: status
+[2026-03-28 16:21:40] cmd: brain show
+[2026-03-28 16:21:40] cmd: status
+[2026-03-28 16:21:48] cmd: brain show
+[2026-03-28 16:21:48] cmd: status
+[2026-03-28 16:21:56] cmd: brain show
+[2026-03-28 16:21:56] cmd: status
+[2026-03-28 16:22:04] cmd: brain show
+[2026-03-28 16:22:04] cmd: status
+[2026-03-28 16:22:12] cmd: brain show
+[2026-03-28 16:22:12] cmd: status
+[2026-03-28 16:22:20] cmd: brain show
+[2026-03-28 16:22:20] cmd: status
+[2026-03-28 16:22:28] cmd: brain show
+[2026-03-28 16:22:28] cmd: status
+[2026-03-28 16:22:32] cmd: brain ask hello
+[2026-03-28 16:22:36] cmd: brain show
+[2026-03-28 16:22:36] cmd: status
+[2026-03-28 16:22:44] cmd: brain show
+[2026-03-28 16:22:44] cmd: status
+[2026-03-28 16:22:48] cmd: 1
+[2026-03-28 16:22:52] cmd: brain show
+[2026-03-28 16:22:52] cmd: status
+[2026-03-28 16:23:00] cmd: brain show
+[2026-03-28 16:23:00] cmd: status
+[2026-03-28 16:23:01] cmd: Logos builtin active. Open tasks: 1. Prompt received: hello
+[2026-03-28 16:23:03] cmd: Logos builtin active. Open tasks: 1. Prompt received: hello
+[2026-03-28 16:23:04] cmd: Logos builtin active. Open tasks: 1. Prompt received: hello
+[2026-03-28 16:23:04] cmd: Logos builtin active. Open tasks: 1. Prompt received: hello
+[2026-03-28 16:23:05] cmd: Logos builtin active. Open tasks: 1. Prompt received: hello
+[2026-03-28 16:23:05] cmd: Logos builtin active. Open tasks: 1. Prompt received: hello
+[2026-03-28 16:23:08] cmd: brain show
+[2026-03-28 16:23:08] cmd: status
+[2026-03-28 16:23:16] cmd: brain show
+[2026-03-28 16:23:16] cmd: status
+[2026-03-28 16:23:24] cmd: brain show
+[2026-03-28 16:23:24] cmd: status
+[2026-03-28 16:23:32] cmd: brain show
+[2026-03-28 16:23:32] cmd: status
+[2026-03-28 16:23:40] cmd: brain show
+[2026-03-28 16:23:40] cmd: status
+[2026-03-28 16:23:48] cmd: brain show
+[2026-03-28 16:23:48] cmd: status
+[2026-03-28 16:23:56] cmd: brain show
+[2026-03-28 16:23:56] cmd: status
+[2026-03-28 16:24:04] cmd: brain show
+[2026-03-28 16:24:04] cmd: status
+[2026-03-28 16:24:12] cmd: brain show
+[2026-03-28 16:24:12] cmd: status
+[2026-03-28 16:24:17] cmd: status
+[2026-03-28 16:24:19] cmd: brain ask hello logos are you there
+[2026-03-28 16:24:20] cmd: brain show
+[2026-03-28 16:24:20] cmd: status
+[2026-03-28 16:24:26] cmd: brain ask test message
+[2026-03-28 16:24:28] cmd: brain show
+[2026-03-28 16:24:28] cmd: status
+[2026-03-28 16:24:36] cmd: brain show
+[2026-03-28 16:24:36] cmd: status
+[2026-03-28 16:24:44] cmd: brain show
+[2026-03-28 16:24:44] cmd: status
+[2026-03-28 16:24:52] cmd: brain show
+[2026-03-28 16:24:52] cmd: status
+[2026-03-28 16:25:00] cmd: brain show
+[2026-03-28 16:25:00] cmd: status
+[2026-03-28 16:25:09] cmd: brain show
+[2026-03-28 16:25:09] cmd: status
+[2026-03-28 16:25:09] cmd: brain show
+[2026-03-28 16:25:09] cmd: status
+[2026-03-28 16:25:17] cmd: brain show
+[2026-03-28 16:25:17] cmd: status
+[2026-03-28 16:25:18] cmd: Logos builtin active. Open tasks: 1. Prompt received: hello
+[2026-03-28 16:25:25] cmd: brain show
+[2026-03-28 16:25:25] cmd: status
+[2026-03-28 16:25:26] cmd: brain show
+[2026-03-28 16:25:26] cmd: status
+[2026-03-28 16:25:27] cmd: status
+[2026-03-28 16:25:33] cmd: brain show
+[2026-03-28 16:25:33] cmd: status
+[2026-03-28 16:25:41] cmd: brain show
+[2026-03-28 16:25:41] cmd: status
+[2026-03-28 16:25:47] cmd: brain show
+[2026-03-28 16:25:47] cmd: status
+[2026-03-28 16:25:55] cmd: brain show
+[2026-03-28 16:25:55] cmd: status
+[2026-03-28 16:26:03] cmd: brain show
+[2026-03-28 16:26:03] cmd: status
+[2026-03-28 16:26:11] cmd: brain show
+[2026-03-28 16:26:11] cmd: status
+[2026-03-28 16:26:19] cmd: brain show
+[2026-03-28 16:26:20] cmd: status
+[2026-03-28 16:26:27] cmd: brain show
+[2026-03-28 16:26:28] cmd: status
+[2026-03-28 16:26:35] cmd: brain show
+[2026-03-28 16:26:36] cmd: status
+[2026-03-28 16:26:44] cmd: brain show
+[2026-03-28 16:26:44] cmd: status
+[2026-03-28 16:26:52] cmd: brain show
+[2026-03-28 16:26:52] cmd: status
+[2026-03-28 16:27:00] cmd: brain show
+[2026-03-28 16:27:00] cmd: status
+[2026-03-28 16:27:08] cmd: brain show
+[2026-03-28 16:27:08] cmd: status
+[2026-03-28 16:27:16] cmd: brain show
+[2026-03-28 16:27:16] cmd: status
+[2026-03-28 16:27:24] cmd: brain show
+[2026-03-28 16:27:25] cmd: status
+[2026-03-28 16:27:32] cmd: brain show
+[2026-03-28 16:27:33] cmd: status
+[2026-03-28 16:27:40] cmd: brain show
+[2026-03-28 16:27:41] cmd: status
+[2026-03-28 16:27:48] cmd: brain show
+[2026-03-28 16:27:49] cmd: status
+[2026-03-28 16:27:56] cmd: brain show
+[2026-03-28 16:27:57] cmd: status
+[2026-03-28 16:28:04] cmd: brain show
+[2026-03-28 16:28:05] cmd: status
+[2026-03-28 16:28:12] cmd: brain show
+[2026-03-28 16:28:13] cmd: status
+[2026-03-28 16:28:20] cmd: brain show
+[2026-03-28 16:28:21] cmd: status
+[2026-03-28 16:28:28] cmd: brain show
+[2026-03-28 16:28:29] cmd: status
+[2026-03-28 16:28:36] cmd: brain show
+[2026-03-28 16:28:37] cmd: status
+[2026-03-28 16:28:44] cmd: brain show
+[2026-03-28 16:28:45] cmd: status
+[2026-03-28 16:28:57] started http://127.0.0.1:7788/
+[2026-03-28 16:28:57] cmd: brain show
+[2026-03-28 16:28:57] cmd: status
+[2026-03-28 16:29:00] cmd: brain show
+[2026-03-28 16:29:01] cmd: status
+[2026-03-28 16:29:06] cmd: brain ask How are you doing
+[2026-03-28 16:29:08] cmd: brain ask what should I work on next
+[2026-03-28 16:29:09] cmd: brain show
+[2026-03-28 16:29:09] cmd: status
+[2026-03-28 16:29:11] cmd: brain ask help me debug this code issue
+[2026-03-28 16:29:14] cmd: brain show
+[2026-03-28 16:29:14] cmd: status
+[2026-03-28 16:29:17] cmd: brain show
+[2026-03-28 16:29:17] cmd: status
+[2026-03-28 16:29:22] cmd: brain show
+[2026-03-28 16:29:22] cmd: status
+[2026-03-28 16:29:25] cmd: brain show
+[2026-03-28 16:29:25] cmd: status
+[2026-03-28 16:29:30] cmd: brain show
+[2026-03-28 16:29:30] cmd: status
+[2026-03-28 16:29:33] cmd: brain show
+[2026-03-28 16:29:33] cmd: status
+[2026-03-28 16:29:38] cmd: brain show
+[2026-03-28 16:29:38] cmd: status
+[2026-03-28 16:29:41] cmd: brain show
+[2026-03-28 16:29:41] cmd: status
+[2026-03-28 16:29:46] cmd: brain show
+[2026-03-28 16:29:46] cmd: status
+[2026-03-28 16:29:49] cmd: brain show
+[2026-03-28 16:29:49] cmd: status
+[2026-03-28 16:29:54] cmd: brain show
+[2026-03-28 16:29:54] cmd: status
+[2026-03-28 16:29:57] cmd: brain show
+[2026-03-28 16:29:57] cmd: status
+[2026-03-28 16:30:02] cmd: brain show
+[2026-03-28 16:30:02] cmd: status
+[2026-03-28 16:30:05] cmd: brain show
+[2026-03-28 16:30:05] cmd: status
+[2026-03-28 16:30:10] cmd: brain show
+[2026-03-28 16:30:10] cmd: status
+[2026-03-28 16:30:13] cmd: brain show
+[2026-03-28 16:30:13] cmd: status
+[2026-03-28 16:30:18] cmd: brain show
+[2026-03-28 16:30:18] cmd: status
+[2026-03-28 16:30:21] cmd: brain show
+[2026-03-28 16:30:21] cmd: status
+[2026-03-28 16:30:26] cmd: brain show
+[2026-03-28 16:30:26] cmd: status
+[2026-03-28 16:30:29] cmd: brain show
+[2026-03-28 16:30:29] cmd: status
+[2026-03-28 16:30:34] cmd: brain show
+[2026-03-28 16:30:34] cmd: status
+[2026-03-28 16:30:37] cmd: brain show
+[2026-03-28 16:30:37] cmd: status
+[2026-03-28 16:30:42] cmd: brain show
+[2026-03-28 16:30:42] cmd: status
+[2026-03-28 16:30:45] cmd: brain show
+[2026-03-28 16:30:45] cmd: status
+[2026-03-28 16:30:48] cmd: brain show
+[2026-03-28 16:30:48] cmd: status
+[2026-03-28 16:30:53] cmd: brain show
+[2026-03-28 16:30:53] cmd: status
+[2026-03-28 16:31:01] cmd: brain show
+[2026-03-28 16:31:01] cmd: status
+[2026-03-28 16:31:09] cmd: brain show
+[2026-03-28 16:31:09] cmd: status
+[2026-03-28 16:31:14] cmd: brain show
+[2026-03-28 16:31:14] cmd: status
+[2026-03-28 16:31:17] cmd: brain show
+[2026-03-28 16:31:17] cmd: status
+[2026-03-28 16:31:22] cmd: brain show
+[2026-03-28 16:31:23] cmd: status
+[2026-03-28 16:31:25] cmd: brain show
+[2026-03-28 16:31:25] cmd: status
+[2026-03-28 16:31:31] cmd: brain show
+[2026-03-28 16:31:31] cmd: status
+[2026-03-28 16:31:33] cmd: brain show
+[2026-03-28 16:31:33] cmd: status
+[2026-03-28 16:31:40] cmd: brain show
+[2026-03-28 16:31:40] cmd: status
+[2026-03-28 16:31:42] cmd: brain show
+[2026-03-28 16:31:42] cmd: status
+[2026-03-28 16:31:48] cmd: brain show
+[2026-03-28 16:31:48] cmd: status
+[2026-03-28 16:31:50] cmd: brain show
+[2026-03-28 16:31:50] cmd: status
+[2026-03-28 16:31:56] started http://127.0.0.1:7788/
+[2026-03-28 16:31:57] cmd: brain show
+[2026-03-28 16:31:57] cmd: status
+[2026-03-28 16:31:58] cmd: brain show
+[2026-03-28 16:31:58] cmd: status
+[2026-03-28 16:32:14] speech: 
+[2026-03-28 16:32:14] cmd: brain show
+[2026-03-28 16:32:14] cmd: brain show
+[2026-03-28 16:32:14] cmd: status
+[2026-03-28 16:32:14] cmd: brain show
+[2026-03-28 16:32:15] cmd: status
+[2026-03-28 16:32:15] cmd: brain show
+[2026-03-28 16:32:15] cmd: status
+[2026-03-28 16:32:15] cmd: status
+[2026-03-28 16:32:17] cmd: brain show
+[2026-03-28 16:32:17] cmd: status
+[2026-03-28 16:32:20] cmd: brain show
+[2026-03-28 16:32:20] cmd: status
+[2026-03-28 16:32:31] speech: 
+[2026-03-28 16:32:31] cmd: brain show
+[2026-03-28 16:32:31] cmd: brain show
+[2026-03-28 16:32:31] cmd: status
+[2026-03-28 16:32:31] cmd: brain show
+[2026-03-28 16:32:31] cmd: brain show
+[2026-03-28 16:32:31] cmd: status
+[2026-03-28 16:32:31] cmd: status
+[2026-03-28 16:32:32] cmd: status
+[2026-03-28 16:32:33] cmd: brain show
+[2026-03-28 16:32:34] cmd: status
+[2026-03-28 16:32:36] cmd: brain show
+[2026-03-28 16:32:36] cmd: status
+[2026-03-28 16:32:40] speech: 
+[2026-03-28 16:32:40] cmd: brain show
+[2026-03-28 16:32:40] cmd: status
+[2026-03-28 16:32:41] cmd: brain show
+[2026-03-28 16:32:42] cmd: status
+[2026-03-28 16:32:44] cmd: brain show
+[2026-03-28 16:32:44] cmd: status
+[2026-03-28 16:32:46] cmd: brain show
+[2026-03-28 16:32:46] cmd: status
+[2026-03-28 16:32:50] cmd: brain show
+[2026-03-28 16:32:50] cmd: status
+[2026-03-28 16:32:52] cmd: brain show
+[2026-03-28 16:32:52] cmd: status
+[2026-03-28 16:32:54] cmd: brain show
+[2026-03-28 16:32:54] cmd: status
+[2026-03-28 16:32:55] cmd: brain show
+[2026-03-28 16:32:55] cmd: status
+[2026-03-28 16:32:56] cmd: brain show
+[2026-03-28 16:32:57] cmd: status
+[2026-03-28 16:33:02] speech: 
+[2026-03-28 16:33:02] cmd: brain show
+[2026-03-28 16:33:02] cmd: status
+[2026-03-28 16:33:02] cmd: brain show
+[2026-03-28 16:33:03] cmd: status
+[2026-03-28 16:33:05] cmd: brain show
+[2026-03-28 16:33:05] cmd: status
+[2026-03-28 16:33:09] cmd: brain show
+[2026-03-28 16:33:09] cmd: status
+[2026-03-28 16:33:11] cmd: brain show
+[2026-03-28 16:33:11] cmd: status
+[2026-03-28 16:33:13] cmd: brain show
+[2026-03-28 16:33:13] cmd: status
+[2026-03-28 16:33:17] cmd: brain show
+[2026-03-28 16:33:17] cmd: status
+[2026-03-28 16:33:19] cmd: brain show
+[2026-03-28 16:33:19] cmd: status
+[2026-03-28 16:33:21] cmd: brain show
+[2026-03-28 16:33:21] cmd: status
+[2026-03-28 16:33:25] cmd: brain show
+[2026-03-28 16:33:25] cmd: status
+[2026-03-28 16:33:27] cmd: brain show
+[2026-03-28 16:33:27] cmd: status
+[2026-03-28 16:33:29] cmd: brain show
+[2026-03-28 16:33:29] cmd: status
+[2026-03-28 16:33:33] cmd: brain show
+[2026-03-28 16:33:33] cmd: status
+[2026-03-28 16:33:35] cmd: brain show
+[2026-03-28 16:33:35] cmd: status
+[2026-03-28 16:33:37] cmd: brain show
+[2026-03-28 16:33:37] cmd: status
+[2026-03-28 16:33:41] cmd: brain show
+[2026-03-28 16:33:41] cmd: status
+[2026-03-28 16:33:43] cmd: brain show
+[2026-03-28 16:33:43] cmd: status
+[2026-03-28 16:33:45] cmd: brain show
+[2026-03-28 16:33:45] cmd: status
+[2026-03-28 16:33:49] cmd: brain show
+[2026-03-28 16:33:49] cmd: status
+[2026-03-28 16:33:51] cmd: brain show
+[2026-03-28 16:33:51] cmd: status
+[2026-03-28 16:33:53] cmd: brain show
+[2026-03-28 16:33:53] cmd: status
+[2026-03-28 16:33:57] cmd: brain show
+[2026-03-28 16:33:57] cmd: status
+[2026-03-28 16:33:59] cmd: brain show
+[2026-03-28 16:33:59] cmd: status
+[2026-03-28 16:34:01] cmd: brain show
+[2026-03-28 16:34:01] cmd: status
+[2026-03-28 16:34:05] cmd: brain show
+[2026-03-28 16:34:05] cmd: status
+[2026-03-28 16:34:07] cmd: brain show
+[2026-03-28 16:34:07] cmd: status
+[2026-03-28 16:34:09] cmd: brain show
+[2026-03-28 16:34:09] cmd: status
+[2026-03-28 16:34:13] cmd: brain show
+[2026-03-28 16:34:13] cmd: status
+[2026-03-28 16:34:15] cmd: brain show
+[2026-03-28 16:34:15] cmd: status
+[2026-03-28 16:34:17] cmd: brain show
+[2026-03-28 16:34:17] cmd: status
+[2026-03-28 16:34:21] cmd: brain show
+[2026-03-28 16:34:21] cmd: status
+[2026-03-28 16:34:23] cmd: brain show
+[2026-03-28 16:34:23] cmd: status
+[2026-03-28 16:34:25] cmd: brain show
+[2026-03-28 16:34:25] cmd: status
+[2026-03-28 16:34:29] cmd: brain show
+[2026-03-28 16:34:29] cmd: status
+[2026-03-28 16:34:31] cmd: brain show
+[2026-03-28 16:34:31] cmd: status
+[2026-03-28 16:34:33] cmd: brain show
+[2026-03-28 16:34:33] cmd: status
+[2026-03-28 16:34:37] cmd: brain show
+[2026-03-28 16:34:37] cmd: status
+[2026-03-28 16:34:39] cmd: brain show
+[2026-03-28 16:34:39] cmd: status
+[2026-03-28 16:34:41] cmd: brain show
+[2026-03-28 16:34:41] cmd: status
+[2026-03-28 16:34:45] cmd: brain show
+[2026-03-28 16:34:45] cmd: status
+[2026-03-28 16:34:47] cmd: brain show
+[2026-03-28 16:34:47] cmd: status
+[2026-03-28 16:34:49] cmd: brain show
+[2026-03-28 16:34:49] cmd: status
+[2026-03-28 16:34:53] cmd: brain show
+[2026-03-28 16:34:53] cmd: status
+[2026-03-28 16:34:55] cmd: brain show
+[2026-03-28 16:34:55] cmd: status
+[2026-03-28 16:34:57] cmd: brain show
+[2026-03-28 16:34:57] cmd: status
+[2026-03-28 16:35:01] cmd: brain show
+[2026-03-28 16:35:01] cmd: status
+[2026-03-28 16:35:03] cmd: brain show
+[2026-03-28 16:35:03] cmd: status
+[2026-03-28 16:35:05] cmd: brain show
+[2026-03-28 16:35:05] cmd: status
+[2026-03-28 16:35:09] cmd: brain show
+[2026-03-28 16:35:09] cmd: status
+[2026-03-28 16:35:11] cmd: brain show
+[2026-03-28 16:35:11] cmd: status
+[2026-03-28 16:35:13] cmd: brain show
+[2026-03-28 16:35:13] cmd: status
+[2026-03-28 16:35:17] cmd: brain show
+[2026-03-28 16:35:17] cmd: status
+[2026-03-28 16:35:19] cmd: brain show
+[2026-03-28 16:35:19] cmd: status
+[2026-03-28 16:35:21] cmd: brain show
+[2026-03-28 16:35:21] cmd: status
+[2026-03-28 16:35:25] cmd: brain show
+[2026-03-28 16:35:25] cmd: status
+[2026-03-28 16:35:27] cmd: brain show
+[2026-03-28 16:35:27] cmd: status
+[2026-03-28 16:35:29] cmd: brain show
+[2026-03-28 16:35:29] cmd: status
+[2026-03-28 16:35:33] cmd: brain show
+[2026-03-28 16:35:33] cmd: status
+[2026-03-28 16:35:35] cmd: brain show
+[2026-03-28 16:35:35] cmd: status
+[2026-03-28 16:35:37] cmd: brain show
+[2026-03-28 16:35:37] cmd: status
+[2026-03-28 16:35:41] cmd: brain show
+[2026-03-28 16:35:41] cmd: status
+[2026-03-28 16:35:43] cmd: brain show
+[2026-03-28 16:35:43] cmd: status
+[2026-03-28 16:35:45] cmd: brain show
+[2026-03-28 16:35:45] cmd: status
+[2026-03-28 16:35:49] cmd: brain show
+[2026-03-28 16:35:49] cmd: status
+[2026-03-28 16:35:51] cmd: brain show
+[2026-03-28 16:35:51] cmd: status
+[2026-03-28 16:35:53] cmd: brain show
+[2026-03-28 16:35:53] cmd: status
+[2026-03-28 16:35:57] cmd: brain show
+[2026-03-28 16:35:57] cmd: status
+[2026-03-28 16:35:59] cmd: brain show
+[2026-03-28 16:35:59] cmd: status
+[2026-03-28 16:36:01] cmd: brain show
+[2026-03-28 16:36:01] cmd: status
+[2026-03-28 16:36:09] started http://127.0.0.1:7788/
+[2026-03-28 16:36:09] cmd: brain show
+[2026-03-28 16:36:09] cmd: brain show
+[2026-03-28 16:36:09] cmd: brain show
+[2026-03-28 16:36:09] cmd: status
+[2026-03-28 16:36:09] cmd: status
+[2026-03-28 16:36:10] cmd: status
+[2026-03-28 16:36:13] cmd: brain show
+[2026-03-28 16:36:13] cmd: status
+[2026-03-28 16:36:15] cmd: brain show
+[2026-03-28 16:36:15] cmd: status
+[2026-03-28 16:36:17] cmd: brain show
+[2026-03-28 16:36:17] cmd: status
+[2026-03-28 16:36:21] cmd: brain show
+[2026-03-28 16:36:21] cmd: status
+[2026-03-28 16:36:23] cmd: brain show
+[2026-03-28 16:36:23] cmd: status
+[2026-03-28 16:36:25] cmd: brain show
+[2026-03-28 16:36:25] cmd: status
+[2026-03-28 16:36:29] cmd: brain ask What is your purpose?
+[2026-03-28 16:36:29] cmd: brain show
+[2026-03-28 16:36:29] cmd: status
+[2026-03-28 16:36:31] cmd: brain show
+[2026-03-28 16:36:31] cmd: status
+[2026-03-28 16:36:33] cmd: brain show
+[2026-03-28 16:36:33] cmd: status
+[2026-03-28 16:36:37] cmd: brain show
+[2026-03-28 16:36:37] cmd: status
+[2026-03-28 16:36:39] cmd: brain show
+[2026-03-28 16:36:39] cmd: status
+[2026-03-28 16:36:41] cmd: brain show
+[2026-03-28 16:36:41] cmd: status
+[2026-03-28 16:36:42] cmd: brain show
+[2026-03-28 16:36:42] cmd: status
+[2026-03-28 16:36:45] cmd: brain show
+[2026-03-28 16:36:45] cmd: status
+[2026-03-28 16:36:45] cmd: brain ask Tell me about yourself and what you can do
+[2026-03-28 16:36:47] cmd: brain show
+[2026-03-28 16:36:47] cmd: status
+[2026-03-28 16:36:49] cmd: brain show
+[2026-03-28 16:36:49] cmd: status
+[2026-03-28 16:36:50] cmd: brain show
+[2026-03-28 16:36:50] cmd: status
+[2026-03-28 16:36:53] cmd: brain show
+[2026-03-28 16:36:53] cmd: status
+[2026-03-28 16:36:55] cmd: brain show
+[2026-03-28 16:36:55] cmd: status
+[2026-03-28 16:36:57] cmd: brain show
+[2026-03-28 16:36:57] cmd: status
+[2026-03-28 16:36:58] cmd: brain show
+[2026-03-28 16:36:58] cmd: status
+[2026-03-28 16:37:01] cmd: brain show
+[2026-03-28 16:37:01] cmd: status
+[2026-03-28 16:37:03] cmd: brain show
+[2026-03-28 16:37:03] cmd: status
+[2026-03-28 16:37:05] cmd: brain show
+[2026-03-28 16:37:05] cmd: status
+[2026-03-28 16:37:06] cmd: brain show
+[2026-03-28 16:37:06] cmd: status
+[2026-03-28 16:37:09] cmd: brain show
+[2026-03-28 16:37:09] cmd: status
+[2026-03-28 16:37:11] cmd: brain show
+[2026-03-28 16:37:11] cmd: status
+[2026-03-28 16:37:13] cmd: brain show
+[2026-03-28 16:37:13] cmd: status
+[2026-03-28 16:37:14] cmd: brain show
+[2026-03-28 16:37:14] cmd: status
+[2026-03-28 16:37:17] cmd: brain show
+[2026-03-28 16:37:17] cmd: status
+[2026-03-28 16:37:19] cmd: brain show
+[2026-03-28 16:37:19] cmd: status
+[2026-03-28 16:37:21] cmd: brain show
+[2026-03-28 16:37:21] cmd: status
+[2026-03-28 16:37:22] cmd: brain show
+[2026-03-28 16:37:22] cmd: status
+[2026-03-28 16:37:25] cmd: brain show
+[2026-03-28 16:37:25] cmd: status
+[2026-03-28 16:37:27] cmd: brain show
+[2026-03-28 16:37:27] cmd: status
+[2026-03-28 16:37:30] cmd: brain show
+[2026-03-28 16:37:30] cmd: status
+[2026-03-28 16:37:31] cmd: brain show
+[2026-03-28 16:37:31] cmd: status
+[2026-03-28 16:37:33] cmd: brain show
+[2026-03-28 16:37:33] cmd: status
+[2026-03-28 16:37:35] cmd: brain show
+[2026-03-28 16:37:36] cmd: status
+[2026-03-28 16:37:37] cmd: brain ask What can you help me with?
+[2026-03-28 16:37:38] cmd: brain show
+[2026-03-28 16:37:38] cmd: status
+[2026-03-28 16:37:39] cmd: brain show
+[2026-03-28 16:37:39] cmd: status
+[2026-03-28 16:37:40] cmd: brain ask I need to write a function that processes files
+[2026-03-28 16:37:41] cmd: brain show
+[2026-03-28 16:37:41] cmd: status
+[2026-03-28 16:37:43] cmd: brain ask How do I debug this PowerShell script?
+[2026-03-28 16:37:43] cmd: brain show
+[2026-03-28 16:37:44] cmd: status
+[2026-03-28 16:37:46] cmd: brain show
+[2026-03-28 16:37:46] cmd: status
+[2026-03-28 16:37:46] cmd: brain ask I have a bug in my code, can you help me fix it?
+[2026-03-28 16:37:47] cmd: brain show
+[2026-03-28 16:37:47] cmd: status
+[2026-03-28 16:37:50] cmd: brain show
+[2026-03-28 16:37:50] cmd: status
+[2026-03-28 16:37:51] cmd: brain show
+[2026-03-28 16:37:51] cmd: status
+[2026-03-28 16:37:52] cmd: brain show
+[2026-03-28 16:37:52] cmd: status
+[2026-03-28 16:37:54] cmd: brain show
+[2026-03-28 16:37:54] cmd: status
+[2026-03-28 16:37:55] cmd: brain show
+[2026-03-28 16:37:55] cmd: status
+[2026-03-28 16:37:58] cmd: brain show
+[2026-03-28 16:37:58] cmd: status
+[2026-03-28 16:37:59] cmd: brain show
+[2026-03-28 16:37:59] cmd: status
+[2026-03-28 16:38:00] cmd: brain show
+[2026-03-28 16:38:00] cmd: status
+[2026-03-28 16:38:02] cmd: brain show
+[2026-03-28 16:38:02] cmd: status
+[2026-03-28 16:38:03] cmd: brain show
+[2026-03-28 16:38:03] cmd: status
+[2026-03-28 16:38:06] cmd: brain show
+[2026-03-28 16:38:06] cmd: status
+[2026-03-28 16:38:07] cmd: brain show
+[2026-03-28 16:38:07] cmd: status
+[2026-03-28 16:38:08] cmd: brain show
+[2026-03-28 16:38:08] cmd: status
+[2026-03-28 16:38:10] cmd: brain show
+[2026-03-28 16:38:10] cmd: status
+[2026-03-28 16:38:11] cmd: brain show
+[2026-03-28 16:38:11] cmd: status
+[2026-03-28 16:38:14] cmd: brain show
+[2026-03-28 16:38:14] cmd: status
+[2026-03-28 16:38:15] cmd: brain show
+[2026-03-28 16:38:15] cmd: status
+[2026-03-28 16:38:16] cmd: brain show
+[2026-03-28 16:38:16] cmd: status
+[2026-03-28 16:38:18] cmd: brain show
+[2026-03-28 16:38:18] cmd: status
+[2026-03-28 16:38:19] cmd: brain show
+[2026-03-28 16:38:19] cmd: status
+[2026-03-28 16:38:22] cmd: brain show
+[2026-03-28 16:38:22] cmd: status
+[2026-03-28 16:38:23] cmd: brain show
+[2026-03-28 16:38:23] cmd: status
+[2026-03-28 16:38:24] cmd: brain show
+[2026-03-28 16:38:24] cmd: status
+[2026-03-28 16:38:26] cmd: brain show
+[2026-03-28 16:38:26] cmd: status
+[2026-03-28 16:38:27] cmd: brain show
+[2026-03-28 16:38:27] cmd: status
+[2026-03-28 16:38:30] cmd: brain show
+[2026-03-28 16:38:30] cmd: status
+[2026-03-28 16:38:31] cmd: brain show
+[2026-03-28 16:38:31] cmd: status
+[2026-03-28 16:38:32] cmd: brain show
+[2026-03-28 16:38:33] cmd: status
+[2026-03-28 16:38:34] cmd: brain show
+[2026-03-28 16:38:34] cmd: status
+[2026-03-28 16:38:35] cmd: brain show
+[2026-03-28 16:38:35] cmd: status
+[2026-03-28 16:38:38] cmd: brain show
+[2026-03-28 16:38:39] cmd: status
+[2026-03-28 16:38:40] cmd: brain show
+[2026-03-28 16:38:40] cmd: status
+[2026-03-28 16:38:40] cmd: brain show
+[2026-03-28 16:38:41] cmd: status
+[2026-03-28 16:38:42] cmd: brain show
+[2026-03-28 16:38:42] cmd: status
+[2026-03-28 16:38:43] cmd: brain show
+[2026-03-28 16:38:43] cmd: status
+[2026-03-28 16:38:46] cmd: brain show
+[2026-03-28 16:38:47] cmd: status
+[2026-03-28 16:38:48] cmd: brain show
+[2026-03-28 16:38:48] cmd: status
+[2026-03-28 16:38:48] cmd: brain show
+[2026-03-28 16:38:49] cmd: status
+[2026-03-28 16:38:50] cmd: brain show
+[2026-03-28 16:38:50] cmd: status
+[2026-03-28 16:38:51] cmd: brain show
+[2026-03-28 16:38:51] cmd: status
+[2026-03-28 16:38:54] cmd: brain show
+[2026-03-28 16:38:55] cmd: status
+[2026-03-28 16:38:57] cmd: brain show
+[2026-03-28 16:38:57] cmd: brain show
+[2026-03-28 16:38:57] cmd: status
+[2026-03-28 16:38:57] cmd: status
+[2026-03-28 16:38:59] cmd: brain show
+[2026-03-28 16:38:59] cmd: status
+[2026-03-28 16:38:59] cmd: brain show
+[2026-03-28 16:38:59] cmd: status
+[2026-03-28 16:39:03] cmd: brain show
+[2026-03-28 16:39:03] cmd: status
+[2026-03-28 16:39:05] cmd: brain show
+[2026-03-28 16:39:05] cmd: brain show
+[2026-03-28 16:39:05] cmd: status
+[2026-03-28 16:39:05] cmd: status
+[2026-03-28 16:39:07] cmd: brain show
+[2026-03-28 16:39:07] cmd: status
+[2026-03-28 16:39:07] cmd: brain show
+[2026-03-28 16:39:07] cmd: status
+[2026-03-28 16:39:11] cmd: brain show
+[2026-03-28 16:39:11] cmd: status
+[2026-03-28 16:39:13] cmd: brain show
+[2026-03-28 16:39:13] cmd: brain show
+[2026-03-28 16:39:13] cmd: status
+[2026-03-28 16:39:13] cmd: status
+[2026-03-28 16:39:15] cmd: brain show
+[2026-03-28 16:39:15] cmd: status
+[2026-03-28 16:39:15] cmd: brain show
+[2026-03-28 16:39:15] cmd: status
+[2026-03-28 16:39:19] cmd: brain show
+[2026-03-28 16:39:19] cmd: status
+[2026-03-28 16:39:21] cmd: brain show
+[2026-03-28 16:39:21] cmd: brain show
+[2026-03-28 16:39:22] cmd: status
+[2026-03-28 16:39:22] cmd: status
+[2026-03-28 16:39:23] cmd: brain show
+[2026-03-28 16:39:23] cmd: brain show
+[2026-03-28 16:39:23] cmd: status
+[2026-03-28 16:39:24] cmd: status
+[2026-03-28 16:39:27] cmd: brain show
+[2026-03-28 16:39:27] cmd: status
+[2026-03-28 16:39:29] cmd: brain show
+[2026-03-28 16:39:29] cmd: brain show
+[2026-03-28 16:39:30] cmd: status
+[2026-03-28 16:39:30] cmd: status
+[2026-03-28 16:39:31] cmd: brain show
+[2026-03-28 16:39:31] cmd: brain show
+[2026-03-28 16:39:31] cmd: status
+[2026-03-28 16:39:32] cmd: status
+[2026-03-28 16:39:36] cmd: brain show
+[2026-03-28 16:39:36] cmd: status
+[2026-03-28 16:39:38] cmd: brain show
+[2026-03-28 16:39:38] cmd: brain show
+[2026-03-28 16:39:38] cmd: status
+[2026-03-28 16:39:38] cmd: status
+[2026-03-28 16:39:39] cmd: brain show
+[2026-03-28 16:39:39] cmd: brain show
+[2026-03-28 16:39:39] cmd: status
+[2026-03-28 16:39:40] cmd: status
+[2026-03-28 16:39:44] cmd: brain show
+[2026-03-28 16:39:44] cmd: status
+[2026-03-28 16:39:46] cmd: brain show
+[2026-03-28 16:39:46] cmd: brain show
+[2026-03-28 16:39:46] cmd: status
+[2026-03-28 16:39:46] cmd: status
+[2026-03-28 16:39:47] cmd: brain show
+[2026-03-28 16:39:47] cmd: brain show
+[2026-03-28 16:39:47] cmd: status
+[2026-03-28 16:39:48] cmd: status
+[2026-03-28 16:39:52] cmd: brain show
+[2026-03-28 16:39:52] cmd: status
+[2026-03-28 16:39:54] cmd: brain show
+[2026-03-28 16:39:54] cmd: brain show
+[2026-03-28 16:39:54] cmd: status
+[2026-03-28 16:39:54] cmd: status
+[2026-03-28 16:39:56] cmd: brain show
+[2026-03-28 16:39:56] cmd: brain show
+[2026-03-28 16:39:56] cmd: status
+[2026-03-28 16:39:56] cmd: status
+[2026-03-28 16:40:00] cmd: brain show
+[2026-03-28 16:40:00] cmd: status
+[2026-03-28 16:40:02] cmd: brain show
+[2026-03-28 16:40:02] cmd: brain show
+[2026-03-28 16:40:03] cmd: status
+[2026-03-28 16:40:03] cmd: status
+[2026-03-28 16:40:04] cmd: brain show
+[2026-03-28 16:40:04] cmd: brain show
+[2026-03-28 16:40:05] cmd: status
+[2026-03-28 16:40:05] cmd: status
+[2026-03-28 16:40:08] cmd: brain show
+[2026-03-28 16:40:09] cmd: status
+[2026-03-28 16:40:10] cmd: brain show
+[2026-03-28 16:40:10] cmd: brain show
+[2026-03-28 16:40:11] cmd: status
+[2026-03-28 16:40:11] cmd: status
+[2026-03-28 16:40:12] cmd: brain show
+[2026-03-28 16:40:12] cmd: brain show
+[2026-03-28 16:40:13] cmd: status
+[2026-03-28 16:40:13] cmd: status
+[2026-03-28 16:40:16] cmd: brain show
+[2026-03-28 16:40:17] cmd: status
+[2026-03-28 16:40:18] cmd: brain show
+[2026-03-28 16:40:18] cmd: brain show
+[2026-03-28 16:40:19] cmd: status
+[2026-03-28 16:40:19] cmd: status
+[2026-03-28 16:40:20] cmd: brain show
+[2026-03-28 16:40:20] cmd: brain show
+[2026-03-28 16:40:21] cmd: status
+[2026-03-28 16:40:21] cmd: status
+[2026-03-28 16:40:24] cmd: brain show
+[2026-03-28 16:40:25] cmd: status
+[2026-03-28 16:40:26] cmd: brain show
+[2026-03-28 16:40:26] cmd: brain show
+[2026-03-28 16:40:27] cmd: status
+[2026-03-28 16:40:27] cmd: status
+[2026-03-28 16:40:28] cmd: brain show
+[2026-03-28 16:40:28] cmd: brain show
+[2026-03-28 16:40:29] cmd: status
+[2026-03-28 16:40:29] cmd: status
+[2026-03-28 16:40:32] cmd: brain show
+[2026-03-28 16:40:33] cmd: status
+[2026-03-28 16:40:34] cmd: brain show
+[2026-03-28 16:40:34] cmd: brain show
+[2026-03-28 16:40:35] cmd: status
+[2026-03-28 16:40:35] cmd: status
+[2026-03-28 16:40:36] cmd: brain show
+[2026-03-28 16:40:36] cmd: brain show
+[2026-03-28 16:40:37] cmd: status
+[2026-03-28 16:40:37] cmd: status
+[2026-03-28 16:40:40] cmd: brain show
+[2026-03-28 16:40:41] cmd: status
+[2026-03-28 16:40:42] cmd: brain show
+[2026-03-28 16:40:42] cmd: brain show
+[2026-03-28 16:40:43] cmd: status
+[2026-03-28 16:40:43] cmd: status
+[2026-03-28 16:40:44] cmd: brain show
+[2026-03-28 16:40:44] cmd: brain show
+[2026-03-28 16:40:45] cmd: status
+[2026-03-28 16:40:45] cmd: status
+[2026-03-28 16:40:48] cmd: brain show
+[2026-03-28 16:40:49] cmd: status
+[2026-03-28 16:40:50] cmd: brain show
+[2026-03-28 16:40:50] cmd: brain show
+[2026-03-28 16:40:51] cmd: status
+[2026-03-28 16:40:51] cmd: status
+[2026-03-28 16:40:53] cmd: brain show
+[2026-03-28 16:40:53] cmd: brain show
+[2026-03-28 16:40:53] cmd: status
+[2026-03-28 16:40:53] cmd: status
+[2026-03-28 16:40:56] cmd: brain show
+[2026-03-28 16:40:57] cmd: status
+[2026-03-28 16:40:58] cmd: brain show
+[2026-03-28 16:40:58] cmd: brain show
+[2026-03-28 16:40:59] cmd: status
+[2026-03-28 16:40:59] cmd: status
+[2026-03-28 16:41:01] cmd: brain show
+[2026-03-28 16:41:01] cmd: brain show
+[2026-03-28 16:41:01] cmd: status
+[2026-03-28 16:41:01] cmd: status
+[2026-03-28 16:41:04] cmd: brain show
+[2026-03-28 16:41:05] cmd: status
+[2026-03-28 16:41:07] cmd: brain show
+[2026-03-28 16:41:07] cmd: brain show
+[2026-03-28 16:41:07] cmd: status
+[2026-03-28 16:41:07] cmd: status
+[2026-03-28 16:41:09] cmd: brain show
+[2026-03-28 16:41:09] cmd: brain show
+[2026-03-28 16:41:09] cmd: status
+[2026-03-28 16:41:09] cmd: status
+[2026-03-28 16:41:12] cmd: brain show
+[2026-03-28 16:41:13] cmd: status
+[2026-03-28 16:41:15] cmd: brain show
+[2026-03-28 16:41:15] cmd: brain show
+[2026-03-28 16:41:15] cmd: status
+[2026-03-28 16:41:15] cmd: status
+[2026-03-28 16:41:17] cmd: brain show
+[2026-03-28 16:41:17] cmd: brain show
+[2026-03-28 16:41:17] cmd: status
+[2026-03-28 16:41:17] cmd: status
+[2026-03-28 16:41:20] cmd: brain show
+[2026-03-28 16:41:21] cmd: status
+[2026-03-28 16:41:23] cmd: brain show
+[2026-03-28 16:41:23] cmd: brain show
+[2026-03-28 16:41:23] cmd: status
+[2026-03-28 16:41:23] cmd: status
+[2026-03-28 16:41:25] cmd: brain show
+[2026-03-28 16:41:25] cmd: brain show
+[2026-03-28 16:41:25] cmd: status
+[2026-03-28 16:41:25] cmd: status
+[2026-03-28 16:41:29] cmd: brain show
+[2026-03-28 16:41:29] cmd: status
+[2026-03-28 16:41:31] cmd: brain show
+[2026-03-28 16:41:31] cmd: brain show
+[2026-03-28 16:41:31] cmd: status
+[2026-03-28 16:41:31] cmd: status
+[2026-03-28 16:41:33] cmd: brain show
+[2026-03-28 16:41:33] cmd: brain show
+[2026-03-28 16:41:33] cmd: status
+[2026-03-28 16:41:33] cmd: status
+[2026-03-28 16:41:37] cmd: brain show
+[2026-03-28 16:41:37] cmd: status
+[2026-03-28 16:41:39] cmd: brain show
+[2026-03-28 16:41:39] cmd: brain show
+[2026-03-28 16:41:39] cmd: status
+[2026-03-28 16:41:39] cmd: status
+[2026-03-28 16:41:41] cmd: brain show
+[2026-03-28 16:41:41] cmd: brain show
+[2026-03-28 16:41:41] cmd: status
+[2026-03-28 16:41:41] cmd: status
+[2026-03-28 16:41:45] cmd: brain show
+[2026-03-28 16:41:45] cmd: status
+[2026-03-28 16:41:47] cmd: brain show
+[2026-03-28 16:41:47] cmd: brain show
+[2026-03-28 16:41:47] cmd: status
+[2026-03-28 16:41:47] cmd: status
+[2026-03-28 16:41:49] cmd: brain show
+[2026-03-28 16:41:49] cmd: brain show
+[2026-03-28 16:41:49] cmd: status
+[2026-03-28 16:41:49] cmd: status
+[2026-03-28 16:41:53] cmd: brain show
+[2026-03-28 16:41:53] cmd: status
+[2026-03-28 16:41:55] cmd: brain show
+[2026-03-28 16:41:55] cmd: brain show
+[2026-03-28 16:41:55] cmd: status
+[2026-03-28 16:41:55] cmd: status
+[2026-03-28 16:41:57] cmd: brain show
+[2026-03-28 16:41:57] cmd: brain show
+[2026-03-28 16:41:57] cmd: status
+[2026-03-28 16:41:57] cmd: status
+[2026-03-28 16:42:01] cmd: brain show
+[2026-03-28 16:42:01] cmd: status
+[2026-03-28 16:42:03] cmd: brain show
+[2026-03-28 16:42:03] cmd: brain show
+[2026-03-28 16:42:03] cmd: status
+[2026-03-28 16:42:03] cmd: status
+[2026-03-28 16:42:05] cmd: brain show
+[2026-03-28 16:42:05] cmd: brain show
+[2026-03-28 16:42:05] cmd: status
+[2026-03-28 16:42:05] cmd: status
+[2026-03-28 16:42:09] cmd: brain show
+[2026-03-28 16:42:09] cmd: status
+[2026-03-28 16:42:11] cmd: brain show
+[2026-03-28 16:42:11] cmd: brain show
+[2026-03-28 16:42:11] cmd: status
+[2026-03-28 16:42:11] cmd: status
+[2026-03-28 16:42:13] cmd: brain show
+[2026-03-28 16:42:13] cmd: brain show
+[2026-03-28 16:42:13] cmd: status
+[2026-03-28 16:42:13] cmd: status
+[2026-03-28 16:42:17] cmd: brain show
+[2026-03-28 16:42:17] cmd: status
+[2026-03-28 16:42:19] cmd: brain show
+[2026-03-28 16:42:19] cmd: brain show
+[2026-03-28 16:42:19] cmd: status
+[2026-03-28 16:42:19] cmd: status
+[2026-03-28 16:42:21] cmd: brain show
+[2026-03-28 16:42:21] cmd: brain show
+[2026-03-28 16:42:21] cmd: status
+[2026-03-28 16:42:21] cmd: status
+[2026-03-28 16:42:25] cmd: brain show
+[2026-03-28 16:42:25] cmd: status
+[2026-03-28 16:42:27] cmd: brain show
+[2026-03-28 16:42:27] cmd: brain show
+[2026-03-28 16:42:27] cmd: status
+[2026-03-28 16:42:27] cmd: status
+[2026-03-28 16:42:29] cmd: brain show
+[2026-03-28 16:42:29] cmd: brain show
+[2026-03-28 16:42:29] cmd: status
+[2026-03-28 16:42:29] cmd: status
+[2026-03-28 16:42:33] cmd: brain show
+[2026-03-28 16:42:33] cmd: status
+[2026-03-28 16:42:35] cmd: brain show
+[2026-03-28 16:42:35] cmd: brain show
+[2026-03-28 16:42:35] cmd: status
+[2026-03-28 16:42:35] cmd: status
+[2026-03-28 16:42:37] cmd: brain show
+[2026-03-28 16:42:37] cmd: brain show
+[2026-03-28 16:42:37] cmd: status
+[2026-03-28 16:42:37] cmd: status
+[2026-03-28 16:42:41] cmd: brain show
+[2026-03-28 16:42:41] cmd: status
+[2026-03-28 16:42:43] cmd: brain show
+[2026-03-28 16:42:43] cmd: brain show
+[2026-03-28 16:42:43] cmd: status
+[2026-03-28 16:42:43] cmd: status
+[2026-03-28 16:42:45] cmd: brain show
+[2026-03-28 16:42:45] cmd: brain show
+[2026-03-28 16:42:45] cmd: status
+[2026-03-28 16:42:45] cmd: status
+[2026-03-28 16:42:49] cmd: brain show
+[2026-03-28 16:42:49] cmd: status
+[2026-03-28 16:42:51] cmd: brain show
+[2026-03-28 16:42:51] cmd: brain show
+[2026-03-28 16:42:51] cmd: status
+[2026-03-28 16:42:51] cmd: status
+[2026-03-28 16:42:53] cmd: brain show
+[2026-03-28 16:42:53] cmd: brain show
+[2026-03-28 16:42:53] cmd: status
+[2026-03-28 16:42:53] cmd: status
+[2026-03-28 16:42:57] cmd: brain show
+[2026-03-28 16:42:57] cmd: status
+[2026-03-28 16:42:59] cmd: brain show
+[2026-03-28 16:42:59] cmd: brain show
+[2026-03-28 16:42:59] cmd: status
+[2026-03-28 16:42:59] cmd: status
+[2026-03-28 16:43:01] cmd: brain show
+[2026-03-28 16:43:01] cmd: brain show
+[2026-03-28 16:43:01] cmd: status
+[2026-03-28 16:43:01] cmd: status
+[2026-03-28 16:43:05] cmd: brain show
+[2026-03-28 16:43:05] cmd: status
+[2026-03-28 16:43:07] cmd: brain show
+[2026-03-28 16:43:07] cmd: brain show
+[2026-03-28 16:43:07] cmd: status
+[2026-03-28 16:43:07] cmd: status
+[2026-03-28 16:43:09] cmd: brain show
+[2026-03-28 16:43:09] cmd: brain show
+[2026-03-28 16:43:09] cmd: status
+[2026-03-28 16:43:09] cmd: status
+[2026-03-28 16:43:13] cmd: brain show
+[2026-03-28 16:43:13] cmd: status
+[2026-03-28 16:43:15] cmd: brain show
+[2026-03-28 16:43:15] cmd: brain show
+[2026-03-28 16:43:15] cmd: status
+[2026-03-28 16:43:15] cmd: status
+[2026-03-28 16:43:17] cmd: brain show
+[2026-03-28 16:43:17] cmd: brain show
+[2026-03-28 16:43:17] cmd: status
+[2026-03-28 16:43:17] cmd: status
+[2026-03-28 16:43:21] cmd: brain show
+[2026-03-28 16:43:21] cmd: status
+[2026-03-28 16:43:23] cmd: brain show
+[2026-03-28 16:43:23] cmd: brain show
+[2026-03-28 16:43:23] cmd: status
+[2026-03-28 16:43:23] cmd: status
+[2026-03-28 16:43:25] cmd: brain show
+[2026-03-28 16:43:25] cmd: brain show
+[2026-03-28 16:43:25] cmd: status
+[2026-03-28 16:43:25] cmd: status
+[2026-03-28 16:43:29] cmd: brain show
+[2026-03-28 16:43:29] cmd: status
+[2026-03-28 16:43:31] cmd: brain show
+[2026-03-28 16:43:31] cmd: brain show
+[2026-03-28 16:43:31] cmd: status
+[2026-03-28 16:43:31] cmd: status
+[2026-03-28 16:43:33] cmd: brain show
+[2026-03-28 16:43:33] cmd: brain show
+[2026-03-28 16:43:33] cmd: status
+[2026-03-28 16:43:33] cmd: status
+[2026-03-28 16:43:37] cmd: brain show
+[2026-03-28 16:43:37] cmd: status
+[2026-03-28 16:43:39] cmd: brain show
+[2026-03-28 16:43:39] cmd: brain show
+[2026-03-28 16:43:39] cmd: status
+[2026-03-28 16:43:39] cmd: status
+[2026-03-28 16:43:41] cmd: brain show
+[2026-03-28 16:43:41] cmd: brain show
+[2026-03-28 16:43:41] cmd: status
+[2026-03-28 16:43:41] cmd: status
+[2026-03-28 16:43:45] cmd: brain show
+[2026-03-28 16:43:45] cmd: status
+[2026-03-28 16:43:47] cmd: brain show
+[2026-03-28 16:43:47] cmd: brain show
+[2026-03-28 16:43:47] cmd: status
+[2026-03-28 16:43:47] cmd: status
+[2026-03-28 16:43:49] cmd: brain show
+[2026-03-28 16:43:49] cmd: brain show
+[2026-03-28 16:43:49] cmd: status
+[2026-03-28 16:43:49] cmd: status
+[2026-03-28 16:43:53] cmd: brain show
+[2026-03-28 16:43:53] cmd: status
+[2026-03-28 16:43:55] cmd: brain show
+[2026-03-28 16:43:55] cmd: brain show
+[2026-03-28 16:43:55] cmd: status
+[2026-03-28 16:43:55] cmd: status
+[2026-03-28 16:43:57] cmd: brain show
+[2026-03-28 16:43:57] cmd: brain show
+[2026-03-28 16:43:57] cmd: status
+[2026-03-28 16:43:57] cmd: status
+[2026-03-28 16:44:01] cmd: brain show
+[2026-03-28 16:44:01] cmd: status
+[2026-03-28 16:44:03] cmd: brain show
+[2026-03-28 16:44:03] cmd: brain show
+[2026-03-28 16:44:03] cmd: status
+[2026-03-28 16:44:03] cmd: status
+[2026-03-28 16:44:05] cmd: brain show
+[2026-03-28 16:44:05] cmd: brain show
+[2026-03-28 16:44:05] cmd: status
+[2026-03-28 16:44:05] cmd: status
+[2026-03-28 16:44:09] cmd: brain show
+[2026-03-28 16:44:09] cmd: status
+[2026-03-28 16:44:11] cmd: brain show
+[2026-03-28 16:44:11] cmd: brain show
+[2026-03-28 16:44:11] cmd: status
+[2026-03-28 16:44:11] cmd: status
+[2026-03-28 16:44:13] cmd: brain show
+[2026-03-28 16:44:13] cmd: brain show
+[2026-03-28 16:44:13] cmd: status
+[2026-03-28 16:44:13] cmd: status
+[2026-03-28 16:44:17] cmd: brain show
+[2026-03-28 16:44:17] cmd: status
+[2026-03-28 16:44:19] cmd: brain show
+[2026-03-28 16:44:19] cmd: brain show
+[2026-03-28 16:44:19] cmd: status
+[2026-03-28 16:44:19] cmd: status
+[2026-03-28 16:44:21] cmd: brain show
+[2026-03-28 16:44:21] cmd: brain show
+[2026-03-28 16:44:21] cmd: status
+[2026-03-28 16:44:21] cmd: status
+[2026-03-28 16:44:25] cmd: brain show
+[2026-03-28 16:44:25] cmd: status
+[2026-03-28 16:44:27] cmd: brain show
+[2026-03-28 16:44:27] cmd: brain show
+[2026-03-28 16:44:27] cmd: status
+[2026-03-28 16:44:27] cmd: status
+[2026-03-28 16:44:29] cmd: brain show
+[2026-03-28 16:44:29] cmd: brain show
+[2026-03-28 16:44:29] cmd: status
+[2026-03-28 16:44:29] cmd: status
+[2026-03-28 16:44:33] cmd: brain show
+[2026-03-28 16:44:33] cmd: status
+[2026-03-28 16:44:35] cmd: brain show
+[2026-03-28 16:44:35] cmd: brain show
+[2026-03-28 16:44:35] cmd: status
+[2026-03-28 16:44:35] cmd: status
+[2026-03-28 16:44:37] cmd: brain show
+[2026-03-28 16:44:37] cmd: brain show
+[2026-03-28 16:44:37] cmd: status
+[2026-03-28 16:44:37] cmd: status
+[2026-03-28 16:44:41] cmd: brain show
+[2026-03-28 16:44:41] cmd: status
+[2026-03-28 16:44:43] cmd: brain show
+[2026-03-28 16:44:43] cmd: brain show
+[2026-03-28 16:44:43] cmd: status
+[2026-03-28 16:44:43] cmd: status
+[2026-03-28 16:44:45] cmd: brain show
+[2026-03-28 16:44:45] cmd: brain show
+[2026-03-28 16:44:45] cmd: status
+[2026-03-28 16:44:45] cmd: status
+[2026-03-28 16:44:49] cmd: brain show
+[2026-03-28 16:44:49] cmd: status
+[2026-03-28 16:44:51] cmd: brain show
+[2026-03-28 16:44:51] cmd: brain show
+[2026-03-28 16:44:51] cmd: status
+[2026-03-28 16:44:51] cmd: status
+[2026-03-28 16:44:53] cmd: brain show
+[2026-03-28 16:44:53] cmd: brain show
+[2026-03-28 16:44:53] cmd: status
+[2026-03-28 16:44:53] cmd: status
+[2026-03-28 16:44:57] cmd: brain show
+[2026-03-28 16:44:57] cmd: status
+[2026-03-28 16:44:59] cmd: brain show
+[2026-03-28 16:44:59] cmd: brain show
+[2026-03-28 16:44:59] cmd: status
+[2026-03-28 16:44:59] cmd: status
+[2026-03-28 16:45:01] cmd: brain show
+[2026-03-28 16:45:01] cmd: brain show
+[2026-03-28 16:45:01] cmd: status
+[2026-03-28 16:45:01] cmd: status
+[2026-03-28 16:45:05] cmd: brain show
+[2026-03-28 16:45:05] cmd: status
+[2026-03-28 16:45:07] cmd: brain show
+[2026-03-28 16:45:07] cmd: brain show
+[2026-03-28 16:45:07] cmd: status
+[2026-03-28 16:45:07] cmd: status
+[2026-03-28 16:45:09] cmd: brain show
+[2026-03-28 16:45:09] cmd: brain show
+[2026-03-28 16:45:09] cmd: status
+[2026-03-28 16:45:09] cmd: status
+[2026-03-28 16:45:13] cmd: brain show
+[2026-03-28 16:45:13] cmd: status
+[2026-03-28 16:45:15] cmd: brain show
+[2026-03-28 16:45:15] cmd: brain show
+[2026-03-28 16:45:15] cmd: status
+[2026-03-28 16:45:15] cmd: status
+[2026-03-28 16:45:17] cmd: brain show
+[2026-03-28 16:45:17] cmd: brain show
+[2026-03-28 16:45:17] cmd: status
+[2026-03-28 16:45:17] cmd: status
+[2026-03-28 16:45:21] cmd: brain show
+[2026-03-28 16:45:21] cmd: status
+[2026-03-28 16:45:23] cmd: brain show
+[2026-03-28 16:45:23] cmd: brain show
+[2026-03-28 16:45:23] cmd: status
+[2026-03-28 16:45:23] cmd: status
+[2026-03-28 16:45:25] cmd: brain show
+[2026-03-28 16:45:25] cmd: brain show
+[2026-03-28 16:45:25] cmd: status
+[2026-03-28 16:45:25] cmd: status
+[2026-03-28 16:45:29] cmd: brain show
+[2026-03-28 16:45:29] cmd: status
+[2026-03-28 16:45:31] cmd: brain show
+[2026-03-28 16:45:31] cmd: brain show
+[2026-03-28 16:45:31] cmd: status
+[2026-03-28 16:45:31] cmd: status
+[2026-03-28 16:45:33] cmd: brain show
+[2026-03-28 16:45:33] cmd: brain show
+[2026-03-28 16:45:33] cmd: status
+[2026-03-28 16:45:33] cmd: status
+[2026-03-28 16:45:37] cmd: brain show
+[2026-03-28 16:45:37] cmd: status
+[2026-03-28 16:45:39] cmd: brain show
+[2026-03-28 16:45:39] cmd: brain show
+[2026-03-28 16:45:39] cmd: status
+[2026-03-28 16:45:39] cmd: status
+[2026-03-28 16:45:41] cmd: brain show
+[2026-03-28 16:45:41] cmd: brain show
+[2026-03-28 16:45:41] cmd: status
+[2026-03-28 16:45:41] cmd: status
+[2026-03-28 16:45:45] cmd: brain show
+[2026-03-28 16:45:45] cmd: status
+[2026-03-28 16:45:47] cmd: brain show
+[2026-03-28 16:45:47] cmd: brain show
+[2026-03-28 16:45:47] cmd: status
+[2026-03-28 16:45:47] cmd: status
+[2026-03-28 16:45:49] cmd: brain show
+[2026-03-28 16:45:49] cmd: brain show
+[2026-03-28 16:45:49] cmd: status
+[2026-03-28 16:45:49] cmd: status
+[2026-03-28 16:45:53] cmd: brain show
+[2026-03-28 16:45:53] cmd: status
+[2026-03-28 16:45:55] cmd: brain show
+[2026-03-28 16:45:55] cmd: brain show
+[2026-03-28 16:45:55] cmd: status
+[2026-03-28 16:45:55] cmd: status
+[2026-03-28 16:45:57] cmd: brain show
+[2026-03-28 16:45:57] cmd: brain show
+[2026-03-28 16:45:57] cmd: status
+[2026-03-28 16:45:57] cmd: status
+[2026-03-28 16:46:01] cmd: brain show
+[2026-03-28 16:46:01] cmd: status
+[2026-03-28 16:46:03] cmd: brain show
+[2026-03-28 16:46:03] cmd: brain show
+[2026-03-28 16:46:03] cmd: status
+[2026-03-28 16:46:03] cmd: status
+[2026-03-28 16:46:05] cmd: brain show
+[2026-03-28 16:46:05] cmd: brain show
+[2026-03-28 16:46:05] cmd: status
+[2026-03-28 16:46:05] cmd: status
+[2026-03-28 16:46:09] cmd: brain show
+[2026-03-28 16:46:09] cmd: status
+[2026-03-28 16:46:11] cmd: brain show
+[2026-03-28 16:46:11] cmd: brain show
+[2026-03-28 16:46:11] cmd: status
+[2026-03-28 16:46:11] cmd: status
+[2026-03-28 16:46:13] cmd: brain show
+[2026-03-28 16:46:13] cmd: brain show
+[2026-03-28 16:46:13] cmd: status
+[2026-03-28 16:46:13] cmd: status
+[2026-03-28 16:46:17] cmd: brain show
+[2026-03-28 16:46:17] cmd: status
+[2026-03-28 16:46:19] cmd: brain show
+[2026-03-28 16:46:19] cmd: brain show
+[2026-03-28 16:46:19] cmd: status
+[2026-03-28 16:46:19] cmd: status
+[2026-03-28 16:46:21] cmd: brain show
+[2026-03-28 16:46:21] cmd: brain show
+[2026-03-28 16:46:21] cmd: status
+[2026-03-28 16:46:21] cmd: status
+[2026-03-28 16:46:25] cmd: brain show
+[2026-03-28 16:46:25] cmd: status
+[2026-03-28 16:46:27] cmd: brain show
+[2026-03-28 16:46:27] cmd: brain show
+[2026-03-28 16:46:27] cmd: status
+[2026-03-28 16:46:27] cmd: status
+[2026-03-28 16:46:29] cmd: brain show
+[2026-03-28 16:46:29] cmd: brain show
+[2026-03-28 16:46:29] cmd: status
+[2026-03-28 16:46:29] cmd: status
+[2026-03-28 16:46:33] cmd: brain show
+[2026-03-28 16:46:33] cmd: status
+[2026-03-28 16:46:35] cmd: brain show
+[2026-03-28 16:46:35] cmd: brain show
+[2026-03-28 16:46:35] cmd: status
+[2026-03-28 16:46:35] cmd: status
+[2026-03-28 16:46:37] cmd: brain show
+[2026-03-28 16:46:37] cmd: brain show
+[2026-03-28 16:46:37] cmd: status
+[2026-03-28 16:46:37] cmd: status
+[2026-03-28 16:46:41] cmd: brain show
+[2026-03-28 16:46:41] cmd: status
+[2026-03-28 16:46:43] cmd: brain show
+[2026-03-28 16:46:43] cmd: brain show
+[2026-03-28 16:46:43] cmd: status
+[2026-03-28 16:46:43] cmd: status
+[2026-03-28 16:46:45] cmd: brain show
+[2026-03-28 16:46:45] cmd: brain show
+[2026-03-28 16:46:45] cmd: status
+[2026-03-28 16:46:45] cmd: status
+[2026-03-28 16:46:49] cmd: brain show
+[2026-03-28 16:46:49] cmd: status
+[2026-03-28 16:46:51] cmd: brain show
+[2026-03-28 16:46:51] cmd: brain show
+[2026-03-28 16:46:51] cmd: status
+[2026-03-28 16:46:51] cmd: status
+[2026-03-28 16:46:53] cmd: brain show
+[2026-03-28 16:46:53] cmd: brain show
+[2026-03-28 16:46:53] cmd: status
+[2026-03-28 16:46:53] cmd: status
+[2026-03-28 16:46:57] cmd: brain show
+[2026-03-28 16:46:57] cmd: status
+[2026-03-28 16:46:59] cmd: brain show
+[2026-03-28 16:46:59] cmd: brain show
+[2026-03-28 16:46:59] cmd: status
+[2026-03-28 16:46:59] cmd: status
+[2026-03-28 16:47:01] cmd: brain show
+[2026-03-28 16:47:01] cmd: brain show
+[2026-03-28 16:47:01] cmd: status
+[2026-03-28 16:47:01] cmd: status
+[2026-03-28 16:47:05] cmd: brain show
+[2026-03-28 16:47:05] cmd: status
+[2026-03-28 16:47:07] cmd: brain show
+[2026-03-28 16:47:07] cmd: brain show
+[2026-03-28 16:47:07] cmd: status
+[2026-03-28 16:47:07] cmd: status
+[2026-03-28 16:47:09] cmd: brain show
+[2026-03-28 16:47:09] cmd: brain show
+[2026-03-28 16:47:09] cmd: status
+[2026-03-28 16:47:09] cmd: status
+[2026-03-28 16:47:13] cmd: brain show
+[2026-03-28 16:47:13] cmd: status
+[2026-03-28 16:47:15] cmd: brain show
+[2026-03-28 16:47:15] cmd: brain show
+[2026-03-28 16:47:15] cmd: status
+[2026-03-28 16:47:15] cmd: status
+[2026-03-28 16:47:17] cmd: brain show
+[2026-03-28 16:47:17] cmd: brain show
+[2026-03-28 16:47:17] cmd: status
+[2026-03-28 16:47:18] cmd: status
+[2026-03-28 16:47:21] cmd: brain show
+[2026-03-28 16:47:21] cmd: status
+[2026-03-28 16:47:23] cmd: brain show
+[2026-03-28 16:47:23] cmd: brain show
+[2026-03-28 16:47:23] cmd: status
+[2026-03-28 16:47:24] cmd: status
+[2026-03-28 16:47:25] cmd: brain show
+[2026-03-28 16:47:25] cmd: brain show
+[2026-03-28 16:47:25] cmd: status
+[2026-03-28 16:47:26] cmd: status
+[2026-03-28 16:47:29] cmd: brain show
+[2026-03-28 16:47:29] cmd: status
+[2026-03-28 16:47:31] cmd: brain show
+[2026-03-28 16:47:31] cmd: brain show
+[2026-03-28 16:47:32] cmd: status
+[2026-03-28 16:47:32] cmd: status
+[2026-03-28 16:47:33] cmd: brain show
+[2026-03-28 16:47:33] cmd: brain show
+[2026-03-28 16:47:33] cmd: status
+[2026-03-28 16:47:34] cmd: status
+[2026-03-28 16:47:37] cmd: brain show
+[2026-03-28 16:47:37] cmd: status
+[2026-03-28 16:47:39] cmd: brain show
+[2026-03-28 16:47:40] cmd: brain show
+[2026-03-28 16:47:40] cmd: status
+[2026-03-28 16:47:40] cmd: status
+[2026-03-28 16:47:41] cmd: brain show
+[2026-03-28 16:47:41] cmd: brain show
+[2026-03-28 16:47:41] cmd: status
+[2026-03-28 16:47:42] cmd: status
+[2026-03-28 16:47:45] cmd: brain show
+[2026-03-28 16:47:45] cmd: status
+[2026-03-28 16:47:48] cmd: brain show
+[2026-03-28 16:47:48] cmd: brain show
+[2026-03-28 16:47:48] cmd: status
+[2026-03-28 16:47:48] cmd: status
+[2026-03-28 16:47:49] cmd: brain show
+[2026-03-28 16:47:49] cmd: brain show
+[2026-03-28 16:47:49] cmd: status
+[2026-03-28 16:47:50] cmd: status
+[2026-03-28 16:47:53] cmd: brain show
+[2026-03-28 16:47:53] cmd: status
+[2026-03-28 16:47:56] cmd: brain show
+[2026-03-28 16:47:56] cmd: brain show
+[2026-03-28 16:47:56] cmd: status
+[2026-03-28 16:47:56] cmd: status
+[2026-03-28 16:47:58] cmd: brain show
+[2026-03-28 16:47:58] cmd: brain show
+[2026-03-28 16:47:58] cmd: status
+[2026-03-28 16:47:58] cmd: status
+[2026-03-28 16:48:01] cmd: brain show
+[2026-03-28 16:48:01] cmd: status
+[2026-03-28 16:48:04] cmd: brain show
+[2026-03-28 16:48:04] cmd: brain show
+[2026-03-28 16:48:04] cmd: status
+[2026-03-28 16:48:04] cmd: status
+[2026-03-28 16:48:06] cmd: brain show
+[2026-03-28 16:48:06] cmd: brain show
+[2026-03-28 16:48:06] cmd: status
+[2026-03-28 16:48:06] cmd: status
+[2026-03-28 16:48:09] cmd: brain show
+[2026-03-28 16:48:09] cmd: status
+[2026-03-28 16:48:12] cmd: brain show
+[2026-03-28 16:48:12] cmd: brain show
+[2026-03-28 16:48:12] cmd: status
+[2026-03-28 16:48:12] cmd: status
+[2026-03-28 16:48:14] cmd: brain show
+[2026-03-28 16:48:14] cmd: brain show
+[2026-03-28 16:48:14] cmd: status
+[2026-03-28 16:48:14] cmd: status
+[2026-03-28 16:48:17] cmd: brain show
+[2026-03-28 16:48:17] cmd: status
+[2026-03-28 16:48:20] cmd: brain show
+[2026-03-28 16:48:20] cmd: brain show
+[2026-03-28 16:48:20] cmd: status
+[2026-03-28 16:48:20] cmd: status
+[2026-03-28 16:48:22] cmd: brain show
+[2026-03-28 16:48:22] cmd: brain show
+[2026-03-28 16:48:22] cmd: status
+[2026-03-28 16:48:22] cmd: status
+[2026-03-28 16:48:25] cmd: brain show
+[2026-03-28 16:48:26] cmd: status
+[2026-03-28 16:48:28] cmd: brain show
+[2026-03-28 16:48:28] cmd: brain show
+[2026-03-28 16:48:28] cmd: status
+[2026-03-28 16:48:28] cmd: status
+[2026-03-28 16:48:30] cmd: brain show
+[2026-03-28 16:48:30] cmd: brain show
+[2026-03-28 16:48:30] cmd: status
+[2026-03-28 16:48:30] cmd: status
+[2026-03-28 16:48:33] cmd: brain show
+[2026-03-28 16:48:34] cmd: status
+[2026-03-28 16:48:36] cmd: brain show
+[2026-03-28 16:48:36] cmd: brain show
+[2026-03-28 16:48:36] cmd: status
+[2026-03-28 16:48:36] cmd: status
+[2026-03-28 16:48:38] cmd: brain show
+[2026-03-28 16:48:38] cmd: brain show
+[2026-03-28 16:48:38] cmd: status
+[2026-03-28 16:48:38] cmd: status
+[2026-03-28 16:48:41] cmd: brain show
+[2026-03-28 16:48:42] cmd: status
+[2026-03-28 16:48:44] cmd: brain show
+[2026-03-28 16:48:44] cmd: brain show
+[2026-03-28 16:48:44] cmd: status
+[2026-03-28 16:48:44] cmd: status
+[2026-03-28 16:48:46] cmd: brain show
+[2026-03-28 16:48:46] cmd: brain show
+[2026-03-28 16:48:46] cmd: status
+[2026-03-28 16:48:46] cmd: status
+[2026-03-28 16:48:49] cmd: brain show
+[2026-03-28 16:48:50] cmd: status
+[2026-03-28 16:48:52] cmd: brain show
+[2026-03-28 16:48:52] cmd: brain show
+[2026-03-28 16:48:52] cmd: status
+[2026-03-28 16:48:52] cmd: status
+[2026-03-28 16:48:54] cmd: brain show
+[2026-03-28 16:48:54] cmd: brain show
+[2026-03-28 16:48:54] cmd: status
+[2026-03-28 16:48:54] cmd: status
+[2026-03-28 16:48:57] cmd: brain show
+[2026-03-28 16:48:58] cmd: status
+[2026-03-28 16:49:00] cmd: brain show
+[2026-03-28 16:49:00] cmd: brain show
+[2026-03-28 16:49:00] cmd: status
+[2026-03-28 16:49:00] cmd: status
+[2026-03-28 16:49:02] cmd: brain show
+[2026-03-28 16:49:02] cmd: brain show
+[2026-03-28 16:49:02] cmd: status
+[2026-03-28 16:49:02] cmd: status
+[2026-03-28 16:49:05] cmd: brain show
+[2026-03-28 16:49:06] cmd: status
+[2026-03-28 16:49:08] cmd: brain show
+[2026-03-28 16:49:08] cmd: brain show
+[2026-03-28 16:49:08] cmd: status
+[2026-03-28 16:49:08] cmd: status
+[2026-03-28 16:49:10] cmd: brain show
+[2026-03-28 16:49:10] cmd: brain show
+[2026-03-28 16:49:10] cmd: status
+[2026-03-28 16:49:10] cmd: status
+[2026-03-28 16:49:13] cmd: brain show
+[2026-03-28 16:49:14] cmd: status
+[2026-03-28 16:49:16] cmd: brain show
+[2026-03-28 16:49:16] cmd: brain show
+[2026-03-28 16:49:16] cmd: status
+[2026-03-28 16:49:16] cmd: status
+[2026-03-28 16:49:18] cmd: brain show
+[2026-03-28 16:49:18] cmd: brain show
+[2026-03-28 16:49:18] cmd: status
+[2026-03-28 16:49:18] cmd: status
+[2026-03-28 16:49:21] cmd: brain show
+[2026-03-28 16:49:22] cmd: status
+[2026-03-28 16:49:24] cmd: brain show
+[2026-03-28 16:49:24] cmd: brain show
+[2026-03-28 16:49:24] cmd: status
+[2026-03-28 16:49:24] cmd: status
+[2026-03-28 16:49:26] cmd: brain show
+[2026-03-28 16:49:26] cmd: brain show
+[2026-03-28 16:49:26] cmd: status
+[2026-03-28 16:49:26] cmd: status
+[2026-03-28 16:49:29] cmd: brain show
+[2026-03-28 16:49:30] cmd: status
+[2026-03-28 16:49:32] cmd: brain show
+[2026-03-28 16:49:32] cmd: brain show
+[2026-03-28 16:49:32] cmd: status
+[2026-03-28 16:49:32] cmd: status
+[2026-03-28 16:49:34] cmd: brain show
+[2026-03-28 16:49:34] cmd: brain show
+[2026-03-28 16:49:34] cmd: status
+[2026-03-28 16:49:34] cmd: status
+[2026-03-28 16:49:37] cmd: brain show
+[2026-03-28 16:49:38] cmd: status
+[2026-03-28 16:49:40] cmd: brain show
+[2026-03-28 16:49:40] cmd: brain show
+[2026-03-28 16:49:40] cmd: status
+[2026-03-28 16:49:40] cmd: status
+[2026-03-28 16:49:42] cmd: brain show
+[2026-03-28 16:49:42] cmd: brain show
+[2026-03-28 16:49:42] cmd: status
+[2026-03-28 16:49:42] cmd: status
+[2026-03-28 16:49:45] cmd: brain show
+[2026-03-28 16:49:46] cmd: status
+[2026-03-28 16:49:48] cmd: brain show
+[2026-03-28 16:49:48] cmd: brain show
+[2026-03-28 16:49:48] cmd: status
+[2026-03-28 16:49:48] cmd: status
+[2026-03-28 16:49:50] cmd: brain show
+[2026-03-28 16:49:50] cmd: brain show
+[2026-03-28 16:49:50] cmd: status
+[2026-03-28 16:49:50] cmd: status
+[2026-03-28 16:49:54] cmd: brain show
+[2026-03-28 16:49:54] cmd: status
+[2026-03-28 16:49:56] cmd: brain show
+[2026-03-28 16:49:56] cmd: brain show
+[2026-03-28 16:49:56] cmd: status
+[2026-03-28 16:49:56] cmd: status
+[2026-03-28 16:49:58] cmd: brain show
+[2026-03-28 16:49:58] cmd: brain show
+[2026-03-28 16:49:58] cmd: status
+[2026-03-28 16:49:58] cmd: status
+[2026-03-28 16:50:02] cmd: brain show
+[2026-03-28 16:50:02] cmd: status
+[2026-03-28 16:50:04] cmd: brain show
+[2026-03-28 16:50:04] cmd: brain show
+[2026-03-28 16:50:04] cmd: status
+[2026-03-28 16:50:04] cmd: status
+[2026-03-28 16:50:06] cmd: brain show
+[2026-03-28 16:50:06] cmd: brain show
+[2026-03-28 16:50:06] cmd: status
+[2026-03-28 16:50:06] cmd: status
+[2026-03-28 16:50:10] cmd: brain show
+[2026-03-28 16:50:10] cmd: status
+[2026-03-28 16:50:12] cmd: brain show
+[2026-03-28 16:50:12] cmd: brain show
+[2026-03-28 16:50:12] cmd: status
+[2026-03-28 16:50:12] cmd: status
+[2026-03-28 16:50:14] cmd: brain show
+[2026-03-28 16:50:14] cmd: brain show
+[2026-03-28 16:50:14] cmd: status
+[2026-03-28 16:50:14] cmd: status
+[2026-03-28 16:50:18] cmd: brain show
+[2026-03-28 16:50:18] cmd: status
+[2026-03-28 16:50:20] cmd: brain show
+[2026-03-28 16:50:20] cmd: brain show
+[2026-03-28 16:50:20] cmd: status
+[2026-03-28 16:50:20] cmd: status
+[2026-03-28 16:50:22] cmd: brain show
+[2026-03-28 16:50:22] cmd: brain show
+[2026-03-28 16:50:22] cmd: status
+[2026-03-28 16:50:22] cmd: status
+[2026-03-28 16:50:26] cmd: brain show
+[2026-03-28 16:50:26] cmd: status
+[2026-03-28 16:50:28] cmd: brain show
+[2026-03-28 16:50:28] cmd: brain show
+[2026-03-28 16:50:28] cmd: status
+[2026-03-28 16:50:28] cmd: status
+[2026-03-28 16:50:30] cmd: brain show
+[2026-03-28 16:50:30] cmd: brain show
+[2026-03-28 16:50:30] cmd: status
+[2026-03-28 16:50:30] cmd: status
+[2026-03-28 16:50:34] cmd: brain show
+[2026-03-28 16:50:34] cmd: status
+[2026-03-28 16:50:36] cmd: brain show
+[2026-03-28 16:50:36] cmd: brain show
+[2026-03-28 16:50:36] cmd: status
+[2026-03-28 16:50:36] cmd: status
+[2026-03-28 16:50:38] cmd: brain show
+[2026-03-28 16:50:38] cmd: brain show
+[2026-03-28 16:50:38] cmd: status
+[2026-03-28 16:50:38] cmd: status
+[2026-03-28 16:50:42] cmd: brain show
+[2026-03-28 16:50:42] cmd: status
+[2026-03-28 16:50:44] cmd: brain show
+[2026-03-28 16:50:44] cmd: brain show
+[2026-03-28 16:50:44] cmd: status
+[2026-03-28 16:50:44] cmd: status
+[2026-03-28 16:50:46] cmd: brain show
+[2026-03-28 16:50:46] cmd: brain show
+[2026-03-28 16:50:46] cmd: status
+[2026-03-28 16:50:46] cmd: status
+[2026-03-28 16:50:50] cmd: brain show
+[2026-03-28 16:50:50] cmd: status
+[2026-03-28 16:50:52] cmd: brain show
+[2026-03-28 16:50:52] cmd: brain show
+[2026-03-28 16:50:52] cmd: status
+[2026-03-28 16:50:52] cmd: status
+[2026-03-28 16:50:54] cmd: brain show
+[2026-03-28 16:50:54] cmd: brain show
+[2026-03-28 16:50:54] cmd: status
+[2026-03-28 16:50:54] cmd: status
+[2026-03-28 16:50:58] cmd: brain show
+[2026-03-28 16:50:58] cmd: status
+[2026-03-28 16:51:00] cmd: brain show
+[2026-03-28 16:51:00] cmd: brain show
+[2026-03-28 16:51:00] cmd: status
+[2026-03-28 16:51:00] cmd: status
+[2026-03-28 16:51:02] cmd: brain show
+[2026-03-28 16:51:02] cmd: brain show
+[2026-03-28 16:51:02] cmd: status
+[2026-03-28 16:51:02] cmd: status
+[2026-03-28 16:51:06] cmd: brain show
+[2026-03-28 16:51:06] cmd: status
+[2026-03-28 16:51:08] cmd: brain show
+[2026-03-28 16:51:08] cmd: brain show
+[2026-03-28 16:51:08] cmd: status
+[2026-03-28 16:51:08] cmd: status
+[2026-03-28 16:51:10] cmd: brain show
+[2026-03-28 16:51:10] cmd: brain show
+[2026-03-28 16:51:10] cmd: status
+[2026-03-28 16:51:10] cmd: status
+[2026-03-28 16:51:14] cmd: brain show
+[2026-03-28 16:51:14] cmd: status
+[2026-03-28 16:51:16] cmd: brain show
+[2026-03-28 16:51:16] cmd: brain show
+[2026-03-28 16:51:16] cmd: status
+[2026-03-28 16:51:16] cmd: status
+[2026-03-28 16:51:18] cmd: brain show
+[2026-03-28 16:51:18] cmd: brain show
+[2026-03-28 16:51:18] cmd: status
+[2026-03-28 16:51:18] cmd: status
+[2026-03-28 16:51:22] cmd: brain show
+[2026-03-28 16:51:22] cmd: status
+[2026-03-28 16:51:24] cmd: brain show
+[2026-03-28 16:51:24] cmd: brain show
+[2026-03-28 16:51:24] cmd: status
+[2026-03-28 16:51:24] cmd: status
+[2026-03-28 16:51:26] cmd: brain show
+[2026-03-28 16:51:26] cmd: brain show
+[2026-03-28 16:51:26] cmd: status
+[2026-03-28 16:51:26] cmd: status
+[2026-03-28 16:51:30] cmd: brain show
+[2026-03-28 16:51:30] cmd: status
+[2026-03-28 16:51:32] cmd: brain show
+[2026-03-28 16:51:32] cmd: brain show
+[2026-03-28 16:51:32] cmd: status
+[2026-03-28 16:51:32] cmd: status
+[2026-03-28 16:51:34] cmd: brain show
+[2026-03-28 16:51:34] cmd: brain show
+[2026-03-28 16:51:34] cmd: status
+[2026-03-28 16:51:34] cmd: status
+[2026-03-28 16:51:38] cmd: brain show
+[2026-03-28 16:51:38] cmd: status
+[2026-03-28 16:51:40] cmd: brain show
+[2026-03-28 16:51:40] cmd: brain show
+[2026-03-28 16:51:40] cmd: status
+[2026-03-28 16:51:40] cmd: status
+[2026-03-28 16:51:42] cmd: brain show
+[2026-03-28 16:51:42] cmd: brain show
+[2026-03-28 16:51:42] cmd: status
+[2026-03-28 16:51:42] cmd: status
+[2026-03-28 16:51:46] cmd: brain show
+[2026-03-28 16:51:46] cmd: status
+[2026-03-28 16:51:48] cmd: brain show
+[2026-03-28 16:51:48] cmd: brain show
+[2026-03-28 16:51:48] cmd: status
+[2026-03-28 16:51:48] cmd: status
+[2026-03-28 16:51:50] cmd: brain show
+[2026-03-28 16:51:50] cmd: brain show
+[2026-03-28 16:51:50] cmd: status
+[2026-03-28 16:51:50] cmd: status
+[2026-03-28 16:51:54] cmd: brain show
+[2026-03-28 16:51:54] cmd: status
+[2026-03-28 16:51:56] cmd: brain show
+[2026-03-28 16:51:56] cmd: brain show
+[2026-03-28 16:51:56] cmd: status
+[2026-03-28 16:51:56] cmd: status
+[2026-03-28 16:51:58] cmd: brain show
+[2026-03-28 16:51:58] cmd: brain show
+[2026-03-28 16:51:58] cmd: status
+[2026-03-28 16:51:58] cmd: status
+[2026-03-28 16:52:02] cmd: brain show
+[2026-03-28 16:52:02] cmd: status
+[2026-03-28 16:52:04] cmd: brain show
+[2026-03-28 16:52:04] cmd: brain show
+[2026-03-28 16:52:04] cmd: status
+[2026-03-28 16:52:04] cmd: status
+[2026-03-28 16:52:06] cmd: brain show
+[2026-03-28 16:52:06] cmd: brain show
+[2026-03-28 16:52:06] cmd: status
+[2026-03-28 16:52:06] cmd: status
+[2026-03-28 16:52:10] cmd: brain show
+[2026-03-28 16:52:10] cmd: status
+[2026-03-28 16:52:12] cmd: brain show
+[2026-03-28 16:52:12] cmd: brain show
+[2026-03-28 16:52:12] cmd: status
+[2026-03-28 16:52:12] cmd: status
+[2026-03-28 16:52:14] cmd: brain show
+[2026-03-28 16:52:14] cmd: brain show
+[2026-03-28 16:52:14] cmd: status
+[2026-03-28 16:52:14] cmd: status
+[2026-03-28 16:52:18] cmd: brain show
+[2026-03-28 16:52:18] cmd: status
+[2026-03-28 16:52:20] cmd: brain show
+[2026-03-28 16:52:20] cmd: brain show
+[2026-03-28 16:52:20] cmd: status
+[2026-03-28 16:52:20] cmd: status
+[2026-03-28 16:52:22] cmd: brain show
+[2026-03-28 16:52:22] cmd: brain show
+[2026-03-28 16:52:22] cmd: status
+[2026-03-28 16:52:22] cmd: status
+[2026-03-28 16:52:26] cmd: brain show
+[2026-03-28 16:52:26] cmd: status
+[2026-03-28 16:52:28] cmd: brain show
+[2026-03-28 16:52:28] cmd: brain show
+[2026-03-28 16:52:28] cmd: status
+[2026-03-28 16:52:28] cmd: status
+[2026-03-28 16:52:30] cmd: brain show
+[2026-03-28 16:52:30] cmd: brain show
+[2026-03-28 16:52:30] cmd: status
+[2026-03-28 16:52:30] cmd: status
+[2026-03-28 16:52:34] cmd: brain show
+[2026-03-28 16:52:34] cmd: status
+[2026-03-28 16:52:36] cmd: brain show
+[2026-03-28 16:52:36] cmd: brain show
+[2026-03-28 16:52:36] cmd: status
+[2026-03-28 16:52:36] cmd: status
+[2026-03-28 16:52:38] cmd: brain show
+[2026-03-28 16:52:38] cmd: brain show
+[2026-03-28 16:52:38] cmd: status
+[2026-03-28 16:52:38] cmd: status
+[2026-03-28 16:52:42] cmd: brain show
+[2026-03-28 16:52:42] cmd: status
+[2026-03-28 16:52:44] cmd: brain show
+[2026-03-28 16:52:44] cmd: brain show
+[2026-03-28 16:52:44] cmd: status
+[2026-03-28 16:52:44] cmd: status
+[2026-03-28 16:52:46] cmd: brain show
+[2026-03-28 16:52:46] cmd: brain show
+[2026-03-28 16:52:46] cmd: status
+[2026-03-28 16:52:46] cmd: status
+[2026-03-28 16:52:50] cmd: brain show
+[2026-03-28 16:52:50] cmd: status
+[2026-03-28 16:52:52] cmd: brain show
+[2026-03-28 16:52:52] cmd: brain show
+[2026-03-28 16:52:52] cmd: status
+[2026-03-28 16:52:52] cmd: status
+[2026-03-28 16:52:54] cmd: brain show
+[2026-03-28 16:52:54] cmd: brain show
+[2026-03-28 16:52:54] cmd: status
+[2026-03-28 16:52:54] cmd: status
+[2026-03-28 16:52:58] cmd: brain show
+[2026-03-28 16:52:58] cmd: status
+[2026-03-28 16:53:00] cmd: brain show
+[2026-03-28 16:53:00] cmd: brain show
+[2026-03-28 16:53:00] cmd: status
+[2026-03-28 16:53:00] cmd: status
+[2026-03-28 16:53:02] cmd: brain show
+[2026-03-28 16:53:02] cmd: brain show
+[2026-03-28 16:53:02] cmd: status
+[2026-03-28 16:53:02] cmd: status
+[2026-03-28 16:53:06] cmd: brain show
+[2026-03-28 16:53:06] cmd: status
+[2026-03-28 16:53:08] cmd: brain show
+[2026-03-28 16:53:08] cmd: brain show
+[2026-03-28 16:53:08] cmd: status
+[2026-03-28 16:53:08] cmd: status
+[2026-03-28 16:53:10] cmd: brain show
+[2026-03-28 16:53:10] cmd: brain show
+[2026-03-28 16:53:10] cmd: status
+[2026-03-28 16:53:10] cmd: status
+[2026-03-28 16:53:14] cmd: brain show
+[2026-03-28 16:53:14] cmd: status
+[2026-03-28 16:53:16] cmd: brain show
+[2026-03-28 16:53:16] cmd: status
+[2026-03-28 16:53:16] cmd: brain show
+[2026-03-28 16:53:16] cmd: status
+[2026-03-28 16:53:18] cmd: brain show
+[2026-03-28 16:53:18] cmd: brain show
+[2026-03-28 16:53:18] cmd: status
+[2026-03-28 16:53:18] cmd: status
+[2026-03-28 16:53:22] cmd: brain show
+[2026-03-28 16:53:22] cmd: status
+[2026-03-28 16:53:24] cmd: brain show
+[2026-03-28 16:53:24] cmd: brain show
+[2026-03-28 16:53:24] cmd: status
+[2026-03-28 16:53:24] cmd: status
+[2026-03-28 16:53:26] cmd: brain show
+[2026-03-28 16:53:26] cmd: brain show
+[2026-03-28 16:53:26] cmd: status
+[2026-03-28 16:53:26] cmd: status
+[2026-03-28 16:53:30] cmd: brain show
+[2026-03-28 16:53:30] cmd: status
+[2026-03-28 16:53:32] cmd: brain show
+[2026-03-28 16:53:32] cmd: brain show
+[2026-03-28 16:53:32] cmd: status
+[2026-03-28 16:53:32] cmd: status
+[2026-03-28 16:53:34] cmd: brain show
+[2026-03-28 16:53:34] cmd: brain show
+[2026-03-28 16:53:34] cmd: status
+[2026-03-28 16:53:34] cmd: status
+[2026-03-28 16:53:38] cmd: brain show
+[2026-03-28 16:53:38] cmd: status
+[2026-03-28 16:53:40] cmd: brain show
+[2026-03-28 16:53:40] cmd: brain show
+[2026-03-28 16:53:40] cmd: status
+[2026-03-28 16:53:40] cmd: status
+[2026-03-28 16:53:42] cmd: brain show
+[2026-03-28 16:53:42] cmd: brain show
+[2026-03-28 16:53:42] cmd: status
+[2026-03-28 16:53:42] cmd: status
+[2026-03-28 16:53:46] cmd: brain show
+[2026-03-28 16:53:46] cmd: status
+[2026-03-28 16:53:48] cmd: brain show
+[2026-03-28 16:53:48] cmd: brain show
+[2026-03-28 16:53:48] cmd: status
+[2026-03-28 16:53:48] cmd: status
+[2026-03-28 16:53:50] cmd: brain show
+[2026-03-28 16:53:50] cmd: brain show
+[2026-03-28 16:53:50] cmd: status
+[2026-03-28 16:53:50] cmd: status
+[2026-03-28 16:53:54] cmd: brain show
+[2026-03-28 16:53:54] cmd: status
+[2026-03-28 16:53:56] cmd: brain show
+[2026-03-28 16:53:56] cmd: brain show
+[2026-03-28 16:53:56] cmd: status
+[2026-03-28 16:53:56] cmd: status
+[2026-03-28 16:53:58] cmd: brain show
+[2026-03-28 16:53:58] cmd: brain show
+[2026-03-28 16:53:58] cmd: status
+[2026-03-28 16:53:58] cmd: status
+[2026-03-28 16:54:02] cmd: brain show
+[2026-03-28 16:54:02] cmd: status
+[2026-03-28 16:54:04] cmd: brain show
+[2026-03-28 16:54:04] cmd: brain show
+[2026-03-28 16:54:04] cmd: status
+[2026-03-28 16:54:04] cmd: status
+[2026-03-28 16:54:06] cmd: brain show
+[2026-03-28 16:54:06] cmd: brain show
+[2026-03-28 16:54:06] cmd: status
+[2026-03-28 16:54:06] cmd: status
+[2026-03-28 16:54:10] cmd: brain show
+[2026-03-28 16:54:10] cmd: status
+[2026-03-28 16:54:12] cmd: brain show
+[2026-03-28 16:54:12] cmd: brain show
+[2026-03-28 16:54:12] cmd: status
+[2026-03-28 16:54:12] cmd: status
+[2026-03-28 16:54:14] cmd: brain show
+[2026-03-28 16:54:14] cmd: brain show
+[2026-03-28 16:54:14] cmd: status
+[2026-03-28 16:54:14] cmd: status
+[2026-03-28 16:54:18] cmd: brain show
+[2026-03-28 16:54:18] cmd: status
+[2026-03-28 16:54:20] cmd: brain show
+[2026-03-28 16:54:20] cmd: brain show
+[2026-03-28 16:54:20] cmd: status
+[2026-03-28 16:54:20] cmd: status
+[2026-03-28 16:54:22] cmd: brain show
+[2026-03-28 16:54:22] cmd: brain show
+[2026-03-28 16:54:22] cmd: status
+[2026-03-28 16:54:22] cmd: status
+[2026-03-28 16:54:26] cmd: brain show
+[2026-03-28 16:54:26] cmd: status
+[2026-03-28 16:54:28] cmd: brain show
+[2026-03-28 16:54:28] cmd: brain show
+[2026-03-28 16:54:28] cmd: status
+[2026-03-28 16:54:28] cmd: status
+[2026-03-28 16:54:30] cmd: brain show
+[2026-03-28 16:54:30] cmd: brain show
+[2026-03-28 16:54:30] cmd: status
+[2026-03-28 16:54:30] cmd: status
+[2026-03-28 16:54:34] cmd: brain show
+[2026-03-28 16:54:34] cmd: status
+[2026-03-28 16:54:36] cmd: brain show
+[2026-03-28 16:54:36] cmd: brain show
+[2026-03-28 16:54:36] cmd: status
+[2026-03-28 16:54:36] cmd: status
+[2026-03-28 16:54:38] cmd: brain show
+[2026-03-28 16:54:38] cmd: brain show
+[2026-03-28 16:54:38] cmd: status
+[2026-03-28 16:54:38] cmd: status
+[2026-03-28 16:54:42] cmd: brain show
+[2026-03-28 16:54:42] cmd: status
+[2026-03-28 16:54:44] cmd: brain show
+[2026-03-28 16:54:44] cmd: brain show
+[2026-03-28 16:54:44] cmd: status
+[2026-03-28 16:54:44] cmd: status
+[2026-03-28 16:54:46] cmd: brain show
+[2026-03-28 16:54:46] cmd: brain show
+[2026-03-28 16:54:46] cmd: status
+[2026-03-28 16:54:46] cmd: status
+[2026-03-28 16:54:50] cmd: brain show
+[2026-03-28 16:54:50] cmd: status
+[2026-03-28 16:54:52] cmd: brain show
+[2026-03-28 16:54:52] cmd: brain show
+[2026-03-28 16:54:52] cmd: status
+[2026-03-28 16:54:52] cmd: status
+[2026-03-28 16:54:54] cmd: brain show
+[2026-03-28 16:54:54] cmd: brain show
+[2026-03-28 16:54:54] cmd: status
+[2026-03-28 16:54:54] cmd: status
+[2026-03-28 16:54:58] cmd: brain show
+[2026-03-28 16:54:58] cmd: status
+[2026-03-28 16:55:00] cmd: brain show
+[2026-03-28 16:55:00] cmd: brain show
+[2026-03-28 16:55:00] cmd: status
+[2026-03-28 16:55:00] cmd: status
+[2026-03-28 16:55:02] cmd: brain show
+[2026-03-28 16:55:02] cmd: brain show
+[2026-03-28 16:55:02] cmd: status
+[2026-03-28 16:55:02] cmd: status
+[2026-03-28 16:55:06] cmd: brain show
+[2026-03-28 16:55:06] cmd: status
+[2026-03-28 16:55:08] cmd: brain show
+[2026-03-28 16:55:08] cmd: brain show
+[2026-03-28 16:55:08] cmd: status
+[2026-03-28 16:55:08] cmd: status
+[2026-03-28 16:55:10] cmd: brain show
+[2026-03-28 16:55:10] cmd: brain show
+[2026-03-28 16:55:10] cmd: status
+[2026-03-28 16:55:10] cmd: status
+[2026-03-28 16:55:14] cmd: brain show
+[2026-03-28 16:55:14] cmd: status
+[2026-03-28 16:55:16] cmd: brain show
+[2026-03-28 16:55:16] cmd: brain show
+[2026-03-28 16:55:16] cmd: status
+[2026-03-28 16:55:16] cmd: status
+[2026-03-28 16:55:18] cmd: brain show
+[2026-03-28 16:55:18] cmd: brain show
+[2026-03-28 16:55:18] cmd: status
+[2026-03-28 16:55:18] cmd: status
+[2026-03-28 16:55:22] cmd: brain show
+[2026-03-28 16:55:22] cmd: status
+[2026-03-28 16:55:24] cmd: brain show
+[2026-03-28 16:55:24] cmd: brain show
+[2026-03-28 16:55:24] cmd: status
+[2026-03-28 16:55:24] cmd: status
+[2026-03-28 16:55:26] cmd: brain show
+[2026-03-28 16:55:26] cmd: brain show
+[2026-03-28 16:55:26] cmd: status
+[2026-03-28 16:55:26] cmd: status
+[2026-03-28 16:55:30] cmd: brain show
+[2026-03-28 16:55:30] cmd: status
+[2026-03-28 16:55:32] cmd: brain show
+[2026-03-28 16:55:32] cmd: brain show
+[2026-03-28 16:55:32] cmd: status
+[2026-03-28 16:55:32] cmd: status
+[2026-03-28 16:55:34] cmd: brain show
+[2026-03-28 16:55:34] cmd: brain show
+[2026-03-28 16:55:34] cmd: status
+[2026-03-28 16:55:34] cmd: status
+[2026-03-28 16:55:38] cmd: brain show
+[2026-03-28 16:55:38] cmd: status
+[2026-03-28 16:55:40] cmd: brain show
+[2026-03-28 16:55:40] cmd: brain show
+[2026-03-28 16:55:40] cmd: status
+[2026-03-28 16:55:40] cmd: status
+[2026-03-28 16:55:42] cmd: brain show
+[2026-03-28 16:55:42] cmd: brain show
+[2026-03-28 16:55:42] cmd: status
+[2026-03-28 16:55:42] cmd: status
+[2026-03-28 16:55:46] cmd: brain show
+[2026-03-28 16:55:46] cmd: status
+[2026-03-28 16:55:48] cmd: brain show
+[2026-03-28 16:55:48] cmd: brain show
+[2026-03-28 16:55:48] cmd: status
+[2026-03-28 16:55:48] cmd: status
+[2026-03-28 16:55:50] cmd: brain show
+[2026-03-28 16:55:50] cmd: brain show
+[2026-03-28 16:55:50] cmd: status
+[2026-03-28 16:55:50] cmd: status
+[2026-03-28 16:55:54] cmd: brain show
+[2026-03-28 16:55:54] cmd: status
+[2026-03-28 16:55:56] cmd: brain show
+[2026-03-28 16:55:56] cmd: brain show
+[2026-03-28 16:55:56] cmd: status
+[2026-03-28 16:55:56] cmd: status
+[2026-03-28 16:55:58] cmd: brain show
+[2026-03-28 16:55:58] cmd: brain show
+[2026-03-28 16:55:58] cmd: status
+[2026-03-28 16:55:58] cmd: status
+[2026-03-28 16:56:02] cmd: brain show
+[2026-03-28 16:56:02] cmd: status
+[2026-03-28 16:56:04] cmd: brain show
+[2026-03-28 16:56:04] cmd: brain show
+[2026-03-28 16:56:04] cmd: status
+[2026-03-28 16:56:04] cmd: status
+[2026-03-28 16:56:06] cmd: brain show
+[2026-03-28 16:56:06] cmd: brain show
+[2026-03-28 16:56:06] cmd: status
+[2026-03-28 16:56:06] cmd: status
+[2026-03-28 16:56:10] cmd: brain show
+[2026-03-28 16:56:10] cmd: status
+[2026-03-28 16:56:12] cmd: brain show
+[2026-03-28 16:56:12] cmd: brain show
+[2026-03-28 16:56:12] cmd: status
+[2026-03-28 16:56:12] cmd: status
+[2026-03-28 16:56:14] cmd: brain show
+[2026-03-28 16:56:14] cmd: brain show
+[2026-03-28 16:56:14] cmd: status
+[2026-03-28 16:56:15] cmd: status
+[2026-03-28 16:56:18] cmd: brain show
+[2026-03-28 16:56:18] cmd: status
+[2026-03-28 16:56:20] cmd: brain show
+[2026-03-28 16:56:20] cmd: brain show
+[2026-03-28 16:56:20] cmd: status
+[2026-03-28 16:56:20] cmd: status
+[2026-03-28 16:56:22] cmd: brain show
+[2026-03-28 16:56:22] cmd: brain show
+[2026-03-28 16:56:22] cmd: status
+[2026-03-28 16:56:23] cmd: status
+[2026-03-28 16:56:26] cmd: brain show
+[2026-03-28 16:56:26] cmd: status
+[2026-03-28 16:56:28] cmd: brain show
+[2026-03-28 16:56:28] cmd: brain show
+[2026-03-28 16:56:28] cmd: status
+[2026-03-28 16:56:29] cmd: status
+[2026-03-28 16:56:30] cmd: brain show
+[2026-03-28 16:56:30] cmd: brain show
+[2026-03-28 16:56:30] cmd: status
+[2026-03-28 16:56:31] cmd: status
+[2026-03-28 16:56:34] cmd: brain show
+[2026-03-28 16:56:34] cmd: status
+[2026-03-28 16:56:36] cmd: brain show
+[2026-03-28 16:56:36] cmd: brain show
+[2026-03-28 16:56:36] cmd: status
+[2026-03-28 16:56:37] cmd: status
+[2026-03-28 16:56:38] cmd: brain show
+[2026-03-28 16:56:38] cmd: brain show
+[2026-03-28 16:56:38] cmd: status
+[2026-03-28 16:56:39] cmd: status
+[2026-03-28 16:56:42] cmd: brain show
+[2026-03-28 16:56:42] cmd: status
+[2026-03-28 16:56:44] cmd: brain show
+[2026-03-28 16:56:44] cmd: brain show
+[2026-03-28 16:56:44] cmd: status
+[2026-03-28 16:56:45] cmd: status
+[2026-03-28 16:56:46] cmd: brain show
+[2026-03-28 16:56:46] cmd: brain show
+[2026-03-28 16:56:46] cmd: status
+[2026-03-28 16:56:47] cmd: status
+[2026-03-28 16:56:50] cmd: brain show
+[2026-03-28 16:56:50] cmd: status
+[2026-03-28 16:56:52] cmd: brain show
+[2026-03-28 16:56:52] cmd: brain show
+[2026-03-28 16:56:52] cmd: status
+[2026-03-28 16:56:53] cmd: status
+[2026-03-28 16:56:54] cmd: brain show
+[2026-03-28 16:56:54] cmd: brain show
+[2026-03-28 16:56:55] cmd: status
+[2026-03-28 16:56:55] cmd: status
+[2026-03-28 16:56:58] cmd: brain show
+[2026-03-28 16:56:58] cmd: status
+[2026-03-28 16:57:00] cmd: brain show
+[2026-03-28 16:57:00] cmd: brain show
+[2026-03-28 16:57:00] cmd: status
+[2026-03-28 16:57:01] cmd: status
+[2026-03-28 16:57:02] cmd: brain show
+[2026-03-28 16:57:02] cmd: brain show
+[2026-03-28 16:57:03] cmd: status
+[2026-03-28 16:57:03] cmd: status
+[2026-03-28 16:57:06] cmd: brain show
+[2026-03-28 16:57:06] cmd: status
+[2026-03-28 16:57:08] cmd: brain show
+[2026-03-28 16:57:08] cmd: brain show
+[2026-03-28 16:57:08] cmd: status
+[2026-03-28 16:57:09] cmd: status
+[2026-03-28 16:57:10] cmd: brain show
+[2026-03-28 16:57:10] cmd: brain show
+[2026-03-28 16:57:10] cmd: status
+[2026-03-28 16:57:11] cmd: status
+[2026-03-28 16:57:14] cmd: brain show
+[2026-03-28 16:57:14] cmd: status
+[2026-03-28 16:57:16] cmd: brain show
+[2026-03-28 16:57:16] cmd: brain show
+[2026-03-28 16:57:16] cmd: status
+[2026-03-28 16:57:17] cmd: status
+[2026-03-28 16:57:18] cmd: brain show
+[2026-03-28 16:57:18] cmd: brain show
+[2026-03-28 16:57:18] cmd: status
+[2026-03-28 16:57:19] cmd: status
+[2026-03-28 16:57:22] cmd: brain show
+[2026-03-28 16:57:22] cmd: status
+[2026-03-28 16:57:24] cmd: brain show
+[2026-03-28 16:57:24] cmd: brain show
+[2026-03-28 16:57:24] cmd: status
+[2026-03-28 16:57:25] cmd: status
+[2026-03-28 16:57:26] cmd: brain show
+[2026-03-28 16:57:26] cmd: brain show
+[2026-03-28 16:57:26] cmd: status
+[2026-03-28 16:57:27] cmd: status
+[2026-03-28 16:57:30] cmd: brain show
+[2026-03-28 16:57:30] cmd: status
+[2026-03-28 16:57:32] cmd: brain show
+[2026-03-28 16:57:32] cmd: brain show
+[2026-03-28 16:57:32] cmd: status
+[2026-03-28 16:57:33] cmd: status
+[2026-03-28 16:57:34] cmd: brain show
+[2026-03-28 16:57:34] cmd: brain show
+[2026-03-28 16:57:35] cmd: status
+[2026-03-28 16:57:35] cmd: status
+[2026-03-28 16:57:38] cmd: brain show
+[2026-03-28 16:57:38] cmd: status
+[2026-03-28 16:57:40] cmd: brain show
+[2026-03-28 16:57:40] cmd: brain show
+[2026-03-28 16:57:40] cmd: status
+[2026-03-28 16:57:41] cmd: status
+[2026-03-28 16:57:42] cmd: brain show
+[2026-03-28 16:57:42] cmd: brain show
+[2026-03-28 16:57:43] cmd: status
+[2026-03-28 16:57:43] cmd: status
+[2026-03-28 16:57:46] cmd: brain show
+[2026-03-28 16:57:46] cmd: status
+[2026-03-28 16:57:48] cmd: brain show
+[2026-03-28 16:57:48] cmd: brain show
+[2026-03-28 16:57:49] cmd: status
+[2026-03-28 16:57:49] cmd: status
+[2026-03-28 16:57:50] cmd: brain show
+[2026-03-28 16:57:50] cmd: brain show
+[2026-03-28 16:57:51] cmd: status
+[2026-03-28 16:57:51] cmd: status
+[2026-03-28 16:57:54] cmd: brain show
+[2026-03-28 16:57:54] cmd: status
+[2026-03-28 16:57:56] cmd: brain show
+[2026-03-28 16:57:56] cmd: brain show
+[2026-03-28 16:57:57] cmd: status
+[2026-03-28 16:57:57] cmd: status
+[2026-03-28 16:57:58] cmd: brain show
+[2026-03-28 16:57:58] cmd: brain show
+[2026-03-28 16:57:59] cmd: status
+[2026-03-28 16:57:59] cmd: status
+[2026-03-28 16:58:02] cmd: brain show
+[2026-03-28 16:58:02] cmd: status
+[2026-03-28 16:58:04] cmd: brain show
+[2026-03-28 16:58:04] cmd: brain show
+[2026-03-28 16:58:05] cmd: status
+[2026-03-28 16:58:05] cmd: status
+[2026-03-28 16:58:06] cmd: brain show
+[2026-03-28 16:58:06] cmd: brain show
+[2026-03-28 16:58:07] cmd: status
+[2026-03-28 16:58:07] cmd: status
+[2026-03-28 16:58:10] cmd: brain show
+[2026-03-28 16:58:10] cmd: status
+[2026-03-28 16:58:12] cmd: brain show
+[2026-03-28 16:58:12] cmd: brain show
+[2026-03-28 16:58:13] cmd: status
+[2026-03-28 16:58:13] cmd: status
+[2026-03-28 16:58:14] cmd: brain show
+[2026-03-28 16:58:14] cmd: brain show
+[2026-03-28 16:58:15] cmd: status
+[2026-03-28 16:58:15] cmd: status
+[2026-03-28 16:58:18] cmd: brain show
+[2026-03-28 16:58:19] cmd: status
+[2026-03-28 16:58:20] cmd: brain show
+[2026-03-28 16:58:20] cmd: brain show
+[2026-03-28 16:58:21] cmd: status
+[2026-03-28 16:58:21] cmd: status
+[2026-03-28 16:58:22] cmd: brain show
+[2026-03-28 16:58:22] cmd: brain show
+[2026-03-28 16:58:23] cmd: status
+[2026-03-28 16:58:23] cmd: status
+[2026-03-28 16:58:26] cmd: brain show
+[2026-03-28 16:58:26] cmd: status
+[2026-03-28 16:58:28] cmd: brain show
+[2026-03-28 16:58:28] cmd: brain show
+[2026-03-28 16:58:29] cmd: status
+[2026-03-28 16:58:29] cmd: status
+[2026-03-28 16:58:30] cmd: brain show
+[2026-03-28 16:58:30] cmd: brain show
+[2026-03-28 16:58:31] cmd: status
+[2026-03-28 16:58:31] cmd: status
+[2026-03-28 16:58:34] cmd: brain show
+[2026-03-28 16:58:35] cmd: status
+[2026-03-28 16:58:36] cmd: brain show
+[2026-03-28 16:58:36] cmd: brain show
+[2026-03-28 16:58:37] cmd: status
+[2026-03-28 16:58:37] cmd: status
+[2026-03-28 16:58:38] cmd: brain show
+[2026-03-28 16:58:38] cmd: brain show
+[2026-03-28 16:58:39] cmd: status
+[2026-03-28 16:58:39] cmd: status
+[2026-03-28 16:58:43] cmd: brain show
+[2026-03-28 16:58:43] cmd: status
+[2026-03-28 16:58:44] cmd: brain show
+[2026-03-28 16:58:44] cmd: brain show
+[2026-03-28 16:58:45] cmd: status
+[2026-03-28 16:58:45] cmd: status
+[2026-03-28 16:58:46] cmd: brain show
+[2026-03-28 16:58:47] cmd: status
+[2026-03-28 16:58:47] cmd: brain show
+[2026-03-28 16:58:47] cmd: status
+[2026-03-28 16:58:51] cmd: brain show
+[2026-03-28 16:58:51] cmd: status
+[2026-03-28 16:58:53] cmd: brain show
+[2026-03-28 16:58:53] cmd: brain show
+[2026-03-28 16:58:54] cmd: status
+[2026-03-28 16:58:54] cmd: status
+[2026-03-28 16:58:55] cmd: brain show
+[2026-03-28 16:58:55] cmd: brain show
+[2026-03-28 16:58:56] cmd: status
+[2026-03-28 16:58:56] cmd: status
+[2026-03-28 16:58:59] cmd: brain show
+[2026-03-28 16:59:00] cmd: status
+[2026-03-28 16:59:01] cmd: brain show
+[2026-03-28 16:59:01] cmd: brain show
+[2026-03-28 16:59:02] cmd: status
+[2026-03-28 16:59:02] cmd: status
+[2026-03-28 16:59:03] cmd: brain show
+[2026-03-28 16:59:03] cmd: brain show
+[2026-03-28 16:59:04] cmd: status
+[2026-03-28 16:59:04] cmd: status
+[2026-03-28 16:59:07] cmd: brain show
+[2026-03-28 16:59:08] cmd: status
+[2026-03-28 16:59:09] cmd: brain show
+[2026-03-28 16:59:09] cmd: brain show
+[2026-03-28 16:59:10] cmd: status
+[2026-03-28 16:59:10] cmd: status
+[2026-03-28 16:59:11] cmd: brain show
+[2026-03-28 16:59:11] cmd: brain show
+[2026-03-28 16:59:12] cmd: status
+[2026-03-28 16:59:12] cmd: status
+[2026-03-28 16:59:15] cmd: brain show
+[2026-03-28 16:59:16] cmd: status
+[2026-03-28 16:59:17] cmd: brain show
+[2026-03-28 16:59:17] cmd: brain show
+[2026-03-28 16:59:18] cmd: status
+[2026-03-28 16:59:18] cmd: status
+[2026-03-28 16:59:19] cmd: brain show
+[2026-03-28 16:59:19] cmd: brain show
+[2026-03-28 16:59:20] cmd: status
+[2026-03-28 16:59:20] cmd: status
+[2026-03-28 16:59:23] cmd: brain show
+[2026-03-28 16:59:24] cmd: status
+[2026-03-28 16:59:25] cmd: brain show
+[2026-03-28 16:59:25] cmd: brain show
+[2026-03-28 16:59:26] cmd: status
+[2026-03-28 16:59:26] cmd: status
+[2026-03-28 16:59:27] cmd: brain show
+[2026-03-28 16:59:28] cmd: status
+[2026-03-28 16:59:28] cmd: brain show
+[2026-03-28 16:59:28] cmd: status
+[2026-03-28 16:59:31] cmd: brain show
+[2026-03-28 16:59:32] cmd: status
+[2026-03-28 16:59:33] cmd: brain show
+[2026-03-28 16:59:33] cmd: brain show
+[2026-03-28 16:59:34] cmd: status
+[2026-03-28 16:59:34] cmd: status
+[2026-03-28 16:59:35] cmd: brain show
+[2026-03-28 16:59:35] cmd: brain show
+[2026-03-28 16:59:36] cmd: status
+[2026-03-28 16:59:36] cmd: status
+[2026-03-28 16:59:40] cmd: brain show
+[2026-03-28 16:59:40] cmd: status
+[2026-03-28 16:59:42] cmd: brain show
+[2026-03-28 16:59:42] cmd: brain show
+[2026-03-28 16:59:42] cmd: status
+[2026-03-28 16:59:42] cmd: status
+[2026-03-28 16:59:43] cmd: brain show
+[2026-03-28 16:59:43] cmd: brain show
+[2026-03-28 16:59:44] cmd: status
+[2026-03-28 16:59:44] cmd: status
+[2026-03-28 16:59:48] cmd: brain show
+[2026-03-28 16:59:48] cmd: status
+[2026-03-28 16:59:50] cmd: brain show
+[2026-03-28 16:59:50] cmd: brain show
+[2026-03-28 16:59:50] cmd: status
+[2026-03-28 16:59:50] cmd: status
+[2026-03-28 16:59:52] cmd: brain show
+[2026-03-28 16:59:52] cmd: brain show
+[2026-03-28 16:59:52] cmd: status
+[2026-03-28 16:59:52] cmd: status
+[2026-03-28 16:59:56] cmd: brain show
+[2026-03-28 16:59:56] cmd: status
+[2026-03-28 16:59:58] cmd: brain show
+[2026-03-28 16:59:58] cmd: brain show
+[2026-03-28 16:59:58] cmd: status
+[2026-03-28 16:59:58] cmd: status
+[2026-03-28 17:00:00] cmd: brain show
+[2026-03-28 17:00:00] cmd: brain show
+[2026-03-28 17:00:00] cmd: status
+[2026-03-28 17:00:01] cmd: status
+[2026-03-28 17:00:04] cmd: brain show
+[2026-03-28 17:00:04] cmd: status
+[2026-03-28 17:00:06] cmd: brain show
+[2026-03-28 17:00:06] cmd: brain show
+[2026-03-28 17:00:06] cmd: status
+[2026-03-28 17:00:07] cmd: status
+[2026-03-28 17:00:08] cmd: brain show
+[2026-03-28 17:00:08] cmd: brain show
+[2026-03-28 17:00:08] cmd: status
+[2026-03-28 17:00:09] cmd: status
+[2026-03-28 17:00:12] cmd: brain show
+[2026-03-28 17:00:12] cmd: status
+[2026-03-28 17:00:14] cmd: brain show
+[2026-03-28 17:00:14] cmd: brain show
+[2026-03-28 17:00:14] cmd: status
+[2026-03-28 17:00:15] cmd: status
+[2026-03-28 17:00:16] cmd: brain show
+[2026-03-28 17:00:16] cmd: brain show
+[2026-03-28 17:00:16] cmd: status
+[2026-03-28 17:00:17] cmd: status
+[2026-03-28 17:00:20] cmd: brain show
+[2026-03-28 17:00:20] cmd: status
+[2026-03-28 17:00:22] cmd: brain show
+[2026-03-28 17:00:22] cmd: brain show
+[2026-03-28 17:00:22] cmd: status
+[2026-03-28 17:00:23] cmd: status
+[2026-03-28 17:00:24] cmd: brain show
+[2026-03-28 17:00:24] cmd: brain show
+[2026-03-28 17:00:24] cmd: status
+[2026-03-28 17:00:25] cmd: status
+[2026-03-28 17:00:28] cmd: brain show
+[2026-03-28 17:00:28] cmd: status
+[2026-03-28 17:00:30] cmd: brain show
+[2026-03-28 17:00:30] cmd: brain show
+[2026-03-28 17:00:30] cmd: status
+[2026-03-28 17:00:31] cmd: status
+[2026-03-28 17:00:32] cmd: brain show
+[2026-03-28 17:00:32] cmd: brain show
+[2026-03-28 17:00:32] cmd: status
+[2026-03-28 17:00:33] cmd: status
+[2026-03-28 17:00:36] cmd: brain show
+[2026-03-28 17:00:36] cmd: status
+[2026-03-28 17:00:38] cmd: brain show
+[2026-03-28 17:00:38] cmd: brain show
+[2026-03-28 17:00:38] cmd: status
+[2026-03-28 17:00:39] cmd: status
+[2026-03-28 17:00:40] cmd: brain show
+[2026-03-28 17:00:40] cmd: brain show
+[2026-03-28 17:00:40] cmd: status
+[2026-03-28 17:00:41] cmd: status
+[2026-03-28 17:00:44] cmd: brain show
+[2026-03-28 17:00:44] cmd: status
+[2026-03-28 17:00:46] cmd: brain show
+[2026-03-28 17:00:46] cmd: brain show
+[2026-03-28 17:00:46] cmd: status
+[2026-03-28 17:00:47] cmd: status
+[2026-03-28 17:00:48] cmd: brain show
+[2026-03-28 17:00:48] cmd: brain show
+[2026-03-28 17:00:48] cmd: status
+[2026-03-28 17:00:49] cmd: status
+[2026-03-28 17:00:52] cmd: brain show
+[2026-03-28 17:00:52] cmd: status
+[2026-03-28 17:00:54] cmd: brain show
+[2026-03-28 17:00:54] cmd: brain show
+[2026-03-28 17:00:54] cmd: status
+[2026-03-28 17:00:55] cmd: status
+[2026-03-28 17:00:56] cmd: brain show
+[2026-03-28 17:00:56] cmd: brain show
+[2026-03-28 17:00:56] cmd: status
+[2026-03-28 17:00:57] cmd: status
+[2026-03-28 17:01:00] cmd: brain show
+[2026-03-28 17:01:00] cmd: status
+[2026-03-28 17:01:02] cmd: brain show
+[2026-03-28 17:01:02] cmd: brain show
+[2026-03-28 17:01:02] cmd: status
+[2026-03-28 17:01:03] cmd: status
+[2026-03-28 17:01:04] cmd: brain show
+[2026-03-28 17:01:04] cmd: brain show
+[2026-03-28 17:01:04] cmd: status
+[2026-03-28 17:01:05] cmd: status
+[2026-03-28 17:01:08] cmd: brain show
+[2026-03-28 17:01:08] cmd: status
+[2026-03-28 17:01:10] cmd: brain show
+[2026-03-28 17:01:10] cmd: brain show
+[2026-03-28 17:01:10] cmd: status
+[2026-03-28 17:01:11] cmd: status
+[2026-03-28 17:01:12] cmd: brain show
+[2026-03-28 17:01:12] cmd: brain show
+[2026-03-28 17:01:12] cmd: status
+[2026-03-28 17:01:13] cmd: status
+[2026-03-28 17:01:16] cmd: brain show
+[2026-03-28 17:01:16] cmd: status
+[2026-03-28 17:01:18] cmd: brain show
+[2026-03-28 17:01:18] cmd: brain show
+[2026-03-28 17:01:18] cmd: status
+[2026-03-28 17:01:19] cmd: status
+[2026-03-28 17:01:20] cmd: brain show
+[2026-03-28 17:01:20] cmd: brain show
+[2026-03-28 17:01:20] cmd: status
+[2026-03-28 17:01:21] cmd: status
+[2026-03-28 17:01:24] cmd: brain show
+[2026-03-28 17:01:24] cmd: status
+[2026-03-28 17:01:26] cmd: brain show
+[2026-03-28 17:01:26] cmd: brain show
+[2026-03-28 17:01:26] cmd: status
+[2026-03-28 17:01:27] cmd: status
+[2026-03-28 17:01:28] cmd: brain show
+[2026-03-28 17:01:28] cmd: brain show
+[2026-03-28 17:01:28] cmd: status
+[2026-03-28 17:01:29] cmd: status
+[2026-03-28 17:01:32] cmd: brain show
+[2026-03-28 17:01:32] cmd: status
+[2026-03-28 17:01:34] cmd: brain show
+[2026-03-28 17:01:34] cmd: brain show
+[2026-03-28 17:01:34] cmd: status
+[2026-03-28 17:01:35] cmd: status
+[2026-03-28 17:01:36] cmd: brain show
+[2026-03-28 17:01:36] cmd: brain show
+[2026-03-28 17:01:37] cmd: status
+[2026-03-28 17:01:37] cmd: status
+[2026-03-28 17:01:40] cmd: brain show
+[2026-03-28 17:01:40] cmd: status
+[2026-03-28 17:01:42] cmd: brain show
+[2026-03-28 17:01:42] cmd: brain show
+[2026-03-28 17:01:42] cmd: status
+[2026-03-28 17:01:43] cmd: status
+[2026-03-28 17:01:44] cmd: brain show
+[2026-03-28 17:01:44] cmd: brain show
+[2026-03-28 17:01:45] cmd: status
+[2026-03-28 17:01:45] cmd: status
+[2026-03-28 17:01:48] cmd: brain show
+[2026-03-28 17:01:48] cmd: status
+[2026-03-28 17:01:50] cmd: brain show
+[2026-03-28 17:01:50] cmd: brain show
+[2026-03-28 17:01:50] cmd: status
+[2026-03-28 17:01:51] cmd: status
+[2026-03-28 17:01:52] cmd: brain show
+[2026-03-28 17:01:52] cmd: brain show
+[2026-03-28 17:01:53] cmd: status
+[2026-03-28 17:01:53] cmd: status
+[2026-03-28 17:01:56] cmd: brain show
+[2026-03-28 17:01:56] cmd: status
+[2026-03-28 17:01:58] cmd: brain show
+[2026-03-28 17:01:58] cmd: brain show
+[2026-03-28 17:01:59] cmd: status
+[2026-03-28 17:01:59] cmd: status
+[2026-03-28 17:02:00] cmd: brain show
+[2026-03-28 17:02:00] cmd: brain show
+[2026-03-28 17:02:01] cmd: status
+[2026-03-28 17:02:01] cmd: status
+[2026-03-28 17:02:04] cmd: brain show
+[2026-03-28 17:02:04] cmd: status
+[2026-03-28 17:02:06] cmd: brain show
+[2026-03-28 17:02:06] cmd: brain show
+[2026-03-28 17:02:07] cmd: status
+[2026-03-28 17:02:07] cmd: status
+[2026-03-28 17:02:08] cmd: brain show
+[2026-03-28 17:02:08] cmd: brain show
+[2026-03-28 17:02:09] cmd: status
+[2026-03-28 17:02:09] cmd: status
+[2026-03-28 17:02:12] cmd: brain show
+[2026-03-28 17:02:12] cmd: status
+[2026-03-28 17:02:14] cmd: brain show
+[2026-03-28 17:02:14] cmd: brain show
+[2026-03-28 17:02:15] cmd: status
+[2026-03-28 17:02:15] cmd: status
+[2026-03-28 17:02:16] cmd: brain show
+[2026-03-28 17:02:16] cmd: brain show
+[2026-03-28 17:02:17] cmd: status
+[2026-03-28 17:02:17] cmd: status
+[2026-03-28 17:02:21] cmd: brain show
+[2026-03-28 17:02:21] cmd: status
+[2026-03-28 17:02:22] cmd: brain show
+[2026-03-28 17:02:22] cmd: brain show
+[2026-03-28 17:02:23] cmd: status
+[2026-03-28 17:02:23] cmd: status
+[2026-03-28 17:02:24] cmd: brain show
+[2026-03-28 17:02:24] cmd: brain show
+[2026-03-28 17:02:25] cmd: status
+[2026-03-28 17:02:25] cmd: status
+[2026-03-28 17:02:29] cmd: brain show
+[2026-03-28 17:02:29] cmd: status
+[2026-03-28 17:02:30] cmd: brain show
+[2026-03-28 17:02:30] cmd: brain show
+[2026-03-28 17:02:31] cmd: status
+[2026-03-28 17:02:31] cmd: status
+[2026-03-28 17:02:32] cmd: brain show
+[2026-03-28 17:02:32] cmd: brain show
+[2026-03-28 17:02:33] cmd: status
+[2026-03-28 17:02:33] cmd: status
+[2026-03-28 17:02:37] cmd: brain show
+[2026-03-28 17:02:37] cmd: status
+[2026-03-28 17:02:38] cmd: brain show
+[2026-03-28 17:02:38] cmd: brain show
+[2026-03-28 17:02:39] cmd: status
+[2026-03-28 17:02:39] cmd: status
+[2026-03-28 17:02:40] cmd: brain show
+[2026-03-28 17:02:40] cmd: brain show
+[2026-03-28 17:02:41] cmd: status
+[2026-03-28 17:02:41] cmd: status
+[2026-03-28 17:02:45] cmd: brain show
+[2026-03-28 17:02:45] cmd: status
+[2026-03-28 17:02:46] cmd: brain show
+[2026-03-28 17:02:46] cmd: brain show
+[2026-03-28 17:02:47] cmd: status
+[2026-03-28 17:02:47] cmd: status
+[2026-03-28 17:02:48] cmd: brain show
+[2026-03-28 17:02:48] cmd: brain show
+[2026-03-28 17:02:49] cmd: status
+[2026-03-28 17:02:49] cmd: status
+[2026-03-28 17:02:53] cmd: brain show
+[2026-03-28 17:02:53] cmd: status
+[2026-03-28 17:02:55] cmd: brain show
+[2026-03-28 17:02:55] cmd: brain show
+[2026-03-28 17:02:55] cmd: status
+[2026-03-28 17:02:55] cmd: status
+[2026-03-28 17:02:57] cmd: brain show
+[2026-03-28 17:02:57] cmd: brain show
+[2026-03-28 17:02:57] cmd: status
+[2026-03-28 17:02:57] cmd: status
+[2026-03-28 17:03:01] cmd: brain show
+[2026-03-28 17:03:01] cmd: status
+[2026-03-28 17:03:03] cmd: brain show
+[2026-03-28 17:03:03] cmd: brain show
+[2026-03-28 17:03:03] cmd: status
+[2026-03-28 17:03:03] cmd: status
+[2026-03-28 17:03:05] cmd: brain show
+[2026-03-28 17:03:05] cmd: brain show
+[2026-03-28 17:03:05] cmd: status
+[2026-03-28 17:03:05] cmd: status
+[2026-03-28 17:03:09] cmd: brain show
+[2026-03-28 17:03:09] cmd: status
+[2026-03-28 17:03:11] cmd: brain show
+[2026-03-28 17:03:11] cmd: brain show
+[2026-03-28 17:03:11] cmd: status
+[2026-03-28 17:03:11] cmd: status
+[2026-03-28 17:03:13] cmd: brain show
+[2026-03-28 17:03:13] cmd: brain show
+[2026-03-28 17:03:13] cmd: status
+[2026-03-28 17:03:13] cmd: status
+[2026-03-28 17:03:17] cmd: brain show
+[2026-03-28 17:03:17] cmd: status
+[2026-03-28 17:03:19] cmd: brain show
+[2026-03-28 17:03:19] cmd: brain show
+[2026-03-28 17:03:19] cmd: status
+[2026-03-28 17:03:19] cmd: status
+[2026-03-28 17:03:21] cmd: brain show
+[2026-03-28 17:03:21] cmd: brain show
+[2026-03-28 17:03:21] cmd: status
+[2026-03-28 17:03:22] cmd: status
+[2026-03-28 17:03:25] cmd: brain show
+[2026-03-28 17:03:25] cmd: status
+[2026-03-28 17:03:27] cmd: brain show
+[2026-03-28 17:03:27] cmd: brain show
+[2026-03-28 17:03:27] cmd: status
+[2026-03-28 17:03:27] cmd: status
+[2026-03-28 17:03:29] cmd: brain show
+[2026-03-28 17:03:29] cmd: status
+[2026-03-28 17:03:29] cmd: brain show
+[2026-03-28 17:03:30] cmd: status
+[2026-03-28 17:03:33] cmd: brain show
+[2026-03-28 17:03:33] cmd: status
+[2026-03-28 17:03:35] cmd: brain show
+[2026-03-28 17:03:35] cmd: brain show
+[2026-03-28 17:03:35] cmd: status
+[2026-03-28 17:03:35] cmd: status
+[2026-03-28 17:03:37] cmd: brain show
+[2026-03-28 17:03:37] cmd: brain show
+[2026-03-28 17:03:37] cmd: status
+[2026-03-28 17:03:38] cmd: status
+[2026-03-28 17:03:41] cmd: brain show
+[2026-03-28 17:03:41] cmd: status
+[2026-03-28 17:03:43] cmd: brain show
+[2026-03-28 17:03:43] cmd: brain show
+[2026-03-28 17:03:43] cmd: status
+[2026-03-28 17:03:43] cmd: status
+[2026-03-28 17:03:45] cmd: brain show
+[2026-03-28 17:03:45] cmd: brain show
+[2026-03-28 17:03:45] cmd: status
+[2026-03-28 17:03:46] cmd: status
+[2026-03-28 17:03:49] cmd: brain show
+[2026-03-28 17:03:49] cmd: status
+[2026-03-28 17:03:51] cmd: brain show
+[2026-03-28 17:03:51] cmd: brain show
+[2026-03-28 17:03:51] cmd: status
+[2026-03-28 17:03:51] cmd: status
+[2026-03-28 17:03:53] cmd: brain show
+[2026-03-28 17:03:53] cmd: brain show
+[2026-03-28 17:03:53] cmd: status
+[2026-03-28 17:03:54] cmd: status
+[2026-03-28 17:03:57] cmd: brain show
+[2026-03-28 17:03:57] cmd: status
+[2026-03-28 17:03:59] cmd: brain show
+[2026-03-28 17:03:59] cmd: brain show
+[2026-03-28 17:03:59] cmd: status
+[2026-03-28 17:03:59] cmd: status
+[2026-03-28 17:04:01] cmd: brain show
+[2026-03-28 17:04:01] cmd: brain show
+[2026-03-28 17:04:01] cmd: status
+[2026-03-28 17:04:02] cmd: status
+[2026-03-28 17:04:05] cmd: brain show
+[2026-03-28 17:04:05] cmd: status
+[2026-03-28 17:04:07] cmd: brain show
+[2026-03-28 17:04:07] cmd: brain show
+[2026-03-28 17:04:07] cmd: status
+[2026-03-28 17:04:07] cmd: status
+[2026-03-28 17:04:09] cmd: brain show
+[2026-03-28 17:04:09] cmd: brain show
+[2026-03-28 17:04:09] cmd: status
+[2026-03-28 17:04:10] cmd: status
+[2026-03-28 17:04:13] cmd: brain show
+[2026-03-28 17:04:13] cmd: status
+[2026-03-28 17:04:15] cmd: brain show
+[2026-03-28 17:04:15] cmd: brain show
+[2026-03-28 17:04:15] cmd: status
+[2026-03-28 17:04:15] cmd: status
+[2026-03-28 17:04:17] cmd: brain show
+[2026-03-28 17:04:17] cmd: brain show
+[2026-03-28 17:04:17] cmd: status
+[2026-03-28 17:04:18] cmd: status
+[2026-03-28 17:04:21] cmd: brain show
+[2026-03-28 17:04:21] cmd: status
+[2026-03-28 17:04:23] cmd: brain show
+[2026-03-28 17:04:23] cmd: brain show
+[2026-03-28 17:04:23] cmd: status
+[2026-03-28 17:04:24] cmd: status
+[2026-03-28 17:04:25] cmd: brain show
+[2026-03-28 17:04:25] cmd: brain show
+[2026-03-28 17:04:25] cmd: status
+[2026-03-28 17:04:26] cmd: status
+[2026-03-28 17:04:29] cmd: brain show
+[2026-03-28 17:04:29] cmd: status
+[2026-03-28 17:04:31] cmd: brain show
+[2026-03-28 17:04:31] cmd: brain show
+[2026-03-28 17:04:31] cmd: status
+[2026-03-28 17:04:32] cmd: status
+[2026-03-28 17:04:33] cmd: brain show
+[2026-03-28 17:04:33] cmd: brain show
+[2026-03-28 17:04:34] cmd: status
+[2026-03-28 17:04:34] cmd: status
+[2026-03-28 17:04:37] cmd: brain show
+[2026-03-28 17:04:37] cmd: status
+[2026-03-28 17:04:39] cmd: brain show
+[2026-03-28 17:04:39] cmd: brain show
+[2026-03-28 17:04:39] cmd: status
+[2026-03-28 17:04:40] cmd: status
+[2026-03-28 17:04:41] cmd: brain show
+[2026-03-28 17:04:41] cmd: brain show
+[2026-03-28 17:04:42] cmd: status
+[2026-03-28 17:04:42] cmd: status
+[2026-03-28 17:04:45] cmd: brain show
+[2026-03-28 17:04:45] cmd: status
+[2026-03-28 17:04:47] cmd: brain show
+[2026-03-28 17:04:47] cmd: brain show
+[2026-03-28 17:04:48] cmd: status
+[2026-03-28 17:04:48] cmd: status
+[2026-03-28 17:04:50] cmd: brain show
+[2026-03-28 17:04:50] cmd: brain show
+[2026-03-28 17:04:50] cmd: status
+[2026-03-28 17:04:50] cmd: status
+[2026-03-28 17:04:53] cmd: brain show
+[2026-03-28 17:04:53] cmd: status
+[2026-03-28 17:04:56] cmd: brain show
+[2026-03-28 17:04:56] cmd: brain show
+[2026-03-28 17:04:56] cmd: status
+[2026-03-28 17:04:56] cmd: status
+[2026-03-28 17:04:58] cmd: brain show
+[2026-03-28 17:04:58] cmd: brain show
+[2026-03-28 17:04:58] cmd: status
+[2026-03-28 17:04:58] cmd: status
+[2026-03-28 17:05:01] cmd: brain show
+[2026-03-28 17:05:01] cmd: status
+[2026-03-28 17:05:04] cmd: brain show
+[2026-03-28 17:05:04] cmd: brain show
+[2026-03-28 17:05:04] cmd: status
+[2026-03-28 17:05:04] cmd: status
+[2026-03-28 17:05:06] cmd: brain show
+[2026-03-28 17:05:06] cmd: brain show
+[2026-03-28 17:05:06] cmd: status
+[2026-03-28 17:05:06] cmd: status
+[2026-03-28 17:05:09] cmd: brain show
+[2026-03-28 17:05:09] cmd: status
+[2026-03-28 17:05:12] cmd: brain show
+[2026-03-28 17:05:12] cmd: brain show
+[2026-03-28 17:05:12] cmd: status
+[2026-03-28 17:05:12] cmd: status
+[2026-03-28 17:05:14] cmd: brain show
+[2026-03-28 17:05:14] cmd: brain show
+[2026-03-28 17:05:14] cmd: status
+[2026-03-28 17:05:14] cmd: status
+[2026-03-28 17:05:17] cmd: brain show
+[2026-03-28 17:05:17] cmd: status
+[2026-03-28 17:05:20] cmd: brain show
+[2026-03-28 17:05:20] cmd: brain show
+[2026-03-28 17:05:20] cmd: status
+[2026-03-28 17:05:20] cmd: status
+[2026-03-28 17:05:22] cmd: brain show
+[2026-03-28 17:05:22] cmd: brain show
+[2026-03-28 17:05:22] cmd: status
+[2026-03-28 17:05:22] cmd: status
+[2026-03-28 17:05:25] cmd: brain show
+[2026-03-28 17:05:25] cmd: status
+[2026-03-28 17:05:28] cmd: brain show
+[2026-03-28 17:05:28] cmd: brain show
+[2026-03-28 17:05:28] cmd: status
+[2026-03-28 17:05:28] cmd: status
+[2026-03-28 17:05:30] cmd: brain show
+[2026-03-28 17:05:30] cmd: brain show
+[2026-03-28 17:05:30] cmd: status
+[2026-03-28 17:05:30] cmd: status
+[2026-03-28 17:05:33] cmd: brain show
+[2026-03-28 17:05:34] cmd: status
+[2026-03-28 17:05:36] cmd: brain show
+[2026-03-28 17:05:36] cmd: brain show
+[2026-03-28 17:05:36] cmd: status
+[2026-03-28 17:05:36] cmd: status
+[2026-03-28 17:05:38] cmd: brain show
+[2026-03-28 17:05:38] cmd: brain show
+[2026-03-28 17:05:38] cmd: status
+[2026-03-28 17:05:38] cmd: status
+[2026-03-28 17:05:41] cmd: brain show
+[2026-03-28 17:05:42] cmd: status
+[2026-03-28 17:05:44] cmd: brain show
+[2026-03-28 17:05:44] cmd: brain show
+[2026-03-28 17:05:44] cmd: status
+[2026-03-28 17:05:44] cmd: status
+[2026-03-28 17:05:46] cmd: brain show
+[2026-03-28 17:05:46] cmd: brain show
+[2026-03-28 17:05:46] cmd: status
+[2026-03-28 17:05:46] cmd: status
+[2026-03-28 17:05:49] cmd: brain show
+[2026-03-28 17:05:50] cmd: status
+[2026-03-28 17:05:52] cmd: brain show
+[2026-03-28 17:05:52] cmd: brain show
+[2026-03-28 17:05:52] cmd: status
+[2026-03-28 17:05:52] cmd: status
+[2026-03-28 17:05:54] cmd: brain show
+[2026-03-28 17:05:54] cmd: brain show
+[2026-03-28 17:05:54] cmd: status
+[2026-03-28 17:05:54] cmd: status
+[2026-03-28 17:05:57] cmd: brain show
+[2026-03-28 17:05:58] cmd: status
+[2026-03-28 17:06:00] cmd: brain show
+[2026-03-28 17:06:00] cmd: brain show
+[2026-03-28 17:06:00] cmd: status
+[2026-03-28 17:06:00] cmd: status
+[2026-03-28 17:06:02] cmd: brain show
+[2026-03-28 17:06:02] cmd: brain show
+[2026-03-28 17:06:02] cmd: status
+[2026-03-28 17:06:02] cmd: status
+[2026-03-28 17:06:06] cmd: brain show
+[2026-03-28 17:06:06] cmd: status
+[2026-03-28 17:06:08] cmd: brain show
+[2026-03-28 17:06:08] cmd: brain show
+[2026-03-28 17:06:08] cmd: status
+[2026-03-28 17:06:08] cmd: status
+[2026-03-28 17:06:10] cmd: brain show
+[2026-03-28 17:06:10] cmd: brain show
+[2026-03-28 17:06:10] cmd: status
+[2026-03-28 17:06:10] cmd: status
+[2026-03-28 17:06:14] cmd: brain show
+[2026-03-28 17:06:14] cmd: status
+[2026-03-28 17:06:16] cmd: brain show
+[2026-03-28 17:06:16] cmd: brain show
+[2026-03-28 17:06:16] cmd: status
+[2026-03-28 17:06:16] cmd: status
+[2026-03-28 17:06:18] cmd: brain show
+[2026-03-28 17:06:18] cmd: brain show
+[2026-03-28 17:06:18] cmd: status
+[2026-03-28 17:06:18] cmd: status
+[2026-03-28 17:06:22] cmd: brain show
+[2026-03-28 17:06:22] cmd: status
+[2026-03-28 17:06:24] cmd: brain show
+[2026-03-28 17:06:24] cmd: brain show
+[2026-03-28 17:06:24] cmd: status
+[2026-03-28 17:06:24] cmd: status
+[2026-03-28 17:06:26] cmd: brain show
+[2026-03-28 17:06:26] cmd: brain show
+[2026-03-28 17:06:26] cmd: status
+[2026-03-28 17:06:26] cmd: status
+[2026-03-28 17:06:30] cmd: brain show
+[2026-03-28 17:06:30] cmd: status
+[2026-03-28 17:06:32] cmd: brain show
+[2026-03-28 17:06:32] cmd: brain show
+[2026-03-28 17:06:32] cmd: status
+[2026-03-28 17:06:32] cmd: status
+[2026-03-28 17:06:34] cmd: brain show
+[2026-03-28 17:06:34] cmd: brain show
+[2026-03-28 17:06:34] cmd: status
+[2026-03-28 17:06:34] cmd: status
+[2026-03-28 17:06:38] cmd: brain show
+[2026-03-28 17:06:38] cmd: status
+[2026-03-28 17:06:40] cmd: brain show
+[2026-03-28 17:06:40] cmd: brain show
+[2026-03-28 17:06:40] cmd: status
+[2026-03-28 17:06:41] cmd: status
+[2026-03-28 17:06:42] cmd: brain show
+[2026-03-28 17:06:42] cmd: brain show
+[2026-03-28 17:06:42] cmd: status
+[2026-03-28 17:06:43] cmd: status
+[2026-03-28 17:06:46] cmd: brain show
+[2026-03-28 17:06:46] cmd: status
+[2026-03-28 17:06:48] cmd: brain show
+[2026-03-28 17:06:48] cmd: brain show
+[2026-03-28 17:06:48] cmd: status
+[2026-03-28 17:06:49] cmd: status
+[2026-03-28 17:06:50] cmd: brain show
+[2026-03-28 17:06:50] cmd: brain show
+[2026-03-28 17:06:50] cmd: status
+[2026-03-28 17:06:51] cmd: status
+[2026-03-28 17:06:54] cmd: brain show
+[2026-03-28 17:06:54] cmd: status
+[2026-03-28 17:06:56] cmd: brain show
+[2026-03-28 17:06:56] cmd: brain show
+[2026-03-28 17:06:56] cmd: status
+[2026-03-28 17:06:57] cmd: status
+[2026-03-28 17:06:58] cmd: brain show
+[2026-03-28 17:06:58] cmd: brain show
+[2026-03-28 17:06:58] cmd: status
+[2026-03-28 17:06:59] cmd: status
+[2026-03-28 17:07:02] cmd: brain show
+[2026-03-28 17:07:02] cmd: status
+[2026-03-28 17:07:04] cmd: brain show
+[2026-03-28 17:07:04] cmd: brain show
+[2026-03-28 17:07:04] cmd: status
+[2026-03-28 17:07:05] cmd: status
+[2026-03-28 17:07:06] cmd: brain show
+[2026-03-28 17:07:06] cmd: brain show
+[2026-03-28 17:07:06] cmd: status
+[2026-03-28 17:07:07] cmd: status
+[2026-03-28 17:07:10] cmd: brain show
+[2026-03-28 17:07:10] cmd: status
+[2026-03-28 17:07:12] cmd: brain show
+[2026-03-28 17:07:12] cmd: brain show
+[2026-03-28 17:07:13] cmd: status
+[2026-03-28 17:07:13] cmd: status
+[2026-03-28 17:07:14] cmd: brain show
+[2026-03-28 17:07:14] cmd: brain show
+[2026-03-28 17:07:15] cmd: status
+[2026-03-28 17:07:15] cmd: status
+[2026-03-28 17:07:18] cmd: brain show
+[2026-03-28 17:07:18] cmd: status
+[2026-03-28 17:07:20] cmd: brain show
+[2026-03-28 17:07:20] cmd: brain show
+[2026-03-28 17:07:21] cmd: status
+[2026-03-28 17:07:21] cmd: status
+[2026-03-28 17:07:22] cmd: brain show
+[2026-03-28 17:07:22] cmd: brain show
+[2026-03-28 17:07:23] cmd: status
+[2026-03-28 17:07:23] cmd: status
+[2026-03-28 17:07:26] cmd: brain show
+[2026-03-28 17:07:26] cmd: status
+[2026-03-28 17:07:28] cmd: brain show
+[2026-03-28 17:07:28] cmd: brain show
+[2026-03-28 17:07:29] cmd: status
+[2026-03-28 17:07:29] cmd: status
+[2026-03-28 17:07:30] cmd: brain show
+[2026-03-28 17:07:30] cmd: brain show
+[2026-03-28 17:07:31] cmd: status
+[2026-03-28 17:07:31] cmd: status
+[2026-03-28 17:07:34] cmd: brain show
+[2026-03-28 17:07:34] cmd: status
+[2026-03-28 17:07:36] cmd: brain show
+[2026-03-28 17:07:36] cmd: brain show
+[2026-03-28 17:07:37] cmd: status
+[2026-03-28 17:07:37] cmd: status
+[2026-03-28 17:07:38] cmd: brain show
+[2026-03-28 17:07:38] cmd: brain show
+[2026-03-28 17:07:39] cmd: status
+[2026-03-28 17:07:39] cmd: status
+[2026-03-28 17:07:42] cmd: brain show
+[2026-03-28 17:07:42] cmd: status
+[2026-03-28 17:07:44] cmd: brain show
+[2026-03-28 17:07:44] cmd: brain show
+[2026-03-28 17:07:45] cmd: status
+[2026-03-28 17:07:45] cmd: status
+[2026-03-28 17:07:46] cmd: brain show
+[2026-03-28 17:07:46] cmd: brain show
+[2026-03-28 17:07:47] cmd: status
+[2026-03-28 17:07:47] cmd: status
+[2026-03-28 17:07:50] cmd: brain show
+[2026-03-28 17:07:50] cmd: status
+[2026-03-28 17:07:52] cmd: brain show
+[2026-03-28 17:07:52] cmd: brain show
+[2026-03-28 17:07:53] cmd: status
+[2026-03-28 17:07:53] cmd: status
+[2026-03-28 17:07:54] cmd: brain show
+[2026-03-28 17:07:54] cmd: brain show
+[2026-03-28 17:07:55] cmd: status
+[2026-03-28 17:07:55] cmd: status
+[2026-03-28 17:07:58] cmd: brain show
+[2026-03-28 17:07:58] cmd: status
+[2026-03-28 17:08:00] cmd: brain show
+[2026-03-28 17:08:00] cmd: brain show
+[2026-03-28 17:08:01] cmd: status
+[2026-03-28 17:08:01] cmd: status
+[2026-03-28 17:08:02] cmd: brain show
+[2026-03-28 17:08:02] cmd: brain show
+[2026-03-28 17:08:03] cmd: status
+[2026-03-28 17:08:03] cmd: status
+[2026-03-28 17:08:06] cmd: brain show
+[2026-03-28 17:08:07] cmd: status
+[2026-03-28 17:08:08] cmd: brain show
+[2026-03-28 17:08:08] cmd: brain show
+[2026-03-28 17:08:09] cmd: status
+[2026-03-28 17:08:09] cmd: status
+[2026-03-28 17:08:10] cmd: brain show
+[2026-03-28 17:08:10] cmd: brain show
+[2026-03-28 17:08:11] cmd: status
+[2026-03-28 17:08:11] cmd: status
+[2026-03-28 17:08:14] cmd: brain show
+[2026-03-28 17:08:15] cmd: status
+[2026-03-28 17:08:16] cmd: brain show
+[2026-03-28 17:08:16] cmd: brain show
+[2026-03-28 17:08:17] cmd: status
+[2026-03-28 17:08:17] cmd: status
+[2026-03-28 17:08:18] cmd: brain show
+[2026-03-28 17:08:18] cmd: brain show
+[2026-03-28 17:08:19] cmd: status
+[2026-03-28 17:08:19] cmd: status
+[2026-03-28 17:08:22] cmd: brain show
+[2026-03-28 17:08:23] cmd: status
+[2026-03-28 17:08:24] cmd: brain show
+[2026-03-28 17:08:24] cmd: brain show
+[2026-03-28 17:08:25] cmd: status
+[2026-03-28 17:08:25] cmd: status
+[2026-03-28 17:08:26] cmd: brain show
+[2026-03-28 17:08:26] cmd: brain show
+[2026-03-28 17:08:27] cmd: status
+[2026-03-28 17:08:27] cmd: status
+[2026-03-28 17:08:30] cmd: brain show
+[2026-03-28 17:08:31] cmd: status
+[2026-03-28 17:08:32] cmd: brain show
+[2026-03-28 17:08:33] cmd: brain show
+[2026-03-28 17:08:33] cmd: status
+[2026-03-28 17:08:33] cmd: status
+[2026-03-28 17:08:35] cmd: brain show
+[2026-03-28 17:08:35] cmd: brain show
+[2026-03-28 17:08:35] cmd: status
+[2026-03-28 17:08:35] cmd: status
+[2026-03-28 17:08:38] cmd: brain show
+[2026-03-28 17:08:39] cmd: status
+[2026-03-28 17:08:41] cmd: brain show
+[2026-03-28 17:08:41] cmd: brain show
+[2026-03-28 17:08:41] cmd: status
+[2026-03-28 17:08:41] cmd: status
+[2026-03-28 17:08:43] cmd: brain show
+[2026-03-28 17:08:43] cmd: brain show
+[2026-03-28 17:08:43] cmd: status
+[2026-03-28 17:08:43] cmd: status
+[2026-03-28 17:08:46] cmd: brain show
+[2026-03-28 17:08:47] cmd: status
+[2026-03-28 17:08:49] cmd: brain show
+[2026-03-28 17:08:49] cmd: brain show
+[2026-03-28 17:08:49] cmd: status
+[2026-03-28 17:08:49] cmd: status
+[2026-03-28 17:08:51] cmd: brain show
+[2026-03-28 17:08:51] cmd: brain show
+[2026-03-28 17:08:51] cmd: status
+[2026-03-28 17:08:51] cmd: status
+[2026-03-28 17:08:54] cmd: brain show
+[2026-03-28 17:08:55] cmd: status
+[2026-03-28 17:08:57] cmd: brain show
+[2026-03-28 17:08:57] cmd: brain show
+[2026-03-28 17:08:57] cmd: status
+[2026-03-28 17:08:57] cmd: status
+[2026-03-28 17:08:59] cmd: brain show
+[2026-03-28 17:08:59] cmd: brain show
+[2026-03-28 17:08:59] cmd: status
+[2026-03-28 17:08:59] cmd: status
+[2026-03-28 17:09:02] cmd: brain show
+[2026-03-28 17:09:03] cmd: status
+[2026-03-28 17:09:05] cmd: brain show
+[2026-03-28 17:09:05] cmd: brain show
+[2026-03-28 17:09:05] cmd: status
+[2026-03-28 17:09:05] cmd: status
+[2026-03-28 17:09:07] cmd: brain show
+[2026-03-28 17:09:07] cmd: brain show
+[2026-03-28 17:09:07] cmd: status
+[2026-03-28 17:09:07] cmd: status
+[2026-03-28 17:09:10] cmd: brain show
+[2026-03-28 17:09:11] cmd: status
+[2026-03-28 17:09:13] cmd: brain show
+[2026-03-28 17:09:13] cmd: brain show
+[2026-03-28 17:09:13] cmd: status
+[2026-03-28 17:09:13] cmd: status
+[2026-03-28 17:09:15] cmd: brain show
+[2026-03-28 17:09:15] cmd: brain show
+[2026-03-28 17:09:15] cmd: status
+[2026-03-28 17:09:15] cmd: status
+[2026-03-28 17:09:18] cmd: brain show
+[2026-03-28 17:09:19] cmd: status
+[2026-03-28 17:09:21] cmd: brain show
+[2026-03-28 17:09:21] cmd: brain show
+[2026-03-28 17:09:21] cmd: status
+[2026-03-28 17:09:21] cmd: status
+[2026-03-28 17:09:23] cmd: brain show
+[2026-03-28 17:09:23] cmd: brain show
+[2026-03-28 17:09:23] cmd: status
+[2026-03-28 17:09:23] cmd: status
+[2026-03-28 17:09:26] cmd: brain show
+[2026-03-28 17:09:27] cmd: status
+[2026-03-28 17:09:29] cmd: brain show
+[2026-03-28 17:09:29] cmd: brain show
+[2026-03-28 17:09:29] cmd: status
+[2026-03-28 17:09:29] cmd: status
+[2026-03-28 17:09:31] cmd: brain show
+[2026-03-28 17:09:31] cmd: brain show
+[2026-03-28 17:09:31] cmd: status
+[2026-03-28 17:09:31] cmd: status
+[2026-03-28 17:09:35] cmd: brain show
+[2026-03-28 17:09:35] cmd: status
+[2026-03-28 17:09:37] cmd: brain show
+[2026-03-28 17:09:37] cmd: brain show
+[2026-03-28 17:09:37] cmd: status
+[2026-03-28 17:09:37] cmd: status
+[2026-03-28 17:09:39] cmd: brain show
+[2026-03-28 17:09:39] cmd: brain show
+[2026-03-28 17:09:39] cmd: status
+[2026-03-28 17:09:39] cmd: status
+[2026-03-28 17:09:43] cmd: brain show
+[2026-03-28 17:09:43] cmd: status
+[2026-03-28 17:09:45] cmd: brain show
+[2026-03-28 17:09:45] cmd: brain show
+[2026-03-28 17:09:45] cmd: status
+[2026-03-28 17:09:46] cmd: status
+[2026-03-28 17:09:47] cmd: brain show
+[2026-03-28 17:09:47] cmd: brain show
+[2026-03-28 17:09:47] cmd: status
+[2026-03-28 17:09:48] cmd: status
+[2026-03-28 17:09:51] cmd: brain show
+[2026-03-28 17:09:51] cmd: status
+[2026-03-28 17:09:53] cmd: brain show
+[2026-03-28 17:09:53] cmd: brain show
+[2026-03-28 17:09:53] cmd: status
+[2026-03-28 17:09:54] cmd: status
+[2026-03-28 17:09:55] cmd: brain show
+[2026-03-28 17:09:55] cmd: brain show
+[2026-03-28 17:09:55] cmd: status
+[2026-03-28 17:09:56] cmd: status
+[2026-03-28 17:09:59] cmd: brain show
+[2026-03-28 17:09:59] cmd: status
+[2026-03-28 17:10:01] cmd: brain show
+[2026-03-28 17:10:01] cmd: brain show
+[2026-03-28 17:10:01] cmd: status
+[2026-03-28 17:10:02] cmd: status
+[2026-03-28 17:10:03] cmd: brain show
+[2026-03-28 17:10:03] cmd: brain show
+[2026-03-28 17:10:04] cmd: status
+[2026-03-28 17:10:04] cmd: status
+[2026-03-28 17:10:07] cmd: brain show
+[2026-03-28 17:10:07] cmd: status
+[2026-03-28 17:10:09] cmd: brain show
+[2026-03-28 17:10:09] cmd: brain show
+[2026-03-28 17:10:10] cmd: status
+[2026-03-28 17:10:10] cmd: status
+[2026-03-28 17:10:11] cmd: brain show
+[2026-03-28 17:10:11] cmd: brain show
+[2026-03-28 17:10:12] cmd: status
+[2026-03-28 17:10:12] cmd: status
+[2026-03-28 17:10:15] cmd: brain show
+[2026-03-28 17:10:15] cmd: status
+[2026-03-28 17:10:17] cmd: brain show
+[2026-03-28 17:10:17] cmd: brain show
+[2026-03-28 17:10:18] cmd: status
+[2026-03-28 17:10:18] cmd: status
+[2026-03-28 17:10:19] cmd: brain show
+[2026-03-28 17:10:19] cmd: brain show
+[2026-03-28 17:10:20] cmd: status
+[2026-03-28 17:10:20] cmd: status
+[2026-03-28 17:10:23] cmd: brain show
+[2026-03-28 17:10:23] cmd: status
+[2026-03-28 17:10:25] cmd: brain show
+[2026-03-28 17:10:25] cmd: brain show
+[2026-03-28 17:10:26] cmd: status
+[2026-03-28 17:10:26] cmd: status
+[2026-03-28 17:10:27] cmd: brain show
+[2026-03-28 17:10:27] cmd: brain show
+[2026-03-28 17:10:28] cmd: status
+[2026-03-28 17:10:28] cmd: status
+[2026-03-28 17:10:31] cmd: brain show
+[2026-03-28 17:10:31] cmd: status
+[2026-03-28 17:10:33] cmd: brain show
+[2026-03-28 17:10:33] cmd: brain show
+[2026-03-28 17:10:34] cmd: status
+[2026-03-28 17:10:34] cmd: status
+[2026-03-28 17:10:35] cmd: brain show
+[2026-03-28 17:10:35] cmd: brain show
+[2026-03-28 17:10:36] cmd: status
+[2026-03-28 17:10:36] cmd: status
+[2026-03-28 17:10:39] cmd: brain show
+[2026-03-28 17:10:39] cmd: status
+[2026-03-28 17:10:41] cmd: brain show
+[2026-03-28 17:10:41] cmd: brain show
+[2026-03-28 17:10:42] cmd: status
+[2026-03-28 17:10:42] cmd: status
+[2026-03-28 17:10:43] cmd: brain show
+[2026-03-28 17:10:43] cmd: brain show
+[2026-03-28 17:10:44] cmd: status
+[2026-03-28 17:10:44] cmd: status
+[2026-03-28 17:10:47] cmd: brain show
+[2026-03-28 17:10:47] cmd: status
+[2026-03-28 17:10:49] cmd: brain show
+[2026-03-28 17:10:49] cmd: brain show
+[2026-03-28 17:10:50] cmd: status
+[2026-03-28 17:10:50] cmd: status
+[2026-03-28 17:10:51] cmd: brain show
+[2026-03-28 17:10:51] cmd: brain show
+[2026-03-28 17:10:52] cmd: status
+[2026-03-28 17:10:52] cmd: status
+[2026-03-28 17:10:55] cmd: brain show
+[2026-03-28 17:10:55] cmd: status
+[2026-03-28 17:10:57] cmd: brain show
+[2026-03-28 17:10:57] cmd: brain show
+[2026-03-28 17:10:58] cmd: status
+[2026-03-28 17:10:58] cmd: status
+[2026-03-28 17:10:59] cmd: brain show
+[2026-03-28 17:10:59] cmd: brain show
+[2026-03-28 17:11:00] cmd: status
+[2026-03-28 17:11:00] cmd: status
+[2026-03-28 17:11:03] cmd: brain show
+[2026-03-28 17:11:03] cmd: status
+[2026-03-28 17:11:05] cmd: brain show
+[2026-03-28 17:11:05] cmd: brain show
+[2026-03-28 17:11:06] cmd: status
+[2026-03-28 17:11:06] cmd: status
+[2026-03-28 17:11:07] cmd: brain show
+[2026-03-28 17:11:07] cmd: brain show
+[2026-03-28 17:11:08] cmd: status
+[2026-03-28 17:11:08] cmd: status
+[2026-03-28 17:11:11] cmd: brain show
+[2026-03-28 17:11:11] cmd: status
+[2026-03-28 17:11:13] cmd: brain show
+[2026-03-28 17:11:13] cmd: brain show
+[2026-03-28 17:11:14] cmd: status
+[2026-03-28 17:11:14] cmd: status
+[2026-03-28 17:11:15] cmd: brain show
+[2026-03-28 17:11:16] cmd: status
+[2026-03-28 17:11:16] cmd: brain show
+[2026-03-28 17:11:16] cmd: status
+[2026-03-28 17:11:19] cmd: brain show
+[2026-03-28 17:11:19] cmd: status
+[2026-03-28 17:11:21] cmd: brain show
+[2026-03-28 17:11:21] cmd: brain show
+[2026-03-28 17:11:22] cmd: status
+[2026-03-28 17:11:22] cmd: status
+[2026-03-28 17:11:23] cmd: brain show
+[2026-03-28 17:11:24] cmd: brain show
+[2026-03-28 17:11:24] cmd: status
+[2026-03-28 17:11:24] cmd: status
+[2026-03-28 17:11:27] cmd: brain show
+[2026-03-28 17:11:27] cmd: status
+[2026-03-28 17:11:29] cmd: brain show
+[2026-03-28 17:11:29] cmd: brain show
+[2026-03-28 17:11:30] cmd: status
+[2026-03-28 17:11:30] cmd: status
+[2026-03-28 17:11:32] cmd: brain show
+[2026-03-28 17:11:32] cmd: brain show
+[2026-03-28 17:11:32] cmd: status
+[2026-03-28 17:11:32] cmd: status
+[2026-03-28 17:11:35] cmd: brain show
+[2026-03-28 17:11:35] cmd: status
+[2026-03-28 17:11:37] cmd: brain show
+[2026-03-28 17:11:37] cmd: brain show
+[2026-03-28 17:11:38] cmd: status
+[2026-03-28 17:11:38] cmd: status
+[2026-03-28 17:11:40] cmd: brain show
+[2026-03-28 17:11:40] cmd: brain show
+[2026-03-28 17:11:40] cmd: status
+[2026-03-28 17:11:40] cmd: status
+[2026-03-28 17:11:43] cmd: brain show
+[2026-03-28 17:11:44] cmd: status
+[2026-03-28 17:11:45] cmd: brain show
+[2026-03-28 17:11:46] cmd: brain show
+[2026-03-28 17:11:46] cmd: status
+[2026-03-28 17:11:46] cmd: status
+[2026-03-28 17:11:48] cmd: brain show
+[2026-03-28 17:11:48] cmd: brain show
+[2026-03-28 17:11:48] cmd: status
+[2026-03-28 17:11:48] cmd: status
+[2026-03-28 17:11:51] cmd: brain show
+[2026-03-28 17:11:52] cmd: status
+[2026-03-28 17:11:54] cmd: brain show
+[2026-03-28 17:11:54] cmd: brain show
+[2026-03-28 17:11:54] cmd: status
+[2026-03-28 17:11:54] cmd: status
+[2026-03-28 17:11:56] cmd: brain show
+[2026-03-28 17:11:56] cmd: brain show
+[2026-03-28 17:11:56] cmd: status
+[2026-03-28 17:11:56] cmd: status
+[2026-03-28 17:11:59] cmd: brain show
+[2026-03-28 17:12:00] cmd: status
+[2026-03-28 17:12:02] cmd: brain show
+[2026-03-28 17:12:02] cmd: brain show
+[2026-03-28 17:12:02] cmd: status
+[2026-03-28 17:12:02] cmd: status
+[2026-03-28 17:12:04] cmd: brain show
+[2026-03-28 17:12:04] cmd: brain show
+[2026-03-28 17:12:04] cmd: status
+[2026-03-28 17:12:04] cmd: status
+[2026-03-28 17:12:07] cmd: brain show
+[2026-03-28 17:12:08] cmd: status
+[2026-03-28 17:12:10] cmd: brain show
+[2026-03-28 17:12:10] cmd: brain show
+[2026-03-28 17:12:10] cmd: status
+[2026-03-28 17:12:10] cmd: status
+[2026-03-28 17:12:12] cmd: brain show
+[2026-03-28 17:12:12] cmd: brain show
+[2026-03-28 17:12:12] cmd: status
+[2026-03-28 17:12:12] cmd: status
+[2026-03-28 17:12:15] cmd: brain show
+[2026-03-28 17:12:16] cmd: status
+[2026-03-28 17:12:18] cmd: brain show
+[2026-03-28 17:12:18] cmd: brain show
+[2026-03-28 17:12:18] cmd: status
+[2026-03-28 17:12:18] cmd: status
+[2026-03-28 17:12:20] cmd: brain show
+[2026-03-28 17:12:20] cmd: brain show
+[2026-03-28 17:12:20] cmd: status
+[2026-03-28 17:12:20] cmd: status
+[2026-03-28 17:12:23] cmd: brain show
+[2026-03-28 17:12:24] cmd: status
+[2026-03-28 17:12:26] cmd: brain show
+[2026-03-28 17:12:26] cmd: brain show
+[2026-03-28 17:12:26] cmd: status
+[2026-03-28 17:12:26] cmd: status
+[2026-03-28 17:12:28] cmd: brain show
+[2026-03-28 17:12:28] cmd: brain show
+[2026-03-28 17:12:28] cmd: status
+[2026-03-28 17:12:28] cmd: status
+[2026-03-28 17:12:32] cmd: brain show
+[2026-03-28 17:12:32] cmd: status
+[2026-03-28 17:12:34] cmd: brain show
+[2026-03-28 17:12:34] cmd: brain show
+[2026-03-28 17:12:34] cmd: status
+[2026-03-28 17:12:34] cmd: status
+[2026-03-28 17:12:36] cmd: brain show
+[2026-03-28 17:12:36] cmd: brain show
+[2026-03-28 17:12:36] cmd: status
+[2026-03-28 17:12:36] cmd: status
+[2026-03-28 17:12:40] cmd: brain show
+[2026-03-28 17:12:40] cmd: status
+[2026-03-28 17:12:42] cmd: brain show
+[2026-03-28 17:12:42] cmd: brain show
+[2026-03-28 17:12:42] cmd: status
+[2026-03-28 17:12:42] cmd: status
+[2026-03-28 17:12:44] cmd: brain show
+[2026-03-28 17:12:44] cmd: brain show
+[2026-03-28 17:12:44] cmd: status
+[2026-03-28 17:12:44] cmd: status
+[2026-03-28 17:12:48] cmd: brain show
+[2026-03-28 17:12:48] cmd: status
+[2026-03-28 17:12:50] cmd: brain show
+[2026-03-28 17:12:50] cmd: brain show
+[2026-03-28 17:12:50] cmd: status
+[2026-03-28 17:12:50] cmd: status
+[2026-03-28 17:12:52] cmd: brain show
+[2026-03-28 17:12:52] cmd: brain show
+[2026-03-28 17:12:52] cmd: status
+[2026-03-28 17:12:52] cmd: status
+[2026-03-28 17:12:56] cmd: brain show
+[2026-03-28 17:12:56] cmd: status
+[2026-03-28 17:12:58] cmd: brain show
+[2026-03-28 17:12:58] cmd: brain show
+[2026-03-28 17:12:58] cmd: status
+[2026-03-28 17:12:58] cmd: status
+[2026-03-28 17:13:00] cmd: brain show
+[2026-03-28 17:13:00] cmd: brain show
+[2026-03-28 17:13:00] cmd: status
+[2026-03-28 17:13:00] cmd: status
+[2026-03-28 17:13:04] cmd: brain show
+[2026-03-28 17:13:04] cmd: status
+[2026-03-28 17:13:06] cmd: brain show
+[2026-03-28 17:13:06] cmd: brain show
+[2026-03-28 17:13:06] cmd: status
+[2026-03-28 17:13:06] cmd: status
+[2026-03-28 17:13:08] cmd: brain show
+[2026-03-28 17:13:08] cmd: brain show
+[2026-03-28 17:13:08] cmd: status
+[2026-03-28 17:13:08] cmd: status
+[2026-03-28 17:13:12] cmd: brain show
+[2026-03-28 17:13:12] cmd: status
+[2026-03-28 17:13:14] cmd: brain show
+[2026-03-28 17:13:14] cmd: brain show
+[2026-03-28 17:13:14] cmd: status
+[2026-03-28 17:13:14] cmd: status
+[2026-03-28 17:13:16] cmd: brain show
+[2026-03-28 17:13:16] cmd: brain show
+[2026-03-28 17:13:16] cmd: status
+[2026-03-28 17:13:16] cmd: status
+[2026-03-28 17:13:20] cmd: brain show
+[2026-03-28 17:13:20] cmd: status
+[2026-03-28 17:13:22] cmd: brain show
+[2026-03-28 17:13:22] cmd: brain show
+[2026-03-28 17:13:22] cmd: status
+[2026-03-28 17:13:22] cmd: status
+[2026-03-28 17:13:24] cmd: brain show
+[2026-03-28 17:13:24] cmd: brain show
+[2026-03-28 17:13:24] cmd: status
+[2026-03-28 17:13:24] cmd: status
+[2026-03-28 17:13:28] cmd: brain show
+[2026-03-28 17:13:28] cmd: status
+[2026-03-28 17:13:30] cmd: brain show
+[2026-03-28 17:13:30] cmd: brain show
+[2026-03-28 17:13:30] cmd: status
+[2026-03-28 17:13:30] cmd: status
+[2026-03-28 17:13:32] cmd: brain show
+[2026-03-28 17:13:32] cmd: brain show
+[2026-03-28 17:13:32] cmd: status
+[2026-03-28 17:13:32] cmd: status
+[2026-03-28 17:13:36] cmd: brain show
+[2026-03-28 17:13:36] cmd: status
+[2026-03-28 17:13:38] cmd: brain show
+[2026-03-28 17:13:38] cmd: brain show
+[2026-03-28 17:13:38] cmd: status
+[2026-03-28 17:13:38] cmd: status
+[2026-03-28 17:13:40] cmd: brain show
+[2026-03-28 17:13:40] cmd: brain show
+[2026-03-28 17:13:40] cmd: status
+[2026-03-28 17:13:40] cmd: status
+[2026-03-28 17:13:44] cmd: brain show
+[2026-03-28 17:13:44] cmd: status
+[2026-03-28 17:13:46] cmd: brain show
+[2026-03-28 17:13:46] cmd: brain show
+[2026-03-28 17:13:46] cmd: status
+[2026-03-28 17:13:46] cmd: status
+[2026-03-28 17:13:48] cmd: brain show
+[2026-03-28 17:13:48] cmd: brain show
+[2026-03-28 17:13:48] cmd: status
+[2026-03-28 17:13:48] cmd: status
+[2026-03-28 17:13:52] cmd: brain show
+[2026-03-28 17:13:52] cmd: status
+[2026-03-28 17:13:54] cmd: brain show
+[2026-03-28 17:13:54] cmd: brain show
+[2026-03-28 17:13:54] cmd: status
+[2026-03-28 17:13:54] cmd: status
+[2026-03-28 17:13:56] cmd: brain show
+[2026-03-28 17:13:56] cmd: brain show
+[2026-03-28 17:13:56] cmd: status
+[2026-03-28 17:13:56] cmd: status
+[2026-03-28 17:14:00] cmd: brain show
+[2026-03-28 17:14:00] cmd: status
+[2026-03-28 17:14:02] cmd: brain show
+[2026-03-28 17:14:02] cmd: brain show
+[2026-03-28 17:14:02] cmd: status
+[2026-03-28 17:14:02] cmd: status
+[2026-03-28 17:14:04] cmd: brain show
+[2026-03-28 17:14:04] cmd: brain show
+[2026-03-28 17:14:04] cmd: status
+[2026-03-28 17:14:04] cmd: status
+[2026-03-28 17:14:08] cmd: brain show
+[2026-03-28 17:14:08] cmd: status
+[2026-03-28 17:14:10] cmd: brain show
+[2026-03-28 17:14:10] cmd: brain show
+[2026-03-28 17:14:10] cmd: status
+[2026-03-28 17:14:10] cmd: status
+[2026-03-28 17:14:12] cmd: brain show
+[2026-03-28 17:14:12] cmd: brain show
+[2026-03-28 17:14:12] cmd: status
+[2026-03-28 17:14:12] cmd: status
+[2026-03-28 17:14:16] cmd: brain show
+[2026-03-28 17:14:16] cmd: status
+[2026-03-28 17:14:18] cmd: brain show
+[2026-03-28 17:14:18] cmd: brain show
+[2026-03-28 17:14:18] cmd: status
+[2026-03-28 17:14:18] cmd: status
+[2026-03-28 17:14:20] cmd: brain show
+[2026-03-28 17:14:20] cmd: brain show
+[2026-03-28 17:14:20] cmd: status
+[2026-03-28 17:14:20] cmd: status
+[2026-03-28 17:14:24] cmd: brain show
+[2026-03-28 17:14:24] cmd: status
+[2026-03-28 17:14:26] cmd: brain show
+[2026-03-28 17:14:26] cmd: brain show
+[2026-03-28 17:14:26] cmd: status
+[2026-03-28 17:14:26] cmd: status
+[2026-03-28 17:14:28] cmd: brain show
+[2026-03-28 17:14:28] cmd: brain show
+[2026-03-28 17:14:28] cmd: status
+[2026-03-28 17:14:28] cmd: status
+[2026-03-28 17:14:32] cmd: brain show
+[2026-03-28 17:14:32] cmd: status
+[2026-03-28 17:14:34] cmd: brain show
+[2026-03-28 17:14:34] cmd: brain show
+[2026-03-28 17:14:34] cmd: status
+[2026-03-28 17:14:34] cmd: status
+[2026-03-28 17:14:36] cmd: brain show
+[2026-03-28 17:14:36] cmd: brain show
+[2026-03-28 17:14:36] cmd: status
+[2026-03-28 17:14:36] cmd: status
+[2026-03-28 17:14:40] cmd: brain show
+[2026-03-28 17:14:40] cmd: status
+[2026-03-28 17:14:42] cmd: brain show
+[2026-03-28 17:14:42] cmd: brain show
+[2026-03-28 17:14:42] cmd: status
+[2026-03-28 17:14:42] cmd: status
+[2026-03-28 17:14:44] cmd: brain show
+[2026-03-28 17:14:44] cmd: brain show
+[2026-03-28 17:14:44] cmd: status
+[2026-03-28 17:14:44] cmd: status
+[2026-03-28 17:14:48] cmd: brain show
+[2026-03-28 17:14:48] cmd: status
+[2026-03-28 17:14:50] cmd: brain show
+[2026-03-28 17:14:50] cmd: brain show
+[2026-03-28 17:14:50] cmd: status
+[2026-03-28 17:14:50] cmd: status
+[2026-03-28 17:14:52] cmd: brain show
+[2026-03-28 17:14:52] cmd: brain show
+[2026-03-28 17:14:52] cmd: status
+[2026-03-28 17:14:52] cmd: status
+[2026-03-28 17:14:56] cmd: brain show
+[2026-03-28 17:14:56] cmd: status
+[2026-03-28 17:14:58] cmd: brain show
+[2026-03-28 17:14:58] cmd: brain show
+[2026-03-28 17:14:58] cmd: status
+[2026-03-28 17:14:58] cmd: status
+[2026-03-28 17:15:00] cmd: brain show
+[2026-03-28 17:15:00] cmd: brain show
+[2026-03-28 17:15:00] cmd: status
+[2026-03-28 17:15:00] cmd: status
+[2026-03-28 17:15:04] cmd: brain show
+[2026-03-28 17:15:04] cmd: status
+[2026-03-28 17:15:06] cmd: brain show
+[2026-03-28 17:15:06] cmd: brain show
+[2026-03-28 17:15:06] cmd: status
+[2026-03-28 17:15:06] cmd: status
+[2026-03-28 17:15:08] cmd: brain show
+[2026-03-28 17:15:08] cmd: brain show
+[2026-03-28 17:15:08] cmd: status
+[2026-03-28 17:15:08] cmd: status
+[2026-03-28 17:15:12] cmd: brain show
+[2026-03-28 17:15:12] cmd: status
+[2026-03-28 17:15:14] cmd: brain show
+[2026-03-28 17:15:14] cmd: brain show
+[2026-03-28 17:15:14] cmd: status
+[2026-03-28 17:15:14] cmd: status
+[2026-03-28 17:15:16] cmd: brain show
+[2026-03-28 17:15:16] cmd: brain show
+[2026-03-28 17:15:16] cmd: status
+[2026-03-28 17:15:16] cmd: status
+[2026-03-28 17:15:20] cmd: brain show
+[2026-03-28 17:15:20] cmd: status
+[2026-03-28 17:15:22] cmd: brain show
+[2026-03-28 17:15:22] cmd: brain show
+[2026-03-28 17:15:22] cmd: status
+[2026-03-28 17:15:22] cmd: status
+[2026-03-28 17:15:24] cmd: brain show
+[2026-03-28 17:15:24] cmd: brain show
+[2026-03-28 17:15:24] cmd: status
+[2026-03-28 17:15:24] cmd: status
+[2026-03-28 17:15:28] cmd: brain show
+[2026-03-28 17:15:28] cmd: status
+[2026-03-28 17:15:30] cmd: brain show
+[2026-03-28 17:15:30] cmd: brain show
+[2026-03-28 17:15:30] cmd: status
+[2026-03-28 17:15:30] cmd: status
+[2026-03-28 17:15:32] cmd: brain show
+[2026-03-28 17:15:32] cmd: brain show
+[2026-03-28 17:15:32] cmd: status
+[2026-03-28 17:15:32] cmd: status
+[2026-03-28 17:15:36] cmd: brain show
+[2026-03-28 17:15:36] cmd: status
+[2026-03-28 17:15:38] cmd: brain show
+[2026-03-28 17:15:38] cmd: brain show
+[2026-03-28 17:15:38] cmd: status
+[2026-03-28 17:15:38] cmd: status
+[2026-03-28 17:15:40] cmd: brain show
+[2026-03-28 17:15:40] cmd: brain show
+[2026-03-28 17:15:40] cmd: status
+[2026-03-28 17:15:40] cmd: status
+[2026-03-28 17:15:44] cmd: brain show
+[2026-03-28 17:15:44] cmd: status
+[2026-03-28 17:15:46] cmd: brain show
+[2026-03-28 17:15:46] cmd: brain show
+[2026-03-28 17:15:46] cmd: status
+[2026-03-28 17:15:46] cmd: status
+[2026-03-28 17:15:48] cmd: brain show
+[2026-03-28 17:15:48] cmd: brain show
+[2026-03-28 17:15:48] cmd: status
+[2026-03-28 17:15:48] cmd: status
+[2026-03-28 17:15:52] cmd: brain show
+[2026-03-28 17:15:52] cmd: status
+[2026-03-28 17:15:54] cmd: brain show
+[2026-03-28 17:15:54] cmd: brain show
+[2026-03-28 17:15:54] cmd: status
+[2026-03-28 17:15:54] cmd: status
+[2026-03-28 17:15:56] cmd: brain show
+[2026-03-28 17:15:56] cmd: brain show
+[2026-03-28 17:15:56] cmd: status
+[2026-03-28 17:15:56] cmd: status
+[2026-03-28 17:16:00] cmd: brain show
+[2026-03-28 17:16:00] cmd: status
+[2026-03-28 17:16:02] cmd: brain show
+[2026-03-28 17:16:02] cmd: brain show
+[2026-03-28 17:16:02] cmd: status
+[2026-03-28 17:16:02] cmd: status
+[2026-03-28 17:16:04] cmd: brain show
+[2026-03-28 17:16:04] cmd: brain show
+[2026-03-28 17:16:04] cmd: status
+[2026-03-28 17:16:04] cmd: status
+[2026-03-28 17:16:08] cmd: brain show
+[2026-03-28 17:16:08] cmd: status
+[2026-03-28 17:16:10] cmd: brain show
+[2026-03-28 17:16:10] cmd: brain show
+[2026-03-28 17:16:10] cmd: status
+[2026-03-28 17:16:10] cmd: status
+[2026-03-28 17:16:12] cmd: brain show
+[2026-03-28 17:16:12] cmd: brain show
+[2026-03-28 17:16:12] cmd: status
+[2026-03-28 17:16:12] cmd: status
+[2026-03-28 17:16:16] cmd: brain show
+[2026-03-28 17:16:16] cmd: status
+[2026-03-28 17:16:18] cmd: brain show
+[2026-03-28 17:16:18] cmd: brain show
+[2026-03-28 17:16:18] cmd: status
+[2026-03-28 17:16:18] cmd: status
+[2026-03-28 17:16:20] cmd: brain show
+[2026-03-28 17:16:20] cmd: brain show
+[2026-03-28 17:16:20] cmd: status
+[2026-03-28 17:16:20] cmd: status
+[2026-03-28 17:16:24] cmd: brain show
+[2026-03-28 17:16:24] cmd: status
+[2026-03-28 17:16:26] cmd: brain show
+[2026-03-28 17:16:26] cmd: brain show
+[2026-03-28 17:16:26] cmd: status
+[2026-03-28 17:16:26] cmd: status
+[2026-03-28 17:16:28] cmd: brain show
+[2026-03-28 17:16:28] cmd: brain show
+[2026-03-28 17:16:28] cmd: status
+[2026-03-28 17:16:28] cmd: status
+[2026-03-28 17:16:32] cmd: brain show
+[2026-03-28 17:16:32] cmd: status
+[2026-03-28 17:16:34] cmd: brain show
+[2026-03-28 17:16:34] cmd: brain show
+[2026-03-28 17:16:34] cmd: status
+[2026-03-28 17:16:34] cmd: status
+[2026-03-28 17:16:36] cmd: brain show
+[2026-03-28 17:16:36] cmd: brain show
+[2026-03-28 17:16:36] cmd: status
+[2026-03-28 17:16:36] cmd: status
+[2026-03-28 17:16:40] cmd: brain show
+[2026-03-28 17:16:40] cmd: status
+[2026-03-28 17:16:42] cmd: brain show
+[2026-03-28 17:16:42] cmd: brain show
+[2026-03-28 17:16:42] cmd: status
+[2026-03-28 17:16:42] cmd: status
+[2026-03-28 17:16:44] cmd: brain show
+[2026-03-28 17:16:44] cmd: brain show
+[2026-03-28 17:16:44] cmd: status
+[2026-03-28 17:16:44] cmd: status
+[2026-03-28 17:16:48] cmd: brain show
+[2026-03-28 17:16:48] cmd: status
+[2026-03-28 17:16:50] cmd: brain show
+[2026-03-28 17:16:50] cmd: brain show
+[2026-03-28 17:16:50] cmd: status
+[2026-03-28 17:16:50] cmd: status
+[2026-03-28 17:16:52] cmd: brain show
+[2026-03-28 17:16:52] cmd: brain show
+[2026-03-28 17:16:52] cmd: status
+[2026-03-28 17:16:52] cmd: status
+[2026-03-28 17:16:56] cmd: brain show
+[2026-03-28 17:16:56] cmd: status
+[2026-03-28 17:16:58] cmd: brain show
+[2026-03-28 17:16:58] cmd: brain show
+[2026-03-28 17:16:58] cmd: status
+[2026-03-28 17:16:58] cmd: status
+[2026-03-28 17:17:00] cmd: brain show
+[2026-03-28 17:17:00] cmd: brain show
+[2026-03-28 17:17:00] cmd: status
+[2026-03-28 17:17:00] cmd: status
+[2026-03-28 17:17:04] cmd: brain show
+[2026-03-28 17:17:04] cmd: status
+[2026-03-28 17:17:06] cmd: brain show
+[2026-03-28 17:17:06] cmd: brain show
+[2026-03-28 17:17:06] cmd: status
+[2026-03-28 17:17:06] cmd: status
+[2026-03-28 17:17:08] cmd: brain show
+[2026-03-28 17:17:08] cmd: brain show
+[2026-03-28 17:17:08] cmd: status
+[2026-03-28 17:17:08] cmd: status
+[2026-03-28 17:17:12] cmd: brain show
+[2026-03-28 17:17:12] cmd: status
+[2026-03-28 17:17:14] cmd: brain show
+[2026-03-28 17:17:14] cmd: brain show
+[2026-03-28 17:17:14] cmd: status
+[2026-03-28 17:17:14] cmd: status
+[2026-03-28 17:17:16] cmd: brain show
+[2026-03-28 17:17:16] cmd: brain show
+[2026-03-28 17:17:16] cmd: status
+[2026-03-28 17:17:16] cmd: status
+[2026-03-28 17:17:20] cmd: brain show
+[2026-03-28 17:17:20] cmd: status
+[2026-03-28 17:17:22] cmd: brain show
+[2026-03-28 17:17:22] cmd: brain show
+[2026-03-28 17:17:22] cmd: status
+[2026-03-28 17:17:22] cmd: status
+[2026-03-28 17:17:24] cmd: brain show
+[2026-03-28 17:17:24] cmd: brain show
+[2026-03-28 17:17:24] cmd: status
+[2026-03-28 17:17:24] cmd: status
+[2026-03-28 17:17:28] cmd: brain show
+[2026-03-28 17:17:28] cmd: status
+[2026-03-28 17:17:30] cmd: brain show
+[2026-03-28 17:17:30] cmd: brain show
+[2026-03-28 17:17:30] cmd: status
+[2026-03-28 17:17:30] cmd: status
+[2026-03-28 17:17:32] cmd: brain show
+[2026-03-28 17:17:32] cmd: brain show
+[2026-03-28 17:17:32] cmd: status
+[2026-03-28 17:17:32] cmd: status
+[2026-03-28 17:17:36] cmd: brain show
+[2026-03-28 17:17:36] cmd: status
+[2026-03-28 17:17:38] cmd: brain show
+[2026-03-28 17:17:38] cmd: brain show
+[2026-03-28 17:17:38] cmd: status
+[2026-03-28 17:17:38] cmd: status
+[2026-03-28 17:17:40] cmd: brain show
+[2026-03-28 17:17:40] cmd: brain show
+[2026-03-28 17:17:40] cmd: status
+[2026-03-28 17:17:40] cmd: status
+[2026-03-28 17:17:44] cmd: brain show
+[2026-03-28 17:17:44] cmd: status
+[2026-03-28 17:17:46] cmd: brain show
+[2026-03-28 17:17:46] cmd: brain show
+[2026-03-28 17:17:46] cmd: status
+[2026-03-28 17:17:46] cmd: status
+[2026-03-28 17:17:48] cmd: brain show
+[2026-03-28 17:17:48] cmd: brain show
+[2026-03-28 17:17:48] cmd: status
+[2026-03-28 17:17:48] cmd: status
+[2026-03-28 17:17:52] cmd: brain show
+[2026-03-28 17:17:52] cmd: status
+[2026-03-28 17:17:54] cmd: brain show
+[2026-03-28 17:17:54] cmd: brain show
+[2026-03-28 17:17:54] cmd: status
+[2026-03-28 17:17:54] cmd: status
+[2026-03-28 17:17:56] cmd: brain show
+[2026-03-28 17:17:56] cmd: brain show
+[2026-03-28 17:17:56] cmd: status
+[2026-03-28 17:17:56] cmd: status
+[2026-03-28 17:18:00] cmd: brain show
+[2026-03-28 17:18:00] cmd: status
+[2026-03-28 17:18:02] cmd: brain show
+[2026-03-28 17:18:02] cmd: brain show
+[2026-03-28 17:18:02] cmd: status
+[2026-03-28 17:18:02] cmd: status
+[2026-03-28 17:18:04] cmd: brain show
+[2026-03-28 17:18:04] cmd: brain show
+[2026-03-28 17:18:04] cmd: status
+[2026-03-28 17:18:04] cmd: status
+[2026-03-28 17:18:08] cmd: brain show
+[2026-03-28 17:18:08] cmd: status
+[2026-03-28 17:18:10] cmd: brain show
+[2026-03-28 17:18:10] cmd: brain show
+[2026-03-28 17:18:10] cmd: status
+[2026-03-28 17:18:10] cmd: status
+[2026-03-28 17:18:12] cmd: brain show
+[2026-03-28 17:18:12] cmd: brain show
+[2026-03-28 17:18:12] cmd: status
+[2026-03-28 17:18:12] cmd: status
+[2026-03-28 17:18:16] cmd: brain show
+[2026-03-28 17:18:16] cmd: status
+[2026-03-28 17:18:18] cmd: brain show
+[2026-03-28 17:18:18] cmd: brain show
+[2026-03-28 17:18:18] cmd: status
+[2026-03-28 17:18:18] cmd: status
+[2026-03-28 17:18:20] cmd: brain show
+[2026-03-28 17:18:20] cmd: brain show
+[2026-03-28 17:18:20] cmd: status
+[2026-03-28 17:18:20] cmd: status
+[2026-03-28 17:18:24] cmd: brain show
+[2026-03-28 17:18:24] cmd: status
+[2026-03-28 17:18:26] cmd: brain show
+[2026-03-28 17:18:26] cmd: brain show
+[2026-03-28 17:18:26] cmd: status
+[2026-03-28 17:18:26] cmd: status
+[2026-03-28 17:18:28] cmd: brain show
+[2026-03-28 17:18:28] cmd: brain show
+[2026-03-28 17:18:28] cmd: status
+[2026-03-28 17:18:28] cmd: status
+[2026-03-28 17:18:32] cmd: brain show
+[2026-03-28 17:18:32] cmd: status
+[2026-03-28 17:18:34] cmd: brain show
+[2026-03-28 17:18:34] cmd: brain show
+[2026-03-28 17:18:34] cmd: status
+[2026-03-28 17:18:34] cmd: status
+[2026-03-28 17:18:36] cmd: brain show
+[2026-03-28 17:18:36] cmd: brain show
+[2026-03-28 17:18:36] cmd: status
+[2026-03-28 17:18:36] cmd: status
+[2026-03-28 17:18:40] cmd: brain show
+[2026-03-28 17:18:40] cmd: status
+[2026-03-28 17:18:42] cmd: brain show
+[2026-03-28 17:18:42] cmd: brain show
+[2026-03-28 17:18:42] cmd: status
+[2026-03-28 17:18:42] cmd: status
+[2026-03-28 17:18:44] cmd: brain show
+[2026-03-28 17:18:44] cmd: brain show
+[2026-03-28 17:18:44] cmd: status
+[2026-03-28 17:18:44] cmd: status
+[2026-03-28 17:18:48] cmd: brain show
+[2026-03-28 17:18:48] cmd: status
+[2026-03-28 17:18:50] cmd: brain show
+[2026-03-28 17:18:50] cmd: brain show
+[2026-03-28 17:18:50] cmd: status
+[2026-03-28 17:18:50] cmd: status
+[2026-03-28 17:18:52] cmd: brain show
+[2026-03-28 17:18:52] cmd: brain show
+[2026-03-28 17:18:52] cmd: status
+[2026-03-28 17:18:52] cmd: status
+[2026-03-28 17:18:56] cmd: brain show
+[2026-03-28 17:18:56] cmd: status
+[2026-03-28 17:18:58] cmd: brain show
+[2026-03-28 17:18:58] cmd: brain show
+[2026-03-28 17:18:58] cmd: status
+[2026-03-28 17:18:58] cmd: status
+[2026-03-28 17:19:00] cmd: brain show
+[2026-03-28 17:19:00] cmd: brain show
+[2026-03-28 17:19:00] cmd: status
+[2026-03-28 17:19:00] cmd: status
+[2026-03-28 17:19:04] cmd: brain show
+[2026-03-28 17:19:04] cmd: status
+[2026-03-28 17:19:06] cmd: brain show
+[2026-03-28 17:19:06] cmd: brain show
+[2026-03-28 17:19:06] cmd: status
+[2026-03-28 17:19:06] cmd: status
+[2026-03-28 17:19:08] cmd: brain show
+[2026-03-28 17:19:08] cmd: brain show
+[2026-03-28 17:19:08] cmd: status
+[2026-03-28 17:19:08] cmd: status
+[2026-03-28 17:19:12] cmd: brain show
+[2026-03-28 17:19:12] cmd: status
+[2026-03-28 17:19:14] cmd: brain show
+[2026-03-28 17:19:14] cmd: brain show
+[2026-03-28 17:19:14] cmd: status
+[2026-03-28 17:19:14] cmd: status
+[2026-03-28 17:19:16] cmd: brain show
+[2026-03-28 17:19:16] cmd: brain show
+[2026-03-28 17:19:16] cmd: status
+[2026-03-28 17:19:16] cmd: status
+[2026-03-28 17:19:20] cmd: brain show
+[2026-03-28 17:19:20] cmd: status
+[2026-03-28 17:19:22] cmd: brain show
+[2026-03-28 17:19:22] cmd: brain show
+[2026-03-28 17:19:22] cmd: status
+[2026-03-28 17:19:22] cmd: status
+[2026-03-28 17:19:24] cmd: brain show
+[2026-03-28 17:19:24] cmd: brain show
+[2026-03-28 17:19:24] cmd: status
+[2026-03-28 17:19:24] cmd: status
+[2026-03-28 17:19:28] cmd: brain show
+[2026-03-28 17:19:28] cmd: status
+[2026-03-28 17:19:30] cmd: brain show
+[2026-03-28 17:19:30] cmd: brain show
+[2026-03-28 17:19:30] cmd: status
+[2026-03-28 17:19:30] cmd: status
+[2026-03-28 17:19:32] cmd: brain show
+[2026-03-28 17:19:32] cmd: brain show
+[2026-03-28 17:19:32] cmd: status
+[2026-03-28 17:19:32] cmd: status
+[2026-03-28 17:19:36] cmd: brain show
+[2026-03-28 17:19:36] cmd: status
+[2026-03-28 17:19:38] cmd: brain show
+[2026-03-28 17:19:38] cmd: brain show
+[2026-03-28 17:19:38] cmd: status
+[2026-03-28 17:19:38] cmd: status
+[2026-03-28 17:19:40] cmd: brain show
+[2026-03-28 17:19:40] cmd: brain show
+[2026-03-28 17:19:40] cmd: status
+[2026-03-28 17:19:40] cmd: status
+[2026-03-28 17:19:44] cmd: brain show
+[2026-03-28 17:19:44] cmd: status
+[2026-03-28 17:19:46] cmd: brain show
+[2026-03-28 17:19:46] cmd: status
+[2026-03-28 17:19:46] cmd: brain show
+[2026-03-28 17:19:46] cmd: status
+[2026-03-28 17:19:48] cmd: brain show
+[2026-03-28 17:19:48] cmd: brain show
+[2026-03-28 17:19:48] cmd: status
+[2026-03-28 17:19:48] cmd: status
+[2026-03-28 17:19:52] cmd: brain show
+[2026-03-28 17:19:52] cmd: status
+[2026-03-28 17:19:54] cmd: brain show
+[2026-03-28 17:19:54] cmd: brain show
+[2026-03-28 17:19:54] cmd: status
+[2026-03-28 17:19:54] cmd: status
+[2026-03-28 17:19:56] cmd: brain show
+[2026-03-28 17:19:56] cmd: brain show
+[2026-03-28 17:19:56] cmd: status
+[2026-03-28 17:19:56] cmd: status
+[2026-03-28 17:20:00] cmd: brain show
+[2026-03-28 17:20:00] cmd: status
+[2026-03-28 17:20:02] cmd: brain show
+[2026-03-28 17:20:02] cmd: brain show
+[2026-03-28 17:20:02] cmd: status
+[2026-03-28 17:20:02] cmd: status
+[2026-03-28 17:20:04] cmd: brain show
+[2026-03-28 17:20:04] cmd: brain show
+[2026-03-28 17:20:04] cmd: status
+[2026-03-28 17:20:04] cmd: status
+[2026-03-28 17:20:08] cmd: brain show
+[2026-03-28 17:20:08] cmd: status
+[2026-03-28 17:20:10] cmd: brain show
+[2026-03-28 17:20:10] cmd: brain show
+[2026-03-28 17:20:10] cmd: status
+[2026-03-28 17:20:10] cmd: status
+[2026-03-28 17:20:12] cmd: brain show
+[2026-03-28 17:20:12] cmd: brain show
+[2026-03-28 17:20:12] cmd: status
+[2026-03-28 17:20:12] cmd: status
+[2026-03-28 17:20:16] cmd: brain show
+[2026-03-28 17:20:16] cmd: status
+[2026-03-28 17:20:18] cmd: brain show
+[2026-03-28 17:20:18] cmd: brain show
+[2026-03-28 17:20:18] cmd: status
+[2026-03-28 17:20:18] cmd: status
+[2026-03-28 17:20:20] cmd: brain show
+[2026-03-28 17:20:20] cmd: brain show
+[2026-03-28 17:20:20] cmd: status
+[2026-03-28 17:20:20] cmd: status
+[2026-03-28 17:20:24] cmd: brain show
+[2026-03-28 17:20:24] cmd: status
+[2026-03-28 17:20:26] cmd: brain show
+[2026-03-28 17:20:26] cmd: brain show
+[2026-03-28 17:20:26] cmd: status
+[2026-03-28 17:20:26] cmd: status
+[2026-03-28 17:20:28] cmd: brain show
+[2026-03-28 17:20:28] cmd: brain show
+[2026-03-28 17:20:28] cmd: status
+[2026-03-28 17:20:28] cmd: status
+[2026-03-28 17:20:32] cmd: brain show
+[2026-03-28 17:20:32] cmd: status
+[2026-03-28 17:20:34] cmd: brain show
+[2026-03-28 17:20:34] cmd: brain show
+[2026-03-28 17:20:34] cmd: status
+[2026-03-28 17:20:34] cmd: status
+[2026-03-28 17:20:36] cmd: brain show
+[2026-03-28 17:20:36] cmd: brain show
+[2026-03-28 17:20:36] cmd: status
+[2026-03-28 17:20:36] cmd: status
+[2026-03-28 17:20:40] cmd: brain show
+[2026-03-28 17:20:40] cmd: status
+[2026-03-28 17:20:42] cmd: brain show
+[2026-03-28 17:20:42] cmd: brain show
+[2026-03-28 17:20:42] cmd: status
+[2026-03-28 17:20:42] cmd: status
+[2026-03-28 17:20:44] cmd: brain show
+[2026-03-28 17:20:44] cmd: brain show
+[2026-03-28 17:20:44] cmd: status
+[2026-03-28 17:20:44] cmd: status
+[2026-03-28 17:20:48] cmd: brain show
+[2026-03-28 17:20:48] cmd: status
+[2026-03-28 17:20:50] cmd: brain show
+[2026-03-28 17:20:50] cmd: brain show
+[2026-03-28 17:20:50] cmd: status
+[2026-03-28 17:20:50] cmd: status
+[2026-03-28 17:20:52] cmd: brain show
+[2026-03-28 17:20:52] cmd: brain show
+[2026-03-28 17:20:52] cmd: status
+[2026-03-28 17:20:52] cmd: status
+[2026-03-28 17:20:56] cmd: brain show
+[2026-03-28 17:20:56] cmd: status
+[2026-03-28 17:20:58] cmd: brain show
+[2026-03-28 17:20:58] cmd: brain show
+[2026-03-28 17:20:58] cmd: status
+[2026-03-28 17:20:58] cmd: status
+[2026-03-28 17:21:00] cmd: brain show
+[2026-03-28 17:21:00] cmd: brain show
+[2026-03-28 17:21:00] cmd: status
+[2026-03-28 17:21:00] cmd: status
+[2026-03-28 17:21:04] cmd: brain show
+[2026-03-28 17:21:04] cmd: status
+[2026-03-28 17:21:06] cmd: brain show
+[2026-03-28 17:21:06] cmd: brain show
+[2026-03-28 17:21:06] cmd: status
+[2026-03-28 17:21:06] cmd: status
+[2026-03-28 17:21:08] cmd: brain show
+[2026-03-28 17:21:08] cmd: brain show
+[2026-03-28 17:21:08] cmd: status
+[2026-03-28 17:21:08] cmd: status
+[2026-03-28 17:21:12] cmd: brain show
+[2026-03-28 17:21:12] cmd: status
+[2026-03-28 17:21:14] cmd: brain show
+[2026-03-28 17:21:14] cmd: brain show
+[2026-03-28 17:21:14] cmd: status
+[2026-03-28 17:21:14] cmd: status
+[2026-03-28 17:21:16] cmd: brain show
+[2026-03-28 17:21:16] cmd: brain show
+[2026-03-28 17:21:16] cmd: status
+[2026-03-28 17:21:16] cmd: status
+[2026-03-28 17:21:20] cmd: brain show
+[2026-03-28 17:21:20] cmd: status
+[2026-03-28 17:21:22] cmd: brain show
+[2026-03-28 17:21:22] cmd: brain show
+[2026-03-28 17:21:22] cmd: status
+[2026-03-28 17:21:22] cmd: status
+[2026-03-28 17:21:24] cmd: brain show
+[2026-03-28 17:21:24] cmd: brain show
+[2026-03-28 17:21:24] cmd: status
+[2026-03-28 17:21:24] cmd: status
+[2026-03-28 17:21:28] cmd: brain show
+[2026-03-28 17:21:28] cmd: status
+[2026-03-28 17:21:30] cmd: brain show
+[2026-03-28 17:21:30] cmd: brain show
+[2026-03-28 17:21:30] cmd: status
+[2026-03-28 17:21:30] cmd: status
+[2026-03-28 17:21:32] cmd: brain show
+[2026-03-28 17:21:32] cmd: brain show
+[2026-03-28 17:21:32] cmd: status
+[2026-03-28 17:21:32] cmd: status
+[2026-03-28 17:21:36] cmd: brain show
+[2026-03-28 17:21:36] cmd: status
+[2026-03-28 17:21:38] cmd: brain show
+[2026-03-28 17:21:38] cmd: brain show
+[2026-03-28 17:21:38] cmd: status
+[2026-03-28 17:21:38] cmd: status
+[2026-03-28 17:21:40] cmd: brain show
+[2026-03-28 17:21:40] cmd: brain show
+[2026-03-28 17:21:40] cmd: status
+[2026-03-28 17:21:40] cmd: status
+[2026-03-28 17:21:44] cmd: brain show
+[2026-03-28 17:21:44] cmd: status
+[2026-03-28 17:21:46] cmd: brain show
+[2026-03-28 17:21:46] cmd: brain show
+[2026-03-28 17:21:46] cmd: status
+[2026-03-28 17:21:46] cmd: status
+[2026-03-28 17:21:48] cmd: brain show
+[2026-03-28 17:21:48] cmd: brain show
+[2026-03-28 17:21:48] cmd: status
+[2026-03-28 17:21:48] cmd: status
+[2026-03-28 17:21:52] cmd: brain show
+[2026-03-28 17:21:52] cmd: status
+[2026-03-28 17:21:54] cmd: brain show
+[2026-03-28 17:21:54] cmd: brain show
+[2026-03-28 17:21:54] cmd: status
+[2026-03-28 17:21:54] cmd: status
+[2026-03-28 17:21:56] cmd: brain show
+[2026-03-28 17:21:56] cmd: brain show
+[2026-03-28 17:21:56] cmd: status
+[2026-03-28 17:21:56] cmd: status
+[2026-03-28 17:22:00] cmd: brain show
+[2026-03-28 17:22:00] cmd: status
+[2026-03-28 17:22:02] cmd: brain show
+[2026-03-28 17:22:02] cmd: brain show
+[2026-03-28 17:22:02] cmd: status
+[2026-03-28 17:22:02] cmd: status
+[2026-03-28 17:22:04] cmd: brain show
+[2026-03-28 17:22:04] cmd: brain show
+[2026-03-28 17:22:04] cmd: status
+[2026-03-28 17:22:04] cmd: status
+[2026-03-28 17:22:08] cmd: brain show
+[2026-03-28 17:22:08] cmd: status
+[2026-03-28 17:22:10] cmd: brain show
+[2026-03-28 17:22:10] cmd: brain show
+[2026-03-28 17:22:10] cmd: status
+[2026-03-28 17:22:10] cmd: status
+[2026-03-28 17:22:12] cmd: brain show
+[2026-03-28 17:22:12] cmd: brain show
+[2026-03-28 17:22:12] cmd: status
+[2026-03-28 17:22:12] cmd: status
+[2026-03-28 17:22:16] cmd: brain show
+[2026-03-28 17:22:16] cmd: status
+[2026-03-28 17:22:18] cmd: brain show
+[2026-03-28 17:22:18] cmd: brain show
+[2026-03-28 17:22:18] cmd: status
+[2026-03-28 17:22:18] cmd: status
+[2026-03-28 17:22:20] cmd: brain show
+[2026-03-28 17:22:20] cmd: brain show
+[2026-03-28 17:22:20] cmd: status
+[2026-03-28 17:22:20] cmd: status
+[2026-03-28 17:22:24] cmd: brain show
+[2026-03-28 17:22:24] cmd: status
+[2026-03-28 17:22:26] cmd: brain show
+[2026-03-28 17:22:26] cmd: brain show
+[2026-03-28 17:22:26] cmd: status
+[2026-03-28 17:22:26] cmd: status
+[2026-03-28 17:22:28] cmd: brain show
+[2026-03-28 17:22:28] cmd: brain show
+[2026-03-28 17:22:28] cmd: status
+[2026-03-28 17:22:28] cmd: status
+[2026-03-28 17:22:32] cmd: brain show
+[2026-03-28 17:22:32] cmd: status
+[2026-03-28 17:22:34] cmd: brain show
+[2026-03-28 17:22:34] cmd: brain show
+[2026-03-28 17:22:34] cmd: status
+[2026-03-28 17:22:34] cmd: status
+[2026-03-28 17:22:36] cmd: brain show
+[2026-03-28 17:22:36] cmd: status
+[2026-03-28 17:22:36] cmd: brain show
+[2026-03-28 17:22:36] cmd: status
+[2026-03-28 17:22:40] cmd: brain show
+[2026-03-28 17:22:40] cmd: status
+[2026-03-28 17:22:42] cmd: brain show
+[2026-03-28 17:22:42] cmd: brain show
+[2026-03-28 17:22:42] cmd: status
+[2026-03-28 17:22:42] cmd: status
+[2026-03-28 17:22:44] cmd: brain show
+[2026-03-28 17:22:44] cmd: brain show
+[2026-03-28 17:22:44] cmd: status
+[2026-03-28 17:22:45] cmd: status
+[2026-03-28 17:22:48] cmd: brain show
+[2026-03-28 17:22:48] cmd: status
+[2026-03-28 17:22:50] cmd: brain show
+[2026-03-28 17:22:50] cmd: brain show
+[2026-03-28 17:22:50] cmd: status
+[2026-03-28 17:22:50] cmd: status
+[2026-03-28 17:22:52] cmd: brain show
+[2026-03-28 17:22:52] cmd: brain show
+[2026-03-28 17:22:52] cmd: status
+[2026-03-28 17:22:53] cmd: status
+[2026-03-28 17:22:56] cmd: brain show
+[2026-03-28 17:22:56] cmd: status
+[2026-03-28 17:22:58] cmd: brain show
+[2026-03-28 17:22:58] cmd: brain show
+[2026-03-28 17:22:58] cmd: status
+[2026-03-28 17:22:58] cmd: status
+[2026-03-28 17:23:00] cmd: brain show
+[2026-03-28 17:23:00] cmd: brain show
+[2026-03-28 17:23:00] cmd: status
+[2026-03-28 17:23:01] cmd: status
+[2026-03-28 17:23:04] cmd: brain show
+[2026-03-28 17:23:04] cmd: status
+[2026-03-28 17:23:06] cmd: brain show
+[2026-03-28 17:23:06] cmd: brain show
+[2026-03-28 17:23:06] cmd: status
+[2026-03-28 17:23:07] cmd: status
+[2026-03-28 17:23:08] cmd: brain show
+[2026-03-28 17:23:08] cmd: brain show
+[2026-03-28 17:23:08] cmd: status
+[2026-03-28 17:23:09] cmd: status
+[2026-03-28 17:23:12] cmd: brain show
+[2026-03-28 17:23:12] cmd: status
+[2026-03-28 17:23:14] cmd: brain show
+[2026-03-28 17:23:14] cmd: brain show
+[2026-03-28 17:23:14] cmd: status
+[2026-03-28 17:23:15] cmd: status
+[2026-03-28 17:23:16] cmd: brain show
+[2026-03-28 17:23:16] cmd: brain show
+[2026-03-28 17:23:16] cmd: status
+[2026-03-28 17:23:17] cmd: status
+[2026-03-28 17:23:20] cmd: brain show
+[2026-03-28 17:23:20] cmd: status
+[2026-03-28 17:23:22] cmd: brain show
+[2026-03-28 17:23:22] cmd: brain show
+[2026-03-28 17:23:22] cmd: status
+[2026-03-28 17:23:23] cmd: status
+[2026-03-28 17:23:24] cmd: brain show
+[2026-03-28 17:23:24] cmd: brain show
+[2026-03-28 17:23:24] cmd: status
+[2026-03-28 17:23:25] cmd: status
+[2026-03-28 17:23:28] cmd: brain show
+[2026-03-28 17:23:28] cmd: status
+[2026-03-28 17:23:30] cmd: brain show
+[2026-03-28 17:23:30] cmd: brain show
+[2026-03-28 17:23:30] cmd: status
+[2026-03-28 17:23:31] cmd: status
+[2026-03-28 17:23:32] cmd: brain show
+[2026-03-28 17:23:32] cmd: brain show
+[2026-03-28 17:23:33] cmd: status
+[2026-03-28 17:23:33] cmd: status
+[2026-03-28 17:23:36] cmd: brain show
+[2026-03-28 17:23:36] cmd: status
+[2026-03-28 17:23:38] cmd: brain show
+[2026-03-28 17:23:38] cmd: brain show
+[2026-03-28 17:23:38] cmd: status
+[2026-03-28 17:23:39] cmd: status
+[2026-03-28 17:23:40] cmd: brain show
+[2026-03-28 17:23:40] cmd: brain show
+[2026-03-28 17:23:40] cmd: status
+[2026-03-28 17:23:41] cmd: status
+[2026-03-28 17:23:44] cmd: brain show
+[2026-03-28 17:23:44] cmd: status
+[2026-03-28 17:23:46] cmd: brain show
+[2026-03-28 17:23:46] cmd: brain show
+[2026-03-28 17:23:46] cmd: status
+[2026-03-28 17:23:47] cmd: status
+[2026-03-28 17:23:48] cmd: brain show
+[2026-03-28 17:23:48] cmd: brain show
+[2026-03-28 17:23:49] cmd: status
+[2026-03-28 17:23:49] cmd: status
+[2026-03-28 17:23:52] cmd: brain show
+[2026-03-28 17:23:52] cmd: status
+[2026-03-28 17:23:54] cmd: brain show
+[2026-03-28 17:23:54] cmd: brain show
+[2026-03-28 17:23:54] cmd: status
+[2026-03-28 17:23:55] cmd: status
+[2026-03-28 17:47:16] cmd: brain show
+[2026-03-28 17:47:16] cmd: status
+[2026-03-28 17:52:48] cmd: brain show
+[2026-03-28 17:52:48] cmd: status
+[2026-03-28 17:52:57] cmd: brain show
+[2026-03-28 17:52:57] cmd: status
+[2026-03-28 17:53:05] cmd: brain show
+[2026-03-28 17:53:05] cmd: status
+[2026-03-28 17:53:13] cmd: brain show
+[2026-03-28 17:53:13] cmd: status
+[2026-03-28 17:53:21] cmd: brain show
+[2026-03-28 17:53:21] cmd: status
+[2026-03-28 17:53:29] cmd: brain show
+[2026-03-28 17:53:29] cmd: status
+[2026-03-28 17:53:37] cmd: brain show
+[2026-03-28 17:53:37] cmd: status
+[2026-03-28 17:53:45] cmd: brain show
+[2026-03-28 17:53:45] cmd: status
+[2026-03-28 17:53:55] cmd: brain show
+[2026-03-28 17:53:55] cmd: status
+[2026-04-07 01:39:10] started http://127.0.0.1:7788/
+[2026-04-12 00:37:43] started http://127.0.0.1:7788/
+[2026-04-12 14:56:27] started http://127.0.0.1:7788/
+[2026-04-23 09:39:10] started http://127.0.0.1:7788/
+[2026-04-23 15:17:08] started http://127.0.0.1:7788/

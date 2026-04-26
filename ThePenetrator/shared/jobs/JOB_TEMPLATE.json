@@ -1,0 +1,21 @@
+{
+  "$schema": "Job board entry",
+  "id": "JOB-0000",
+  "title": "Short description of the task",
+  "posted_by": "agent_name",
+  "posted_at": "2026-04-09T00:00:00Z",
+  "priority": "low | medium | high | critical",
+  "type": "build | debug | research | review | refactor | deploy | wire | security",
+  "scope": {
+    "workspace": "ThePenetrator",
+    "target_files": [],
+    "target_dirs": []
+  },
+  "description": "Full description of what needs to happen.",
+  "acceptance": ["Condition 1 that proves this job is done", "Condition 2"],
+  "claimed_by": null,
+  "claimed_at": null,
+  "completed_at": null,
+  "result": null,
+  "notes": []
+}

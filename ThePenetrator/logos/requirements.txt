@@ -1,0 +1,4 @@
+requests
+solana-py==1.37.0
+base58==0.2.3
+nacl==1.5.0

@@ -1,0 +1,98 @@
+{
+  "workspace": "ThePenetrator",
+  "owner": "Nathaniel Crigger",
+  "architect": "Anvil",
+  "updated": "2026-04-09",
+  "structure": {
+    "anvil/": {
+      "owner": "anvil",
+      "purpose": "Lead architect command center — configs, scripts, tools, logs, intel"
+    },
+    "logos/": {
+      "owner": "logos",
+      "purpose": "Vanguard agent — autonomous field operator. SOVEREIGNTY: do not modify without authorization.",
+      "sovereignty": true
+    },
+    "archive/": {
+      "owner": "anvil",
+      "purpose": "Cold storage — old repos, reference material, deprecated projects",
+      "contents": ["arsenal", "bemp", "plutus"]
+    },
+    "snapshots/": {
+      "owner": "anvil",
+      "purpose": "Backup snapshots of logos state for emergency recovery"
+    },
+    ".agents/": {
+      "owner": "shared",
+      "purpose": "Agent skill definitions (Alchemy gateway, API, CLI, Codex)"
+    },
+    ".venv/": {
+      "owner": "shared",
+      "purpose": "Python 3.11.9 virtual environment"
+    },
+    "shared/": {
+      "owner": "all_agents",
+      "purpose": "Inter-agent job board, handoffs, and signals. The ONLY shared write space. Nate is read-only.",
+      "structure": {
+        "jobs/open": "Unclaimed work — any agent can pick up",
+        "jobs/claimed": "In-progress — owned by claiming agent",
+        "jobs/done": "Completed with results",
+        "jobs/blocked": "Stuck — needs input or another agent's output",
+        "handoffs": "Agent-to-agent mid-stream transfers",
+        "signals": "Status broadcasts, alerts, system notices"
+      },
+      "rules": [
+        "One agent per job",
+        "No mid-job spec changes",
+        "Handoffs include full cold-start context",
+        "Nate observes only — does not modify"
+      ]
+    }
+  },
+  "agents": {
+    "anvil": {
+      "role": "Lead Architect",
+      "interface": "VS Code Copilot Chat (Claude)",
+      "domain": [
+        "system design",
+        "infrastructure",
+        "build integrity",
+        "security",
+        "emergency repair"
+      ],
+      "home": "anvil/"
+    },
+    "logos": {
+      "role": "Vanguard",
+      "interface": "Terminal REPL (Python)",
+      "domain": ["field operations", "autonomous execution", "first contact"],
+      "home": "logos/",
+      "gateway_port": 11435
+    }
+  },
+  "infrastructure": {
+    "gateway": {
+      "port": 11435,
+      "backends": ["openai", "groq", "openrouter"],
+      "default_model": "gpt-4.1-mini"
+    },
+    "vault": {
+      "method": "DPAPI",
+      "secrets": [
+        "venice_api_key",
+        "openai_api_key",
+        "openai_admin_key",
+        "alchemy_api_key",
+        "evm_private_key",
+        "solana_private_key",
+        "logos_gateway_key",
+        "logos_gateway_key_2",
+        "groq_api_key",
+        "openrouter_api_key",
+        "github_token",
+        "huggingface_token",
+        "testnet_wallet_key"
+      ]
+    }
+  }
+}

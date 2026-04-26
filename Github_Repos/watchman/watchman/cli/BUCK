@@ -1,0 +1,149 @@
+load("@fbsource//tools/build_defs:rust_binary.bzl", "rust_binary")
+
+oncall("scm_client_infra")
+
+rust_binary(
+    name = "cli",
+    srcs = glob(["src/**/*.rs"]),
+    autocargo = {
+        "cargo_target_config": {
+            "name": "watchmanctl",
+        },
+        "cargo_toml_config": {
+            "dependencies_override": {
+                "dependencies": {
+                    "ahash": {
+                        "features": ["runtime-rng"],
+                        "version": "0.8.11",
+                    },
+                    "anyhow": {"version": "1.0.98"},
+                    "duct": {"version": "0.13.6"},
+                    "jwalk": {"version": "0.8.1"},
+                    "serde": {
+                        "features": [
+                            "derive",
+                            "rc",
+                        ],
+                        "version": "1.0.219",
+                    },
+                    "serde_json": {
+                        "features": [
+                            "alloc",
+                            "float_roundtrip",
+                            "raw_value",
+                            "unbounded_depth",
+                        ],
+                        "version": "1.0.140",
+                    },
+                    "structopt": {"version": "0.3.26"},
+                    "sysinfo": {"version": "0.35.1"},
+                    "tabular": {"version": "0.2.0"},
+                    "tokio": {
+                        "features": [
+                            "full",
+                            "test-util",
+                            "tracing",
+                        ],
+                        "version": "1.47.1",
+                    },
+                },
+                "target": {
+                    "'cfg(target_os = \"linux\")'": {
+                        "dependencies": {
+                            "nix": {
+                                "features": [
+                                    "dir",
+                                    "event",
+                                    "hostname",
+                                    "inotify",
+                                    "ioctl",
+                                    "mman",
+                                    "mount",
+                                    "net",
+                                    "poll",
+                                    "ptrace",
+                                    "reboot",
+                                    "resource",
+                                    "sched",
+                                    "signal",
+                                    "term",
+                                    "time",
+                                    "user",
+                                    "zerocopy",
+                                ],
+                                "version": "0.30.1",
+                            },
+                        },
+                    },
+                    "'cfg(target_os = \"macos\")'": {
+                        "dependencies": {
+                            "nix": {
+                                "features": [
+                                    "dir",
+                                    "event",
+                                    "hostname",
+                                    "inotify",
+                                    "ioctl",
+                                    "mman",
+                                    "mount",
+                                    "net",
+                                    "poll",
+                                    "ptrace",
+                                    "reboot",
+                                    "resource",
+                                    "sched",
+                                    "signal",
+                                    "term",
+                                    "time",
+                                    "user",
+                                    "zerocopy",
+                                ],
+                                "version": "0.30.1",
+                            },
+                        },
+                    },
+                },
+            },
+            "extra_buck_dependencies": {
+                "dependencies": [
+                    "//watchman/rust/watchman_client:watchman_client",
+                ],
+                "target": {
+                    "'cfg(unix)'": {
+                        "dependencies": [
+                            "fbsource//third-party/rust:nix",
+                        ],
+                    },
+                },
+            },
+            "package": {
+                "authors": ["Source Control Oncall oncall+source_control@xmail.facebook.com"],
+                "name": "watchmanctl",
+            },
+        },
+    },
+    features = [
+        "fb",
+    ],
+    deps = [
+        "fbsource//third-party/rust:ahash",
+        "fbsource//third-party/rust:anyhow",
+        "fbsource//third-party/rust:duct",
+        "fbsource//third-party/rust:jwalk",
+        "fbsource//third-party/rust:serde",
+        "fbsource//third-party/rust:serde_json",
+        "fbsource//third-party/rust:structopt",
+        "fbsource//third-party/rust:sysinfo",
+        "fbsource//third-party/rust:tabular",
+        "fbsource//third-party/rust:tokio",
+        "//watchman/rust/watchman_client:watchman_client",
+    ] + select({
+        "DEFAULT": [],
+        "ovr_config//os:linux": [
+            "fbsource//third-party/rust:nix",
+        ],
+        "ovr_config//os:macos": [
+            "fbsource//third-party/rust:nix",
+        ],
+    }),
+)

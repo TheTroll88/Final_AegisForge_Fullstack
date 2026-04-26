@@ -1,0 +1,10 @@
+---
+Bug-Database: https://bugs.launchpad.net/launchpadlib
+Bug-Submit: https://bugs.launchpad.net/launchpadlib/+filebug
+Changelog: https://launchpadlib.readthedocs.io/en/latest/NEWS.html
+Documentation: https://launchpadlib.readthedocs.io/
+Registry:
+  - Name: PyPI
+    Entry: launchpadlib
+Repository: https://code.launchpad.net/launchpadlib
+Repository-Browse: https://bazaar.launchpad.net/~lazr-developers/launchpadlib/trunk/files

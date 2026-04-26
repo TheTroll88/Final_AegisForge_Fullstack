@@ -1,0 +1,74 @@
+{
+  "timestamp_utc": "2026-03-29T21:13:48.618607+00:00",
+  "inventory_file": "C:\\Users\\natha\\OneDrive\\GitHub\\Aegis-safety-protocol-\\foreman\\account_inventory.json",
+  "summary": {
+    "total": 7,
+    "ok": 4,
+    "failed": 3,
+    "integrity_sha256": "03f72a74d49bad2b2ea9ac86c38297b02bad99fbd556eec2eb76cb1a47dbd0fa"
+  },
+  "results": [
+    {
+      "ok": false,
+      "kind": "evm_wallet",
+      "name": "Rainbow Primary EVM",
+      "expected": "0x30Cbd5ffb18B38cC77Cca71B609259547cB3be5B",
+      "observed": "",
+      "details": "missing secret"
+    },
+    {
+      "ok": false,
+      "kind": "solana_wallet",
+      "name": "Primary Solana",
+      "expected": "A5x55fr2BzVS31WRmRc7okJ4utCkqkTJKBAiqoAxQy6",
+      "observed": "",
+      "details": "missing secret"
+    },
+    {
+      "ok": false,
+      "kind": "web_session",
+      "name": "X/Twitter",
+      "expected": "x.com",
+      "observed": "missing",
+      "details": "session file not found"
+    },
+    {
+      "ok": true,
+      "kind": "web_session",
+      "name": "Galxe",
+      "expected": "app.galxe.com",
+      "observed": "missing",
+      "details": "optional session not found"
+    },
+    {
+      "ok": true,
+      "kind": "web_session",
+      "name": "Layer3",
+      "expected": "app.layer3.xyz",
+      "observed": "missing",
+      "details": "optional session not found"
+    },
+    {
+      "ok": true,
+      "kind": "web_session",
+      "name": "TaskOn",
+      "expected": "taskon.xyz",
+      "observed": "missing",
+      "details": "optional session not found"
+    },
+    {
+      "ok": true,
+      "kind": "web_session",
+      "name": "Intract",
+      "expected": "intract.io",
+      "observed": "missing",
+      "details": "optional session not found"
+    }
+  ],
+  "report_file": "C:\\Users\\natha\\OneDrive\\GitHub\\Aegis-safety-protocol-\\foreman\\reports\\account_audit_20260329_211348.json",
+  "keepass": {
+    "attempted": false,
+    "ok": false,
+    "details": "disabled"
+  }
+}

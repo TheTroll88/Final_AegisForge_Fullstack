@@ -1,0 +1,19 @@
+{{- $pages := where site.RegularPages "Params.sitemap" "!=" false -}}
+{{- $sorted := sort $pages "RelPermalink" -}}
+{{- $grouped := $sorted.GroupBy "Section" -}}
+
+# Docker Documentation
+{{- range $grouped }}
+
+## {{ humanize .Key }}
+{{- range .Pages }}
+{{- template "pageItem" . }}
+{{- end }}
+{{- end -}}
+
+{{- define "pageItem" }}
+{{- if and .Title .Permalink }}
+- [{{ .Title }}]({{ .Permalink }})
+  {{- with .Description }}: {{ chomp (replace . "\n" " ") }}{{- end }}
+{{- end }}
+{{- end }}

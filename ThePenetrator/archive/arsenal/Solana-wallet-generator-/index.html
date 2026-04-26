@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic SEO -->
+  <title>Solana Wallet Generator - Secure Offline Keypair Tool</title>
+  <meta name="google-site-verification" content="WMwJ_psOMCiLYUPOoF0FsAbEVbHaBl7hwBogp8XQdg0" />
+  <meta name="description"
+    content="Generate Solana wallets securely in your browser. Offline support, QR code, and market data. No data is sent to servers.">
+  <meta name="keywords"
+    content="Solana, Wallet, Generator, Solana Wallet Generator, Solana Keypair, Web3, Crypto, Offline Wallet, Solana Tools">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Daniel Samuel Emeka">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/ticker.css">
+  <link rel="stylesheet" href="assets/css/mediaQuery.css">
+  <link rel="stylesheet" href="assets/css/mobileView.css">
+
+  <!-- favicon img -->
+  <link rel="icon" href="assets/imgs/solanaLogoMark.svg" type="image/png">
+
+
+  <!-- JS SCRIPTS -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/cryptoTicker.js" defer></script>
+  <script src="https://unpkg.com/@solana/web3.js@1.76.0/lib/index.iife.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="assets/imgs/solanaLogoMark.svg" alt="Solana official logo">
+    <h1>Solana Wallet Generator</h1>
+    <h3>Open source Javascript Client-Side Wallet Generator</h3>
+  </header>
+
+
+  <main>
+
+    <section class="mobile-view">
+      <div>
+        <img src="assets/imgs/serverDown.svg" alt="Illustration showing a server down">
+        <p><em>opps!!! </em>This site is best viewed on desktop</p>
+      </div>
+    </section>
+
+    <section class="windows-content container">
+      <div class="walletContainer">
+        <div class="btn--div">
+          <button onclick="generateWallet()" class="no-print">Generate Wallet</button>
+
+          <div id="toast" class="toast no-print">Copied to clipboard!</div>
+
+          <button class="no-print" onclick="printWallet()">Print</button>
+        </div>
+
+
+
+        <div id="walletDetails">
+          <div class="public">
+            <div class="pub--1">
+              <div class="pub--copy">
+                <h3>Public Address: </h3>
+                <button onclick="copyAddress()" class="no-print btn--public">Copy Address</button>
+              </div>
+              <p> <span id="publicKey" class="publicaddress"></span></p>
+              <div class="pub--note">
+                <p>Anyone can see this (SHARE)</p>
+              </div>
+            </div>
+
+            <div> <canvas id="publicKeyQR" class="no-print"></canvas></div>
+          </div>
+
+
+          <div class="private">
+            <div class="p--details">
+              <h3>Private Key: </h3>
+              <div class="private-key">
+                <p> <span id="privateKey" class="private--key" data-real-keys=""></span></p>
+              </div>
+            </div>
+
+
+
+            <div class="p--instruct">
+              <div class="p--btn">
+                <button onclick="copyPrivate()" class="no-print btn--public">Copy Private Keys</button>
+                <button class="no-print btn--view" onclick="togglePrivateKey()">View private key</button>
+              </div>
+              <!-- Toast Message -->
+              <!-- <div id="toast" class="toast no-print"></div> -->
+              <div id="toast" class="toast no-print">Copied to clipboard!</div>
+
+              <p class="p-note">Only you can see this (DON"T SHARE IT)</p>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="instruct-marquee">
+        <div class="crypto-ticker">
+
+          <div class="ticker--1"><img src="assets/imgs/solanaLogo.svg" alt="Solana logo "></div>
+
+
+          <div class="ticker--2">
+            <ul>
+
+              <li>
+                <p>Price: </p><span class="solana-price"></span>
+              </li>
+
+              <li>
+                <p>24hr Change: </p><span class="solana-change"></span>
+              </li>
+
+              <li>
+                <p>24hr Volume: </p><span class="solana-volume"></span>
+              </li>
+
+              <li>
+                <p>Market Cap: </p><span class="solana-marketcap"></span>
+              </li>
+
+              <li>
+                <p>Circulating Supply:</p> <span class="solana-circulating"></span>
+              </li>
+
+              <li>
+                <p>Total Supply: </p><span class="solana-supply"></span>
+              </li>
+
+              <li>
+                <p>All Time High: </p><span class="solana-ath"></span>
+              </li>
+
+              <li>
+                <p>All Time Low: </p><span class="solana-atl"></span>
+              </li>
+
+              <li>
+                <p>Market Dominance: </p><span class="solana-dominance"></span>
+              </li>
+
+              <li>
+                <p>Market Rank: </p><span class="solana-rank"></span>
+              </li>
+
+            </ul>
+
+            <ul aria-hidden="true">
+
+
+              <li>
+                <p>Price: </p><span class="solana-price"></span>
+              </li>
+
+              <li>
+                <p>24hr Change: </p><span class="solana-change"></span>
+              </li>
+
+              <li>
+                <p>24hr Volume: </p><span class="solana-volume"></span>
+              </li>
+
+              <li>
+                <p>Market Cap: </p><span class="solana-marketcap"></span>
+              </li>
+
+              <li>
+                <p>Circulating Supply:</p> <span class="solana-circulating"></span>
+              </li>
+
+              <li>
+                <p>Total Supply: </p><span class="solana-supply"></span>
+              </li>
+
+              <li>
+                <p>All Time High: </p><span class="solana-ath"></span>
+              </li>
+
+              <li>
+                <p>All Time Low: </p><span class="solana-atl"></span>
+              </li>
+
+              <li>
+                <p>Market Dominance: </p><span class="solana-dominance"></span>
+              </li>
+
+              <li>
+                <p>Market Rank: </p><span class="solana-rank"></span>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="instruct">
+          <ul>
+            <li>
+              <ion-icon name="arrow-forward-outline" class="icon"></ion-icon>
+              <p>Click on <span>Generate Wallet</span> to generate a wallet</p>
+            </li>
+
+            <li>
+              <ion-icon name="arrow-forward-outline" class="icon"></ion-icon>
+              <p>Ensure to <strong>save or print</strong> out generated wallets before usage</p>
+            </li>
+
+            <li>
+              <ion-icon name="arrow-forward-outline" class="icon"></ion-icon>
+              <p>Any wallet details not saved, cannot be recovered after the refreshing the page or genrating a new
+                wallet
+              </p>
+            </li>
+
+            <li>
+              <ion-icon name="arrow-forward-outline" class="icon"></ion-icon>
+              <p>Refresh the page to see this message again</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by <a href="https://github.com/mindfullMellow" target="_blank" noopener>Daniel Samuel Emeka</a></p>
+    <div>&copy; <span class="year"></span></div>
+  </footer>
+</body>
+
+</html>

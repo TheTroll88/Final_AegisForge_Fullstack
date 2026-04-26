@@ -1,0 +1,166 @@
+/*
+/////////////////////////////////////
+instruction / marquee container
+/////////////////////////////////////
+*/
+
+.instruct-marquee {
+  margin-top: 2.4rem;
+}
+
+/*
+/////////////////////////////////////
+Crypto ticker container
+/////////////////////////////////////
+*/
+
+.crypto-ticker {
+
+  font-family: system-ui, sans-serif;
+  padding-block: 0.8rem;
+  overflow: hidden;
+  user-select: none;
+  display: flex;
+  /* gap: 2rem; */
+}
+
+.ticker--1 {
+  flex: 1;
+}
+
+.ticker--2 {
+  overflow: hidden;
+  user-select: none;
+  display: flex;
+  gap: 4rem;
+  z-index: 99999;
+}
+
+.crypto-ticker ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  animation: scroll 30s linear infinite;
+}
+
+.crypto-ticker:hover ul {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - 40px));
+  }
+}
+
+.crypto-ticker img {
+  height: 100%;
+  width: 20rem;
+  margin-right: 2.4rem;
+}
+
+.crypto-ticker ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+
+.crypto-ticker ul li span {
+  display: block;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--black-grey-color);
+}
+
+.crypto-ticker ul li p {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: var(--black-color);
+  font-weight: 500;
+}
+
+/* DAILY CAHNGE COLORS */
+.cc-red {
+  color: #cd3a3a !important;
+}
+
+.cc-red::after {
+  content: '↓' !important;
+}
+
+
+.cc-green {
+  color: #168735 !important;
+}
+
+.cc-green::after {
+  content: '↑' !important;
+}
+
+
+/*
+/////////////////////////////////////
+INSTRUCT container
+/////////////////////////////////////
+*/
+
+.instruct {
+  width: 100%;
+  height: auto;
+  margin-top: 5.4rem;
+  padding: 2.4rem 1.8rem;
+
+}
+
+.instruct ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start;
+  list-style: none;
+}
+
+
+.instruct li {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+
+.instruct li p {
+  font-family: inherit;
+  font-size: 1.4rem;
+  line-height: 1.2;
+
+}
+
+.instruct li span {
+  background-color: var(--black-color);
+  color: var(--text-color);
+  border: none;
+  padding: 0.3rem 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 0.4rem;
+}
+
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}

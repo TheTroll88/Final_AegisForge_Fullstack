@@ -1,0 +1,858 @@
+[
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://moove.xyz/@thetroll/refer"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/@thetroll/refer"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/css/546e2d18a2a795ef.css"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/webpack-26ece4775bc9237e.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/c7cf295c-80c63f0353d46f45.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8604-fa5859fb452b3610.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/main-app-30ff34a5343385ad.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8871-eec794c16cd7b6ec.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2353-c6c275e77a445a50.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8134-4203ddacb7ccc71b.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6749-f59a5d568850b14c.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/app/layout-b4588f69353d95de.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/5399-cde1332edb992f00.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/7864-0981618089e42a93.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6070-506683ec37a61c6b.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/7858-3403580e7345bad8.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2094-5919ee22e3191cb7.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6739-4322d0276742bb7f.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8345-099d3b4451cecdfd.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/1066-41a23b1327804445.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6276-ae7359208928749e.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2615-0709467f79546787.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/5017-7a65ad0ecd7daaf1.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/1993-a8dc11bb9e89d4b5.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6902-dc36221830c14548.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/318-5c27926ff05ced26.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/7775-7c3eab67f3609339.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8599-7b0252f2c2038e32.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/975-c13d99ac948e47f3.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/4374-b9e58742ebadf4a9.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6801-cbaaafefa0319280.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6075-9f90856028f77ae0.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6081-373fb120ce0c551a.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/app/user/%5B_handle%5D/refer/page-27b594ef0274d2fe.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/assets/fonts/satoshi-variable.woff2"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/assets/images/heroes/moove_profile.jpg"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/eebe4a7f-7166-402f-92e0-1f64ca2aa800?projectId=34357d3c125c2bcf2ce2bc3309d98715"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/b6ec7b81-bb4f-427d-e290-7631e6e50d00?projectId=34357d3c125c2bcf2ce2bc3309d98715"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/7677b54f-3486-46e2-4e37-bf8747814f00?projectId=950e5de04fd5acec33569ef52020ae0a"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/04c88bf0-f115-4686-8c29-90a3d018a400?projectId=950e5de04fd5acec33569ef52020ae0a"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/34c0e38d-66c4-470e-1aed-a6fabe2d1e00?projectId=950e5de04fd5acec33569ef52020ae0a"
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client&sv=3.26.0&t=1775097008649&sid=403186c0-e",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�SMo�0\f�+\u0002O-�\u000f9v�Ľ�h���Z\fh�\u001e�!Pd:�\"[�D'm���AN��@\u000f���\f=��\u0002��%\u0007�����V4\b\u0005���\\��z�Eщ%��\n7\u0010�Z��G�D�+�x��D�1k���_�\u000fT#Y�ul�B\u000b\u00014H�\u0014$�؂C�i�.�����4�<�qY��X��i&Ӱ会J9�$�\u0014\u0002\u0018�{���H��WxD�j׊бgӳ_��\u0016\u0002�����;\u0019z�v.��\u0012\u0014pc^��\"\u001eG��<��4\u001b�n�Y�#~�\u001eU�gg�)�N�y�i|�ŵ�x�N�4g'ן�o�\u0004L�\u0015�O(W�]��4\u0018'i\u0012q��;Q\t�\u000eO \u0000m�\u0018*�6|��\u0000j��\u001b"
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client&sv=3.26.0&t=1775097008650&sid=403186c0-e",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�S[O�0\u0014�+�y\u0002)\u0017����e\b�\r1�$`<LS�:'�W'��\u0016��ߧ�U7$\u001e��\u0007[�����\u000ep�\r9ȿ���[Q#� :2\u000b)Z�,�C�i\u0016��%�`#t7XUD���p��\u0006�1\u001b\f��_�\u000fT!Y�uh�D\u000b\u001e�H�\u0010$ ��!��%�\u0010�h2K%�1)\n?N�ܟ�2�\u000b�˙�I6YF�A+V��~GFR��\n�\bS�F\u0011:�l:��\u001d}�\u0003�Y�\r�3C��.�\n\u001b�\u001cn̋�Z�I��ɣj\n�u���Mx��أj���=��);o[����V\u0014&Q\u0016D);��|��cZ��}B�6�좲��p\u0012M\u0002>\u001cv'Ja��\u0005<�F��Cl��;�2��="
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/_icons/favicon_32x32.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/12336b57.69d6f7739c31a73a.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6037.27e48de5c98cbb7a.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x6c3ea9036406852006290770bedfcaba0e23a0e8.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.1stdigital.com/icon/fdusd.svg"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.geckoterminal.com/4zghh5mpcvlzdhpd5tx2ilqcw68n"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.geckoterminal.com/grl0f5yo20wc70df4cf6kldjzcxh"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.optimism.io/data/OP/logo.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.debank.com/image/matic_token/logo_url/matic/6f5a6b6f0732a7a235131bd7804d357c.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.debank.com/image/avax_token/logo_url/avax/0b9c84359c84d6bdd5bfda9c2d4c4a82.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://ethena.fi/shared/usde.svg"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.jup.ag/jup/icon.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://xstocks-metadata.backed.fi/logos/tokens/TSLAx.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://xstocks-metadata.backed.fi/logos/tokens/GOOGLx.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.meteora.ag/met-token.svg"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.debank.com/image/eth_token/logo_url/0x68749665ff8d2d112fa859aa293f07a622782f38/a100487c27e4e6e5557ef770230c7f8b.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://arbitrum.foundation/logo.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x57e114b691db790c35207b2e685d4a43181e6061.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.debank.com/image/eth_token/logo_url/0x152649ea73beab28c5b49b26eb48f7ead6d4c898/9003539eb61139bd494b7412b785d482.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.debank.com/image/eth_token/logo_url/0xd2a530170d71a9cfe1651fb468e2b98f7ed7456b/f3a524932c6f3e1fcf68411609e82590.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.debank.com/image/eth_token/logo_url/0x6418c0dd099a9fda397c766304cdd918233e8847/425ba00e9d76dea0775279de457e9a64.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://s2.coinmarketcap.com/static/img/coins/64x64/20947.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.sei.io/sei-app/sei-icon.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.debank.com/image/hyper_token/logo_url/hyper/0b3e288cfe418e9ce69eef4c96374583.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://app.hyperliquid.xyz/coins/USDT_spot.svg"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/?_rsc=16775"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/profile?_rsc=16775"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/dashboard?_rsc=16775"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/refer?_rsc=16775"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2927.24adafd01638ff86.js"
+  },
+  {
+    "type": "FAIL",
+    "method": "GET",
+    "url": "https://www.moove.xyz/?_rsc=16775",
+    "reason": "net::ERR_ABORTED"
+  },
+  {
+    "type": "FAIL",
+    "method": "GET",
+    "url": "https://www.moove.xyz/dashboard?_rsc=16775",
+    "reason": "net::ERR_ABORTED"
+  },
+  {
+    "type": "FAIL",
+    "method": "GET",
+    "url": "https://www.moove.xyz/refer?_rsc=16775",
+    "reason": "net::ERR_ABORTED"
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3.26.0&t=1775097008850&sid=4031",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�T]o�0\u0014�/�9N���O�:i\u0015bB0&\r4E�}Ӆ%vd;�ʔ������=0���$��ǹ���\u0007�\u0011����=<~^�\u000e�\u0001\u001f��\u0004��`��\u001eM�MǕ@\b`���cn��-[,v�]�i=bx���x�n�\u0019ݶ\u000b�5\u001a\b�C�%w\u001c�\u0003X���j�\u0002\u0006\t��\"\u0013�`*%IRQ�\"\u00111��օ\u0010i\u001emb\b��[�\u0006Ӿ�c���\\�a�Y`�2)Ø>>I��8\u0000���Q\u000e\r\u0017�\u0019�wp\u0019�a\u001a�A�\u0018\u0014�\u0012zP\u000e\u0018\r�\u0019�l����\u001dZ`I\u0016\u0017�\u0014�`����{�\u000b\u0002\u0010�u�[��<��\u0016�#Q�x��K\"�\u0010$�\u0005%%/2��2��l#���)�)�6�356F"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/b6ec7b81-bb4f-427d-e290-7631e6e50d00?projectId=34357d3c125c2bcf2ce2bc3",
+    "body": "RIFF�\u0003\u0000\u0000WEBPVP8X\n\u0000\u0000\u0000\u0010\u0000\u0000\u0000;\u0000\u0000;\u0000\u0000ALPH)\u0001\u0000\u0000\u0001��m۲�ks_� N~�7,N\u001bi�\u0003��A�:ww�2�\u000e�\u001c�����JDL\u0000Un�Ph��,�\u0018�Lg��\u001ff��$\u001f�_wU��F����w2'�ć��\u0007󑜠\u0003�j�M9��+���\u0000��ʙr��2�9P)\u0011\rGP�=D�9�\u0015j��y��H�pbE\u000exF����d|C�� }��,1$\u000f�\u0014J\"E�HL\u0016���r����,\u0012\u0007Ŧ��$R�G\nŐ<>$�\u0019��\u0015�r\u0017ɠBڐ!M�&p\u0018Q�\u0007�}\r)q�\u0006\u0002(�\u000e\"R��Q�\u001eCKe��\u0011L��I'<m=U)�\n�9G���<qBa��;��u�-�շ�\u0013�2,���c�h�c��4lL�j�2\u0000VP8 >\u0002\u0000\u0000p\f\u0000�\u0001*<\u0000<\u0000>9\u0018�C�!�\u001e�T\u0000 \u0003��\u0000f��=��;�$��\u0001䛨;�\u0001��k�v�\u0005�\u0012�{_|\u0001�\u0011����\u001c���\u000b\u0002�MR��A�Ƈj\u001c\u0014F���\u0016j����\\Ƚ=��\u0018�T�@�@\u0000��r\u000f��l��������$�n�IG󮣎�w\u0015�\u001f{Us(I���#�gtb\u0019\u0017\u001b�F[��@�`\u0012*�<��`|v9\u000b�`�{�"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/eebe4a7f-7166-402f-92e0-1f64ca2aa800?projectId=34357d3c125c2bcf2ce2bc3",
+    "body": "RIFFV\u0004\u0000\u0000WEBPVP8 J\u0004\u0000\u00000\u0017\u0000�\u0001*<\u0000<\u0000>I$�E\"�!\u0013\rT�(\u0004��\u0000]�\u0000���o4���/��=�M�\u0015�/�k�\u0007�O�\u0007b�@\u000f�]E��\u001eZ\u001e��^�\u0019�\u001dt�h�s��\b;Wh�\b�\\Ow\u0011q^Fǡ�ξ������\u0017�����\u0002w��~�\u0001�|r�~�2��=A���3�\u001cW��t�_\u0012���y���� (WƷ���qq�\u000eX�1�L�\u000ea����_P!��\u0005\u0012Hsu�i&\u0000\u0000���=�fg?\u0017&��\u001fã��\u001c�?�cW�P\u001aY����3�\u001f��s;R��pC�����th�R\u0012��:�d�:���v�(z�R��}�.�:��)\r��oO�[�e��?\t�=n��w�İ�)�+����\u0001�6�,��`F��)���\u001c�:��f^T�8��Y�?�2>\u0000Ӊ\u001a|\u0007��>l�ժ��\u001d���/�ј�ě\u0015�!�O�S���́^1���l�\u0005�\u00157�\u0005�4�Ͼ_��1���0�\u0001�5��wh��+l���CQG\u0002�\u0004$��\u0017����\u000e�V�B��'=�\u0003p��*���2]s��B����{����w|�F���Lj3>�\u00040\u001b\u0018r_w�7B�vu\b�"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/04c88bf0-f115-4686-8c29-90a3d018a400?projectId=950e5de04fd5acec33569ef",
+    "body": "RIFF�\u0000\u0000\u0000WEBPVP8 �\u0000\u0000\u0000�\u0006\u0000�\u0001*<\u0000<\u0000>I$�E\"�!\u0014\f\u0004\u0000(\u0004���j&�3В~\b�j�Ȋkμ\u001c��Q�h���By\u000e�g$x�\u0000\u0000�����#\f�d\r5&\u00129_��A���}��������o��_5���h�R�._���6��\u000bE��2I�_�ɠ���U\u0015�����A����\u0000���Ι��b�6�I�y�{�3�e\u0003{�|:(Eo�4����?�|\u0019�O���+5\u0007̼��������\u000e��\\:\u0000\u0000"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/34c0e38d-66c4-470e-1aed-a6fabe2d1e00?projectId=950e5de04fd5acec33569ef",
+    "body": "RIFF:\u0003\u0000\u0000WEBPVP8 .\u0003\u0000\u00000\u0013\u0000�\u0001*<\u0000<\u0000>I �D��!\u0014\u0005T(\u0004��\u0000g\u001a����-�߅|��\u0002\n\u0007h\r�\u001e`?UX=�9��=\u0000<�}��l}\u001a�t}��7'��8A��z{��>�3�3�\u0006�)����_�'�?������z4~�\u001ag>�h�5���\u0010v�\u001c�}Z�\u000eP�R��\u000bo�;p1���\u0004\u000bN\u0015�\u0016~1ݢ��\u0000\u0000��\u0005��\u001b=F�Q��\u001b>\u0007Z�0m���_˶o(Y[�F����\u001c�5�m��\u000e�.�fa}�n�k0@K\u0006A\t\r�=��h�|�p)|Ƙ�\u0016F\u0019�[\u001e�\u0005m�\u000e~�.�A_�\u0017�08��}�:���c�Izm�]e\u00112��\u0004��\u0004\u000bp�\u0016�{��:'\u001f�a��?�������\u001e�h�(�N�4\u001d�&�� ���\u001e]M|1c�}S��\u0007�2��& ���^��\u0002n�O�ys\u0017�<cZi��\u001e�A��\u0011�ł���g\"K���/\b�\u0011��T�N�\"N�A�Ԉ]ݔ/-Z������D�l��1�7���_i��u��(@S\u001c�)�\u0011I�����ȼr\u0003,�\u001cN��Z���08\u0003�^9��\nW��Va�܃F��Ʒ�\u0010a\u0006��Ihe\u0001GW�"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/7677b54f-3486-46e2-4e37-bf8747814f00?projectId=950e5de04fd5acec33569ef",
+    "body": "RIFF�\u0002\u0000\u0000WEBPVP8X\n\u0000\u0000\u0000\u0010\u0000\u0000\u0000;\u0000\u0000;\u0000\u0000ALPH[\u0000\u0000\u0000\u0001`\u001a�V��\n�\u001f���h\u000e�X,�eUy>\u0013\u0011\u0013\u0000�r�ǧ�e�{����/�\u0010�@:d\u0013~�P\u000e�ҕ�)��;ٔ�+��T�ҙ�����Ryơ0#�.7��n�\u0003\u0000\u0000VP8 \\\u0002\u0000\u0000�\u000f\u0000�\u0001*<\u0000<\u0000>I\u001c�D\"��\u0018�ʹ(\u0004��\u0000h#�����K�{���\u001f����\u0000~�z&��v\u0000U�����-���y��-�c��wC���\u0003<�I�\u0002\"R$ſ,j�\rAK��/w�\u0006L�cry3�\u000b�\u001d�\u0016���U�B�\u0014�\u000f��9>�\u0000����*�PY�3��Yu\u0005&\u0015)\u001e��'7\u0012_8���\u000f?�I�4��H\tQ��ڧ@\u0001l*��\u001f��̱�\u0011��sK����j�\u0014`���\u001a\u001cJ\nⓙj����^�\r\u000eV3kŊ�`��6T�_qG\u0017�&\u000b��̷���E2+\u0010�Te~<}b�Ρ�Q��xMH�6&1;RV\u001d�F��}�����좾\u0000��;��(�#;Z5J�e�j�\u0013\t���}�v\u001e@$Jo`�G}0�\nVzr\u0019w���z��\u000e\u0014<�Ov\u0013\"\u0000\u0007\u001b�/�\u001ef��s@�R�Ǩ^\u0004%��\f��~հ�'�ڷ"
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3.26.0&t=1775097010659&sid=4031",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�RMo�0\f�/<ˉbǱ��\u000e�!�>\n�+0\fC�H��U�\r�v�\u0005�a�\u001e֝D>R��#�@#9\u000eP}��4�cKP\u0001\u000e�\u001d\u0014�<x��\u001e\u001b:���\u0007r\u001a\u0004�h��ub�C�\\���E�u#-\u001e/ߗo�D�;k��j� �%F��P]!P\b�s�\u001dT��٪�(�P�u���6)�*K��u�T^��\u0019\b��\u000f޾����\u001fU�>C%\u0005�����\u0013�%��16�w�3<���z>�~l����-�&B�L�8':�z�7���Zr�A��{�P�h\u0003\t�\u0003�u{���h��\u000b�\u0004\f�|T(��< @\r��v�\u000b�t�GKsHmu��Y�hT*Y\u0017J&[,7I����\u001c"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://moove.xyz/profile"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/profile"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/css/546e2d18a2a795ef.css"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/webpack-26ece4775bc9237e.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/c7cf295c-80c63f0353d46f45.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8604-fa5859fb452b3610.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/main-app-30ff34a5343385ad.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8871-eec794c16cd7b6ec.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2353-c6c275e77a445a50.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8134-4203ddacb7ccc71b.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6749-f59a5d568850b14c.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/app/layout-b4588f69353d95de.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/5399-cde1332edb992f00.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/7864-0981618089e42a93.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6070-506683ec37a61c6b.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/7858-3403580e7345bad8.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2094-5919ee22e3191cb7.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6739-4322d0276742bb7f.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8345-099d3b4451cecdfd.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/1066-41a23b1327804445.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6276-ae7359208928749e.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2615-0709467f79546787.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/5017-7a65ad0ecd7daaf1.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/1993-a8dc11bb9e89d4b5.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6902-dc36221830c14548.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/318-5c27926ff05ced26.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8599-7b0252f2c2038e32.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/975-c13d99ac948e47f3.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/4374-b9e58742ebadf4a9.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6801-cbaaafefa0319280.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6075-9f90856028f77ae0.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/app/(widget)/layout-9f65f64295a2814c.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/app/not-found-a5395debcb4b0e37.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/assets/fonts/satoshi-variable.woff2"
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client&sv=3.26.0&t=1775097010823&sid=403186c0-e",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�S�o�0\u0010�W���J@L�$�OU;mU�R�E�4E�9�\u0017��mB۔�}2��V��n�\u0003��x�ݽ�-�\u0006kk ���}ް\n!\u0003�Z�଱��,k�\n\u0017\u001b�\u001dx�a�u\u0015����F���J�\r\u0006�OϣF�BH\u0004\u000f*�,g�A�\u0005��\bU_�C\u00061��لS\u001f�<�ㄧ�,摟SZ�8O��2\u0002\u000f\u0006�V�\u000f0Ya�St�r�v\u0017'/�j5��2:ĮD�&/�\u0000\u0002\u001e�Vk��\u0007�Z�z�VXہ�YH�FI@��\\Թ�\f��'!\r�\t��z\u0012���I|LN�F�\u001c���h\u001aD\u0013rt�����#R��|F�V��Ԫ�Q\u0018�\u0001u\u000f�c\u0005�b�\u000bx \u0015gC�X�\u000fw�A���w"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/_icons/favicon_32x32.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/?_rsc=10b1h"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/dashboard?_rsc=10b1h"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/refer?_rsc=10b1h"
+  },
+  {
+    "type": "FAIL",
+    "method": "GET",
+    "url": "https://www.moove.xyz/?_rsc=10b1h",
+    "reason": "net::ERR_ABORTED"
+  },
+  {
+    "type": "FAIL",
+    "method": "GET",
+    "url": "https://www.moove.xyz/dashboard?_rsc=10b1h",
+    "reason": "net::ERR_ABORTED"
+  },
+  {
+    "type": "FAIL",
+    "method": "GET",
+    "url": "https://www.moove.xyz/refer?_rsc=10b1h",
+    "reason": "net::ERR_ABORTED"
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3.26.0&t=1775097011026&sid=4031",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�Tmk�0\u0010�/��J��ַ�\u0016\u001a��غA7�QN�ԫ-\u0019IN�\u0006��!7��Q�\u000b�ꋅ�E�<���6��\u0003�m�p��\u001d�\u00009xS���`I��lml'5\u0012D���\u0010|n��89�n��Θ\r��v�'�5u�\u0006���T�K\u0010{p�\\c��\u0014\u0004d<��9rF�R,˱dE�)S��\u0005b��W)D��5U�m���HU����s x\u0004�tU�=Y����O[�g��?�8+y�D`I5��Wh\u0006��xo�v5�j���@$E��c\u0004�#\u001b���\u0005\"��y�-O݄��UK�\tK�&y�0%\u0011Y�@�JY��B�Y]�W��\u001a�(�x׬����Fw\u0014J؃o�K�[�\u0006��0�\u0011"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8059.b5e771f470d29f61.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6257.2d3f7c7cf890c52b.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://api.moove.xyz/v1/registration-check?handle=troll_sol_001"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.google.com/recaptcha/enterprise.js?render=6LfGrhksAAAAAI_buI_Xi2uZhLKSl1XVK9VZiL5g"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/eebe4a7f-7166-402f-92e0-1f64ca2aa800?projectId=34357d3c125c2bcf2ce2bc3309d98715"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/b6ec7b81-bb4f-427d-e290-7631e6e50d00?projectId=34357d3c125c2bcf2ce2bc3309d98715"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/04c88bf0-f115-4686-8c29-90a3d018a400?projectId=950e5de04fd5acec33569ef52020ae0a"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/7677b54f-3486-46e2-4e37-bf8747814f00?projectId=950e5de04fd5acec33569ef52020ae0a"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/34c0e38d-66c4-470e-1aed-a6fabe2d1e00?projectId=950e5de04fd5acec33569ef52020ae0a"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/71ca9daf-a31e-4d2a-fd01-f5dc2dc66900?projectId=950e5de04fd5acec33569ef52020ae0a"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/eebe4a7f-7166-402f-92e0-1f64ca2aa800?projectId=34357d3c125c2bcf2ce2bc3",
+    "body": "RIFFV\u0004\u0000\u0000WEBPVP8 J\u0004\u0000\u00000\u0017\u0000�\u0001*<\u0000<\u0000>I$�E\"�!\u0013\rT�(\u0004��\u0000]�\u0000���o4���/��=�M�\u0015�/�k�\u0007�O�\u0007b�@\u000f�]E��\u001eZ\u001e��^�\u0019�\u001dt�h�s��\b;Wh�\b�\\Ow\u0011q^Fǡ�ξ������\u0017�����\u0002w��~�\u0001�|r�~�2��=A���3�\u001cW��t�_\u0012���y���� (WƷ���qq�\u000eX�1�L�\u000ea����_P!��\u0005\u0012Hsu�i&\u0000\u0000���=�fg?\u0017&��\u001fã��\u001c�?�cW�P\u001aY����3�\u001f��s;R��pC�����th�R\u0012��:�d�:���v�(z�R��}�.�:��)\r��oO�[�e��?\t�=n��w�İ�)�+����\u0001�6�,��`F��)���\u001c�:��f^T�8��Y�?�2>\u0000Ӊ\u001a|\u0007��>l�ժ��\u001d���/�ј�ě\u0015�!�O�S���́^1���l�\u0005�\u00157�\u0005�4�Ͼ_��1���0�\u0001�5��wh��+l���CQG\u0002�\u0004$��\u0017����\u000e�V�B��'=�\u0003p��*���2]s��B����{����w|�F���Lj3>�\u00040\u001b\u0018r_w�7B�vu\b�"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/b6ec7b81-bb4f-427d-e290-7631e6e50d00?projectId=34357d3c125c2bcf2ce2bc3",
+    "body": "RIFF�\u0003\u0000\u0000WEBPVP8X\n\u0000\u0000\u0000\u0010\u0000\u0000\u0000;\u0000\u0000;\u0000\u0000ALPH)\u0001\u0000\u0000\u0001��m۲�ks_� N~�7,N\u001bi�\u0003��A�:ww�2�\u000e�\u001c�����JDL\u0000Un�Ph��,�\u0018�Lg��\u001ff��$\u001f�_wU��F����w2'�ć��\u0007󑜠\u0003�j�M9��+���\u0000��ʙr��2�9P)\u0011\rGP�=D�9�\u0015j��y��H�pbE\u000exF����d|C�� }��,1$\u000f�\u0014J\"E�HL\u0016���r����,\u0012\u0007Ŧ��$R�G\nŐ<>$�\u0019��\u0015�r\u0017ɠBڐ!M�&p\u0018Q�\u0007�}\r)q�\u0006\u0002(�\u000e\"R��Q�\u001eCKe��\u0011L��I'<m=U)�\n�9G���<qBa��;��u�-�շ�\u0013�2,���c�h�c��4lL�j�2\u0000VP8 >\u0002\u0000\u0000p\f\u0000�\u0001*<\u0000<\u0000>9\u0018�C�!�\u001e�T\u0000 \u0003��\u0000f��=��;�$��\u0001䛨;�\u0001��k�v�\u0005�\u0012�{_|\u0001�\u0011����\u001c���\u000b\u0002�MR��A�Ƈj\u001c\u0014F���\u0016j����\\Ƚ=��\u0018�T�@�@\u0000��r\u000f��l��������$�n�IG󮣎�w\u0015�\u001f{Us(I���#�gtb\u0019\u0017\u001b�F[��@�`\u0012*�<��`|v9\u000b�`�{�"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/04c88bf0-f115-4686-8c29-90a3d018a400?projectId=950e5de04fd5acec33569ef",
+    "body": "RIFF�\u0000\u0000\u0000WEBPVP8 �\u0000\u0000\u0000�\u0006\u0000�\u0001*<\u0000<\u0000>I$�E\"�!\u0014\f\u0004\u0000(\u0004���j&�3В~\b�j�Ȋkμ\u001c��Q�h���By\u000e�g$x�\u0000\u0000�����#\f�d\r5&\u00129_��A���}��������o��_5���h�R�._���6��\u000bE��2I�_�ɠ���U\u0015�����A����\u0000���Ι��b�6�I�y�{�3�e\u0003{�|:(Eo�4����?�|\u0019�O���+5\u0007̼��������\u000e��\\:\u0000\u0000"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/7677b54f-3486-46e2-4e37-bf8747814f00?projectId=950e5de04fd5acec33569ef",
+    "body": "RIFF�\u0002\u0000\u0000WEBPVP8X\n\u0000\u0000\u0000\u0010\u0000\u0000\u0000;\u0000\u0000;\u0000\u0000ALPH[\u0000\u0000\u0000\u0001`\u001a�V��\n�\u001f���h\u000e�X,�eUy>\u0013\u0011\u0013\u0000�r�ǧ�e�{����/�\u0010�@:d\u0013~�P\u000e�ҕ�)��;ٔ�+��T�ҙ�����Ryơ0#�.7��n�\u0003\u0000\u0000VP8 \\\u0002\u0000\u0000�\u000f\u0000�\u0001*<\u0000<\u0000>I\u001c�D\"��\u0018�ʹ(\u0004��\u0000h#�����K�{���\u001f����\u0000~�z&��v\u0000U�����-���y��-�c��wC���\u0003<�I�\u0002\"R$ſ,j�\rAK��/w�\u0006L�cry3�\u000b�\u001d�\u0016���U�B�\u0014�\u000f��9>�\u0000����*�PY�3��Yu\u0005&\u0015)\u001e��'7\u0012_8���\u000f?�I�4��H\tQ��ڧ@\u0001l*��\u001f��̱�\u0011��sK����j�\u0014`���\u001a\u001cJ\nⓙj����^�\r\u000eV3kŊ�`��6T�_qG\u0017�&\u000b��̷���E2+\u0010�Te~<}b�Ρ�Q��xMH�6&1;RV\u001d�F��}�����좾\u0000��;��(�#;Z5J�e�j�\u0013\t���}�v\u001e@$Jo`�G}0�\nVzr\u0019w���z��\u000e\u0014<�Ov\u0013\"\u0000\u0007\u001b�/�\u001ef��s@�R�Ǩ^\u0004%��\f��~հ�'�ڷ"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/34c0e38d-66c4-470e-1aed-a6fabe2d1e00?projectId=950e5de04fd5acec33569ef",
+    "body": "RIFF:\u0003\u0000\u0000WEBPVP8 .\u0003\u0000\u00000\u0013\u0000�\u0001*<\u0000<\u0000>I �D��!\u0014\u0005T(\u0004��\u0000g\u001a����-�߅|��\u0002\n\u0007h\r�\u001e`?UX=�9��=\u0000<�}��l}\u001a�t}��7'��8A��z{��>�3�3�\u0006�)����_�'�?������z4~�\u001ag>�h�5���\u0010v�\u001c�}Z�\u000eP�R��\u000bo�;p1���\u0004\u000bN\u0015�\u0016~1ݢ��\u0000\u0000��\u0005��\u001b=F�Q��\u001b>\u0007Z�0m���_˶o(Y[�F����\u001c�5�m��\u000e�.�fa}�n�k0@K\u0006A\t\r�=��h�|�p)|Ƙ�\u0016F\u0019�[\u001e�\u0005m�\u000e~�.�A_�\u0017�08��}�:���c�Izm�]e\u00112��\u0004��\u0004\u000bp�\u0016�{��:'\u001f�a��?�������\u001e�h�(�N�4\u001d�&�� ���\u001e]M|1c�}S��\u0007�2��& ���^��\u0002n�O�ys\u0017�<cZi��\u001e�A��\u0011�ł���g\"K���/\b�\u0011��T�N�\"N�A�Ԉ]ݔ/-Z������D�l��1�7���_i��u��(@S\u001c�)�\u0011I�����ȼr\u0003,�\u001cN��Z���08\u0003�^9��\nW��Va�܃F��Ʒ�\u0010a\u0006��Ihe\u0001GW�"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/71ca9daf-a31e-4d2a-fd01-f5dc2dc66900?projectId=950e5de04fd5acec33569ef",
+    "body": "RIFFX\u0002\u0000\u0000WEBPVP8X\n\u0000\u0000\u0000\u0010\u0000\u0000\u0000;\u0000\u0000;\u0000\u0000ALPH0\u0000\u0000\u0000\u0001/��m\u0003�?�^��b҈�8��`\u001a���\u001eA\bId�A�@\u0007�OD�' B�[1S��\u0001VP8 \u0002\u0002\u0000\u0000�\u000b\u0000�\u0001*<\u0000<\u0000>I �D��!\u0016\n�4(\u0004��\u0000j{��v���\u001e&�~�^�<���}\u0000<�e~\u0012p�\u0019�b\u001e5!�9����\u0003\r�~�\u0004F��՛����h\u0002�+�?\u0015��+��\u0003'@�f�0\u0000��U�\u0017�^�]�%�P��o�¬4c�e)��\u0010�:�\u0002z Ōl\u001e��\n!I�BM����8܌q�M��2\u0011zYf(�I=1�Nk�͹e�ڿ(��D�\u001b�\u0019i�\r��~�\u001b��Iט��a��r�m���O�w^��T�z0l��m�D^�o���d63?H���Js��n��Q�\u0014�G����N���\u0004|��8L]���b�-������\u0010��o_�4��h\u001f���=��߆K���r׿�7z�\u0007�`y��\u001f���\f\rq=���-gE?�\u000e ��0O����\u001f��6;2E����70\u0019�������s\u0014{���\u001eQOV�[�._\u0010\f����e�Y5�_?���\u0018�\u001dj,[(���1G�!��y"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://api.moove.xyz/v1/registration-check?handle=troll_sol_001",
+    "body": "{\"isAvailable\":true}"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.gstatic.com/recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.google.com/recaptcha/enterprise/anchor?ar=1&k=6LfGrhksAAAAAI_buI_Xi2uZhLKSl1XVK9VZiL5g&co=aHR0cHM6Ly93d3cubW9vdmUueHl6OjQ0Mw..&hl=en&v=kUY"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.gstatic.com/recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/styles__ltr.css"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.gstatic.com/recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.google.com/recaptcha/enterprise/webworker.js?hl=en&v=kUYUkUlSyqkjTSMaN2w3RaOh"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.gstatic.com/recaptcha/api2/logo_48.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.gstatic.com/recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js"
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3.26.0&t=1775097020829&sid=4031",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�Wmo�6\u0010�+\u0004�!\t Ҳ�X\u0005\u0006\u0014�^�&E��\u000b� 0h�l��I�<�%���@Ɏ��I�u\u001d: �\u0007Kw�#y�C�[\ns0�izu[=�\u00133�)\u0015\u0005ځ\u00149\u0016\u000e�Tj%�4�s���� �>m4\u0016�\u0005�Y;\u0007�\\�4rgGJ\u0003��\fPd\u0002\u0005Mo�\u0007�5o^Ӕ��yڕ1�N��vG��i[&,��ѩ��^s�Ј�b\f���\u0018\t\u0015�0���#\u0017��|&�K\u0018&w�3e��3�KB#*\u000b���W\u000eUxp\u00031\u0006��x7Jk���\u001c_*�م'�>�f��\u0017�R�n�\u0005Yv�'�e�k���[��N��I�\u001c�����YD��\u0002�\r�Ԟ�W\u0013gg�h&M\u001e�\u001fy/F©�"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/bd665b6f.59d964dbc2567ec7.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/1161-57546f40aa422822.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/874.555ff86b95f65fc3.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/589.7e72996eadf82a92.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/5725.0bbe36bfa126c504.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2613.655d750eeb63b62c.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/7540.dce9fa711b0d7380.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/4284.e697a0cc71328ec9.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/7939.a7b5fe224ed95508.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8674.e7e5d72018ed804c.js"
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3.26.0&t=1775097030831&sid=4031",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�oo�6\u0010ƿ\nq{�\u0000\"M[�\u0013�@��\u001d��iQ�킡(\f�:[�iR )�i��>P�\u00139q�n�^l0�\"�\u001d}$���zn\u0000Wh����M��N,\u00112\u0010U�\u0013)�P9�2��\\@\u0002+���-B(}���k��v�ls��S:;S\u001a!�%\u0006��  �\u0001��+k^��\f�<�^\f%�8�s�\u001f�1��˔��.�\u001c���\u0014\u0012(�\u001c'��?0SPA�\u0015��9򾉓��w[9r���6v�̂|'�E \u0001Y9�&��T�G7\u0011s4����Zt\u0006���+er����G��?#W�\f���f�?'/�R�\u0015Nߨ�\u0019�#�\u000e�ٛ_?��L�V\u000b$��\\�s�pv��n�e<��\u000fb&�"
+  }
+]

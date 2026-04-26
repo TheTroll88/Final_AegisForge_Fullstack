@@ -1,0 +1,80 @@
+$ErrorActionPreference='Stop'
+$currentRoot = 'C:\Users\natha\.openclaw'
+$archiveRoot = 'D:\AegisForge\OpenClaw_Archive'
+$workspace = 'C:\Users\natha\OneDrive\Desktop\Final_AegisForge_Fullstack'
+$stamp = Get-Date -Format 'yyyyMMdd-HHmmss'
+
+Write-Host '=== STEP 1: Locate current and archived .openclaw ==='
+if (-not (Test-Path $currentRoot)) { throw "Current .openclaw not found at $currentRoot" }
+$archCandidates = Get-ChildItem $archiveRoot -Directory -ErrorAction Stop | Sort-Object LastWriteTime
+$old = $null
+foreach ($d in $archCandidates) {
+  $candidate = Join-Path $d.FullName '.openclaw'
+  if (Test-Path $candidate) { $old = $candidate; break }
+}
+if (-not $old) { throw 'No archived .openclaw found under D:\AegisForge\OpenClaw_Archive' }
+Write-Host "Current: $currentRoot"
+Write-Host "Archived source: $old"
+
+Write-Host '=== STEP 2: Backup current gateway config ==='
+$backupDir = Join-Path $archiveRoot ("current-openclaw-backup-" + $stamp)
+New-Item -ItemType Directory -Path $backupDir -Force | Out-Null
+$filesToSync = @('openclaw.json','gateway.cmd','exec-approvals.json')
+foreach ($f in $filesToSync) {
+  $src = Join-Path $currentRoot $f
+  if (Test-Path $src) { Copy-Item $src (Join-Path $backupDir $f) -Force }
+}
+Write-Host "Backup dir: $backupDir"
+Get-ChildItem $backupDir -File | Select-Object Name,Length,LastWriteTime | Format-Table -AutoSize
+
+Write-Host '=== STEP 3: Sync old gateway config files into current ==='
+foreach ($f in $filesToSync) {
+  $src = Join-Path $old $f
+  $dst = Join-Path $currentRoot $f
+  if (Test-Path $src) {
+    Copy-Item $src $dst -Force
+    Write-Host "Synced: $f"
+  } else {
+    Write-Host "Missing in archive (skipped): $f"
+  }
+}
+
+Write-Host '=== STEP 4: Verify file hashes match archive ==='
+foreach ($f in $filesToSync) {
+  $src = Join-Path $old $f
+  $dst = Join-Path $currentRoot $f
+  if ((Test-Path $src) -and (Test-Path $dst)) {
+    $h1 = (Get-FileHash $src -Algorithm SHA256).Hash
+    $h2 = (Get-FileHash $dst -Algorithm SHA256).Hash
+    Write-Host "$f hash match: $($h1 -eq $h2)"
+  }
+}
+
+Write-Host '=== STEP 5: Save provided gateway log snapshot into workspace Cloud/OpenClaw ==='
+$logDir = Join-Path $workspace 'Cloud\OpenClaw\gateway_logs'
+New-Item -ItemType Directory -Path $logDir -Force | Out-Null
+$logFile = Join-Path $logDir ("openclaw-gateway-session-" + (Get-Date -Format 'yyyyMMdd-HHmmss') + '.log')
+@'
+17:43:33 [gateway] loading configuration…
+17:43:34 [gateway] resolving authentication…
+17:43:34 [gateway] starting...
+17:44:15 [gateway] starting HTTP server...
+17:44:15 [canvas] host mounted at http://127.0.0.1:18789/__openclaw__/canvas/ (root C:\Users\natha\.openclaw\canvas)
+17:44:15 [health-monitor] started (interval: 300s, startup-grace: 60s, channel-connect-grace: 120s)
+17:44:16 [gateway] agent model: ollama/glm4
+17:44:16 [gateway] ready (5 plugins: acpx, browser, device-pair, phone-control, talk-voice; 42.1s)
+17:44:16 [gateway] log file: \tmp\openclaw\openclaw-2026-04-20.log
+17:44:17 [gateway] starting channels and sidecars...
+17:44:17 [hooks] loaded 4 internal hook handlers
+17:45:06 [ws] handshake timeout conn=d1025200-520c-4918-8a94-3f46e5db364d peer=127.0.0.1:64991->127.0.0.1:18789 remote=127.0.0.1
+17:45:06 [model-pricing] pricing bootstrap failed: TimeoutError: The operation was aborted due to timeout
+17:45:06 [ws] closed before connect conn=f25f1465-669e-4e87-bea4-d41c4c42ea8e peer=127.0.0.1:61221->127.0.0.1:18789 remote=127.0.0.1 fwd=n/a origin=n/a host=127.0.0.1:18789 ua=n/a code=1006 reason=n/a
+17:45:06 [ws] closed before connect conn=9ab6eedc-e03c-40b5-aa30-f261eb2da6d5 peer=127.0.0.1:58174->127.0.0.1:18789 remote=127.0.0.1 fwd=n/a origin=n/a host=127.0.0.1:18789 ua=n/a code=1006 reason=n/a
+17:45:06 [ws] closed before connect conn=d1025200-520c-4918-8a94-3f46e5db364d peer=127.0.0.1:64991->127.0.0.1:18789 remote=127.0.0.1 fwd=n/a origin=n/a host=127.0.0.1:18789 ua=n/a code=1006 reason=n/a
+17:45:18 [bonjour] restarting advertiser (service stuck in announcing for 11169ms (gateway fqdn=Nates_PC (OpenClaw)._openclaw-gw._tcp.local. host=openclaw.local. port=18789 state=announcing))
+17:45:18 [gateway] device pairing auto-approved device=7a0d8bb4f973b480718c3c7b8b157510ad97fda5e964c6618af02ba6f7aa8a82 role=operator
+17:45:20 [plugins] embedded acpx runtime backend registered (cwd: C:\Users\natha\.openclaw\workspace)
+17:45:20 [browser/server] Browser control listening on http://127.0.0.1:18791/ (auth=token)
+17:45:24 [heartbeat] started
+17:45:24 [bonjour] watchdog detected non-announced service; attempting re-advertise (gateway fqdn=Nates_PC (OpenClaw)._openclaw-gw._tcp.local. host=openclaw.local. port=18789 state=probing)
+17:45:25 [plugins] embedded acpx runtime backend ready

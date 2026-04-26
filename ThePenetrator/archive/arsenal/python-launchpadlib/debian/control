@@ -1,0 +1,67 @@
+Source: python-launchpadlib
+Section: python
+Priority: optional
+Maintainer: Stefano Rivera <stefanor@debian.org>
+Uploaders: Debian Python Team <team+python@tracker.debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ pybuild-plugin-pyproject,
+ python3-all,
+ python3-keyring <!nocheck>,
+ python3-lazr.restfulclient <!nocheck>,
+ python3-pytest <!nocheck>,
+ python3-setuptools,
+ python3-simplejson <!nocheck>,
+ python3-testresources <!nocheck>,
+ python3-wadllib <!nocheck>
+Standards-Version: 4.6.2
+Homepage: https://launchpad.net/launchpadlib
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-launchpadlib.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-launchpadlib
+Rules-Requires-Root: no
+
+Package: python3-launchpadlib
+Architecture: all
+Depends:
+ python3-httplib2,
+ python3-lazr.restfulclient,
+ python3-lazr.uri,
+ ${misc:Depends},
+ ${python3:Depends}
+Suggests: python3-keyring, python3-pkg-resources, python3-testresources
+Description: Launchpad web services client library (Python 3)
+ A free Python library for scripting Launchpad through its web services
+ interface.
+ .
+ It currently provides access to the following parts of Launchpad:
+  * People and Teams
+  * Team memberships
+  * Bugs and bugtasks
+ .
+ The Launchpad API is currently in beta, and may well change in ways
+ incompatible with this library.
+ .
+ This package is for Python 3.
+
+Package: python3-launchpadlib-desktop
+Architecture: all
+Depends:
+ python3-keyring,
+ python3-launchpadlib (= ${source:Version}),
+ ${misc:Depends}
+Description: Launchpad web services client library with credential storage (Python 3)
+ A free Python library for scripting Launchpad through its web services
+ interface.
+ .
+ It currently provides access to the following parts of Launchpad:
+  * People and Teams
+  * Team memberships
+  * Bugs and bugtasks
+ .
+ The Launchpad API is currently in beta, and may well change in ways
+ incompatible with this library.
+ .
+ This metapackage is for Python 3. It depends on python3-launchpadlib and
+ includes the dependencies for storing credentials in the Desktop secrets
+ keyring.

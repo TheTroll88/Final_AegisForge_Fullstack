@@ -1,0 +1,55 @@
+# ============================================================================
+#  MISSION CONTROL — GITHUB WEBHOOK INTEGRATION
+# ============================================================================
+
+## WHAT IT DOES
+Listens for GitHub events and takes autonomous action:
+- PR merged → starts health monitoring (pings health_check_url)
+- CI failed (check_suite/check_run/status) → triggers auto-rollback
+- All verified via HMAC-SHA256 signature
+
+## SETUP
+1. In your GitHub repo → Settings → Webhooks → Add webhook
+2. Payload URL: http://<YOUR_MC_IP>:4000/api/webhooks/github
+3. Content-Type: application/json
+4. Secret: set same value as GITHUB_WEBHOOK_SECRET env var
+5. Events to subscribe: Pull requests, Check suites, Check runs, Statuses
+
+## ENV VAR
+GITHUB_WEBHOOK_SECRET=<your_hmac_secret>
+- If NOT set: webhook runs but logs warning (dev mode, no signature check)
+- If set: validates X-Hub-Signature-256 header with HMAC-SHA256
+
+## HOW SIGNATURE VERIFICATION WORKS
+```
+expected = 'sha256=' + HMAC-SHA256(GITHUB_WEBHOOK_SECRET, rawBody).hexdigest()
+timingSafeEqual(received_signature, expected)
+```
+
+## EVENT: pull_request (merged)
+When a PR is merged:
+1. Finds matching Product by repo_url (normalized, strips .git trailing slash)
+2. Checks Product settings for health_check_url
+3. Only monitors if automation_tier is 'semi_auto' or 'full_auto' (skips 'supervised')
+4. Starts post-merge health monitor (pings health URL, rolls back if failing)
+
+## EVENT: check_suite/check_run (completed, conclusion=failure)
+When CI fails after merge:
+1. Cross-references product by repo
+2. Finds the task that created the PR
+3. Executes auto-rollback to the commit before the merge
+
+## EVENT: status (failure/error)
+Same as check_suite — triggers rollback workflow.
+
+## ROLLBACK CAPABILITIES
+- executeRollback() — reverts the merge commit
+- startPostMergeMonitor() — periodically checks health URL
+- getProductSettings() — reads product automation tier
+
+## INTEGRATION WITH AEGISFORGE
+Your repos can send webhooks to MC at port 4000. This means:
+- When a Foreman agent creates a PR and it merges, MC watches for regressions
+- If CI breaks, MC auto-reverts — no human needed
+- Combined with the agent pipeline (Builder→Tester→Reviewer), this creates
+  a full autonomous code→test→deploy→monitor→rollback loop

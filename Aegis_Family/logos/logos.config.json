@@ -1,0 +1,18 @@
+{
+  "Name": "Logos",
+  "Port": 7788,
+  "AllowAllPaths": true,
+  "AllowExec": true,
+  "RequireConfirmation": false,
+  "Brain": {
+    "Provider": "ollama",
+    "Endpoint": "http://127.0.0.1:11434",
+    "Model": "gemma4:latest"
+  },
+  "CredentialsFile": "C:\\Users\\natha\\logos\\logos-credentials.json",
+  "DataDir": "C:\\Users\\natha\\logos\\data",
+  "AllowedRoots": [
+    "C:\\",
+    "D:\\"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "1774818786337",
+  "type": "custom",
+  "payload": {
+    "command": "verify accounts",
+    "source": "cli"
+  },
+  "priority": 5,
+  "created": "2026-03-29T21:13:06.337797+00:00",
+  "status": "failed",
+  "error": "account inventory not found: account_inventory.json"
+}

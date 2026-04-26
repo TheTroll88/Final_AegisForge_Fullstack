@@ -1,0 +1,30 @@
+{
+  "name": "@aegisforge/asig-contracts",
+  "version": "1.0.0",
+  "description": "AegisSignal (ASIG) ERC-20 token and supporting contracts — EchoBeacon, MetaSignalRegistry, Watcher",
+  "author": "AegisForge",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "compile":          "hardhat compile",
+    "test":             "hardhat test",
+    "test:gas":         "REPORT_GAS=true hardhat test",
+    "coverage":         "hardhat coverage",
+    "clean":            "hardhat clean",
+    "lint":             "solhint 'contracts/**/*.sol'",
+    "node":             "hardhat node",
+    "deploy:asig":      "hardhat run scripts/deploy-asig.js",
+    "deploy:echo":      "hardhat run scripts/deploy-echo.js",
+    "deploy:registry":  "hardhat run scripts/deploy-registry.js",
+    "deploy:watcher":   "hardhat run scripts/deploy-watcher.js",
+    "deploy:all:testnet": "hardhat run scripts/deploy-all.js --network base-sepolia",
+    "deploy:all:mainnet": "hardhat run scripts/deploy-all.js --network base",
+    "verify:asig":      "hardhat verify --network base"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.0",
+    "solhint": "^5.0.3"
+  }
+}

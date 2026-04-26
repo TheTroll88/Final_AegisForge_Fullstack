@@ -1,0 +1,1092 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "ollama/gemma4"
+      },
+      "models": {
+        "openai/gpt-4o": {
+          "alias": "GPT-4o"
+        },
+        "venice/kimi-k2-5": {
+          "alias": "Kimi K2.5"
+        },
+        "venice/olafangensan-glm-4.7-flash-heretic": {},
+        "vercel-ai-gateway/anthropic/claude-opus-4.6": {
+          "alias": "Vercel AI Gateway"
+        }
+      },
+      "workspace": "C:\\Users\\natha\\.openclaw\\workspace"
+    }
+  },
+  "auth": {
+    "profiles": {
+      "custom-1": {
+        "mode": "api_key",
+        "provider": "aegis_d49993c5792a58f0828bf7b87527c5dbbff6e37efdabbc8422e91aeedd96235582d7764abb466949accce861219e90af1507d7a5f4cf7835795f4ff91e48b897"
+      },
+      "openai:default": {
+        "mode": "api_key",
+        "provider": "openai"
+      },
+      "venice:default": {
+        "mode": "api_key",
+        "provider": "venice"
+      },
+      "vercel-ai-gateway:default": {
+        "mode": "api_key",
+        "provider": "vercel-ai-gateway"
+      }
+    }
+  },
+  "channels": {
+    "zalouser": {
+      "dmPolicy": "pairing",
+      "enabled": true,
+      "groups": {}
+    },
+    "telegram": {
+      "enabled": true,
+      "botToken": "8421483697:AAHqbLwY1np8V-yAemoucSQeFuRRQpq2w3A",
+      "dmPolicy": "pairing",
+      "groups": {
+        "*": {
+          "requireMention": true
+        }
+      }
+    }
+  },
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "token": "fc319c3d6efb314630c38b9d289413ebffa8011591acf6fd"
+    },
+    "bind": "loopback",
+    "controlUi": {
+      "allowInsecureAuth": true
+    },
+    "mode": "local",
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send",
+        "sms.search"
+      ]
+    },
+    "port": 18789,
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "meta": {
+    "lastTouchedAt": "2026-04-18T03:08:38.94Z",
+    "lastTouchedVersion": "2026.4.9"
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "ollama": {
+        "api": "ollama",
+        "apiKey": "ollama-local",
+        "baseUrl": "http://127.0.0.1:11434",
+        "models": [
+          {
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "gemma4",
+            "input": [
+              "text",
+              "image"
+            ],
+            "name": "gemma4",
+            "reasoning": true
+          },
+          {
+            "contextWindow": 202752,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "glm-5.1:cloud",
+            "input": [
+              "text"
+            ],
+            "name": "glm-5.1:cloud",
+            "reasoning": true
+          },
+          {
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "gemma3:4b",
+            "input": [
+              "text",
+              "image"
+            ],
+            "name": "gemma3:4b"
+          }
+        ]
+      },
+      "openai": {
+        "api": "openai-completions",
+        "baseUrl": "https://api.openai.com/v1",
+        "models": [
+          {
+            "compat": {
+              "supportsTools": true,
+              "supportsUsageInStreaming": true
+            },
+            "contextWindow": 128000,
+            "cost": {
+              "cacheRead": 0.00125,
+              "cacheWrite": 0,
+              "input": 0.0025,
+              "output": 0.01
+            },
+            "id": "gpt-4o",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 16384,
+            "name": "GPT-4o",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsTools": true,
+              "supportsUsageInStreaming": true
+            },
+            "contextWindow": 128000,
+            "cost": {
+              "cacheRead": 7.5E-05,
+              "cacheWrite": 0,
+              "input": 0.00015,
+              "output": 0.0006
+            },
+            "id": "gpt-4o-mini",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 16384,
+            "name": "GPT-4o Mini",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": true
+            },
+            "contextWindow": 200000,
+            "cost": {
+              "cacheRead": 0.00055,
+              "cacheWrite": 0,
+              "input": 0.0011,
+              "output": 0.0044
+            },
+            "id": "o3-mini",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 100000,
+            "name": "o3-mini",
+            "reasoning": true
+          }
+        ]
+      },
+      "venice": {
+        "api": "openai-completions",
+        "baseUrl": "https://api.venice.ai/api/v1",
+        "models": [
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 128000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "llama-3.3-70b",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 4096,
+            "name": "Llama 3.3 70B",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 128000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "llama-3.2-3b",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 4096,
+            "name": "Llama 3.2 3B",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsTools": false,
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 128000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "hermes-3-llama-3.1-405b",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 16384,
+            "name": "Hermes 3 Llama 3.1 405B",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 128000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "qwen3-235b-a22b-thinking-2507",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 16384,
+            "name": "Qwen3 235B Thinking",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 128000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "qwen3-235b-a22b-instruct-2507",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 16384,
+            "name": "Qwen3 235B Instruct",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 256000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "qwen3-coder-480b-a35b-instruct",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 65536,
+            "name": "Qwen3 Coder 480B",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 256000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "qwen3-coder-480b-a35b-instruct-turbo",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 65536,
+            "name": "Qwen3 Coder 480B Turbo",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 256000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "qwen3-5-35b-a3b",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 65536,
+            "name": "Qwen3.5 35B A3B",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 256000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "qwen3-next-80b",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 16384,
+            "name": "Qwen3 Next 80B",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 256000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "qwen3-vl-235b-a22b",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 16384,
+            "name": "Qwen3 VL 235B (Vision)",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 32000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "qwen3-4b",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 4096,
+            "name": "Venice Small (Qwen3 4B)",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsTools": false,
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 160000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "deepseek-v3.2",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 32768,
+            "name": "DeepSeek V3.2",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsTools": false,
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 32000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "venice-uncensored",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 4096,
+            "name": "Venice Uncensored (Dolphin-Mistral)",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 128000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "mistral-31-24b",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 4096,
+            "name": "Venice Medium (Mistral)",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 198000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "google-gemma-3-27b-it",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 16384,
+            "name": "Google Gemma 3 27B Instruct",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 128000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "openai-gpt-oss-120b",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 16384,
+            "name": "OpenAI GPT OSS 120B",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 128000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "nvidia-nemotron-3-nano-30b-a3b",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 16384,
+            "name": "NVIDIA Nemotron 3 Nano 30B",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 128000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "olafangensan-glm-4.7-flash-heretic",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 24000,
+            "name": "GLM 4.7 Flash Heretic",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 198000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "zai-org-glm-4.6",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 16384,
+            "name": "GLM 4.6",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 198000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "zai-org-glm-4.7",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 16384,
+            "name": "GLM 4.7",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 128000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "zai-org-glm-4.7-flash",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 16384,
+            "name": "GLM 4.7 Flash",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 198000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "zai-org-glm-5",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 32000,
+            "name": "GLM 5",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 256000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "kimi-k2-5",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 65536,
+            "name": "Kimi K2.5",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 256000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "kimi-k2-thinking",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 65536,
+            "name": "Kimi K2 Thinking",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 198000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "minimax-m21",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 32768,
+            "name": "MiniMax M2.1",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 198000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "minimax-m25",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 32768,
+            "name": "MiniMax M2.5",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 198000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "claude-opus-4-5",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 32768,
+            "name": "Claude Opus 4.5 (via Venice)",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 1000000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "claude-opus-4-6",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 128000,
+            "name": "Claude Opus 4.6 (via Venice)",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 198000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "claude-sonnet-4-5",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 64000,
+            "name": "Claude Sonnet 4.5 (via Venice)",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 1000000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "claude-sonnet-4-6",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 64000,
+            "name": "Claude Sonnet 4.6 (via Venice)",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 256000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "openai-gpt-52",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 65536,
+            "name": "GPT-5.2 (via Venice)",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 256000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "openai-gpt-52-codex",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 65536,
+            "name": "GPT-5.2 Codex (via Venice)",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 400000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "openai-gpt-53-codex",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 128000,
+            "name": "GPT-5.3 Codex (via Venice)",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 1000000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "openai-gpt-54",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 131072,
+            "name": "GPT-5.4 (via Venice)",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 128000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "openai-gpt-4o-2024-11-20",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 16384,
+            "name": "GPT-4o (via Venice)",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 128000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "openai-gpt-4o-mini-2024-07-18",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 16384,
+            "name": "GPT-4o Mini (via Venice)",
+            "reasoning": false
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 198000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "gemini-3-pro-preview",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 32768,
+            "name": "Gemini 3 Pro (via Venice)",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 1000000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "gemini-3-1-pro-preview",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 32768,
+            "name": "Gemini 3.1 Pro (via Venice)",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 256000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "gemini-3-flash-preview",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 65536,
+            "name": "Gemini 3 Flash (via Venice)",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 1000000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "grok-41-fast",
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 30000,
+            "name": "Grok 4.1 Fast (via Venice)",
+            "reasoning": true
+          },
+          {
+            "compat": {
+              "supportsUsageInStreaming": false
+            },
+            "contextWindow": 256000,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "grok-code-fast-1",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 10000,
+            "name": "Grok Code Fast 1 (via Venice)",
+            "reasoning": true
+          }
+        ]
+      }
+    }
+  },
+  "plugins": {
+    "allow": [
+      "openclaw-web-search",
+      "ollama",
+      "openai",
+      "venice",
+      "vercel-ai-gateway"
+    ],
+    "entries": {
+      "ollama": {
+        "enabled": true
+      },
+      "openai": {
+        "enabled": true
+      },
+      "openclaw-web-search": {
+        "enabled": true
+      },
+      "venice": {
+        "enabled": true
+      },
+      "vercel-ai-gateway": {
+        "enabled": true
+      },
+      "zalouser": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "openclaw-web-search": {
+        "installPath": "C:\\Users\\natha\\.openclaw\\extensions\\openclaw-web-search",
+        "source": "npm",
+        "spec": "@ollama/openclaw-web-search"
+      }
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "tools": {
+    "alsoAllow": [
+      "ollama_web_search",
+      "ollama_web_fetch"
+    ],
+    "profile": "coding",
+    "web": {
+      "fetch": {
+        "enabled": false
+      },
+      "search": {
+        "enabled": false
+      }
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-09T19:51:16.494Z",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local",
+    "lastRunVersion": "2026.4.9"
+  }
+}

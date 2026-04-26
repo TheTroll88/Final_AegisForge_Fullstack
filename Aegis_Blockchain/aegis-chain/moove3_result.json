@@ -1,0 +1,184 @@
+{
+  "pubkey": "FsawhLdooUScfcq2PJPU6yLy2vJfejtPvH3naKXf6W1M",
+  "signed": true,
+  "authTokens": null,
+  "consoleLog": [
+    "[log] [INIT] __fakeWallet ready, pubkey=FsawhLdo...",
+    "[log] [FETCH] POST https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client&sv=3.26.0& BODY:31,139,8,0,0,0,0,0,0,10,157,83,77,79,220,48,16,253,43,214,156,64,202,39,201,126,133,75,17,84,45,162,172,42,1,229,80,85,43,199,153,108,220,117,226,200,158,100,129",
+    "[log] [FETCH] POST https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client&sv=3.26.0& BODY:31,139,8,0,0,0,0,0,0,10,157,83,93,79,219,48,20,253,43,214,125,26,82,62,28,146,166,109,120,25,130,105,67,12,52,9,24,15,211,84,185,206,77,227,213,177,35,251,166,5,",
+    "[log] [FETCH] POST https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3 BODY:31,139,8,0,0,0,0,0,0,10,197,84,219,110,211,64,16,253,151,121,182,83,59,190,196,222,39,64,173,212,8,81,33,40,149,10,66,214,120,119,156,154,218,187,214,238,56,105,",
+    "[log] [INIT] __fakeWallet ready, pubkey=FsawhLdo...",
+    "[log] [INIT] __fakeWallet ready, pubkey=FsawhLdo...",
+    "[log] [INIT] __fakeWallet ready, pubkey=FsawhLdo...",
+    "[log] [INIT] __fakeWallet ready, pubkey=FsawhLdo...",
+    "[log] [INIT] __fakeWallet ready, pubkey=FsawhLdo...",
+    "[log] [FETCH] POST https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3 BODY:31,139,8,0,0,0,0,0,0,10,157,82,203,110,219,48,16,252,151,61,83,182,94,150,101,157,122,112,14,6,250,8,208,52,64,81,20,198,138,92,201,108,40,74,32,87,114,92,67,255",
+    "[log] [INIT] __fakeWallet ready, pubkey=FsawhLdo...",
+    "[log] [FETCH] POST https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client&sv=3.26.0& BODY:31,139,8,0,0,0,0,0,0,10,157,83,93,107,219,64,16,252,43,199,62,37,32,201,167,72,254,82,158,66,82,218,144,38,4,146,212,148,82,204,234,180,178,174,62,233,196,221,20",
+    "[log] [FETCH] POST https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3 BODY:31,139,8,0,0,0,0,0,0,10,197,84,219,106,220,72,16,253,151,122,150,198,210,232,222,111,9,54,120,8,49,33,55,72,150,32,74,221,165,113,175,165,110,209,93,154,201,196,",
+    "[log] [INIT] __fakeWallet ready, pubkey=FsawhLdo...",
+    "[log] [INIT] __fakeWallet ready, pubkey=FsawhLdo...",
+    "[log] [INIT] __fakeWallet ready, pubkey=FsawhLdo...",
+    "[log] [INIT] __fakeWallet ready, pubkey=FsawhLdo...",
+    "[log] [INIT] __fakeWallet ready, pubkey=FsawhLdo...",
+    "[warning] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.",
+    "[log] [FETCH] GET https://api.moove.xyz/v1/registration-check?handle=troll_sol_4357",
+    "[log] [FETCH RESP] 200 https://api.moove.xyz/v1/registration-check?handle=troll_sol_4357 => {\"isAvailable\":true}",
+    "[log] [FakeAdapter] constructed: Phantom",
+    "[log] [FakeAdapter] disconnect()",
+    "[log] [FakeAdapter] connect() → success",
+    "[log] [FETCH] POST https://api.moove.xyz/v1/auth/request BODY:{\"address\":\"FsawhLdooUScfcq2PJPU6yLy2vJfejtPvH3naKXf6W1M\",\"chainType\":\"SVM\"}",
+    "[log] [FETCH RESP] 200 https://api.moove.xyz/v1/auth/request => {\"message\":\"7a736fee-8bdd-42f1-baec-7c225593b2d8\",\"canSignIn\":false}",
+    "[warning] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.",
+    "[log] [FETCH] POST https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3 BODY:31,139,8,0,0,0,0,0,0,10,237,153,109,171,219,54,24,134,255,138,208,190,180,96,41,78,236,56,57,30,12,70,55,182,177,118,20,214,173,140,82,14,138,253,36,214,162,72,7",
+    "[log] [FETCH] GET https://api.moove.xyz/v1/registration-check?handle=trollbg4789",
+    "[log] [FETCH RESP] 200 https://api.moove.xyz/v1/registration-check?handle=trollbg4789 => {\"isAvailable\":true}",
+    "[log] [FakeAdapter] signMessageString(), type=string",
+    "[log] [FAKE] signMsgStr called, type=string len=36",
+    "[log] [FAKE] message hex (first 80): 37613733366665652d386264642d343266312d626165632d376332323535393362326438",
+    "[log] [FAKE] signMsgStr signed OK, b58: 64eia6HpvFYuAsDjHXSy...",
+    "[log] [FETCH] POST https://api.moove.xyz/v1/registration BODY:{\"handle\":\"trollbg4789\",\"address\":\"FsawhLdooUScfcq2PJPU6yLy2vJfejtPvH3naKXf6W1M\",\"signature\":\"64eia6HpvFYuAsDjHXSy62qrua3VgEyDDTFZXapB2tjniUuLCoyF8ifrW1UJmGMm3A1Bq482B5FojSoTs1TnX54B\",\"tokenAddress\":null,\"chainId\":null,\"recaptchaToken\":\"0cAFcWe",
+    "[log] [FETCH] POST https://www.google.com/recaptcha/enterprise/clr?k=6LfGrhksAAAAAI_buI_Xi2uZhLKSl1XVK9VZiL5g BODY:10,40,54,76,102,71,114,104,107,115,65,65,65,65,65,73,95,98,117,73,95,88,105,50,117,90,104,76,75,83,108,49,88,86,75,57,86,90,105,76,53,103,18,142,12,48,51,65,70,99,87,101,65,53,100,97,118,95,8",
+    "[error] Failed to load resource: the server responded with a status of 500 ()",
+    "[log] [FETCH RESP] 500 https://api.moove.xyz/v1/registration => {\"errors\":[{\"message\":\"Cannot create authentication token. Please try again.\",\"code\":\"CANNOT_CREATE_AUTHENTICATION_TOKEN\"}]}",
+    "[log] [FETCH] POST https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3 BODY:31,139,8,0,0,0,0,0,0,10,157,85,109,111,212,56,16,254,43,145,239,75,43,197,222,100,147,221,182,70,66,66,112,186,67,20,132,4,92,117,170,170,213,196,158,108,204,58,"
+  ],
+  "networkTraffic": [
+    {
+      "dir": "REQ",
+      "method": "POST",
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client&sv=3.26.0&t=1775103315197&sid=cca736c1-8710-48fc-86e0-1b4dfe88de83&ec=1&gz=1",
+      "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�SMO�0\u0010�+֜@�'�~�K\u0011T-��*\u0001�PU+Ǚl�u�Ȟd�m�{��j[$\u000e�����xޛy3;�\u001e\u001b��}����FȀw�W���\u0019̲��q�K܂\u0007=W����Z���v�\rj�{\f��_�\u000fT!\u0019�Th�D\u0003\u001e�H���!ہEk�n�� \u0003!�,��؟���O���S��8O�\u0012��\u0002�\tx0RwF���$)���0���вgݱ_��\u0016<\u0010�1��;\u0019:�f���\u0010dp�_�R<�\u0004\u0011;y�M���-�Y\u001c\u0005�9{��4=gO���]���G�o$��d\u0016$Svr�����ǔ� ��b�O�eet�a��A�>v�Kn��\tx���c���\u000fw�A�-5{�^I\u001f�G�\u0001z�\u0010+\fb��ʂ*��4��w\u0015�uE�-��\u0003�}�\r��<޾\u0019\u000b\u0019���E\u0014���h��-d�l6��$�'��l����)���H���J\n���\u0007\\鲴H�%�B�%n���"
+    },
+    {
+      "dir": "REQ",
+      "method": "POST",
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client&sv=3.26.0&t=1775103315199&sid=cca736c1-8710-48fc-86e0-1b4dfe88de83&ec=1&gz=1",
+      "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�S]O�0\u0014�+�}\u001aR>\u001c��mx\u0019�iC\f4\t\u0018\u000f�T��M�ձ#��\u0005���)iņ�Ø�`��~�sw�\u001b4����?�E�P���.�h�sX\u0014\u001e�W�,<\tG\u0010�F�n���Z_��v��\u001ak7\u0018=<>��FrV��a�\u000e\u0002h�D)H@��C��s(@J1Ms���i��lV�p�#\u000f�eVV8��8K!�V�p�9����H\u000f\u0015>#L��\"���v�'{��\u0000d�\u001c\u001azc�Σ[�\u0015\u001a�\u0002���Zē��w�ʔv���-Kx�Oؽ2yv�\u001e�숝���{\\^*�'�4Js�������i�F�\u0011��\u001e����\u0006�$M\">\u001cv#*���\u0005\u0002�V��C4��\r\u0004P[OfOދ���Q}�^i�K�h\u0016[UR\rE�e���F��\t�9�\u0001l\u0014n[����﫶P�`�0�|$�AO�i�H��I��4�$�|�<Y3TxڠSR�g��be�7��U呠H9��\u0004\f�\u001a�QM#"
+    },
+    {
+      "dir": "REQ",
+      "method": "POST",
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3.26.0&t=1775103315401&sid=cca736c1-8710-48fc-86e0-1b4dfe88de83&ec=2&gz=1",
+      "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�T�n�@\u0010��y�S;���'@��\bQ!(�\nB�xw��ڻ��8iZ��Ѻ)4�\u0007@H}��s;s��<\u0000mI�\u0003����y�=�\u0000\u001c�T\u0012\u0007\u001e-\t1�m��QK�\u0000�؍��yp��d��-zc����ߟ��\u001bbk���RC\u0016\u0002�Q!#�\u0007p�\\k��\u0014\u0004H��$�qX��(L�F�ENQ\u0018שj�(\u0014\u0015\t\u00040����vQ�3�*n{�z\u0007\"\n@��j5�E��~�V�r�\u0005`I��$WҌ��\u0010��]C���L\u000eD�'E\u0012@�Z��4��f�\u0001[�?\u0013�i:\u00050:��]��{�\u0000�����S7��Xw4��K%�PFj\u0019�%fa\u001dS\u001ab��&S\u0011&*�)�!��͙޶��<�\u0007��W��\u001a5Jn��i\n��\u0001\u0011�VY\u001c%I�-��G�w��!GkI�{���@�)8��!�\u0010\u001bd��n0n�^(/��A�z�c\u0015z� `��M�vT�0T\u001d�Z�@0;\\\u001dd�v�"
+    },
+    {
+      "dir": "RES",
+      "status": 202,
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client&sv=3.26.0&t=1775103315197&sid=cca736c1-8",
+      "body": "{\"success\":true}"
+    },
+    {
+      "dir": "RES",
+      "status": 202,
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client&sv=3.26.0&t=1775103315199&sid=cca736c1-8",
+      "body": "{\"success\":true}"
+    },
+    {
+      "dir": "RES",
+      "status": 202,
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3.26.0&t=1775103315401&sid=cca7",
+      "body": "{\"success\":true}"
+    },
+    {
+      "dir": "REQ",
+      "method": "POST",
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3.26.0&t=1775103324438&sid=cca736c1-8710-48fc-86e0-1b4dfe88de83&ec=1&gz=1",
+      "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�R�n�0\u0010��=S�^�e�zp\u000e\u0006�\b�4@Q\u0014Ɗ\\�l(J Wr\\C�^P)\u0002\u0017����rf9;W��,{��]_�\u001f�#�\u0000G�\u0012\u0007\u001e\u001dUՀ-\u001d'M�#Y\u0005\u0002&4c�:1\u000f�Z�������Vϗ��w|\"v�1kG\r9\u0010�\u0011�BF����{���\u001e*�\u0012�Y!���&q����ʂ�(�s�PY**3\u0010�ȏμAѠ��2@_�J�B@�ϯ@�Ko[��I��-A��7�\u0014r\u0001~A�4��\u0005\b�=j:�'�\u0006l�n�\u0014�նmFsg[l�#˟�\u001c�#\u0005U�Ɠ\u00005�C�(YO�/��Y���\u0005�¹�\u0004\u0002���\u000e{�8�X\u001bZJER�;%�H�*��\u001dn�:�<�l��FŘ�\ff\u0011���흝��m�'\u0010�\u000eJ0�^��uoa�\u0005�\u000e\tH��M\u0012gY��Y�J��f��,�/���b���_��zz$\u0017r\u0001\u0015d��X� \u0002�p\u0019\u0002�\u000f��K�\u0007���d9r��A��\f�"
+    },
+    {
+      "dir": "REQ",
+      "method": "POST",
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client&sv=3.26.0&t=1775103324732&sid=cca736c1-8710-48fc-86e0-1b4dfe88de83&ec=1&gz=1",
+      "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�S]k�@\u0010�+�>% ɧH�R�BRڐ&\u0004�ԔR�괲�>����N�������@�iу��jfvgw\u0003���Y�~lv�7X\u0013d���s���\feY�\u000b��$�!�\u0015��WTε6\u001b\f��uTk�����y�\u001a]JE\u0010@M\u000e\u000bt\b�\u0006,Y+usy\u0001\u0019\b��d$�p2�y�NJ\u0011NF��8O��&��&\t\u0004�SvF}��I���k�c��8{a�ug،��\u0010�*�%{a\u0007\u0010\b@t�P�>H�Y2s\\P�z�g�\u0014\u000e�\u0011gG3�\u0014zm��=�y�O�L6���=��cvֶ�f�_I7\u0018&�(\u0019���/��_\u0003���g\u0012K}��+�k\u001a�I\u001cq��;,���/\u0010��\u0002�V�\t\u001f� �J[��\u001c{#�\u001f����W\rXa���Z\u0016��,NS~�U$\u0017��l�y\u0000��V\u001b���\u0010}�\u00162�e�S�{Wj�\u000e�\u0016�x<\u001e�<IN�q�w�g�xeg5\u0019)pp^I�\u000b\r�s]��"
+    },
+    {
+      "dir": "RES",
+      "status": 202,
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client&sv=3.26.0&t=1775103324732&sid=cca736c1-8",
+      "body": "{\"success\":true}"
+    },
+    {
+      "dir": "REQ",
+      "method": "POST",
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3.26.0&t=1775103324931&sid=cca736c1-8710-48fc-86e0-1b4dfe88de83&ec=2&gz=1",
+      "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�T�j�H\u0010��z�����o\t6x\b1!7H� Jݥq��n�]�����C�\u0013�M\u0002{a!z�P�O�S�@\u00072�A�q��y�#�\u0000�ٶ\u0012'�\u001d\t1��\u001b�H�\b\u000e8���y����x<nFk\u000f��z�v19��!��Ĩ�\u0011�=x�^[��\u0004\u0001Rb��2��*M��e\\���i����ZQ�A\u0004\u0013��\u000f*\r\u0016U�z�v� �\b�\u001d[m�\u001cJ�\u0007�˶M�M�<<u�4u\u001d�#�\u001dIn��\r������\\۝�BX�f�\bz�|p3L��yh'Ԇ�d/�%�ٓ\u000b3��:0D g�v�]�\u0015\f�n��T�]�(��2Q�8o�����\u0018�\n�B%��\f�(����+s�Κ�B���:T��Y5K����D\u0010�\u0001�VU�&Y�ͫ,{L���N��\u001c\u0019~�����D�\tr�'�\u001e�Z�:Y?����=���f\u001e��\u0014\f���u�v��\u001e��ij\u0007����hu�x�6�9\f"
+    },
+    {
+      "dir": "RES",
+      "status": 202,
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3.26.0&t=1775103324931&sid=cca7",
+      "body": "{\"success\":true}"
+    },
+    {
+      "dir": "REQ",
+      "method": "GET",
+      "url": "https://api.moove.xyz/v1/registration-check?handle=troll_sol_4357"
+    },
+    {
+      "dir": "RES",
+      "status": 200,
+      "url": "https://api.moove.xyz/v1/registration-check?handle=troll_sol_4357",
+      "body": "{\"isAvailable\":true}"
+    },
+    {
+      "dir": "REQ",
+      "method": "POST",
+      "url": "https://api.moove.xyz/v1/auth/request",
+      "body": "{\"address\":\"FsawhLdooUScfcq2PJPU6yLy2vJfejtPvH3naKXf6W1M\",\"chainType\":\"SVM\"}"
+    },
+    {
+      "dir": "RES",
+      "status": 200,
+      "url": "https://api.moove.xyz/v1/auth/request",
+      "body": "{\"message\":\"7a736fee-8bdd-42f1-baec-7c225593b2d8\",\"canSignIn\":false}"
+    },
+    {
+      "dir": "REQ",
+      "method": "POST",
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3.26.0&t=1775103344740&sid=cca736c1-8710-48fc-86e0-1b4dfe88de83&ec=4&gz=1",
+      "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�m��6\u0018���о�`)N�89\u001e\fF7��v\u0014֭�R\u000e��$֢HF�\u0013����C���'/={�\u000e��plI��sߏt\u0005}İ\u0005i\rN�}l\u001eb\u001b�)f�U�\u0019+m�!M3��5\u000e���\u0016֖&\u001d�v�\u001d�(�\u0005Z�?�J��\\\u0000\u000e�\u0006,˙e8��\r\u0018Õ��\u001b��,c�(��d>\u001b�$�/32O $�E�/a>�a\u001e�\u0000�l\u0005��\u0016O\u0018�r+܌^�:��)G��T��[XD���\\��\u001f��\t\u000epVi\r�>q�ʀ�g+�֏��\u000b�FS\u001a�go���Π�ޠqH�/�[.��KT'�s�uY\nx\u000b�\u001f�\u001dM�\u0019�\u0012����߼z\u0019 �׀��l���\u0017�V\u001b\u0018��1\r�\u001f��-���'8�Be�/\u0015$��g\u001c�B\u0019+\u001b�\u0006S�\u0001�E[�[��4�����\u00168\u001d�qx(+��\n�ӻ0\f�îT�\u000e[\u001eJ϶�)v��0��l�X�)q:�ͦ�0��d\u001a�M�\u0007%�̾ހ�\u0019\u001b�(x"
+    },
+    {
+      "dir": "RES",
+      "status": 202,
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3.26.0&t=1775103344740&sid=cca7",
+      "body": "{\"success\":true}"
+    },
+    {
+      "dir": "REQ",
+      "method": "GET",
+      "url": "https://api.moove.xyz/v1/registration-check?handle=trollbg4789"
+    },
+    {
+      "dir": "RES",
+      "status": 200,
+      "url": "https://api.moove.xyz/v1/registration-check?handle=trollbg4789",
+      "body": "{\"isAvailable\":true}"
+    },
+    {
+      "dir": "REQ",
+      "method": "POST",
+      "url": "https://api.moove.xyz/v1/registration",
+      "body": "{\"handle\":\"trollbg4789\",\"address\":\"FsawhLdooUScfcq2PJPU6yLy2vJfejtPvH3naKXf6W1M\",\"signature\":\"64eia6HpvFYuAsDjHXSy62qrua3VgEyDDTFZXapB2tjniUuLCoyF8ifrW1UJmGMm3A1Bq482B5FojSoTs1TnX54B\",\"tokenAddress\":null,\"chainId\":null,\"recaptchaToken\":\"0cAFcWeA7yruTKljofyf3BKKoCLKjyevOw4IOyNulpwr2_58qIPf8dEzg0aCYrSIpbkz5D7jK9_GhdIh-6rSBqKRhhDrdH8CZvGxoRkQCQy8hqItpAcXN2lR_Cv8LstsGGrDF5WfnpvaM2dboE5ZsfxvqU8Mx6Rx1MW"
+    },
+    {
+      "dir": "RES",
+      "status": 500,
+      "url": "https://api.moove.xyz/v1/registration",
+      "body": "{\"errors\":[{\"message\":\"Cannot create authentication token. Please try again.\",\"code\":\"CANNOT_CREATE_AUTHENTICATION_TOKEN\"}]}"
+    },
+    {
+      "dir": "REQ",
+      "method": "POST",
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3.26.0&t=1775103354735&sid=cca736c1-8710-48fc-86e0-1b4dfe88de83&ec=1&gz=1",
+      "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�Umo�8\u0010�+��K+��d�ݶFBBp�C\u0014�\u0004\\u���Ğl�:vd;�B����l�-T���!�<�y�Ş�%�F\u0013<�׷��\u001d�H8�>؅�.�\u000e9\u0017Z�\u0015I�\u001at\u001f�&����d�ٰ��5���ˤs�V\u001aIJZ\f !\u0000�ģ�ʚׯ\b'B�Y1\u00179=?�3Z�ׂ��1�yU�\u001a��%�\u0017$%\u001d,q�;�\u001bLA\u0005\u001d=z\u001b���(O�&���%WX\u0015G٥2��kr4BR\"z�Єߤ�=�\u0005,ф���\u001a&3�%'W�H��ɻ�I���Yr�̼|�l��i��4^a�F�ɬ8c�<9y��Ƿ�i��\n��P��i�q��I^�,�_�\u0001jp�p��D[\u0001C�h�\u000f$%�����z����\u001c�\u0007\u0001x�\u0010�b�dh\b��2;�\u001aT�&\u0010~�e)Y+�tօǚG铺�����Ȳ�*-�\u0000mGx~v6˳�(g\u0017y1\"_����h�)\u0001���\u0012���\u001e\\غ�\u0018\b/\"E���R�\u000eL"
+    },
+    {
+      "dir": "RES",
+      "status": 202,
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3.26.0&t=1775103354735&sid=cca7",
+      "body": "{\"success\":true}"
+    }
+  ]
+}

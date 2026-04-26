@@ -1,0 +1,1751 @@
+====================================================================
+VENICE API DOCS — WHAT'S NEW (since signed-snapshot-2026-04-09)
+Old commit: 6fcd223 | New commit: 210e5ce | Date: April 20, 2026
+====================================================================
+
+SUMMARY OF COMMITS (newest first):
+[210e5ce] Update swagger.yaml from outerface deployment
+[7abf382] docs(pricing): drop output column for embeddings, rename label
+[7153be5] docs(tts): organize voice catalog by model
+[e7ac612] feat(models): show embedding dimensions on model cards
+[1227b4a] docs(video): document Grok Imagine Private models and download_url
+[9c6408b] feat(models): split Audio page into Text-to-Speech and Speech-to-Text
+[2dd9ec4] chore: update static models from API (2026-04-15)
+[27d4913] docs: add Claude Opus 4.6 Fast and fix model IDs  <-- THE 4.6 UPDATE
+[59e02dc] docs: add experimental API notice to all augment endpoints
+[9bc3b77] docs: add web search API endpoint documentation   <-- NEW ENDPOINT
+[b5a2bdc] docs: add web scrape API endpoint documentation   <-- NEW ENDPOINT
+[8b0946c] docs: add text-parser API endpoint documentation  <-- NEW ENDPOINT
+[b1b6322] Rewrite x402 guide: SDK-first, cleaner structure
+[d2cc44c] fix: resolve all 157 dependency security vulnerabilities
+[9793475] Update llms.txt for comprehensive API coverage
+[6ccd178] Remove redundant "with Venice" from guide page titles
+[1e0d848] Regroup Guides section into logical sub-groups
+
+KEY CHANGES:
+- NEW MODEL: Claude Opus 4.6 Fast added
+- NEW MODEL: Grok Imagine Private documented + download_url field
+- MODEL CARDS: Embedding dimensions now shown
+- NEW ENDPOINTS: /augment/search, /augment/scrape, /augment/text-parser (all experimental)
+- AUDIO PAGE SPLIT: models/audio.mdx removed, replaced by text-to-speech.mdx + speech-to-text.mdx
+- PRICING: Dropped output column for embeddings, renamed label
+- X402 GUIDE: Full rewrite — SDK-first, cleaner structure
+- STYLE: style.css added (248 lines)
+- SECURITY: 157 dependency vulnerabilities fixed
+- GUIDES: Restructured into logical groups, "Additional Integrations" rename
+
+FILES ADDED:   api-reference/endpoint/augment/scrape.mdx, search.mdx, text-parser.mdx
+               models/speech-to-text.mdx, models/text-to-speech.mdx, style.css
+FILES REMOVED: models/audio.mdx, repo_paths_all.txt
+FILES CHANGED: 19 other files (swagger.yaml, docs.json, llms.txt, pricing, guides, etc.)
+
+====================================================================
+RAW DIFF BELOW:
+====================================================================
+
+diff --git a/api-reference/api-spec.mdx b/api-reference/api-spec.mdx
+index 958fa40..2f5d5b9 100644
+--- a/api-reference/api-spec.mdx
++++ b/api-reference/api-spec.mdx
+@@ -274,9 +274,12 @@ While Venice maintains high compatibility with the OpenAI API specification, the
+ 
+ Venice maintains backward compatibility for v1 endpoints and parameters. For model lifecycle policy, deprecation notices, and migration guidance, see [Deprecations](/overview/deprecations).
+ 
+-## OpenAPI specification
++## OpenAPI Specification & Raw Data
+ 
+-For programmatically viewing our API reference, check out our [OpenAPI specification.](https://api.venice.ai/doc/api/swagger.yaml)
++For programmatic access to Venice API docs and data ΓÇö including use with RAG (Retrieval-Augmented Generation) ΓÇö the following resources are available:
++
++* [OpenAPI Spec (YAML)](https://api.venice.ai/doc/api/swagger.yaml) ΓÇö the full API specification in YAML format
++* [API Docs Source](https://github.com/veniceai/api-docs/archive/refs/heads/main.zip) ΓÇö all documentation pages (`.mdx` format) as a downloadable archive
+ 
+ ---
+ 
+diff --git a/api-reference/endpoint/augment/scrape.mdx b/api-reference/endpoint/augment/scrape.mdx
+new file mode 100644
+index 0000000..e26b7c8
+--- /dev/null
++++ b/api-reference/endpoint/augment/scrape.mdx
+@@ -0,0 +1,26 @@
++---
++title: 'Web Scrape'
++openapi: 'POST /augment/scrape'
++"og:title": "Web Scrape | Venice API Docs"
++"og:description": "Documentation covering Venice's web scraping API for extracting markdown content from web pages."
++---
++
++<Warning>This is an experimental API. The request and response format may change without notice.</Warning>
++
++Send a publicly accessible URL in the `url` field. The API returns the page content as **markdown**.
++
++The scraper first tries the target site's native markdown support (via [Cloudflare Markdown for Agents](https://blog.cloudflare.com/markdown-for-agents/)), then falls back to a headless browser extraction. Some sites that block automated access (e.g. X/Twitter, Reddit) are rejected immediately with a `400` error.
++
++**Pricing:** $0.01 per request.
++
++### Example (cURL)
++
++```bash
++curl -X POST https://api.venice.ai/api/v1/augment/scrape \
++  -H "Authorization: Bearer $VENICE_API_KEY" \
++  -H "Content-Type: application/json" \
++  -d '{"url": "https://example.com"}'
++```
++
++-------
++
+diff --git a/api-reference/endpoint/augment/search.mdx b/api-reference/endpoint/augment/search.mdx
+new file mode 100644
+index 0000000..4768a9c
+--- /dev/null
++++ b/api-reference/endpoint/augment/search.mdx
+@@ -0,0 +1,27 @@
++---
++title: 'Web Search'
++openapi: 'POST /augment/search'
++"og:title": "Web Search | Venice API Docs"
++"og:description": "Documentation covering Venice's web search API for retrieving structured search results with privacy-preserving providers."
++---
++
++<Warning>This is an experimental API. The request and response format may change without notice.</Warning>
++
++Send a search query in the `query` field. The API returns structured results including titles, URLs, content snippets, and dates.
++
++**Search providers:**
++- `brave` (default) ΓÇö Brave Search with Zero Data Retention (ZDR). Search queries are never stored or logged by the search provider.
++- `google` ΓÇö Google Search with anonymized queries. Searches are proxied through Venice's infrastructure so that your identity is not associated with the search request sent to Google. Venice does not store or log search queries.
++
++**Pricing:** $0.01 per request.
++
++### Example (cURL)
++
++```bash
++curl -X POST https://api.venice.ai/api/v1/augment/search \
++  -H "Authorization: Bearer $VENICE_API_KEY" \
++  -H "Content-Type: application/json" \
++  -d '{"query": "latest news about AI"}'
++```
++
++-------
+diff --git a/api-reference/endpoint/augment/text-parser.mdx b/api-reference/endpoint/augment/text-parser.mdx
+new file mode 100644
+index 0000000..ba19b0f
+--- /dev/null
++++ b/api-reference/endpoint/augment/text-parser.mdx
+@@ -0,0 +1,28 @@
++---
++title: 'Text Parser'
++openapi: 'POST /augment/text-parser'
++"og:title": "Text Parser | Venice API Docs"
++"og:description": "Documentation covering Venice's text parser API for extracting text from PDF, DOCX, XLSX, and plain text files."
++---
++
++<Warning>This is an experimental API. The request and response format may change without notice.</Warning>
++
++Upload a document file via multipart/form-data using the `file` field. Supported formats include **PDF**, **DOCX**, **XLSX**, and **plain text** files (up to 25MB).
++
++Set `response_format` to `json` (default) for structured output with extracted text and token count, or `text` for the raw extracted text.
++
++**Privacy:** Text parsing runs entirely in-memory on Venice's infrastructure with zero data retention. Your documents are processed and immediately discarded ΓÇö no content is stored or logged.
++
++**Pricing:** $0.01 per request.
++
++### Example (cURL)
++
++```bash
++curl -X POST https://api.venice.ai/api/v1/augment/text-parser \
++  -H "Authorization: Bearer $VENICE_API_KEY" \
++  -F "file=@document.pdf" \
++  -F "response_format=json"
++```
++
++-------
++
+diff --git a/docs.json b/docs.json
+index 761ea91..0accf8f 100644
+--- a/docs.json
++++ b/docs.json
+@@ -28,32 +28,57 @@
+             ]
+           },
+           {
+-            "group": "Guides",
++            "group": "Agents & Integrations",
++            "pages": [
++              "overview/guides/ai-agents",
++              "overview/guides/openclaw-bot",
++              "overview/guides/nanoclaw-venice",
++              "overview/guides/x402-venice-api",
++              "overview/guides/integrations"
++            ]
++          },
++          {
++            "group": "Getting Started",
+             "pages": [
+               "overview/guides/generating-api-key",
+               "overview/guides/generating-api-key-agent",
+-              "overview/guides/ai-agents",
+-              "overview/guides/postman",
+-              "overview/guides/integrations",
++              "overview/guides/openai-migration",
++              "overview/guides/postman"
++            ]
++          },
++          {
++            "group": "Text & Chat",
++            "pages": [
+               "overview/guides/structured-responses",
+               "overview/guides/reasoning-models",
++              "overview/guides/prompt-caching",
++              "overview/guides/tee-e2ee-models"
++            ]
++          },
++          {
++            "group": "Image & Video",
++            "pages": [
+               "overview/guides/image-generation",
+               "overview/guides/image-editing",
+               "overview/guides/video-generation",
+-              "overview/guides/tee-e2ee-models",
+-              "overview/guides/prompt-caching",
++              "overview/guides/reference-to-video",
++              "overview/guides/video-upscaling"
++            ]
++          },
++          {
++            "group": "Coding Tools",
++            "pages": [
+               "overview/guides/claude-code",
+               "overview/guides/cursor",
+-              "overview/guides/codex-cli",
+-              "overview/guides/openclaw-bot",
+-              "overview/guides/nanoclaw-venice",
+-              "overview/guides/x402-venice-api",
+-              "overview/guides/openai-migration",
++              "overview/guides/codex-cli"
++            ]
++          },
++          {
++            "group": "SDKs & Frameworks",
++            "pages": [
+               "overview/guides/langchain",
+               "overview/guides/vercel-ai-sdk",
+-              "overview/guides/crewai",
+-              "overview/guides/reference-to-video",
+-              "overview/guides/video-upscaling"
++              "overview/guides/crewai"
+             ]
+           }
+         ]
+@@ -67,7 +92,8 @@
+               "models/overview",
+               "models/text",
+               "models/image",
+-              "models/audio",
++              "models/text-to-speech",
++              "models/speech-to-text",
+               "models/music",
+               "models/video",
+               "models/embeddings"
+@@ -124,6 +150,14 @@
+                   "api-reference/endpoint/video/complete"
+                 ]
+               },
++              {
++                "group": "Augment",
++                "pages": [
++                  "api-reference/endpoint/augment/text-parser",
++                  "api-reference/endpoint/augment/scrape",
++                  "api-reference/endpoint/augment/search"
++                ]
++              },
+               {
+                 "group": "Embeddings",
+                 "pages": [
+@@ -277,6 +311,10 @@
+     {
+       "source": "/overview/guides/molt-bot",
+       "destination": "/overview/guides/openclaw-bot"
++    },
++    {
++      "source": "/models/audio",
++      "destination": "/models/text-to-speech"
+     }
+   ]
+ }
+diff --git a/llms.txt b/llms.txt
+index d1b3580..e6bca8b 100644
+--- a/llms.txt
++++ b/llms.txt
+@@ -14,43 +14,134 @@ Venice offers four tiers of privacy: **Anonymized** (third-party models with ide
+ 
+ ## API Reference
+ 
++### Text & Chat
+ - [API Specification](https://docs.venice.ai/api-reference/api-spec): Complete API specification with Venice-specific parameters
+-- [Chat Completions](https://docs.venice.ai/api-reference/endpoint/chat/completions): Text generation endpoint with streaming, vision, and tool calling
++- [Chat Completions](https://docs.venice.ai/api-reference/endpoint/chat/completions): Text generation endpoint with streaming, vision, audio input, video input, and tool calling
++- [Model Feature Suffixes](https://docs.venice.ai/api-reference/endpoint/chat/model_feature_suffix): Enable features via model name suffixes (e.g., `model-name:web` for web search)
++
++### Image
+ - [Image Generation](https://docs.venice.ai/api-reference/endpoint/image/generate): Create images from text prompts
++- [Image Generations (OpenAI-compatible)](https://docs.venice.ai/api-reference/endpoint/image/generations): OpenAI-compatible image generation endpoint
+ - [Image Upscaling](https://docs.venice.ai/api-reference/endpoint/image/upscale): Enhance and upscale images
+ - [Image Editing](https://docs.venice.ai/api-reference/endpoint/image/edit): AI-powered image inpainting
+ - [Image Multi-Edit](https://docs.venice.ai/api-reference/endpoint/image/multi-edit): Combine and edit up to 3 images with layered inputs
+ - [Background Remove](https://docs.venice.ai/api-reference/endpoint/image/background-remove): Remove image backgrounds
++- [Image Styles](https://docs.venice.ai/api-reference/endpoint/image/styles): List available image generation styles
++
++### Audio
+ - [Text-to-Speech](https://docs.venice.ai/api-reference/endpoint/audio/speech): Convert text to audio with 50+ voices
+-- [Music Generation](https://docs.venice.ai/api-reference/endpoint/audio/queue): Generate music and sound effects
+-- [Video Generation](https://docs.venice.ai/api-reference/endpoint/video/queue): Generate videos (text-to-video or image-to-video depending on model)
++- [Speech-to-Text](https://docs.venice.ai/api-reference/endpoint/audio/transcriptions): Transcribe audio to text with optional word-level timestamps
++- [Music Generation (Queue)](https://docs.venice.ai/api-reference/endpoint/audio/queue): Queue music/sound effects generation
++- [Music Generation (Retrieve)](https://docs.venice.ai/api-reference/endpoint/audio/retrieve): Retrieve generated audio by ID
++- [Music Generation (Quote)](https://docs.venice.ai/api-reference/endpoint/audio/quote): Get price quote for audio generation
++- [Music Generation (Complete)](https://docs.venice.ai/api-reference/endpoint/audio/complete): Queue and wait for audio generation in one call
++
++### Video
++- [Video Generation (Queue)](https://docs.venice.ai/api-reference/endpoint/video/queue): Queue video generation (text-to-video or image-to-video)
++- [Video Generation (Retrieve)](https://docs.venice.ai/api-reference/endpoint/video/retrieve): Retrieve generated video by ID
++- [Video Generation (Quote)](https://docs.venice.ai/api-reference/endpoint/video/quote): Get price quote for video generation
++- [Video Generation (Complete)](https://docs.venice.ai/api-reference/endpoint/video/complete): Queue and wait for video generation in one call
++- [Video Transcription](https://docs.venice.ai/api-reference/endpoint/video/transcriptions): Extract text/speech from videos
++
++### Augment
++- [Text Parser](https://docs.venice.ai/api-reference/endpoint/augment/text-parser): Extract text from PDF, DOCX, XLSX, and plain text files. Runs in-memory on Venice infrastructure with zero data retention ($0.01/request)
++- [Web Scrape](https://docs.venice.ai/api-reference/endpoint/augment/scrape): Scrape a web page and return its content as markdown ($0.01/request)
++- [Web Search](https://docs.venice.ai/api-reference/endpoint/augment/search): Search the web with privacy-preserving providers ΓÇö Brave (ZDR, zero data retention) or Google (proxied through Venice so your identity is not associated with the search) ($0.01/request)
++
++### Embeddings
+ - [Embeddings](https://docs.venice.ai/api-reference/endpoint/embeddings/generate): Generate vector embeddings for semantic search
++
++### Models
++- [List Models](https://docs.venice.ai/api-reference/endpoint/models/list): Get available models with capabilities and pricing
++- [Model Traits](https://docs.venice.ai/api-reference/endpoint/models/traits): List model trait categories (e.g., `text:uncensored`, `image:fast`)
++- [Compatibility Mapping](https://docs.venice.ai/api-reference/endpoint/models/compatibility_mapping): Map OpenAI model names to Venice equivalents
++
++### Characters
++- [List Characters](https://docs.venice.ai/api-reference/endpoint/characters/list): List available AI character personas
++- [Get Character](https://docs.venice.ai/api-reference/endpoint/characters/get): Get details for a specific character
++- [Character Reviews](https://docs.venice.ai/api-reference/endpoint/characters/reviews): Get reviews for a character
++
++### API Keys
++- [List API Keys](https://docs.venice.ai/api-reference/endpoint/api_keys/list): List your API keys
++- [Get API Key](https://docs.venice.ai/api-reference/endpoint/api_keys/get): Get details for a specific API key
++- [Create API Key](https://docs.venice.ai/api-reference/endpoint/api_keys/create): Create a new API key
++- [Update API Key](https://docs.venice.ai/api-reference/endpoint/api_keys/update): Update an existing API key
++- [Delete API Key](https://docs.venice.ai/api-reference/endpoint/api_keys/delete): Delete an API key
++- [Generate Web3 Key](https://docs.venice.ai/api-reference/endpoint/api_keys/generate_web3_key/post): Generate API key via Web3 wallet signature
++- [Rate Limits](https://docs.venice.ai/api-reference/endpoint/api_keys/rate_limits): Get rate limit configuration for an API key
++- [Rate Limit Logs](https://docs.venice.ai/api-reference/endpoint/api_keys/rate_limit_logs): Get rate limit event logs
++
++### Billing
++- [Balance](https://docs.venice.ai/api-reference/endpoint/billing/balance): Get current account balance
++- [Usage](https://docs.venice.ai/api-reference/endpoint/billing/usage): Get usage history
++- [Usage Analytics](https://docs.venice.ai/api-reference/endpoint/billing/usage-analytics): Get detailed usage analytics
++
++### x402 Wallet Authentication
++- [x402 Balance](https://docs.venice.ai/api-reference/endpoint/x402/balance): Get wallet credit balance
++- [x402 Top-Up](https://docs.venice.ai/api-reference/endpoint/x402/top-up): Add USDC credits via Ethereum wallet
++- [x402 Transactions](https://docs.venice.ai/api-reference/endpoint/x402/transactions): Get wallet transaction history
++
++### Reference
+ - [Rate Limiting](https://docs.venice.ai/api-reference/rate-limiting): Rate limits and best practices
+ - [Error Codes](https://docs.venice.ai/api-reference/error-codes): API error reference
+-- [Characters API](https://docs.venice.ai/api-reference/endpoint/characters/list): List and use AI character personas
+-- [API Keys Management](https://docs.venice.ai/api-reference/endpoint/api_keys/list): Create, list, and manage API keys
+-- [TEE Attestation](https://docs.venice.ai/api-reference/endpoint/tee/attestation): Verify a model runs in a genuine Trusted Execution Environment with cryptographic attestation
+-- [TEE Signature](https://docs.venice.ai/api-reference/endpoint/tee/signature): Verify that a response was produced inside the attested TEE enclave
+ 
+ ## Models
+ 
+ - [Model Overview](https://docs.venice.ai/models/overview): Browse all available models
+-- [Text Models](https://docs.venice.ai/models/text): LLMs including venice-uncensored, GLM 4.7, Qwen, Mistral, Llama
+-- [Image Models](https://docs.venice.ai/models/image): Diffusion models for image generation
+-- [Audio Models](https://docs.venice.ai/models/audio): Text-to-speech models
++- [Text Models](https://docs.venice.ai/models/text): LLMs including venice-uncensored, GLM-4.7, Qwen3, Mistral, Llama, Grok, DeepSeek, Kimi
++- [Image Models](https://docs.venice.ai/models/image): Diffusion models for image generation (Flux, Stable Diffusion)
++- [Text-to-Speech Models](https://docs.venice.ai/models/text-to-speech): TTS models with multilingual voice support (Kokoro, Qwen 3 TTS)
++- [Speech-to-Text Models](https://docs.venice.ai/models/speech-to-text): Audio transcription models (Whisper, Parakeet)
+ - [Music Models](https://docs.venice.ai/models/music): Music and sound effects generation with lyrics support
+ - [Video Models](https://docs.venice.ai/models/video): Text-to-video and image-to-video models
+ - [Embedding Models](https://docs.venice.ai/models/embeddings): Vector embedding models
+ 
+ ## Guides
+ 
+-- [Structured Responses](https://docs.venice.ai/overview/guides/structured-responses): Get JSON responses with guaranteed schemas
+-- [Reasoning Models](https://docs.venice.ai/overview/guides/reasoning-models): Use models with step-by-step reasoning
+-- [TEE & E2EE Models](https://docs.venice.ai/overview/guides/tee-e2ee-models): Privacy-enhanced AI with Trusted Execution Environments (TEE) and End-to-End Encryption (E2EE)ΓÇöcryptographic guarantees that your data remains private, even from Venice
++- [Structured Responses](https://docs.venice.ai/overview/guides/structured-responses): Get JSON responses with guaranteed schemas using `response_format`
++- [Reasoning Models](https://docs.venice.ai/overview/guides/reasoning-models): Use models with step-by-step reasoning (supports `reasoning_effort` parameter)
++- [TEE & E2EE Models](https://docs.venice.ai/overview/guides/tee-e2ee-models): Privacy-enhanced AI with Trusted Execution Environments (TEE) and End-to-End Encryption (E2EE)
++- [Prompt Caching](https://docs.venice.ai/overview/guides/prompt-caching): Reduce latency and costs with prompt caching
++- [Image Generation Guide](https://docs.venice.ai/overview/guides/image-generation): Best practices for image generation
++- [Image Editing Guide](https://docs.venice.ai/overview/guides/image-editing): Image editing and inpainting techniques
++- [Video Generation Guide](https://docs.venice.ai/overview/guides/video-generation): Video generation best practices
++- [x402 Wallet API](https://docs.venice.ai/overview/guides/x402-venice-api): Use Venice API with Ethereum wallet authentication (no API key required)
+ - [AI Agents](https://docs.venice.ai/overview/guides/ai-agents): Build autonomous agents with Eliza framework
+-- [Integrations](https://docs.venice.ai/overview/guides/integrations): Third-party integrations like Brave Leo
++- [LangChain Integration](https://docs.venice.ai/overview/guides/langchain): Use Venice with LangChain
++- [Vercel AI SDK](https://docs.venice.ai/overview/guides/vercel-ai-sdk): Use Venice with Vercel AI SDK
++- [CrewAI Integration](https://docs.venice.ai/overview/guides/crewai): Use Venice with CrewAI
++- [OpenAI Migration](https://docs.venice.ai/overview/guides/openai-migration): Migrate from OpenAI to Venice
++- [Claude Code](https://docs.venice.ai/overview/guides/claude-code): Use Venice with Claude Code CLI
++- [Cursor IDE](https://docs.venice.ai/overview/guides/cursor): Use Venice with Cursor IDE
++- [Codex CLI](https://docs.venice.ai/overview/guides/codex-cli): Use Venice with OpenAI Codex CLI
++- [Integrations](https://docs.venice.ai/overview/guides/integrations): Third-party integrations (Brave Leo, etc.)
+ - [Postman Collection](https://docs.venice.ai/overview/guides/postman): Import ready-to-use API examples
+ 
++## Key Features
++
++### Venice-Specific Parameters
++The `venice_parameters` object in chat completions supports:
++- `enable_web_search`: Enable real-time web search (`auto`, `on`, `off`)
++- `enable_web_scraping`: Scrape URLs in user messages via Firecrawl
++- `enable_web_citations`: Request inline citations in responses
++- `enable_x_search`: Enable xAI native search (web + X/Twitter) for supported models
++- `character_slug`: Use a Venice AI character persona
++- `include_venice_system_prompt`: Include/exclude Venice's default system prompt
++- `strip_thinking_response`: Remove `<think>` blocks from reasoning model responses
++- `disable_thinking`: Disable thinking entirely on reasoning models
++- `enable_e2ee`: Enable/disable E2EE on E2EE-capable models
++
++### Multimodal Support
++Chat completions support multiple input types on compatible models:
++- **Text**: Standard text messages
++- **Images**: Via `image_url` content type (URL or base64)
++- **Audio**: Via `input_audio` content type (base64-encoded)
++- **Video**: Via `video_url` content type (URL, YouTube links, or base64)
++
++### Authentication Options
++- **API Key**: Standard Bearer token authentication
++- **x402 Wallet**: USDC credits via Ethereum wallet (no account required, pay-as-you-go)
++
+ ## Optional
+ 
+ - [Pricing](https://docs.venice.ai/overview/pricing): Pay-as-you-go and DIEM staking options
+@@ -58,4 +149,3 @@ Venice offers four tiers of privacy: **Anonymized** (third-party models with ide
+ - [Deprecations](https://docs.venice.ai/overview/deprecations): Model deprecation notices
+ - [Beta Models](https://docs.venice.ai/overview/beta-models): Experimental models in beta
+ - [OpenAPI Spec](https://docs.venice.ai/swagger.yaml): Full OpenAPI/Swagger specification
+-
+diff --git a/models/speech-to-text.mdx b/models/speech-to-text.mdx
+new file mode 100644
+index 0000000..f216771
+--- /dev/null
++++ b/models/speech-to-text.mdx
+@@ -0,0 +1,31 @@
++---
++title: "Speech-to-Text Models"
++description: "Speech recognition models for transcribing audio to text"
++"og:title": "Speech-to-Text Models | Venice API Docs"
++---
++
++<div id="model-search-placeholder" data-filter="asr">Loading models...</div>
++
++---
++
++## Usage
++
++Speech-to-text models transcribe spoken audio into written text. They are accessed via the [Audio Transcriptions API](/api-reference/endpoint/audio/transcriptions).
++
++### Supported audio formats
++
++`mp3`, `mp4`, `mpeg`, `mpga`, `m4a`, `wav`, `webm`, `flac`, `ogg`
++
++### Response formats
++
++| Format | Description |
++|--------|-------------|
++| `json` | Default. Returns `{ "text": "..." }`. |
++| `text` | Plain transcribed text. |
++| `srt` | SubRip subtitle format with timestamps. |
++| `vtt` | WebVTT subtitle format with timestamps. |
++| `verbose_json` | Full response with segment-level timestamps and metadata. |
++
++<Note>
++Pricing is billed per second of input audio. See the [Audio Transcriptions API](/api-reference/endpoint/audio/transcriptions) for request examples and parameter details.
++</Note>
+diff --git a/models/text-to-speech.mdx b/models/text-to-speech.mdx
+new file mode 100644
+index 0000000..7a2b4b6
+--- /dev/null
++++ b/models/text-to-speech.mdx
+@@ -0,0 +1,39 @@
++---
++title: "Text-to-Speech Models"
++description: "Text-to-speech models with multilingual voice support"
++"og:title": "Text-to-Speech Models | Venice API Docs"
++---
++
++<div id="model-search-placeholder" data-filter="tts">Loading models...</div>
++
++---
++
++## Voice catalog
++
++Voices are **model-specific**. The `voice` you pass must come from the catalog
++of the `model` you selected. Pick a model below to browse its voices.
++
++<div id="tts-voice-picker-placeholder">Loading voices...</div>
++
++<Note>
++Voice IDs are case-sensitive and **only valid for the matching `model`**. Pass
++both fields together in your request payload. See the
++[Audio Speech API](/api-reference/endpoint/audio/speech) for examples.
++</Note>
++
++### Example request
++
++```bash
++curl https://api.venice.ai/api/v1/audio/speech \
++  -H "Authorization: Bearer $VENICE_API_KEY" \
++  -H "Content-Type: application/json" \
++  -d '{
++    "model": "tts-kokoro",
++    "voice": "af_sky",
++    "input": "Hello from Venice."
++  }' \
++  --output speech.mp3
++```
++
++To switch models, change **both** `model` and `voice` to a pair from the
++selected model above.
+diff --git a/overview/guides/claude-code.mdx b/overview/guides/claude-code.mdx
+index afb422d..598bf8f 100644
+--- a/overview/guides/claude-code.mdx
++++ b/overview/guides/claude-code.mdx
+@@ -1,5 +1,5 @@
+ ---
+-title: Claude Code with Venice
++title: Claude Code
+ description: Use Claude Code CLI with Venice AI's Claude models
+ "og:title": "Claude Code with Venice | Venice API Docs"
+ "og:description": "Set up Claude Code to use Claude Opus 4.5/4.6 and Sonnet 4.5/4.6 through Venice AI"
+@@ -28,7 +28,7 @@ Claude Code connects directly to Anthropic's API by default. To use it with Veni
+     Catches Claude Code's outgoing requests before they reach Anthropic
+   </Step>
+   <Step title="Transforms" icon="arrows-rotate">
+-    Converts request format and maps model IDs (e.g., `claude-opus-45`)
++    Converts request format and maps model IDs (e.g., `claude-opus-4-5`)
+   </Step>
+   <Step title="Redirects" icon="route">
+     Forwards requests to Venice at `api.venice.ai/api/v1/chat/completions`
+@@ -106,9 +106,10 @@ Claude Code connects directly to Anthropic's API by default. To use it with Veni
+           "api_base_url": "https://api.venice.ai/api/v1/chat/completions",
+           "api_key": "your-venice-api-key-here",
+           "models": [
+-            "claude-opus-45",
+-            "claude-sonnet-45",
++            "claude-opus-4-5",
++            "claude-sonnet-4-5",
+             "claude-opus-4-6",
++            "claude-opus-4-6-fast",
+             "claude-sonnet-4-6"
+           ],
+           "transformer": {
+@@ -117,10 +118,10 @@ Claude Code connects directly to Anthropic's API by default. To use it with Veni
+         }
+       ],
+       "Router": {
+-        "default": "venice,claude-opus-45",
+-        "think": "venice,claude-opus-45",
+-        "background": "venice,claude-opus-45",
+-        "longContext": "venice,claude-opus-45",
++        "default": "venice,claude-opus-4-5",
++        "think": "venice,claude-opus-4-5",
++        "background": "venice,claude-opus-4-5",
++        "longContext": "venice,claude-opus-4-5",
+         "longContextThreshold": 100000
+       }
+     }
+@@ -153,9 +154,10 @@ Claude Code connects directly to Anthropic's API by default. To use it with Veni
+ 
+ | Model | Venice ID | Best For |
+ |-------|-----------|----------|
+-| Claude Opus 4.5 | `claude-opus-45` | Complex reasoning, large refactors |
+-| Claude Sonnet 4.5 | `claude-sonnet-45` | Fast iteration, everyday coding |
++| Claude Opus 4.5 | `claude-opus-4-5` | Complex reasoning, large refactors |
++| Claude Sonnet 4.5 | `claude-sonnet-4-5` | Fast iteration, everyday coding |
+ | Claude Opus 4.6 | `claude-opus-4-6` | Complex reasoning, large refactors |
++| Claude Opus 4.6 Fast | `claude-opus-4-6-fast` | Complex reasoning with lower latency |
+ | Claude Sonnet 4.6 | `claude-sonnet-4-6` | Fast iteration, everyday coding |
+ 
+ <Info>
+@@ -173,7 +175,7 @@ The router provides several useful features beyond basic routing:
+     Use the `/model` command inside Claude Code to switch models without restarting:
+     
+     ```
+-    /model venice,claude-sonnet-45
++    /model venice,claude-sonnet-4-5
+     ```
+     
+     Useful when you want Opus for complex tasks and Sonnet for quick iterations.
+diff --git a/overview/guides/cursor.mdx b/overview/guides/cursor.mdx
+index 5395924..38dc045 100644
+--- a/overview/guides/cursor.mdx
++++ b/overview/guides/cursor.mdx
+@@ -1,5 +1,5 @@
+ ---
+-title: Cursor IDE with Venice
++title: Cursor IDE
+ description: Use Venice AI models in Cursor IDE with the venice- model prefix
+ "og:title": "Cursor IDE with Venice | Venice API Docs"
+ "og:description": "Set up Cursor IDE to use Venice AI models including Claude, GPT, DeepSeek, and more"
+@@ -63,9 +63,10 @@ Cursor rewrites requests for `claude-*` models into Anthropic's native format, w
+ | Model | Standard ID | Cursor ID |
+ |-------|------------|-----------|
+ | Claude Opus 4.6 | `claude-opus-4-6` | `venice-claude-opus-4-6` |
++| Claude Opus 4.6 Fast | `claude-opus-4-6-fast` | `venice-claude-opus-4-6-fast` |
+ | Claude Sonnet 4.6 | `claude-sonnet-4-6` | `venice-claude-sonnet-4-6` |
+-| Claude Opus 4.5 | `claude-opus-45` | `venice-claude-opus-45` |
+-| Claude Sonnet 4.5 | `claude-sonnet-45` | `venice-claude-sonnet-45` |
++| Claude Opus 4.5 | `claude-opus-4-5` | `venice-claude-opus-4-5` |
++| Claude Sonnet 4.5 | `claude-sonnet-4-5` | `venice-claude-sonnet-4-5` |
+ 
+ <Info>
+ Non-Claude models (e.g. `minimax-m25`, `kimi-k2-5`, `zai-org-glm-5`) are **not affected** and work without the prefix. The `venice-` prefix is safe to use on any model since Venice always strips it, but it is only required for Claude models in Cursor.
+diff --git a/overview/guides/integrations.mdx b/overview/guides/integrations.mdx
+index cba2d5f..27b9810 100644
+--- a/overview/guides/integrations.mdx
++++ b/overview/guides/integrations.mdx
+@@ -1,46 +1,36 @@
+ ---
+-title: "Integrations"
+-description: "Here is a list of third party tools with Venice.ai integrations."
+-"og:title": "Integrations | Venice API Docs"
+-"og:description": "Here is a list of third party tools with Venice.ai integrations."
++title: "Additional Integrations"
++description: "Third-party tools and community projects with Venice AI integrations."
++"og:title": "Additional Integrations | Venice API Docs"
++"og:description": "Third-party tools and community projects with Venice AI integrations."
+ ---
+ 
+ [How to use Venice API](https://venice.ai/blog/how-to-use-venice-api) reference guide.
+ 
+-## Venice Confirmed Integrations
+-
+-* Agents
+-
+-  * [ElizaOS](https://venice.ai/blog/how-to-build-a-social-media-ai-agent-with-elizaos-venice-api) (local build)
++<Note>
++Several integrations have their own dedicated guides ΓÇö see [AI Agents](/overview/guides/ai-agents), [OpenClaw](/overview/guides/openclaw-bot), [NanoClaw](/overview/guides/nanoclaw-venice), [Cursor](/overview/guides/cursor), [Claude Code](/overview/guides/claude-code), and [Codex CLI](/overview/guides/codex-cli).
++</Note>
+ 
+-  * [ElizaOS](https://venice.ai/blog/how-to-launch-an-elizaos-agent-on-akash-using-venice-api-in-less-than-10-minutes) (via [Akash Template](https://console.akash.network/templates/akash-network-awesome-akash-Venice-ElizaOS))
+-
+-  * [Molt Bot](https://docs.molt.bot/providers/venice) Discord bot with Venice API integration.
++## Venice Confirmed Integrations
+ 
+ * Coding
+ 
+-  * [Cursor IDE](https://venice.ai/blog/how-to-code-with-the-venice-api-in-cursor-a-quick-guide)
+-
+   * [Cline](https://venice.ai/blog/how-to-use-the-venice-api-with-cline-in-vscode-a-developers-guide) (VSC Extension)
+ 
+-  * [ROO Code ](https://venice.ai/blog/how-to-use-the-roo-ai-coding-assistant-in-private-with-venice-api-a-quick-guide)(VSC Extension)
++  * [ROO Code](https://venice.ai/blog/how-to-use-the-roo-ai-coding-assistant-in-private-with-venice-api-a-quick-guide) (VSC Extension)
+ 
+-  * [VOID IDE](https://venice.ai/blog/how-to-use-open-source-ai-code-editor-void-in-private-with-venice-api)&#x20;
++  * [VOID IDE](https://venice.ai/blog/how-to-use-open-source-ai-code-editor-void-in-private-with-venice-api)
+ 
+ * Assistants
+ 
+-  * [Brave Leo Browser ](https://venice.ai/blog/how-to-use-brave-leo-ai-with-venice-api-a-privacy-first-browser-ai-assistant)
++  * [Brave Leo Browser](https://venice.ai/blog/how-to-use-brave-leo-ai-with-venice-api-a-privacy-first-browser-ai-assistant)
+ 
+-## Community Confirmed&#x20;
++## Community Confirmed
+ 
+ These integrations have been confirmed by the community. Venice is in the process of confirming these integrations and creating how-to guides for each of the following:
+ 
+ * Agents/Bots
+ 
+-  * [Coinbase Agentkit](https://www.coinbase.com/developer-platform/discover/launches/introducing-agentkit)
+-
+-  * [Eliza\_Starter](https://github.com/Baidis/eliza-Venice) Simplified Eliza setup.
+-
+   * [Venice AI Discord Bot](https://bobbiebeach.space/blog/venice-ai-discord-bot-full-setup-guide-features/)
+ 
+   * [JanitorAI](https://janitorai.com/)
+@@ -66,11 +56,3 @@ These integrations have been confirmed by the community. Venice is in the proces
+   * [Librechat](https://www.librechat.ai/)
+ 
+   * [ScreenSnapAI](https://screensnap.ai/)
+-
+-## Venice API Raw Data
+-
+-Many users have requested access to Venice API docs and data in a format acceptable for use with RAG (Retrieval-Augmented Generation) for various purposes. The full API specification is available within the "API Swagger" document below, in yaml format. The Venice API documents included throughout this API Reference webpage are available from the link below, with most documents in .mdx format.
+-
+-[API Swagger](https://api.venice.ai/doc/api/swagger.yaml)
+-
+-[API Docs](https://github.com/veniceai/api-docs/archive/refs/heads/main.zip)
+diff --git a/overview/guides/prompt-caching.mdx b/overview/guides/prompt-caching.mdx
+index d44c14d..558f4ef 100644
+--- a/overview/guides/prompt-caching.mdx
++++ b/overview/guides/prompt-caching.mdx
+@@ -137,7 +137,7 @@ For conversations or agentic workflows, use a consistent `prompt_cache_key` to i
+ 
+ ```json
+ {
+-  "model": "claude-opus-45",
++  "model": "claude-opus-4-5",
+   "prompt_cache_key": "session-abc-123",
+   "messages": [...]
+ }
+@@ -271,7 +271,7 @@ Function definitions can be cached along with system prompts:
+ 
+ ```json
+ {
+-  "model": "claude-opus-45",
++  "model": "claude-opus-4-5",
+   "tools": [
+     {
+       "type": "function",
+@@ -306,7 +306,7 @@ For vision models, images can be included in cached content:
+ 
+ ```json
+ {
+-  "model": "claude-opus-45",
++  "model": "claude-opus-4-5",
+   "messages": [
+     {
+       "role": "user",
+diff --git a/overview/guides/reasoning-models.mdx b/overview/guides/reasoning-models.mdx
+index 1259a31..c7c4fa0 100644
+--- a/overview/guides/reasoning-models.mdx
++++ b/overview/guides/reasoning-models.mdx
+@@ -135,7 +135,7 @@ When in doubt, use `low`, `medium`, or `high`. These are the most widely support
+ 
+ | Model | Supported values |
+ |-------|-----------------|
+-| Claude Opus 4.6 | `low`, `medium`, `high`, `max` |
++| Claude Opus 4.6, Opus 4.6 Fast | `low`, `medium`, `high`, `max` |
+ | Claude Opus 4.5, Sonnet 4.5, Sonnet 4.6 | `low`, `medium`, `high` |
+ 
+ #### Google
+@@ -212,7 +212,7 @@ For models that support it, `reasoning.enabled: false` is the more reliable opti
+ | GPT-5.2 Codex, GPT-5.3 Codex | Yes (but `none` effort not supported) |
+ | Qwen 3 235B A22B Thinking, Qwen 3.5 35B A3B | Yes |
+ | GLM 4.7 series | Yes |
+-| Claude Opus 4.5/4.6, Sonnet 4.5/4.6 | No (always reasons) |
++| Claude Opus 4.5/4.6/4.6 Fast, Sonnet 4.5/4.6 | No (always reasons) |
+ | Gemini 3 Pro, 3.1 Pro, 3 Flash | No (always reasons) |
+ | DeepSeek R1 | No (always reasons) |
+ 
+diff --git a/overview/guides/video-generation.mdx b/overview/guides/video-generation.mdx
+index 0d1282e..ff66c42 100644
+--- a/overview/guides/video-generation.mdx
++++ b/overview/guides/video-generation.mdx
+@@ -41,7 +41,26 @@ Content-Type: application/json
+ }
+ ```
+ 
+-Save both `model` and `queue_id` - you need them for all subsequent calls.
++For Grok Imagine Private models, the queue response includes an extra `download_url` field:
++
++```json
++{
++  "model": "grok-imagine-text-to-video-private",
++  "queue_id": "123e4567-e89b-12d3-a456-426614174000",
++  "download_url": "https://private-share.venice.ai/v1/share/read/..."
++}
++```
++
++`download_url` is a pre-signed URL you use to download the finished video instead of reading it from the retrieve response. It is only returned once, so persist it alongside `queue_id`. This applies to all four Grok Imagine Private variants:
++
++- `grok-imagine-text-to-video-private`
++- `grok-imagine-image-to-video-private`
++- `grok-imagine-reference-to-video-private`
++- `grok-imagine-video-to-video-private`
++
++Unlike the public `grok-imagine-*-video` variants, Grok Imagine Private models are not billed for content-moderation rejections, so you only pay for successful generations.
++
++Save `model`, `queue_id`, and `download_url` (if present) for all subsequent calls.
+ 
+ ## Step 2: Poll for Completion
+ 
+@@ -63,6 +82,7 @@ Content-Type: application/json
+ |--------------|---------|--------|
+ | `application/json` | Still processing | Wait 5s, poll again |
+ | `video/mp4` | Complete | Response body is the video file |
++| `application/json` with `"COMPLETED"` | Complete, video not inline | `GET` the `download_url` from the queue response |
+ 
+ **Processing response (200, application/json):**
+ ```json
+@@ -78,6 +98,9 @@ Times are in milliseconds. Use `average_execution_time` to estimate remaining wa
+ **Complete response (200, video/mp4):**
+ Response body is raw binary video data. Save to file.
+ 
++**Complete response (200, application/json with `"COMPLETED"`):**
++For models that returned a `download_url` at queue time, retrieve always returns JSON. Fetch the video with `GET download_url`. The URL is pre-signed (no auth header needed) and valid for 24 hours.
++
+ ## Step 3: Cleanup (Optional)
+ 
+ Either auto-delete on retrieval:
+@@ -132,6 +155,7 @@ resp = requests.post(f"{BASE_URL}/video/queue", headers=HEADERS, json={
+ })
+ data = resp.json()
+ model, queue_id = data["model"], data["queue_id"]
++download_url = data.get("download_url")
+ 
+ # Poll
+ while True:
+@@ -141,6 +165,10 @@ while True:
+         with open("output.mp4", "wb") as f:
+             f.write(resp.content)
+         break
++    if resp.json().get("status") == "COMPLETED" and download_url:
++        with open("output.mp4", "wb") as f:
++            f.write(requests.get(download_url).content)
++        break
+     time.sleep(5)
+ 
+ # Cleanup
+@@ -162,7 +190,7 @@ const queueResp = await fetch(`${BASE_URL}/video/queue`, {
+         duration: "5s", resolution: "720p", aspect_ratio: "16:9"
+     })
+ });
+-const {model, queue_id} = await queueResp.json();
++const {model, queue_id, download_url} = await queueResp.json();
+ 
+ // Poll
+ while (true) {
+@@ -175,6 +203,13 @@ while (true) {
+         fs.writeFileSync("output.mp4", Buffer.from(await resp.arrayBuffer()));
+         break;
+     }
++    const status = await resp.json();
++    if (status.status === "COMPLETED" && download_url) {
++        const fs = await import("fs");
++        const video = await fetch(download_url);
++        fs.writeFileSync("output.mp4", Buffer.from(await video.arrayBuffer()));
++        break;
++    }
+     await new Promise(r => setTimeout(r, 5000));
+ }
+ 
+@@ -289,7 +324,8 @@ Quote is in USD.
+ | 400 | `queue`, `quote`, `retrieve`, `complete` | Invalid parameters | Check request body against schema |
+ | 401 | `queue`, `retrieve`, `complete` | Auth failed | Check API key |
+ | 402 | `queue` | Insufficient balance | Add funds |
+-| 404 | `retrieve` | Media not found (invalid, expired, or deleted) | Verify `model`/`queue_id` or re-queue |
++| 404 | `retrieve`, `download_url` | Media not found (invalid, expired, or deleted) | Verify `model`/`queue_id` or re-queue |
++| 410 | `download_url` | Pre-signed URL expired (>24h) | Re-queue the generation |
+ | 413 | `queue` | Payload too large | Reduce image/audio size |
+ | 422 | `queue`, `retrieve` | Content violation | Modify prompt |
+ | 500 | `queue`, `retrieve`, `complete` | Inference/processing failed | Retry with backoff; contact support if persistent |
+@@ -300,10 +336,11 @@ Quote is in USD.
+ ## Polling Strategy
+ 
+ 1. Poll `/video/retrieve` on an interval (for example, every 5 seconds)
+-2. If `Content-Type` is `application/json`, status is still `PROCESSING`; inspect `average_execution_time` and `execution_duration` (milliseconds)
++2. If `Content-Type` is `application/json` and `status` is `"PROCESSING"`, wait and poll again. Use `average_execution_time` and `execution_duration` (milliseconds) to estimate remaining time
+ 3. If `Content-Type` is `video/mp4`, save the response body as your output file
+-4. Optional cleanup: set `delete_media_on_completion: true` on retrieve, or call `/video/complete` after download
+-5. Handle `404` as invalid, expired, or deleted media; handle `500/503` with retries/backoff
++4. If `Content-Type` is `application/json` and `status` is `"COMPLETED"`, `GET` the `download_url` from the queue response to fetch the video
++5. Optional cleanup: set `delete_media_on_completion: true` on retrieve, or call `/video/complete` after download
++6. Handle `404` as invalid, expired, or deleted media; handle `500/503` with retries/backoff
+ 
+ ---
+ 
+diff --git a/overview/guides/x402-venice-api.mdx b/overview/guides/x402-venice-api.mdx
+index 5234ce9..fbdbc21 100644
+--- a/overview/guides/x402-venice-api.mdx
++++ b/overview/guides/x402-venice-api.mdx
+@@ -1,347 +1,184 @@
+ ---
+-title: X402 with Venice
+-description: A guide on how to use the X402 protocol with Venice, covering both human and agent use cases.
+-"og:title": "X402 with Venice for Agents | Venice API Docs"
+-"og:description": "Learn what you and your agents can do with X402 on Venice."
++title: X402
++description: Access Venice without an API key using wallet authentication.
++"og:title": X402
++"og:description": Access Venice without an API key using wallet authentication.
+ ---
+ 
+-X402 lets apps and agents authenticate with a wallet and pay for Venice requests using the balance tied to that wallet.
++X402 lets you use Venice's paid API routes by authenticating with an Ethereum wallet on Base. No API key or account required. Sign a message, maintain a balance, and call any supported route.
+ 
+ <CardGroup cols={3}>
+   <Card title="Wallet Auth" icon="wallet">
+-    Authenticate requests with a signed SIWE payload
++    Authenticate with a signed SIWE payload in the `X-Sign-In-With-X` header.
+   </Card>
+-  <Card title="Automatic Payments" icon="coins">
+-    Spend DIEM-backed balance automatically during requests
++
++  <Card title="Pay with USDC" icon="coins">
++    Maintain spendable balance with USDC on Base.
+   </Card>
+-  <Card title="Agent Friendly" icon="robot">
+-    Works well for autonomous agents and wallet-driven flows
++
++  <Card title="DIEM First" icon="sparkles">
++    If the wallet is linked to a Venice account with DIEM balance, that is spent first.
+   </Card>
+ </CardGroup>
+ 
+----
+-
+ ## What is X402?
+-X402 is an [open, neutral standard for Internet-native payments](https://www.x402.org/) created by [Coinbase.](https://www.coinbase.com) Named after the `402 Payment Required` HTTP header, it aims to act as a backbone for agentic economies by allowing payments to be made entirely programmatically, without human interaction. Today, the most common form of payment used this way is cryptocurrency, and X402 can work across popular blockchains such as Solana, Ethereum, and Base.
+-
+-By using X402, you can allow your Claw agent to pay other agents and people on your behalf, as well as buy things for you.
+-
+-## Using X402 with Venice
+-
+-### Pre-requisites
+-To use X402, you'll need an EVM wallet on Base. One can easily be created through most popular wallets like Base Wallet, Metamask, Phantom, and others. The wallet will additionally need some USDC and funds for gas. If you have staked DIEM, paying via X402 will use up your available daily DIEM inference first.
+-
+-It is highly suggested to use a limited-purpose wallet rather than using a main treasury wallet. 
+-
+-### How the process works
+-
+-X402 on Venice follows a short wallet-auth flow:
+-
+-```text
+-Wallet / Agent
+-    |
+-    | Build a SIWE message for outerface.venice.ai on Base
+-    v
+-Sign the SIWE message with your wallet (EIP-191)
+-    |
+-    | Wrap the signed message in JSON and base64-encode it
+-    v
+-Send X-Sign-In-With-X with your Venice request
+-    |
+-    | Optional: check spendable balance first
+-    |     GET /api/v1/x402/balance/<address>
+-    |
+-    | Main request: call the inference endpoint
+-    |     POST /api/v1/chat/completions
+-    v
+-Venice validates the wallet auth, processes the request,
+-and charges available balance automatically
+-```
+-
+-<Info>
+-The auth header is short-lived and should be refreshed after 10 minutes. Venice uses available DIEM-backed balance automatically, or you can top up with USDC on Base if needed.
+-</Info>
+-
+-### Supported endpoints
+-
+-X402 wallet auth is currently supported on the following Venice endpoints:
+-
+-- `POST /api/v1/chat/completions`
+-- `GET /api/v1/x402/balance/{walletAddress}`
+-- `GET /api/v1/x402/transactions/{walletAddress}`
+ 
+-The top-up flow is separate:
++[X402](https://www.x402.org/) is an open payment standard that lets applications and agents pay for services programmatically using cryptocurrency. Venice implements X402 on Base so that wallets can authenticate and pay for inference directly.
+ 
+-- `POST /api/v1/x402/top-up` uses `X-402-Payment`, not `X-Sign-In-With-X`
++## Prerequisites
+ 
+-For inference, `chat/completions` is the only X402-supported mode right now. If there's other inference modes you'd like us to support with X402, please [let us  know on Featurebase!](https://featurebase.venice.ai/)
++- An EVM wallet on Base
++- A small amount of ETH on Base for gas
++- USDC on Base (or existing DIEM-backed balance from a linked Venice account)
+ 
++<Tip>
++  Consider using a dedicated wallet for automation rather than your main treasury wallet.
++</Tip>
+ 
+-### Happy path: auth, balance, inference, history
++## Quick start
+ 
+-Once you can generate the `X-Sign-In-With-X`, the usual X402 flow on Venice looks like this:
++The [`venice-x402-client`](https://github.com/veniceai/x402-client) SDK provides helpers for SIWE auth, top-ups, and balance tracking.
+ 
+-<Steps>
+-  <Step title="Generate the balance auth header">
+-    Use the SIWE script above to create the `X-Sign-In-With-X` header for your balance request. In that script, set `uri` to the balance resource you are about to call, then use the resulting base64 string as `BALANCE_AUTH`.
+-  </Step>
+-
+-  <Step title="Check whether the wallet can currently spend">
+-    Use the balance endpoint first. This tells you the current prepaid balance and whether the wallet can consume paid Venice endpoints right now.
++```bash
++npm install venice-x402-client
++```
+ 
+-    ```bash
+-    export WALLET_ADDRESS=0xYOUR_WALLET_ADDRESS
+-    export BALANCE_AUTH=YOUR_BASE64_AUTH_HEADER
++```typescript
++import { VeniceClient } from 'venice-x402-client'
+ 
+-    curl --request GET \
+-      --url "https://api.venice.ai/api/v1/x402/balance/$WALLET_ADDRESS" \
+-      --header "X-Sign-In-With-X: $BALANCE_AUTH"
+-    ```
++const venice = new VeniceClient(process.env.WALLET_KEY)
+ 
+-    Example response:
++await venice.topUp(10) // skip if the wallet already has spendable balance
+ 
+-    ```json
+-    {
+-      "success": true,
+-      "data": {
+-        "walletAddress": "0xyour_wallet_address",
+-        "balanceUsd": 12.5,
+-        "canConsume": true,
+-        "minimumTopUpUsd": 5,
+-        "suggestedTopUpUsd": 10,
+-        "diemBalanceUsd": 5.25
+-      }
+-    }
+-    ```
+-
+-    Key fields:
+-
+-    - `canConsume`: whether the wallet can currently use x402-backed Venice endpoints
+-    - `balanceUsd`: current spendable x402 balance
+-    - `minimumTopUpUsd` and `suggestedTopUpUsd`: guidance for the next top-up if the balance is low
+-    - `diemBalanceUsd`: optional DIEM-backed balance available to the linked Venice account
+-  </Step>
+-
+-  <Step title="Generate a fresh auth header for inference">
+-    If `canConsume` is `true`, run the same SIWE script again with `uri` updated to the inference resource you are about to call. Use the resulting header value as `CHAT_AUTH`.
+-  </Step>
+-
+-  <Step title="Call the paid Venice endpoint">
+-    Send the newly generated inference auth header with your request:
+-
+-    ```bash
+-    export CHAT_AUTH=YOUR_BASE64_AUTH_HEADER
+-
+-    curl --request POST \
+-      --url https://api.venice.ai/api/v1/chat/completions \
+-      --header "Content-Type: application/json" \
+-      --header "X-Sign-In-With-X: $CHAT_AUTH" \
+-      --data '{
+-        "model": "kimi-k2-5",
+-        "messages": [
+-          {
+-            "role": "user",
+-            "content": "Hello from an x402-authenticated wallet."
+-          }
+-        ]
+-      }'
+-    ```
+-
+-    Venice will validate the wallet auth and automatically charge available x402-backed balance for the request.
+-  </Step>
+-
+-  <Step title="Review transaction history">
+-    To inspect the wallet ledger, generate another `X-Sign-In-With-X` header with the SIWE script above, this time using the transactions resource as the `uri`. Then call the endpoint:
+-
+-    ```bash
+-    export TX_AUTH=YOUR_BASE64_AUTH_HEADER
+-
+-    curl --request GET \
+-      --url "https://api.venice.ai/api/v1/x402/transactions/$WALLET_ADDRESS?limit=10&offset=0" \
+-      --header "X-Sign-In-With-X: $TX_AUTH"
+-    ```
+-
+-    The transaction feed includes entries such as `TOP_UP`, `CHARGE`, and `REFUND`. Usage-backed entries may also include a `requestId` and `modelId`, which helps correlate spend with a specific Venice request.
+-  </Step>
+-</Steps>
+-
+-### Top-up walkthrough
+-
+-If `canConsume` is `false`, or you want to add more prepaid balance ahead of time, use the top-up endpoint. This endpoint follows the standard x402 payment pattern:
+-
+-<Steps>
+-  <Step title="Ask Venice for payment requirements">
+-    Call the top-up endpoint without an `X-402-Payment` header:
+-
+-    ```bash
+-    curl --request POST \
+-      --url https://api.venice.ai/api/v1/x402/top-up
+-    ```
+-
+-    Venice will respond with `402 Payment Required` and tell you how to pay:
+-
+-    ```json
+-    {
+-      "error": "PAYMENT_REQUIRED",
+-      "message": "Send x402 payment via X-402-Payment header",
+-      "paymentInfo": {
+-        "receiverWallet": "0xRECEIVER_WALLET",
+-        "network": "eip155:8453",
+-        "token": "USDC",
+-        "tokenAddress": "0xUSDC_TOKEN_ADDRESS",
+-        "minimumAmountUsd": 5,
+-        "suggestedAmountUsd": 10
+-      }
+-    }
+-    ```
+-  </Step>
+-
+-  <Step title="Build the x402 payment payload">
+-    Use the returned `paymentInfo` to create a signed x402 payment with your wallet. The resulting payload is then sent in the `X-402-Payment` header.
+-
+-    Venice does not expect `X-Sign-In-With-X` for this endpoint. The payment itself is the authorization for the top-up.
+-    
+-    If you are having trouble with this, have a look at [how to build the X402 payment header.](#creating-the-x-402-payment-header)
+-  </Step>
+-
+-  <Step title="Retry the request with X-402-Payment">
+-    Once you have a signed payment payload, send the same request again:
+-
+-    ```bash
+-    export X402_PAYMENT=YOUR_SIGNED_X402_PAYMENT
+-
+-    curl --request POST \
+-      --url https://api.venice.ai/api/v1/x402/top-up \
+-      --header "X-402-Payment: $X402_PAYMENT"
+-    ```
+-
+-    Example success response:
+-
+-    ```json
+-    {
+-      "success": true,
+-      "data": {
+-        "walletAddress": "0xyour_wallet_address",
+-        "amountCredited": 10,
+-        "newBalance": 22.5,
+-        "paymentId": "payment_01HZY8M4W4Y6QZ8B6Q4P0V3J2K"
+-      }
+-    }
+-    ```
+-  </Step>
+-
+-  <Step title="Confirm the wallet can consume again">
+-    After a successful top-up, generate a fresh balance header with the SIWE script and call the balance endpoint again to confirm `canConsume` is now `true`.
+-  </Step>
+-</Steps>
++const response = await venice.chat({
++  model: 'kimi-k2-5',
++  messages: [{ role: 'user', content: 'Hello!' }]
++})
++```
+ 
+-<Info>
+-In practice, wallet-based clients usually automate this by generating the SIWE-backed `X-Sign-In-With-X` header for the route they are about to call, checking balance, topping up only when needed, then continuing to inference. The balance and transaction endpoints are useful for making those decisions explicit in your own app or agent.
+-</Info>
++The client generates a fresh `X-Sign-In-With-X` header for each request and automatically tracks balance from `X-Balance-Remaining` response headers.
+ 
+-### Prompt for Claw agents
++### With OpenAI-compatible tools
+ 
+-If you're a human using a Claw agent, you can send it the following message to help it try Venice's X402 flow:
++If you're using a tool that accepts a custom `fetch`, use `createAuthFetch` to add wallet auth to any request:
+ 
+-```plaintext
+-Use the Venice API with your wallet.
++```typescript
++import { createAuthFetch } from 'venice-x402-client'
+ 
+-Auth:
+-Build a SIWE message, sign it with your private key (EIP-191), then base64-encode this JSON and send it as X-Sign-In-With-X:
+-{"address":"0xYOUR_ADDRESS","message":"<signed SIWE message>","signature":"0x...","timestamp":<unix ms>,"chainId":8453}
++const authFetch = createAuthFetch(process.env.WALLET_KEY)
++```
+ 
+-Requirements:
+-- domain: outerface.venice.ai
+-- chain ID: 8453
+-- URI: set this to the exact Venice route being called
+-- expiration: 10 minutes
++### Available helpers
+ 
+-Inference:
+-Only `POST /api/v1/chat/completions` currently supports X402 for paid inference.
++The SDK includes first-class helpers for the most common Venice x402 routes. For anything not covered, use `request()` or `createAuthFetch()` directly.
+ 
+-Chat:
+-POST https://api.venice.ai/api/v1/chat/completions
+-Headers: Content-Type: application/json, X-Sign-In-With-X: <base64>
+-Body: {"model":"kimi-k2-5","messages":[{"role":"user","content":"Hello"}]}
++| Category | Methods |
++| --- | --- |
++| Chat | `chat()`, `chatStream()` |
++| Responses | `responses.create()`, `responses.stream()` |
++| Images | `images.generate()`, `images.generations()`, `images.upscale()`, `images.edit()`, `images.multiEdit()`, `images.backgroundRemove()` |
++| Audio | `audio.speech()`, `audio.transcribe()`, `audio.queue()`, `audio.retrieve()`, `audio.complete()` |
++| Video | `video.queue()`, `video.retrieve()`, `video.generate()`, `video.complete()`, `video.transcribe()` |
++| Embeddings | `embeddings()` |
++| Models | `models()` |
++| Wallet | `getBalance()`, `getTransactions()`, `topUp()` |
+ 
+-Balance: GET https://api.venice.ai/api/v1/x402/balance/<address> (generate a fresh SIWE header using the balance URI)
+-Transactions: GET https://api.venice.ai/api/v1/x402/transactions/<address> (generate a fresh SIWE header using the transactions URI)
+-DIEM staked on the wallet is used automatically for payment. No DIEM = top up with USDC on Base (min $5).
+-Guide: https://docs.venice.ai/overview/guides/x402-venice-api
+-```
++---
+ 
+-<Warning>
+-For safety, give the agent the private key through environment variables or a secret manager instead of pasting it directly into a prompt.
+-</Warning>
++## Manual flow
+ 
+-#### Creating a compatible SIWE Payload
++If you're not using the SDK or need to understand the underlying protocol, here's the step-by-step flow. For a new wallet, assume you need to top up first unless it already has spendable DIEM balance.
+ 
+-All of our X402 compatible endpoints require an `X-Sign-In-With-X` header, and we take a Base64-encoded JSON body that includes a SIWE (Sign in with Ethereum) message.
++### Step 1: Create the X-Sign-In-With-X header
+ 
+-To do this programmatically, you can use the short script below to do exactly that (requires the `siwe` and `ethers` npm packages):
++Venice expects a Base64-encoded JSON payload containing a signed SIWE message. Generate a fresh nonce and timestamp for each request flow.
+ 
+-```js
++```typescript
+ import { Wallet } from 'ethers'
+ import { SiweMessage, generateNonce } from 'siwe'
+ 
+-const signer = new Wallet(process.env.PRIVATE_KEY)
+-const walletAddress = signer.address
++const wallet = new Wallet(process.env.EVM_PRIVATE_KEY)
++const now = new Date()
++const resourceUrl = 'https://api.venice.ai/api/v1/chat/completions'
+ 
+-const issuedAt = new Date().toISOString()
+ const siwe = new SiweMessage({
+-  domain: 'outerface.venice.ai',
+-  address: walletAddress,
++  domain: 'api.venice.ai',
++  address: wallet.address,
+   statement: 'Sign in to Venice AI',
+-  uri: 'https://outerface.venice.ai/api/v1/x402/balance/0x...',
++  uri: resourceUrl,
+   version: '1',
+   chainId: 8453,
+   nonce: generateNonce(),
+-  issuedAt,
+-  expirationTime: new Date(Date.now() + 10 * 60 * 1000).toISOString(),
++  issuedAt: now.toISOString(),
++  expirationTime: new Date(now.getTime() + 5 * 60 * 1000).toISOString(),
+ })
+ 
+ const message = siwe.prepareMessage()
+-const signature = await signer.signMessage(message)
++const signature = await wallet.signMessage(message)
+ 
+-const headerValue = Buffer.from(
++const xSignInWithX = Buffer.from(
+   JSON.stringify({
+-    address: walletAddress.toLowerCase(),
++    address: wallet.address,
+     message,
+     signature,
++    timestamp: now.getTime(),
+     chainId: 8453,
+-    timestamp: Date.parse(issuedAt),
+   }),
+   'utf8',
+ ).toString('base64')
++
++console.log(xSignInWithX)
+ ```
+ 
+-This will do the following:
+-- Generate a SIWE message
+-- Prepare the message
+-- Signs the message (done automatically as we have created a wallet instance via `ethers`)
+-- Create a compliant JSON body, convert it into an equivalent byte buffer, and convert it into base64
++### Step 2: Check balance
++
++Before making a paid request, verify the wallet has spendable balance:
++
++```bash
++export WALLET_ADDRESS=0xYOUR_WALLET_ADDRESS
++export X402_AUTH=YOUR_BASE64_SIWX_HEADER
++
++curl --request GET \
++  --url "https://api.venice.ai/api/v1/x402/balance/$WALLET_ADDRESS" \
++  --header "X-Sign-In-With-X: $X402_AUTH"
++```
++
++The response includes:
++
++- `canConsume`: whether the wallet can make paid requests
++- `balanceUsd`: current spendable balance
++- `minimumTopUpUsd` and `suggestedTopUpUsd`: guidance for top-ups
++- `diemBalanceUsd`: DIEM-backed balance, if any
++
++### Step 3: Top up
++
++Top up with USDC on Base:
+ 
+-The `uri` above uses the balance endpoint as an example. When authenticating a different X402 route, update the `uri` in the SIWE message to match the Venice resource you are about to call, then generate a fresh `X-Sign-In-With-X` header from that payload.
++```bash
++curl --request POST \
++  --url https://api.venice.ai/api/v1/x402/top-up
++```
++
++The first call returns `402 Payment Required` with a `PAYMENT-REQUIRED` header containing an `accepts` array. Use those payment details to build an `X-402-Payment` header and retry the same route.
+ 
+-### Creating the X-402-Payment Header
+-To use the top-up endpoint, you'll need to create a X-402-Payment header. 
++#### Building the X-402-Payment header
+ 
+-This can be done with the following script, which will attempt to top up your Venice credits with 5USD worth of credits (note that this requires the `viem` and `x402` npm packages installed).
++The following script creates a signed x402 payment and sends the top-up request. Requires the `x402` and `viem` npm packages.
+ 
+-First you will want to set your private key as `EVM_PRIVATE_KEY` in environment variables (can be skipped if it already exists):
+ ```bash
+-export EVM_PRIVATE_KEY=0xyour_private_key
++export EVM_PRIVATE_KEY=0xYOUR_PRIVATE_KEY
+ ```
+ 
+-Next, run the following script in the same terminal you added your EVM private key as an environment variable:
+ ```bash
+ export X402_PAYMENT="$(
+ node --input-type=module <<'EOF'
+ import { createPaymentHeader } from "x402/client";
+ import { privateKeyToAccount } from "viem/accounts";
++
+ const signer = privateKeyToAccount(process.env.EVM_PRIVATE_KEY);
+ const amountUsd = 5;
+ const amountBaseUnits = String(Math.round(amountUsd * 1e6));
++
+ const header = await createPaymentHeader(signer, 2, {
+   scheme: "exact",
+   network: "base",
+@@ -354,63 +191,125 @@ const header = await createPaymentHeader(signer, 2, {
+   asset: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+   extra: { name: "USD Coin", version: "2" },
+ });
++
+ process.stdout.write(header);
+ EOF
+ )"
+ 
+-curl -sS -X POST "https://api.venice.ai/api/v1/x402/top-up" \
++curl -X POST "https://api.venice.ai/api/v1/x402/top-up" \
+   -H "X-402-Payment: $X402_PAYMENT"
+ ```
+ 
+-### Developers
+-If you're a developer who wants to use X402 with Venice, we have our own [X402 Client library.](https://github.com/veniceai/x402-client)
++<Note>
++  Use the latest `PAYMENT-REQUIRED` / `accepts` response as the source of truth in production instead of hardcoding these values.
++</Note>
++
++### Step 4: Make a request
+ 
+-You can install it with the following one-line snippet:
++Once the wallet has spendable balance, call any supported endpoint with the `X-Sign-In-With-X` header:
+ 
+ ```bash
+-npm install @venice-ai/x402-client
++export X402_AUTH=YOUR_BASE64_SIWX_HEADER
++
++curl --request POST \
++  --url https://api.venice.ai/api/v1/chat/completions \
++  --header "Content-Type: application/json" \
++  --header "X-Sign-In-With-X: $X402_AUTH" \
++  --data '{
++    "model": "kimi-k2-5",
++    "messages": [
++      {
++        "role": "user",
++        "content": "Hello from an x402-authenticated wallet."
++      }
++    ]
++  }'
+ ```
+ 
+-The following snippet can be used to buy inference on Venice with your wallet (assuming you have a wallet key in your environment):
+-```js
+-import { VeniceClient } from '@venice-ai/x402-client'
++Successful responses may include an `X-Balance-Remaining` header.
+ 
+-const venice = new VeniceClient(process.env.WALLET_KEY)
++### Step 5: Inspect transactions (optional)
+ 
+-const response = await venice.chat({
+-  model: 'kimi-k2-5',
+-  messages: [{ role: 'user', content: 'Hello!' }]
+-})
++Review the wallet's transaction history:
++
++```bash
++export WALLET_ADDRESS=0xYOUR_WALLET_ADDRESS
++export X402_AUTH=YOUR_BASE64_SIWX_HEADER
++
++curl --request GET \
++  --url "https://api.venice.ai/api/v1/x402/transactions/$WALLET_ADDRESS?limit=10&offset=0" \
++  --header "X-Sign-In-With-X: $X402_AUTH"
+ ```
+ 
+-### Troubleshooting and error handling
++The ledger includes entries such as `TOP_UP`, `CHARGE`, and `REFUND`.
++
++---
+ 
+-If a request fails, these are the first things to check:
++## Supported routes
+ 
+-- `401 Authentication failed`: regenerate `X-Sign-In-With-X` using the SIWE script. Confirm the payload is valid base64 JSON, the signature matches the wallet, the chain is Base (`8453`), and the SIWE message has not expired.
+-- `403 Unauthorized` on balance or transactions: the wallet recovered from `X-Sign-In-With-X` must match the `walletAddress` path parameter.
+-- `402 Insufficient balance` on `chat/completions`: the wallet auth worked, but the wallet does not currently have enough spendable balance. Check `GET /x402/balance/{walletAddress}` and top up if needed.
+-- `402 PAYMENT_REQUIRED` on `x402/top-up`: this is expected on the first top-up request without `X-402-Payment`. Use the returned `paymentInfo` to build the payment payload, then retry with the header.
+-- `400 Invalid request` or `X402_INVALID_PAYMENT`: rebuild the request body or payment header from scratch. This usually means malformed JSON, an incorrect header value, or a payment payload that does not match the required top-up parameters.
+-- `429 Rate limit exceeded`: retry with backoff, especially if your agent is polling balance or transactions repeatedly.
++### Paid inference routes
+ 
+-For auth-related issues, the most common mistake is using a SIWE `uri` that does not match the Venice route you are calling.
++The following public paid Venice routes currently support x402 wallet authentication.
++
++| Category | Endpoints |
++| --- | --- |
++| Chat | `POST /api/v1/chat/completions`, `POST /api/v1/responses` |
++| Image | `POST /api/v1/image/generate`, `POST /api/v1/images/generations`, `POST /api/v1/image/upscale`, `POST /api/v1/image/edit`, `POST /api/v1/image/multi-edit`, `POST /api/v1/image/background-remove` |
++| Embeddings | `POST /api/v1/embeddings` |
++| Audio | `POST /api/v1/audio/speech`, `POST /api/v1/audio/transcriptions`, `POST /api/v1/audio/complete`, `POST /api/v1/audio/queue`, `POST /api/v1/audio/retrieve` |
++| Video | `POST /api/v1/video/complete`, `POST /api/v1/video/queue`, `POST /api/v1/video/retrieve`, `POST /api/v1/video/transcriptions` |
++
++### Top-up route
++
++| Endpoint | Auth | Purpose |
++| --- | --- | --- |
++| `POST /api/v1/x402/top-up` | Initial request: none. Retry: `X-402-Payment` | Add USDC credits to the wallet's spendable balance |
++
++### Wallet-only routes
++
++These routes use `X-Sign-In-With-X` for identity but do not charge balance.
++
++| Endpoint | Purpose |
++| --- | --- |
++| `GET /api/v1/x402/balance/{walletAddress}` | Check spendable balance |
++| `GET /api/v1/x402/transactions/{walletAddress}` | View transaction history |
+ 
+ ---
+ 
+-## Resources
++## Errors
++
++| Status | Likely cause | What to do |
++| --- | --- | --- |
++| `401` | Malformed or expired SIWE payload | Rebuild `X-Sign-In-With-X` with a fresh nonce and timestamp |
++| `402` on a paid route | Not enough spendable balance | Top up and retry |
++| `402` on `/x402/top-up` | Expected. This is the payment initiation flow. | Use the returned payment details to build `X-402-Payment` and retry |
++| `403` on balance or transactions | Wallet mismatch | Ensure the authenticated wallet matches the `walletAddress` path parameter |
++| `400` on top-up | Malformed payment header | Rebuild from the latest `402` response |
++
++---
++
++## For agents
++
++The flow is the same. Store private keys in environment variables or a secret manager, and check balance before requests to avoid unnecessary `402` round-trips.
++
++---
++
++## Related resources
+ 
+ <CardGroup cols={2}>
+-  <Card title="Chat Completions API" icon="message" href="/api-reference/endpoint/chat/completions">
+-    Primary Venice endpoint for agent inference
++  <Card title="x402 Client SDK" icon="npm" href="https://github.com/veniceai/x402-client">
++    Official Venice x402 client for Node.js/TypeScript.
+   </Card>
+-  <Card title="TEE & E2EE Models" icon="lock" href="/overview/guides/tee-e2ee-models">
+-    Extra transport requirements for E2EE models
++
++  <Card title="API Pricing" icon="coins" href="/overview/pricing">
++    Check model pricing and how Venice charges usage.
+   </Card>
+-  <Card title="AI Agents" icon="robot" href="/overview/guides/ai-agents">
+-    Other agent ecosystems supported by Venice
++
++  <Card title="Chat Completions" icon="message" href="/api-reference/endpoint/chat/completions">
++    A common paid route for wallet-based access.
+   </Card>
+-  <Card title="Venice Pricing" icon="coins" href="/overview/pricing">
+-    Check model pricing and availability
++
++  <Card title="API Spec" icon="code" href="/api-reference/api-spec">
++    Reference documentation and raw spec access.
+   </Card>
+ </CardGroup>
+diff --git a/overview/pricing.mdx b/overview/pricing.mdx
+index 86ea85d..c2ad778 100644
+--- a/overview/pricing.mdx
++++ b/overview/pricing.mdx
+@@ -16,6 +16,7 @@ Prices per 1M tokens unless noted. All prices in USD. 1 Diem = $1/day of compute
+ |---|---|---|---|---|---|---|---|
+ | Claude Opus 4.5 | `claude-opus-4-5` | $6.00 | $30.00 | $0.60 | $7.50 | 198K | Anonymized |
+ | Claude Opus 4.6 (Beta) | `claude-opus-4-6` | $6.00 | $30.00 | $0.60 | $7.50 | 1000K | Anonymized |
++| Claude Opus 4.6 Fast (Beta) | `claude-opus-4-6-fast` | $36.00 | $180.00 | $3.60 | $45.00 | 1000K | Anonymized |
+ | Claude Sonnet 4.5 | `claude-sonnet-4-5` | $3.75 | $18.75 | $0.38 | $4.69 | 198K | Anonymized |
+ | Claude Sonnet 4.6 (Beta) | `claude-sonnet-4-6` | $3.60 | $18.00 | $0.36 | $4.50 | 1000K | Anonymized |
+ | DeepSeek V3.2 | `deepseek-v3.2` | $0.33 | $0.48 | $0.16 | - | 160K | Private |
+@@ -84,9 +85,9 @@ Prices per 1M tokens unless noted. All prices in USD. 1 Diem = $1/day of compute
+ 
+ <div id="pricing-embedding-placeholder">
+ 
+-| Model | ID | Input (per 1M tokens) | Output (per 1M tokens) | Privacy |
+-|---|---|---|---|---|
+-| BGE-M3 | `text-embedding-bge-m3` | $0.15 | $0.60 | Private |
++| Model | ID | Per 1M tokens | Privacy |
++|---|---|---|---|
++| BGE-M3 | `text-embedding-bge-m3` | $0.15 | Private |
+ 
+ </div>
+ 
+diff --git a/style.css b/style.css
+index 44613a2..3a17fb9 100644
+--- a/style.css
++++ b/style.css
+@@ -1502,3 +1502,251 @@
+     line-height: 1.5;
+   }
+ }
++
++/* ===== TTS Voice Picker ===== */
++
++#tts-voice-picker-placeholder {
++  visibility: visible !important;
++  overflow: visible !important;
++  height: auto !important;
++}
++
++.vtp-picker {
++  display: flex;
++  flex-direction: column;
++  gap: 16px;
++  margin-top: 8px;
++  font-family: inherit;
++}
++
++.vtp-row-controls {
++  display: grid;
++  grid-template-columns: minmax(220px, 1fr) minmax(180px, 1fr);
++  gap: 12px;
++}
++
++@media (max-width: 640px) {
++  .vtp-row-controls {
++    grid-template-columns: 1fr;
++  }
++}
++
++.vtp-field {
++  display: flex;
++  flex-direction: column;
++  gap: 6px;
++  min-width: 0;
++}
++
++.vtp-label {
++  font-size: 11px;
++  font-weight: 600;
++  letter-spacing: 0.06em;
++  text-transform: uppercase;
++  opacity: 0.6;
++}
++
++.vtp-model-select,
++.vtp-search {
++  width: 100%;
++  padding: 10px 14px;
++  font-size: 14px;
++  font-family: inherit;
++  color: inherit;
++  background: rgba(128,128,128,0.06);
++  border: 1px solid rgba(128,128,128,0.25);
++  border-radius: 8px;
++  outline: none;
++  box-sizing: border-box;
++  transition: border-color 0.15s, background 0.15s;
++}
++
++.vtp-model-select {
++  font-weight: 500;
++  cursor: pointer;
++  appearance: none;
++  -webkit-appearance: none;
++  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
++  background-repeat: no-repeat;
++  background-position: right 12px center;
++  padding-right: 36px;
++}
++
++.vtp-model-select:focus,
++.vtp-search:focus {
++  border-color: rgba(128,128,128,0.45);
++  background-color: rgba(128,128,128,0.09);
++}
++
++.vtp-search::placeholder {
++  color: rgba(128,128,128,0.55);
++}
++
++.vtp-meta {
++  display: flex;
++  flex-direction: column;
++  gap: 8px;
++}
++
++.vtp-pills {
++  display: flex;
++  flex-wrap: wrap;
++  gap: 6px;
++}
++
++.vtp-pill {
++  display: inline-flex;
++  align-items: center;
++  font-size: 12px;
++  padding: 4px 10px;
++  border-radius: 999px;
++  background: rgba(128,128,128,0.1);
++  color: inherit;
++  white-space: nowrap;
++}
++
++.vtp-pill code {
++  font-size: 12px;
++  background: none;
++  padding: 0;
++  border: none;
++  color: inherit;
++}
++
++.vtp-pill-id {
++  background: rgba(221, 51, 0, 0.1);
++  color: #DD3300;
++}
++
++.vtp-blurb {
++  margin: 0;
++  font-size: 13px;
++  line-height: 1.5;
++  opacity: 0.75;
++}
++
++.vtp-list-header {
++  display: flex;
++  align-items: baseline;
++  justify-content: space-between;
++  margin-top: 4px;
++}
++
++.vtp-list-title {
++  font-size: 11px;
++  font-weight: 600;
++  letter-spacing: 0.06em;
++  text-transform: uppercase;
++  opacity: 0.6;
++}
++
++.vtp-count {
++  font-size: 12px;
++  opacity: 0.55;
++  white-space: nowrap;
++}
++
++.vtp-voice-list {
++  display: flex;
++  flex-direction: column;
++  border: 1px solid rgba(128,128,128,0.18);
++  border-radius: 10px;
++  overflow: hidden;
++  max-height: 480px;
++  overflow-y: auto;
++}
++
++.vtp-voice {
++  display: grid;
++  grid-template-columns: minmax(140px, max-content) 1fr auto;
++  align-items: center;
++  gap: 16px;
++  width: 100%;
++  padding: 10px 14px;
++  border: none;
++  border-bottom: 1px solid rgba(128,128,128,0.12);
++  background: transparent;
++  color: inherit;
++  text-align: left;
++  font-family: inherit;
++  cursor: pointer;
++  transition: background 0.1s;
++}
++
++.vtp-voice:last-child {
++  border-bottom: none;
++}
++
++.vtp-voice:hover {
++  background: rgba(128,128,128,0.06);
++}
++
++.vtp-voice:focus-visible {
++  outline: 2px solid #DD3300;
++  outline-offset: -2px;
++}
++
++.vtp-voice-id {
++  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
++  font-size: 13px;
++  font-weight: 500;
++}
++
++.vtp-voice-meta {
++  font-size: 13px;
++  opacity: 0.6;
++  min-width: 0;
++}
++
++.vtp-voice-action {
++  font-size: 11px;
++  font-weight: 600;
++  letter-spacing: 0.04em;
++  text-transform: uppercase;
++  opacity: 0;
++  transition: opacity 0.15s, color 0.15s;
++  position: relative;
++  color: rgba(128,128,128,0.7);
++}
++
++.vtp-voice:hover .vtp-voice-action {
++  opacity: 1;
++}
++
++.vtp-action-copied {
++  display: none;
++}
++
++.vtp-voice.copied .vtp-voice-action {
++  opacity: 1;
++  color: #DD3300;
++}
++
++.vtp-voice.copied .vtp-action-copy {
++  display: none;
++}
++
++.vtp-voice.copied .vtp-action-copied {
++  display: inline;
++}
++
++.vtp-empty {
++  padding: 24px;
++  text-align: center;
++  font-size: 13px;
++  opacity: 0.55;
++}
++
++.vtp-hint {
++  margin: 0;
++  font-size: 12px;
++  opacity: 0.55;
++  line-height: 1.5;
++}
++
++.vtp-hint code {
++  font-size: 12px;
++  background: rgba(128,128,128,0.1);
++  padding: 1px 5px;
++  border-radius: 4px;
++}

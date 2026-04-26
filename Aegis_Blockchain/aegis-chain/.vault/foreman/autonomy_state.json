@@ -1,0 +1,44 @@
+{
+  "startedAt": 1776818200516,
+  "cycleCount": 1510,
+  "signalsProcessed": 217,
+  "signalsSkipped": 2804,
+  "executionsSuccess": 217,
+  "executionsFailed": 0,
+  "lastCycleAt": 1776820992665,
+  "lastSignals": [
+    {
+      "id": "chain_stats_1776820992665",
+      "source": "chain_monitor",
+      "type": "chain_health",
+      "confidence": 0.35,
+      "priority": 1,
+      "description": "Aegis block 4390, chain 808080",
+      "params": {
+        "blockNumber": 4390,
+        "chainId": 808080
+      },
+      "createdAt": 1776820992665,
+      "expiresAt": 1776821022665
+    },
+    {
+      "id": "base_block_1776820992665",
+      "source": "base_observer",
+      "type": "base_event",
+      "confidence": 0.2,
+      "priority": 1,
+      "description": "Base block 45015817: 158 txs, gas used 32068281",
+      "params": {
+        "blockNumber": 45015817,
+        "txCount": 158,
+        "gasUsed": "32068281",
+        "timestamp": 1776820981
+      },
+      "createdAt": 1776820992665,
+      "expiresAt": 1776821022665
+    }
+  ],
+  "cooldowns": {
+    "chain_health:chain_monitor": 1776821052967
+  }
+}

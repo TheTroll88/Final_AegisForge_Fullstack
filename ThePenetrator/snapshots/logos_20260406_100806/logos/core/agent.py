@@ -1,0 +1,17 @@
+"""Agent loop — orchestrates LLM calls, tool parsing, and session management."""
+
+from logos.llm.client import LLMClient
+from logos.tools.registry import ToolRegistry
+from logos.core.session import Session
+from logos.output.formatter import Formatter
+from logos.output.workbench import Workbench
+
+
+SYSTEM_TEMPLATE = """{identity}
+
+{custom_rules}
+
+TOOLS — use these by putting >> at the START of a new line:
+
+>> READ path/to/file
+>> WRITE path/to/file

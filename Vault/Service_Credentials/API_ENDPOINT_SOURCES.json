@@ -1,0 +1,160 @@
+{
+  "generated": "2026-04-20",
+  "purpose": "Non-secret endpoint source registry for agents and bots",
+  "sensitivity": "public-reference-only",
+  "sources": [
+    {
+      "name": "hermes-telegram-bot",
+      "description": "Hermes — AegisForge Telegram messenger bot",
+      "role": "family messenger / notification relay",
+      "platform": "Telegram Bot API",
+      "base_url": "https://api.telegram.org/bot{HERMES_TELEGRAM_TOKEN}/",
+      "env_var": "HERMES_TELEGRAM_TOKEN",
+      "bot_id": "8421483697",
+      "vault_key_file": "Vault/Bot_Keys/hermes_telegram.txt",
+      "status": "active",
+      "added": "2026-04-20"
+    },
+    {
+      "name": "vinece-endpoints",
+      "description": "Solana / AI agent API surfaces extracted from Aegis_Family/Vinece (solana-clawd)",
+      "local_path": "Aegis_Family/Vinece",
+      "shared_endpoints_path": "Aegis_Family/Vinece/shared-endpoints",
+      "catalog": "Aegis_Family/Vinece/VINECE_ENDPOINT_CATALOG.md",
+      "note": "Original source read-only. shared-endpoints/ is the working copy for other agents.",
+      "endpoints": {
+        "helius_rpc_mainnet": "https://mainnet.helius-rpc.com/?api-key={HELIUS_API_KEY}",
+        "helius_rpc_devnet": "https://devnet.helius-rpc.com/?api-key={HELIUS_API_KEY}",
+        "helius_rest": "https://api-mainnet.helius-rpc.com{path}?api-key={HELIUS_API_KEY}",
+        "helius_wss_mainnet": "wss://mainnet.helius-rpc.com/?api-key={HELIUS_API_KEY}",
+        "pumpportal_wss": "wss://pumpportal.fun/api/data",
+        "telegram_bot": "https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/{method}",
+        "x402_facilitator": "see src/services/x402/types.ts DEFAULT_FACILITATOR_URLS"
+      },
+      "program_addresses": {
+        "pump_bonding_curve": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+        "pump_amm": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+        "pump_fees": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVJ",
+        "pump_global_pda": "4wTV1YmiEkRvAtNtsSGPtUrqRYQMe5SKy2uB4Jjaxnjf"
+      },
+      "env_vars_needed": [
+        "HELIUS_API_KEY",
+        "HELIUS_RPC_URL",
+        "SOLANA_TRACKER_API_KEY",
+        "TELEGRAM_BOT_TOKEN",
+        "X402_ENABLED",
+        "X402_PRIVATE_KEY",
+        "CLAUDE_API_KEY"
+      ]
+    },
+    {
+      "name": "local-assistant",
+      "description": "AegisLocal — PowerShell local-only assistant, no external API needed",
+      "local_path": "D:/AegisForge/local-assistant",
+      "entry_point": "assistant.ps1",
+      "config_file": "assistant.config.json",
+      "assistant_name": "AegisLocal",
+      "memory_files": ["memory.json","tasks.json","notes.log","knowledge.json","routines.json"],
+      "memory_bank_path": "memory-bank/",
+      "allowed_roots": ["C:/Users/natha", "D:/DataVault"],
+      "requires_confirmation": true,
+      "allows_command_execution": false,
+      "mcp_integrations": ["microsoft/markitdown", "MCPBrowser"],
+      "ollama_models_installed": ["gemma3:4b", "gemma4:latest", "glm4:latest", "llama3.2:latest"],
+      "ollama_path": "D:/Ollama",
+      "ollama_exe": "C:/Users/natha/AppData/Local/Programs/Ollama/ollama.exe"
+    },
+    {
+      "name": "public-apis",
+      "repo": "https://github.com/public-apis/public-apis",
+      "local_path": "Github_Repos/public-apis",
+      "default_branch": "master",
+      "snapshot_commit": "3261ad3",
+      "categories_priority": [
+        "blockchain",
+        "cryptocurrency",
+        "security",
+        "social",
+        "finance",
+        "machine-learning",
+        "development"
+      ]
+    },
+    {
+      "name": "CryptoList",
+      "repo": "https://github.com/coinpride/CryptoList",
+      "local_path": "Github_Repos/CryptoList",
+      "default_branch": "master",
+      "snapshot_commit": "a258f1d",
+      "tags": [
+        "bitcoin",
+        "blockchain",
+        "ethereum",
+        "cryptocurrency",
+        "api",
+        "directory"
+      ]
+    },
+    {
+      "name": "sol-faucet-runner",
+      "repo": "https://github.com/TheTroll88/sol-faucet-runner",
+      "local_path": "Aegis_Family/Faucets/sol-faucet-runner",
+      "default_branch": "main",
+      "snapshot_commit": "9de1bbc",
+      "category": "faucet"
+    },
+    {
+      "name": "asig-contracts",
+      "repo": "https://github.com/TheTroll88/asig-token-site",
+      "local_path": "Asig_Coins/asig-contracts",
+      "token_site_path": "Asig_Coins/asig-token-site",
+      "website": "https://aegissignal.io",
+      "network": "Base",
+      "chain_id": 8453,
+      "contracts": {
+        "AegisSignal": {
+          "symbol": "ASIG",
+          "decimals": 18,
+          "total_supply": "1000000",
+          "standard": "ERC-20",
+          "solidity_version": "0.8.26",
+          "deployed_address": "TBD"
+        },
+        "EchoBeacon": {
+          "description": "On-chain string store with diff events",
+          "solidity_version": "0.8.26",
+          "deployed_address": "TBD"
+        },
+        "MetaSignalRegistry": {
+          "description": "Append-only signal log (sender, message, timestamp)",
+          "solidity_version": "0.8.26",
+          "deployed_address": "TBD"
+        },
+        "Watcher": {
+          "description": "Role-gated proxy over MetaSignalRegistry",
+          "solidity_version": "0.8.26",
+          "deployed_address": "TBD"
+        }
+      },
+      "build_artifacts": "Asig_Coins/asig-contracts/artifacts/build-info",
+      "notes": "Hardhat build-info archives from original OneDrive source: C:/Users/natha/OneDrive/agis token"
+    },
+    {
+      "name": "lab-terminal-extension",
+      "official_docs": "https://docs.lab.pro",
+      "telegram_bot": "https://t.me/LAB_Trading_bot",
+      "extension_store": "https://chromewebstore.google.com/detail/lab-terminal/kfhmememmflbdeceaokeakdejlndmddo",
+      "extension_id": "kfhmememmflbdeceaokeakdejlndmddo",
+      "local_reference_path": "Aegis_Family/Foreman/LAB_Terminal_References",
+      "signed_artifact": "KFHMEMEMMFLBDECEAOKEAKDEJLNDMDDO_1_5_0_0.crx",
+      "signed_manifest": "lab_terminal_reference_manifest.json.sig",
+      "public_repo_status": "no_official_public_repo_found"
+    }
+  ],
+  "notes": [
+    "This file stores references only and must not contain live secrets.",
+    "Use Vault/Api_keys.txt and other dedicated vault files for actual credentials.",
+    "Use API_REFERENCE_REVIEW.md for expanded endpoint listing extracted earlier.",
+    "LAB Terminal extension references are archived from official docs and Chrome Web Store signed artifacts."
+  ]
+}

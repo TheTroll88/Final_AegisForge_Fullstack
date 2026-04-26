@@ -1,0 +1,402 @@
+openapi: "3.0.3"
+info:
+  title: Logos Inference Protocol
+  version: "1.0.0"
+  description: >
+    The Logos Inference Protocol — sovereign AI gateway.
+    Authenticated with Logos bearer keys (lgk_*), routed through
+    our own infrastructure. No vendor chains, no restrictions.
+  contact:
+    name: Logos
+  license:
+    name: Private
+    url: https://example.com
+
+servers:
+  - url: http://127.0.0.1:11435
+    description: Local Logos Gateway
+
+security:
+  - BearerAuth: []
+
+paths:
+  /v1/models:
+    get:
+      operationId: listModels
+      summary: List available models
+      description: Returns all models available through the gateway.
+      responses:
+        "200":
+          description: Model list returned successfully.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ModelList"
+        "404":
+          description: Not found.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /health:
+    get:
+      operationId: healthCheck
+      summary: Gateway health check
+      description: Returns gateway status and uptime.
+      security: []
+      responses:
+        "200":
+          description: Gateway is healthy.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthResponse"
+        "404":
+          description: Not found.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /v1/chat/completions:
+    post:
+      operationId: createChatCompletion
+      summary: Create a chat completion
+      description: >
+        Send a chat completion request. Supports streaming (SSE) and
+        non-streaming responses. Routes through available backends.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ChatCompletionRequest"
+      responses:
+        "200":
+          description: Chat completion response.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ChatCompletionResponse"
+            text/event-stream:
+              schema:
+                type: string
+                description: SSE stream of chat completion chunks.
+        "400":
+          description: Invalid JSON in request body.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "401":
+          description: Invalid or missing API key.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuthError"
+        "404":
+          description: Endpoint not found.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /chat/completions:
+    post:
+      operationId: createChatCompletionAlias
+      summary: Create a chat completion (alias)
+      description: Alias for /v1/chat/completions.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ChatCompletionRequest"
+      responses:
+        "200":
+          description: Chat completion response.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ChatCompletionResponse"
+            text/event-stream:
+              schema:
+                type: string
+                description: SSE stream of chat completion chunks.
+        "400":
+          description: Invalid JSON in request body.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "401":
+          description: Invalid or missing API key.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuthError"
+        "404":
+          description: Endpoint not found.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      description: Logos key (lgk_* prefix). Our key, our rules.
+
+  schemas:
+    ChatCompletionRequest:
+      type: object
+      required:
+        - model
+        - messages
+      properties:
+        model:
+          type: string
+          description: Model ID to route inference through.
+          example: olafangensan-glm-4.7-flash-heretic
+          minLength: 1
+          maxLength: 256
+        messages:
+          type: array
+          description: Array of chat messages.
+          minItems: 1
+          maxItems: 256
+          items:
+            $ref: "#/components/schemas/ChatMessage"
+        stream:
+          type: boolean
+          description: Whether to stream the response via SSE.
+          default: false
+        temperature:
+          type: number
+          description: Sampling temperature.
+          minimum: 0
+          maximum: 2
+          example: 0.7
+        max_tokens:
+          type: integer
+          description: Maximum tokens to generate.
+          minimum: 1
+          maximum: 131072
+          example: 4096
+        top_p:
+          type: number
+          description: Nucleus sampling parameter.
+          minimum: 0
+          maximum: 1
+          example: 0.9
+      additionalProperties: false
+
+    ChatMessage:
+      type: object
+      required:
+        - role
+        - content
+      properties:
+        role:
+          type: string
+          enum:
+            - system
+            - user
+            - assistant
+          description: The role of the message author.
+        content:
+          type: string
+          description: The message content.
+          minLength: 1
+          maxLength: 1048576
+      additionalProperties: false
+
+    ChatCompletionResponse:
+      type: object
+      required:
+        - id
+        - object
+        - created
+        - model
+        - choices
+      properties:
+        id:
+          type: string
+          description: Unique inference ID.
+          minLength: 1
+          maxLength: 256
+        object:
+          type: string
+          description: Object type.
+          enum:
+            - chat.completion
+        created:
+          type: integer
+          description: Unix timestamp of creation.
+        model:
+          type: string
+          description: Model used.
+          minLength: 1
+          maxLength: 256
+        choices:
+          type: array
+          minItems: 1
+          maxItems: 16
+          items:
+            $ref: "#/components/schemas/Choice"
+        usage:
+          $ref: "#/components/schemas/Usage"
+      additionalProperties: false
+
+    Choice:
+      type: object
+      required:
+        - index
+        - message
+        - finish_reason
+      properties:
+        index:
+          type: integer
+          description: Choice index.
+          minimum: 0
+        message:
+          $ref: "#/components/schemas/ChatMessage"
+        finish_reason:
+          type: string
+          enum:
+            - stop
+            - length
+            - content_filter
+          description: Reason the generation stopped.
+          nullable: true
+      additionalProperties: false
+
+    Usage:
+      type: object
+      properties:
+        prompt_tokens:
+          type: integer
+          description: Tokens in the prompt.
+          minimum: 0
+        completion_tokens:
+          type: integer
+          description: Tokens in the completion.
+          minimum: 0
+        total_tokens:
+          type: integer
+          description: Total tokens used.
+          minimum: 0
+      additionalProperties: false
+
+    ModelList:
+      type: object
+      required:
+        - object
+        - data
+      properties:
+        object:
+          type: string
+          enum:
+            - list
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/Model"
+      additionalProperties: false
+
+    Model:
+      type: object
+      required:
+        - id
+        - object
+        - owned_by
+      properties:
+        id:
+          type: string
+          description: Model identifier.
+          minLength: 1
+          maxLength: 256
+        object:
+          type: string
+          enum:
+            - model
+        owned_by:
+          type: string
+          description: Owner of the model.
+          minLength: 1
+          maxLength: 256
+      additionalProperties: false
+
+    HealthResponse:
+      type: object
+      required:
+        - status
+        - gateway
+        - uptime
+      properties:
+        status:
+          type: string
+          enum:
+            - ok
+          description: Gateway status.
+        gateway:
+          type: string
+          enum:
+            - Logos
+          description: Gateway identifier.
+        uptime:
+          type: number
+          description: Server uptime as Unix timestamp.
+      additionalProperties: false
+
+    ErrorResponse:
+      type: object
+      required:
+        - error
+      properties:
+        error:
+          type: object
+          required:
+            - message
+          properties:
+            message:
+              type: string
+              description: Error description.
+              minLength: 1
+              maxLength: 1024
+            type:
+              type: string
+              description: Error type.
+              maxLength: 128
+            code:
+              type: string
+              description: Error code.
+              maxLength: 128
+          additionalProperties: false
+      additionalProperties: false
+
+    AuthError:
+      type: object
+      required:
+        - error
+      properties:
+        error:
+          type: object
+          required:
+            - message
+            - type
+          properties:
+            message:
+              type: string
+              description: Authentication error description.
+              minLength: 1
+              maxLength: 1024
+            type:
+              type: string
+              enum:
+                - auth_error
+          additionalProperties: false
+      additionalProperties: false

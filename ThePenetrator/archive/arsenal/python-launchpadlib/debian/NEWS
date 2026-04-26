@@ -1,0 +1,15 @@
+python-launchpadlib (1.9.8-1) unstable; urgency=low
+
+  launchpadlib 1.9 will cause some issues, as it uses the GNOME Keyring / KDE
+  wallet to store credentials.
+  https://help.launchpad.net/API/ThirdPartyIntegration
+
+  Known issues and workarounds:
+
+  Seeing keyring.backend.PasswordSetError or gnomekeyring.IOError?
+  Try ssh -X and run export `dbus-launch` in the ssh session.
+
+  Otherwise, uninstalling python-gnomekeyring will force the credentials to
+  be stored in ~/keyring_pass.cfg instead of a keyring and bypass these issues.
+
+ -- Luca Falavigna <dktrkranz@debian.org>  Fri, 04 Mar 2011 22:31:30 +0100

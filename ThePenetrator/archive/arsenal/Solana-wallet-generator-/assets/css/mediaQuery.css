@@ -1,0 +1,105 @@
+/* MEDIA QUERY FOR 1200PX SCREEN WIDTH */
+
+@media (max-width: 75em) {
+
+  body {
+    max-width: 120rem;
+  }
+}
+
+/* MEDIA QUERY FOR 910PX SCREEN WIDTH */
+
+@media (max-width: 56.875em) {
+  header h1 {
+    font-size: 6.8rem;
+  }
+}
+
+/* MEDIA QUERY FOR 865PX SCREEN WIDTH */
+@media (max-width:54.0625em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* MEDIA QUERY FOR 770PX SCREEN WIDTH */
+@media (max-width:48.125em) {
+  header h1 {
+    font-size: 5.8rem;
+  }
+
+  .pub--copy {
+    gap: 5.2rem;
+  }
+
+  .pub--copy h3 {
+    justify-self: end;
+  }
+}
+
+/* MEDIA QUERY FOR 700PX SCREEN WIDTH */
+@media (max-width:43.75em) {
+  body {
+    height: 100vh;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+}
+
+/* MEDIA QUERY FOR 672PX SCREEN WIDTH */
+@media (max-width: 42.8125em) {
+  header h1 {
+    font-size: 4.2rem;
+    font-weight: 800;
+  }
+
+  header h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* MEDIA QUERY FOR 521PX SCREEN WIDTH */
+@media (max-width:32.5625em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* MEDIA QUERY FOR 463PX SCREEN WIDTH */
+@media (max-width: 28.9375em) {
+  header h1 {
+    font-size: 3.6rem;
+  }
+
+  header h3 {
+    font-size: 1.2rem;
+  }
+
+  .mobile-view p {
+    font-size: 1.2rem;
+  }
+}
+
+/* MEDIA QUERY FOR 437PX SCREEN WIDTH */
+@media (max-width: 27.3125em) {
+  .mobile-view em {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* MEDIA QUERY FOR 410PX SCREEN WIDTH */
+@media (max-width:25.625em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+/* MEDIA QUERY FOR 360PX SCREEN WIDTH */
+@media (max-width:22.5em) {
+  header h1 {
+    font-size: 3.0rem;
+  }
+}

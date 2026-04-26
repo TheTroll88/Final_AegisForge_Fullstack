@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-04-20T20:26:02.5755692-05:00",
+  "sourcePaths": {
+    "runtime_home": "C:\\Users\\natha\\.openclaw",
+    "npm_openclaw_package": "C:\\Users\\natha\\AppData\\Roaming\\npm\\node_modules\\openclaw",
+    "wrappers": [
+      "C:\\Users\\natha\\AppData\\Roaming\\npm\\openclaw",
+      "C:\\Users\\natha\\AppData\\Roaming\\npm\\openclaw.cmd"
+    ]
+  },
+  "destinationPaths": {
+    "destination_root": "C:\\Users\\natha\\OneDrive\\Desktop\\Final_AegisForge_Fullstack\\Cloud\\OpenClaw\\tracked_gateway",
+    "runtime_home": "C:\\Users\\natha\\OneDrive\\Desktop\\Final_AegisForge_Fullstack\\Cloud\\OpenClaw\\tracked_gateway\\runtime_home",
+    "npm_openclaw_package": "C:\\Users\\natha\\OneDrive\\Desktop\\Final_AegisForge_Fullstack\\Cloud\\OpenClaw\\tracked_gateway\\npm_openclaw_package",
+    "bin_wrapper": "C:\\Users\\natha\\OneDrive\\Desktop\\Final_AegisForge_Fullstack\\Cloud\\OpenClaw\\tracked_gateway\\bin_wrapper",
+    "inventory": "C:\\Users\\natha\\OneDrive\\Desktop\\Final_AegisForge_Fullstack\\Cloud\\OpenClaw\\tracked_gateway\\inventory"
+  },
+  "trees": {
+    "runtime_home": {
+      "status": "copied",
+      "robocopyExit": 1,
+      "fileCount": 65,
+      "totalSizeMB": 1.0
+    },
+    "npm_openclaw_package": {
+      "status": "copied",
+      "robocopyExit": 1,
+      "fileCount": 92241,
+      "totalSizeMB": 882.49
+    }
+  },
+  "wrappers": [
+    {
+      "Source": "C:\\Users\\natha\\AppData\\Roaming\\npm\\openclaw",
+      "Status": "copied",
+      "Dest": "C:\\Users\\natha\\OneDrive\\Desktop\\Final_AegisForge_Fullstack\\Cloud\\OpenClaw\\tracked_gateway\\bin_wrapper"
+    },
+    {
+      "Source": "C:\\Users\\natha\\AppData\\Roaming\\npm\\openclaw.cmd",
+      "Status": "copied",
+      "Dest": "C:\\Users\\natha\\OneDrive\\Desktop\\Final_AegisForge_Fullstack\\Cloud\\OpenClaw\\tracked_gateway\\bin_wrapper"
+    }
+  ]
+}

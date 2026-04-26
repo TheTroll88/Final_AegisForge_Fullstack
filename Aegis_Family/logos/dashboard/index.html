@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logos Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="bg-shape bg-shape-a"></div>
+  <div class="bg-shape bg-shape-b"></div>
+
+  <header class="topbar">
+    <div>
+      <h1>Logos Control Deck</h1>
+      <p class="muted">Single-brain local companion dashboard</p>
+    </div>
+    <div class="actions">
+      <button id="refreshBtn">Refresh</button>
+      <button id="pingBtn">Ping</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel status">
+      <h2>State</h2>
+      <div class="kv"><span>Name</span><strong id="nameVal">-</strong></div>
+      <div class="kv"><span>Brain</span><strong id="brainVal">-</strong></div>
+      <div class="kv"><span>Context File</span><strong id="fileVal">-</strong></div>
+      <div class="kv"><span>Open Tasks</span><strong id="taskCountVal">0</strong></div>
+      <pre id="statusOut" class="code small"></pre>
+    </section>
+
+    <section class="panel chat">
+      <h2>Chat</h2>
+      <div id="chatLog" class="chat-log"></div>
+      <div class="chat-input-wrap">
+        <input id="chatInput" type="text" placeholder="Ask Logos..." />
+        <button id="sendChatBtn">Send</button>
+        <button id="micBtn" class="mic-btn" title="Speak">🎤</button>
+      </div>
+      <div id="listeningIndicator" class="listening-indicator hidden">
+        <span class="pulse"></span>Listening...
+      </div>
+      <p class="muted tiny">Uses: brain ask &lt;prompt&gt;</p>
+    </section>
+
+    <section class="panel command">
+      <h2>Command Console</h2>
+      <div class="command-row">
+        <input id="commandInput" type="text" placeholder="task list" />
+        <button id="runCommandBtn">Run</button>
+      </div>
+      <pre id="commandOut" class="code"></pre>
+    </section>
+
+    <section class="panel maintenance">
+      <h2>Self Maintenance</h2>
+      <div class="grid2">
+        <button id="selfCheckBtn">Self Check</button>
+        <button id="selfRollbackBtn" class="danger">Rollback Core</button>
+      </div>
+      <div class="patch-box">
+        <input id="patchOld" type="text" placeholder="old text" />
+        <input id="patchNew" type="text" placeholder="new text" />
+        <button id="selfPatchBtn">Apply Patch</button>
+      </div>
+      <pre id="selfOut" class="code small"></pre>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

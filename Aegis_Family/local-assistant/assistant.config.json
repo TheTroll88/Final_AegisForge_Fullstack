@@ -1,0 +1,26 @@
+{
+  "AssistantName": "AegisLocal",
+  "RequireConfirmation": true,
+  "AllowCommandExecution": false,
+  "AllowAllPaths": true,
+  "MemoryPath": "C:\\Users\\natha\\local-assistant\\memory.json",
+  "TasksPath": "C:\\Users\\natha\\local-assistant\\tasks.json",
+  "NotesPath": "C:\\Users\\natha\\local-assistant\\notes.log",
+  "KnowledgePath": "C:\\Users\\natha\\local-assistant\\knowledge.json",
+  "RoutinesPath": "C:\\Users\\natha\\local-assistant\\routines.json",
+  "FollowLogPath": "C:\\Users\\natha\\local-assistant\\follow.log",
+  "FollowIntervalSeconds": 3,
+  "AllowedRoots": [
+    "C:\\Users\\natha",
+    "D:\\DataVault"
+  ],
+  "BlockedPatterns": [
+    "C:\\Windows",
+    "C:\\Program Files",
+    "C:\\Program Files (x86)",
+    "C:\\Users\\natha\\AppData\\Local\\Microsoft"
+  ],
+  "LogPath": "C:\\Users\\natha\\local-assistant\\assistant.log",
+  "OllamaEndpoint": "http://localhost:11434",
+  "OllamaModel": "gemma4:latest"
+}

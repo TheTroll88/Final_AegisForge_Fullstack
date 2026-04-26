@@ -1,0 +1,1277 @@
+---
+title: Venice API
+"og:title": "Venice API Docs" 
+---
+
+Build AI with no data retention, permissionless access, and compute you permanently own.
+
+<CardGroup cols={3}>
+  <Card title="Start Building" href="/overview/getting-started" target="_blank" icon="rocket">
+    Make your first request in minutes.
+  </Card>
+  <Card title="View Models" href="/overview/models" target="_blank" icon="database">
+    Compare capabilities, context, and base models.
+  </Card>
+  <Card title="API Reference" href="/api-reference" target="_blank" icon="rectangle-code">
+    Endpoints, payloads, and examples.
+  </Card>
+</CardGroup>
+
+## OpenAI Compatibility
+
+Use your existing OpenAI code with just a base URL change.
+
+<CodeGroup>
+```python Python
+import openai
+
+client = openai.OpenAI(
+    api_key="your-api-key",
+    base_url="https://api.venice.ai/api/v1"
+)
+
+response = client.chat.completions.create(
+    model="venice-uncensored-1-2",
+    messages=[{"role": "user", "content": "Hello World!"}]
+)
+
+print(response.choices[0].message.content)
+```
+
+```ts TypeScript
+import OpenAI from "openai";
+
+const openai = new OpenAI({
+  apiKey: process.env.VENICE_API_KEY!,
+  baseURL: "https://api.venice.ai/api/v1",
+});
+
+const completion = await openai.chat.completions.create({
+  model: "venice-uncensored-1-2",
+  messages: [{ role: "user", content: "Hello World!" }],
+});
+
+console.log(completion.choices[0].message.content);
+```
+
+```bash Curl
+curl https://api.venice.ai/api/v1/chat/completions \
+  -H "Authorization: Bearer $VENICE_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "venice-uncensored-1-2",
+    "messages": [{"role": "user", "content": "Hello World!"}]
+  }'
+```
+
+```go Go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    "github.com/openai/openai-go"
+)
+
+func main() {
+    client, err := openai.NewClient(os.Getenv("VENICE_API_KEY"))
+    if err != nil {
+        fmt.Printf("Error creating client: %v\n", err)
+        return
+    }
+    
+    client.BaseURL = "https://api.venice.ai/api/v1"
+    
+    resp, err := client.CreateChatCompletion(
+        context.Background(),
+        openai.ChatCompletionRequest{
+            Model: "venice-uncensored-1-2",
+            Messages: []openai.ChatCompletionMessage{
+                {
+                    Role:    openai.ChatMessageRoleUser,
+                    Content: "Hello World!",
+                },
+            },
+        },
+    )
+    
+    if err != nil {
+        fmt.Printf("Error: %v\n", err)
+        return
+    }
+    
+    fmt.Println(resp.Choices[0].Message.Content)
+}
+```
+
+```php PHP
+<?php
+
+require_once 'vendor/autoload.php';
+
+use OpenAI\Client;
+
+$client = OpenAI::client('your-api-key');
+$client->setBaseUrl('https://api.venice.ai/api/v1');
+
+$response = $client->chat()->create([
+    'model' => 'venice-uncensored',
+    'messages' => [
+        [
+            'role' => 'user',
+            'content' => 'Hello World!'
+        ]
+    ]
+]);
+
+echo $response->choices[0]->message->content;
+```
+
+```csharp C#
+using OpenAI;
+
+var client = new OpenAIClient("your-api-key");
+client.BaseUrl = "https://api.venice.ai/api/v1";
+
+var chatCompletion = await client.GetChatCompletionsAsync(new ChatCompletionOptions
+{
+    Model = "venice-uncensored-1-2",
+    Messages = { new ChatMessage(ChatRole.User, "Hello World!") }
+});
+
+Console.WriteLine(chatCompletion.Value.Choices[0].Message.Content);
+```
+
+```java Java
+import com.openai.OpenAI;
+import com.openai.OpenAIHttpException;
+import com.openai.core.ApiError;
+import com.openai.types.chat.ChatCompletionRequest;
+import com.openai.types.chat.ChatCompletionResponse;
+import com.openai.types.chat.ChatMessage;
+
+public class Main {
+    public static void main(String[] args) {
+        OpenAI client = OpenAI.builder()
+            .apiKey(System.getenv("VENICE_API_KEY"))
+            .baseUrl("https://api.venice.ai/api/v1")
+            .build();
+
+        try {
+            ChatCompletionResponse response = client.chatCompletions().create(
+                ChatCompletionRequest.builder()
+                    .model("venice-uncensored-1-2")
+                    .messages(ChatMessage.of("Hello World!"))
+                    .build()
+            );
+            
+            System.out.println(response.choices().get(0).message().content());
+        } catch (OpenAIHttpException e) {
+            System.err.println("Error: " + e.getMessage());
+        }
+    }
+}
+```
+
+```swift Swift
+import OpenAI
+
+let client = OpenAI(apiToken: "your-api-key")
+client.baseURL = "https://api.venice.ai/api/v1"
+
+Task {
+    do {
+        let response = try await client.chats.create(
+            model: "venice-uncensored-1-2",
+            messages: [.init(role: .user, content: "Hello World!")]
+        )
+        
+        print(response.choices[0].message.content ?? "")
+    } catch {
+        print("Error: \(error)")
+    }
+}
+```
+</CodeGroup>
+
+
+## Build with Venice APIs
+
+Access chat, image generation (generate/upscale/edit), audio (TTS), and characters.
+
+<CardGroup cols={2}>
+  <Card title="Chat Completions" href="/api-reference/endpoint/chat/completions" icon="message">
+    **Text + reasoning**
+    
+    Vision, tool use, streaming
+  </Card>
+  
+  <Card title="Image Generation" href="/api-reference/endpoint/image/generations" icon="image">
+    **Generate, upscale, and edit**
+    
+    Models for styles, quality, and uncensored
+  </Card>
+  
+  <Card title="Audio Synthesis" href="/api-reference/endpoint/audio/speech" icon="headphones">
+    **Text → speech**
+    
+    50+ multilingual voices
+  </Card>
+  
+  <Card title="AI Characters" href="/api-reference/endpoint/characters/list" icon="user">
+    **Characters API**
+    
+    Create, list, and chat with personas
+  </Card>
+</CardGroup>
+
+[View all API endpoints →](/api-reference)
+
+## Popular Models
+
+Copy a Model ID and use it as `model` in your requests.
+
+<Card title="GLM 5.1" icon="brain">
+  Flagship model for deep reasoning and production agents.
+
+  Model ID: `zai-org-glm-5.1`
+  Base: GLM 5.1
+  Context: 200k • Modalities: Text → Text
+
+  **Use cases**
+  - Agent planning and tool use
+  - Complex code & system design
+  - Long‑context reasoning
+
+  ```json
+  {"model":"zai-org-glm-5.1","messages":[{"role":"user","content":"Plan a zero‑downtime DB migration in 3 steps"}]}
+  ```
+</Card>
+
+<CardGroup cols={2}>
+  <Card title="Venice Uncensored 1.2" icon="shield">
+    **Unfiltered generation**
+    
+    Model ID: `venice-uncensored-1-2`
+    
+    Base model: Venice Uncensored 1.2
+    
+    Context: 128k • Best for: uncensored creative, red‑team testing
+    
+    ```json
+    {"model":"venice-uncensored-1-2","messages":[{"role":"user","content":"Write an unfiltered analysis of content moderation policies"}]}
+    ```
+  </Card>
+  
+  <Card title="Mistral 3.1 24B" icon="eye">
+    **Vision + tools**
+    
+    Model ID: `mistral-31-24b`
+    
+    Base model: Mistral 3.1 24B
+    
+    Context: 131k • Supports: Vision, Function calling, image analysis
+    
+    ```json
+    {"model":"mistral-31-24b","messages":[{"role":"user","content":"Describe this image"}]}
+    ```
+  </Card>
+  
+  <Card title="Qwen 3.5 9B" icon="bolt">
+    **Fast and cost‑efficient**
+    
+    Model ID: `qwen3-5-9b`
+    
+    Base model: Qwen 3.5 9B
+    
+    Context: 256k • Best for: chatbots, classification, light reasoning
+    
+    ```json
+    {"model":"qwen3-5-9b","messages":[{"role":"user","content":"Summarize:"}]}
+    ```
+  </Card>
+  
+<Card title="Nano Banana Pro" icon="image">
+    **Image generation**
+    
+    Model ID: `nano-banana-pro`
+    
+    Base model: Nano Banana Pro
+
+    
+    Best for: Text‑to‑image, photorealism, product shots, light upscaling
+    
+    ```json
+    {"model":"nano-banana-pro","prompt":"a serene canal in venice at sunset"}
+    ```
+  </Card>
+</CardGroup>
+
+[View all models →](/overview/models)
+
+## Extend models with built‑in tools
+
+Toggle on compatible models using `venice_parameters` or model suffixes
+
+<CardGroup cols={4}>
+  <Card title="Web Search" icon="globe">
+  </Card>
+  
+  <Card title="Reasoning" icon="brain">
+  </Card>
+  
+  <Card title="Vision" icon="eye">
+  </Card>
+  
+  <Card title="Tool Calling" icon="link">
+  </Card>
+</CardGroup>
+
+<Accordion title="Web Search Code Samples">
+Enable real-time web search with citations on **all text models**. Get up-to-date information from the internet and include source citations in responses. Works with any Venice text model.
+
+<CodeGroup>
+```bash Curl
+curl https://api.venice.ai/api/v1/chat/completions \
+  -H "Authorization: Bearer $VENICE_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "zai-org-glm-5.1",
+    "messages": [{"role": "user", "content": "What are the latest developments in AI?"}],
+    "venice_parameters": {
+      "enable_web_search": "auto"
+    }
+  }'
+```
+
+```ts TypeScript
+import OpenAI from "openai";
+
+const openai = new OpenAI({
+  apiKey: process.env.VENICE_API_KEY!,
+  baseURL: "https://api.venice.ai/api/v1",
+});
+
+const completion = await openai.chat.completions.create({
+  model: "zai-org-glm-5.1",
+  messages: [{ role: "user", content: "What are the latest developments in AI?" }],
+  // @ts-ignore - Venice-specific parameter
+  venice_parameters: {
+    enable_web_search: "auto"
+  }
+});
+
+console.log(completion.choices[0].message.content);
+```
+
+```python Python
+import openai
+
+client = openai.OpenAI(
+    api_key="your-api-key",
+    base_url="https://api.venice.ai/api/v1"
+)
+
+response = client.chat.completions.create(
+    model="zai-org-glm-5-1",
+    messages=[{"role": "user", "content": "What are the latest developments in AI?"}],
+        extra_body={
+        "venice_parameters": {
+            "enable_web_search": "auto"
+        }
+    }
+)
+
+print(response.choices[0].message.content)
+```
+
+```go Go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    "github.com/openai/openai-go"
+)
+
+func main() {
+    client, err := openai.NewClient(os.Getenv("VENICE_API_KEY"))
+    if err != nil {
+        fmt.Printf("Error creating client: %v\n", err)
+        return
+    }
+    
+    client.BaseURL = "https://api.venice.ai/api/v1"
+    
+    // Note: Go client doesn't support venice_parameters directly
+    // Use model suffix approach instead
+    resp, err := client.CreateChatCompletion(
+        context.Background(),
+        openai.ChatCompletionRequest{
+            Model: "zai-org-glm-5-1:enable_web_search=on&enable_web_citations=true",
+            Messages: []openai.ChatCompletionMessage{
+                {
+                    Role:    openai.ChatMessageRoleUser,
+                    Content: "What are the latest developments in AI?",
+                },
+            },
+        },
+    )
+    
+    if err != nil {
+        fmt.Printf("Error: %v\n", err)
+        return
+    }
+    
+    fmt.Println(resp.Choices[0].Message.Content)
+}
+```
+
+```php PHP
+<?php
+
+require_once 'vendor/autoload.php';
+
+use OpenAI\Client;
+
+$client = OpenAI::client('your-api-key');
+$client->setBaseUrl('https://api.venice.ai/api/v1');
+
+$response = $client->chat()->create([
+    'model' => 'zai-org-glm-5-1:enable_web_search=on&enable_web_citations=true',
+    'messages' => [
+        [
+            'role' => 'user',
+            'content' => 'What are the latest developments in AI?'
+        ]
+    ]
+]);
+
+echo $response->choices[0]->message->content;
+```
+
+```csharp C#
+using OpenAI;
+
+var client = new OpenAIClient("your-api-key");
+client.BaseUrl = "https://api.venice.ai/api/v1";
+
+var chatCompletion = await client.GetChatCompletionsAsync(new ChatCompletionOptions
+{
+    Model = "zai-org-glm-5-1:enable_web_search=on&enable_web_citations=true",
+    Messages = { new ChatMessage(ChatRole.User, "What are the latest developments in AI?") }
+});
+
+Console.WriteLine(chatCompletion.Value.Choices[0].Message.Content);
+```
+
+```java Java
+import com.openai.OpenAI;
+import com.openai.OpenAIHttpException;
+import com.openai.core.ApiError;
+import com.openai.types.chat.ChatCompletionRequest;
+import com.openai.types.chat.ChatCompletionResponse;
+import com.openai.types.chat.ChatMessage;
+
+public class Main {
+    public static void main(String[] args) {
+        OpenAI client = OpenAI.builder()
+            .apiKey(System.getenv("VENICE_API_KEY"))
+            .baseUrl("https://api.venice.ai/api/v1")
+            .build();
+
+        try {
+            ChatCompletionResponse response = client.chatCompletions().create(
+                ChatCompletionRequest.builder()
+                    .model("zai-org-glm-5-1:enable_web_search=on&enable_web_citations=true")
+                    .messages(ChatMessage.of("What are the latest developments in AI?"))
+                    .build()
+            );
+            
+            System.out.println(response.choices().get(0).message().content());
+        } catch (OpenAIHttpException e) {
+            System.err.println("Error: " + e.getMessage());
+        }
+    }
+}
+```
+
+```bash Model Suffix
+# Alternative approach: append parameters directly to model ID
+curl https://api.venice.ai/api/v1/chat/completions \
+  -H "Authorization: Bearer $VENICE_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "zai-org-glm-5-1:enable_web_search=on&enable_web_citations=true",
+    "messages": [{"role": "user", "content": "What are the latest developments in AI?"}]
+  }'
+```
+</CodeGroup>
+</Accordion>
+
+<Accordion title="Reasoning Mode Code Samples">
+Advanced step-by-step reasoning with visible thinking process. Available on **reasoning models**: `qwen3-4b`, `deepseek-ai-DeepSeek-R1`. Shows detailed problem-solving steps in `<think>` tags.
+
+<CodeGroup>
+```bash Curl
+curl https://api.venice.ai/api/v1/chat/completions \
+  -H "Authorization: Bearer $VENICE_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "qwen3-4b",
+    "messages": [{"role": "user", "content": "Solve: If x + 2y = 10 and 3x - y = 5, what are x and y?"}],
+    "venice_parameters": {
+      "strip_thinking_response": false
+    }
+  }'
+```
+
+```ts TypeScript
+import OpenAI from "openai";
+
+const openai = new OpenAI({
+  apiKey: process.env.VENICE_API_KEY!,
+  baseURL: "https://api.venice.ai/api/v1",
+});
+
+const completion = await openai.chat.completions.create({
+  model: "qwen3-4b",
+  messages: [{ role: "user", content: "Solve: If x + 2y = 10 and 3x - y = 5, what are x and y?" }],
+  // @ts-ignore - Venice-specific parameter
+  venice_parameters: {
+    strip_thinking_response: false
+  }
+});
+
+console.log(completion.choices[0].message.content);
+```
+
+```python Python
+import openai
+
+client = openai.OpenAI(
+    api_key="your-api-key",
+    base_url="https://api.venice.ai/api/v1"
+)
+
+response = client.chat.completions.create(
+    model="qwen3-4b",
+    messages=[{"role": "user", "content": "Solve: If x + 2y = 10 and 3x - y = 5, what are x and y?"}],
+    extra_body={
+        "venice_parameters": {
+            "strip_thinking_response": False
+        }
+    }
+)
+
+print(response.choices[0].message.content)
+```
+
+```go Go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    "github.com/openai/openai-go"
+)
+
+func main() {
+    client, err := openai.NewClient(os.Getenv("VENICE_API_KEY"))
+    if err != nil {
+        fmt.Printf("Error creating client: %v\n", err)
+        return
+    }
+    
+    client.BaseURL = "https://api.venice.ai/api/v1"
+    
+    resp, err := client.CreateChatCompletion(
+        context.Background(),
+        openai.ChatCompletionRequest{
+            Model: "qwen3-4b",
+            Messages: []openai.ChatCompletionMessage{
+                {
+                    Role:    openai.ChatMessageRoleUser,
+                    Content: "Solve: If x + 2y = 10 and 3x - y = 5, what are x and y?",
+                },
+            },
+        },
+    )
+    
+    if err != nil {
+        fmt.Printf("Error: %v\n", err)
+        return
+    }
+    
+    fmt.Println(resp.Choices[0].Message.Content)
+}
+```
+
+```php PHP
+<?php
+
+require_once 'vendor/autoload.php';
+
+use OpenAI\Client;
+
+$client = OpenAI::client('your-api-key');
+$client->setBaseUrl('https://api.venice.ai/api/v1');
+
+$response = $client->chat()->create([
+    'model' => 'qwen3-4b',
+    'messages' => [
+        [
+            'role' => 'user',
+            'content' => 'Solve: If x + 2y = 10 and 3x - y = 5, what are x and y?'
+        ]
+    ]
+]);
+
+echo $response->choices[0]->message->content;
+```
+
+```csharp C#
+using OpenAI;
+
+var client = new OpenAIClient("your-api-key");
+client.BaseUrl = "https://api.venice.ai/api/v1";
+
+var chatCompletion = await client.GetChatCompletionsAsync(new ChatCompletionOptions
+{
+    Model = "qwen3-4b",
+    Messages = { new ChatMessage(ChatRole.User, "Solve: If x + 2y = 10 and 3x - y = 5, what are x and y?") }
+});
+
+Console.WriteLine(chatCompletion.Value.Choices[0].Message.Content);
+```
+
+```java Java
+import com.openai.OpenAI;
+import com.openai.OpenAIHttpException;
+import com.openai.core.ApiError;
+import com.openai.types.chat.ChatCompletionRequest;
+import com.openai.types.chat.ChatCompletionResponse;
+import com.openai.types.chat.ChatMessage;
+
+public class Main {
+    public static void main(String[] args) {
+        OpenAI client = OpenAI.builder()
+            .apiKey(System.getenv("VENICE_API_KEY"))
+            .baseUrl("https://api.venice.ai/api/v1")
+            .build();
+
+        try {
+            ChatCompletionResponse response = client.chatCompletions().create(
+                ChatCompletionRequest.builder()
+                    .model("qwen3-4b")
+                    .messages(ChatMessage.of("Solve: If x + 2y = 10 and 3x - y = 5, what are x and y?"))
+                    .build()
+            );
+            
+            System.out.println(response.choices().get(0).message().content());
+        } catch (OpenAIHttpException e) {
+            System.err.println("Error: " + e.getMessage());
+        }
+    }
+}
+```
+
+```bash Model Suffix
+# Alternative approach: append parameters directly to model ID
+curl https://api.venice.ai/api/v1/chat/completions \
+  -H "Authorization: Bearer $VENICE_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "qwen3-4b:strip_thinking_response=true",
+    "messages": [{"role": "user", "content": "Solve this math problem"}]
+  }'
+```
+</CodeGroup>
+</Accordion>
+
+<Accordion title="Vision Processing Code Samples">
+Image understanding and multimodal analysis. Available on **vision models**: `qwen3-vl-235b-a22b`. Upload images via base64 data URIs or URLs for analysis, description, and reasoning.
+
+<CodeGroup>
+```bash Curl
+curl https://api.venice.ai/api/v1/chat/completions \
+  -H "Authorization: Bearer $VENICE_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "qwen3-vl-235b-a22b",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {"type": "text", "text": "What do you see in this image?"},
+          {"type": "image_url", "image_url": {"url": "data:image/jpeg;base64,..."}}
+        ]
+      }
+    ]
+  }'
+```
+
+```ts TypeScript
+import OpenAI from "openai";
+
+const openai = new OpenAI({
+  apiKey: process.env.VENICE_API_KEY!,
+  baseURL: "https://api.venice.ai/api/v1",
+});
+
+const completion = await openai.chat.completions.create({
+  model: "qwen3-vl-235b-a22b",
+  messages: [
+    {
+      role: "user",
+      content: [
+        { type: "text", text: "What do you see in this image?" },
+        { type: "image_url", image_url: { url: "data:image/jpeg;base64,..." } }
+      ]
+    }
+  ]
+});
+
+console.log(completion.choices[0].message.content);
+```
+
+```python Python
+import openai
+
+client = openai.OpenAI(
+    api_key="your-api-key",
+    base_url="https://api.venice.ai/api/v1"
+)
+
+response = client.chat.completions.create(
+    model="qwen3-vl-235b-a22b",
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {"type": "text", "text": "What do you see in this image?"},
+                {"type": "image_url", "image_url": {"url": "data:image/jpeg;base64,..."}}
+            ]
+        }
+    ]
+)
+
+print(response.choices[0].message.content)
+```
+
+```go Go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    "github.com/openai/openai-go"
+)
+
+func main() {
+    client, err := openai.NewClient(os.Getenv("VENICE_API_KEY"))
+    if err != nil {
+        fmt.Printf("Error creating client: %v\n", err)
+        return
+    }
+    
+    client.BaseURL = "https://api.venice.ai/api/v1"
+    
+    resp, err := client.CreateChatCompletion(
+        context.Background(),
+        openai.ChatCompletionRequest{
+            Model: "qwen3-vl-235b-a22b",
+            Messages: []openai.ChatCompletionMessage{
+                {
+                    Role: openai.ChatMessageRoleUser,
+                    Content: []openai.ChatCompletionContentPart{
+                        {Type: "text", Text: "What do you see in this image?"},
+                        {Type: "image_url", ImageURL: &openai.ChatCompletionContentPartImageURL{URL: "data:image/jpeg;base64,..."}},
+                    },
+                },
+            },
+        },
+    )
+    
+    if err != nil {
+        fmt.Printf("Error: %v\n", err)
+        return
+    }
+    
+    fmt.Println(resp.Choices[0].Message.Content)
+}
+```
+
+```php PHP
+<?php
+
+require_once 'vendor/autoload.php';
+
+use OpenAI\Client;
+
+$client = OpenAI::client('your-api-key');
+$client->setBaseUrl('https://api.venice.ai/api/v1');
+
+$response = $client->chat()->create([
+    'model' => 'qwen3-vl-235b-a22b',
+    'messages' => [
+        [
+            'role' => 'user',
+            'content' => [
+                ['type' => 'text', 'text' => 'What do you see in this image?'],
+                ['type' => 'image_url', 'image_url' => ['url' => 'data:image/jpeg;base64,...']]
+            ]
+        ]
+    ]
+]);
+
+echo $response->choices[0]->message->content;
+```
+
+```csharp C#
+using OpenAI;
+
+var client = new OpenAIClient("your-api-key");
+client.BaseUrl = "https://api.venice.ai/api/v1";
+
+var chatCompletion = await client.GetChatCompletionsAsync(new ChatCompletionOptions
+{
+    Model = "qwen3-vl-235b-a22b",
+    Messages = { 
+        new ChatMessage(ChatRole.User, [
+            ChatMessageContentPart.CreateTextPart("What do you see in this image?"),
+            ChatMessageContentPart.CreateImagePart(new Uri("data:image/jpeg;base64,..."))
+        ])
+    }
+});
+
+Console.WriteLine(chatCompletion.Value.Choices[0].Message.Content);
+```
+
+```java Java
+import com.openai.OpenAI;
+import com.openai.OpenAIHttpException;
+import com.openai.core.ApiError;
+import com.openai.types.chat.*;
+
+public class Main {
+    public static void main(String[] args) {
+        OpenAI client = OpenAI.builder()
+            .apiKey(System.getenv("VENICE_API_KEY"))
+            .baseUrl("https://api.venice.ai/api/v1")
+            .build();
+
+        try {
+            ChatCompletionResponse response = client.chatCompletions().create(
+                ChatCompletionRequest.builder()
+                    .model("qwen3-vl-235b-a22b")
+                    .messages(ChatMessage.builder()
+                        .role(ChatMessage.Role.USER)
+                        .content(ChatMessage.Content.ofMultiple(
+                            ChatMessage.ContentPart.text("What do you see in this image?"),
+                            ChatMessage.ContentPart.imageUrl("data:image/jpeg;base64,...")
+                        ))
+                        .build())
+                    .build()
+            );
+            
+            System.out.println(response.choices().get(0).message().content());
+        } catch (OpenAIHttpException e) {
+            System.err.println("Error: " + e.getMessage());
+        }
+    }
+}
+```
+
+```bash Model Suffix
+# Alternative approach: append parameters directly to model ID
+curl https://api.venice.ai/api/v1/chat/completions \
+  -H "Authorization: Bearer $VENICE_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "mistral-31-24b:enable_web_search=auto",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {"type": "text", "text": "What do you see in this image and find similar examples online?"},
+          {"type": "image_url", "image_url": {"url": "data:image/jpeg;base64,..."}}
+        ]
+      }
+    ]
+  }'
+```
+</CodeGroup>
+</Accordion>
+
+<Accordion title="Tool Calling Code Samples">
+Tool use and external API integration. Available on **function calling models**: `zai-org-glm-5-1`, `qwen3-4b`, `mistral-31-24b`, `llama-3.2-3b`, `zai-org-glm-5-1`. Define tools for the model to call external APIs, databases, or custom functions.
+
+<CodeGroup>
+```bash Curl
+curl https://api.venice.ai/api/v1/chat/completions \
+  -H "Authorization: Bearer $VENICE_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "zai-org-glm-5-1",
+    "messages": [{"role": "user", "content": "What is the weather like in New York?"}],
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "get_weather",
+          "description": "Get current weather for a location",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "location": {"type": "string", "description": "City name"}
+            },
+            "required": ["location"]
+          }
+        }
+      }
+    ]
+  }'
+```
+
+```ts TypeScript
+import OpenAI from "openai";
+
+const openai = new OpenAI({
+  apiKey: process.env.VENICE_API_KEY!,
+  baseURL: "https://api.venice.ai/api/v1",
+});
+
+const completion = await openai.chat.completions.create({
+  model: "zai-org-glm-5-1",
+  messages: [{ role: "user", content: "What is the weather like in New York?" }],
+  tools: [
+    {
+      type: "function",
+      function: {
+        name: "get_weather",
+        description: "Get current weather for a location",
+        parameters: {
+          type: "object",
+          properties: {
+            location: { type: "string", description: "City name" }
+          },
+          required: ["location"]
+        }
+      }
+    }
+  ]
+});
+
+console.log(completion.choices[0].message.content);
+```
+
+```python Python
+import openai
+
+client = openai.OpenAI(
+    api_key="your-api-key",
+    base_url="https://api.venice.ai/api/v1"
+)
+
+response = client.chat.completions.create(
+    model="zai-org-glm-5-1",
+    messages=[{"role": "user", "content": "What is the weather like in New York?"}],
+    tools=[
+        {
+            "type": "function",
+            "function": {
+                "name": "get_weather",
+                "description": "Get current weather for a location",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "location": {"type": "string", "description": "City name"}
+                    },
+                    "required": ["location"]
+                }
+            }
+        }
+    ]
+)
+
+print(response.choices[0].message.content)
+```
+
+```go Go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    "github.com/openai/openai-go"
+)
+
+func main() {
+    client, err := openai.NewClient(os.Getenv("VENICE_API_KEY"))
+    if err != nil {
+        fmt.Printf("Error creating client: %v\n", err)
+        return
+    }
+    
+    client.BaseURL = "https://api.venice.ai/api/v1"
+    
+    resp, err := client.CreateChatCompletion(
+        context.Background(),
+        openai.ChatCompletionRequest{
+            Model: "zai-org-glm-5-1",
+            Messages: []openai.ChatCompletionMessage{
+                {
+                    Role:    openai.ChatMessageRoleUser,
+                    Content: "What is the weather like in New York?",
+                },
+            },
+            Tools: []openai.ChatCompletionTool{
+                {
+                    Type: openai.ChatCompletionToolTypeFunction,
+                    Function: &openai.FunctionDefinition{
+                        Name:        "get_weather",
+                        Description: "Get current weather for a location",
+                        Parameters: map[string]interface{}{
+                            "type": "object",
+                            "properties": map[string]interface{}{
+                                "location": map[string]interface{}{
+                                    "type":        "string",
+                                    "description": "City name",
+                                },
+                            },
+                            "required": []string{"location"},
+                        },
+                    },
+                },
+            },
+        },
+    )
+    
+    if err != nil {
+        fmt.Printf("Error: %v\n", err)
+        return
+    }
+    
+    fmt.Println(resp.Choices[0].Message.Content)
+}
+```
+
+```php PHP
+<?php
+
+require_once 'vendor/autoload.php';
+
+use OpenAI\Client;
+
+$client = OpenAI::client('your-api-key');
+$client->setBaseUrl('https://api.venice.ai/api/v1');
+
+$response = $client->chat()->create([
+    'model' => 'zai-org-glm-5-1',
+    'messages' => [
+        [
+            'role' => 'user',
+            'content' => 'What is the weather like in New York?'
+        ]
+    ],
+    'tools' => [
+        [
+            'type' => 'function',
+            'function' => [
+                'name' => 'get_weather',
+                'description' => 'Get current weather for a location',
+                'parameters' => [
+                    'type' => 'object',
+                    'properties' => [
+                        'location' => [
+                            'type' => 'string',
+                            'description' => 'City name'
+                        ]
+                    ],
+                    'required' => ['location']
+                ]
+            ]
+        ]
+    ]
+]);
+
+echo $response->choices[0]->message->content;
+```
+
+```csharp C#
+using OpenAI;
+
+var client = new OpenAIClient("your-api-key");
+client.BaseUrl = "https://api.venice.ai/api/v1";
+
+var chatCompletion = await client.GetChatCompletionsAsync(new ChatCompletionOptions
+{
+    Model = "zai-org-glm-5-1",
+    Messages = { new ChatMessage(ChatRole.User, "What is the weather like in New York?") },
+    Tools = {
+        ChatTool.CreateFunctionTool(
+            functionName: "get_weather",
+            functionDescription: "Get current weather for a location",
+            functionParameters: BinaryData.FromString("""
+            {
+                "type": "object",
+                "properties": {
+                    "location": {
+                        "type": "string",
+                        "description": "City name"
+                    }
+                },
+                "required": ["location"]
+            }
+            """)
+        )
+    }
+});
+
+Console.WriteLine(chatCompletion.Value.Choices[0].Message.Content);
+```
+
+```java Java
+import com.openai.OpenAI;
+import com.openai.OpenAIHttpException;
+import com.openai.core.ApiError;
+import com.openai.types.chat.*;
+
+public class Main {
+    public static void main(String[] args) {
+        OpenAI client = OpenAI.builder()
+            .apiKey(System.getenv("VENICE_API_KEY"))
+            .baseUrl("https://api.venice.ai/api/v1")
+            .build();
+
+        try {
+            ChatCompletionResponse response = client.chatCompletions().create(
+                ChatCompletionRequest.builder()
+                    .model("zai-org-glm-5-1")
+                    .messages(ChatMessage.of("What is the weather like in New York?"))
+                    .tools(ChatCompletionTool.builder()
+                        .type(ChatCompletionToolType.FUNCTION)
+                        .function(FunctionDefinition.builder()
+                            .name("get_weather")
+                            .description("Get current weather for a location")
+                            .parameters(FunctionParameters.builder()
+                                .putProperty("location", FunctionParameters.Property.builder()
+                                    .type("string")
+                                    .description("City name")
+                                    .build())
+                                .required("location")
+                                .build())
+                            .build())
+                        .build())
+                    .build()
+            );
+            
+            System.out.println(response.choices().get(0).message().content());
+        } catch (OpenAIHttpException e) {
+            System.err.println("Error: " + e.getMessage());
+        }
+    }
+}
+```
+
+```bash Model Suffix
+# Alternative approach: append parameters directly to model ID
+curl https://api.venice.ai/api/v1/chat/completions \
+  -H "Authorization: Bearer $VENICE_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "zai-org-glm-5-1:enable_web_search=auto",
+    "messages": [{"role": "user", "content": "What is the weather like in New York?"}],
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "get_weather",
+          "description": "Get current weather for a location",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "location": {"type": "string", "description": "City name"}
+            },
+            "required": ["location"]
+          }
+        }
+      }
+    ]
+  }'
+```
+</CodeGroup>
+</Accordion>
+
+### Available Parameters
+
+| Parameter | Options | Description |
+|-----------|---------|-------------|
+| `enable_web_search` | `off`, `on`, `auto` | Enable real-time web search |
+| `enable_web_scraping` | `true`, `false` | Scrape URLs detected in user message |
+| `enable_web_citations` | `true`, `false` | Include citations in web search results |
+| `strip_thinking_response` | `true`, `false` | Hide reasoning steps from response |
+| `disable_thinking` | `true`, `false` | Disable reasoning mode entirely |
+| `include_venice_system_prompt` | `true`, `false` | Include Venice system prompts |
+| `character_slug` | string | Use a specific AI character |
+
+[View all parameters →](/api-reference/api-spec#venice-parameters)
+
+## Pricing Options
+
+<CardGroup cols={3}>
+  <Card title="Pro subscription" href="https://venice.ai/chat" icon="star">
+    **$10 in free credits**
+    
+    One‑time credit when you upgrade
+    
+  </Card>
+
+  <Card title="Buy DIEM" href="https://venice.ai/token" icon="coins">
+    **Permanent access**
+    
+    Stake DIEM for daily compute allocation
+  </Card>
+
+  <Card title="Pay-as-you-go (USD)" href="/overview/pricing" icon="credit-card">
+    **USD payments**
+    
+    Fund your account in USD and pay per usage
+  </Card>
+</CardGroup>
+
+## Start building today
+
+Get your API key and make your first request.
+
+<CardGroup cols={2}>
+  <Card title="Getting Started" href="/overview/getting-started" icon="rocket">
+    Step-by-step guide to your first API call
+  </Card>
+
+  <Card title="API Reference" href="/api-reference" icon="rectangle-code">
+    Complete API documentation and endpoints
+  </Card>
+  
+  <Card title="Postman Collection" href="/overview/guides/postman" icon="play">
+    Ready-to-use API examples and testing
+  </Card>
+  
+  <Card title="AI Agents" href="/overview/guides/ai-agents" icon="robot">
+    Build with Eliza and other agent frameworks
+  </Card>
+</CardGroup>
+
+<Warning>
+  Venice's API is rapidly evolving. Join our [Discord](https://discord.gg/askvenice) to provide feedback and request new features. Your input shapes our development roadmap.
+</Warning>
+
+---
+
+These docs are open source and can be contributed to on [Github](https://github.com/veniceai/api-docs). For additional guidance, see our blog post: ["How to use Venice API"](https://venice.ai/blog/how-to-use-venice-api)

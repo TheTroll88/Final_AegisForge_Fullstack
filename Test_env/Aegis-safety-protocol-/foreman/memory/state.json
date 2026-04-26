@@ -1,0 +1,19 @@
+{
+  "boot_count": 6,
+  "total_actions": 56,
+  "total_posts_simulated": 2,
+  "total_posts_live": 0,
+  "total_tasks_completed": 21,
+  "total_tasks_failed": 2,
+  "decisions_made": 0,
+  "first_boot": "2026-03-29T20:55:32.305075+00:00",
+  "last_boot": "2026-03-29T21:13:22.546378+00:00",
+  "known_wallet_balances": {
+    "solana": 0.0
+  },
+  "last_airdrop_check": "2026-03-29T22:13:24.525356+00:00",
+  "signal_token_address": null,
+  "treasury_sol": 0.0,
+  "treasury_eth": 0.0,
+  "operation_notes": []
+}

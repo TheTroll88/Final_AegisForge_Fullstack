@@ -1,0 +1,22 @@
+{
+  "entries": {
+    "C:\\Users\\natha\\.openclaw\\openclaw.json": {
+      "lastKnownGood": {
+        "hash": "43db5715f33872f783bd31f2b3bf4c7b897c50fc38281fe273f075457f8113d6",
+        "bytes": 28289,
+        "mtimeMs": 1776733696878.055,
+        "ctimeMs": 1776733696878.055,
+        "dev": "3764337433",
+        "ino": "4785074605745921",
+        "mode": 438,
+        "nlink": 1,
+        "uid": 0,
+        "gid": 0,
+        "hasMeta": true,
+        "gatewayMode": "local",
+        "observedAt": "2026-04-21T01:08:32.866Z"
+      },
+      "lastObservedSuspiciousSignature": "415a660a924a8906d9948b4fd3b703a725048dfae4ff7ade87a6dea4df710a46:size-drop-vs-last-good:28289->3645"
+    }
+  }
+}

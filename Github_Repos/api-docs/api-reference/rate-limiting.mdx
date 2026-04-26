@@ -1,0 +1,104 @@
+---
+title: "Rate Limits"
+description: "Request and token rate limits for the Venice API."
+"og:title": "Rate Limits | Venice API Docs"
+---
+
+Rate limits vary by model and tier. You can check your exact limits anytime:
+
+<CardGroup cols={2}>
+  <Card title="View Your Limits" icon="gauge-high" href="/api-reference/endpoint/api_keys/rate_limits?playground=open">
+    Interactive playground
+  </Card>
+  <Card title="Rate Limit Logs" icon="clock-rotate-left" href="/api-reference/endpoint/api_keys/rate_limit_logs?playground=open">
+    See which requests hit limits
+  </Card>
+</CardGroup>
+
+```bash
+curl https://api.venice.ai/api/v1/api_keys/rate_limits \
+  -H "Authorization: Bearer $VENICE_API_KEY"
+```
+
+## Default Limits
+
+### Text Models
+
+Text models are grouped into tiers based on size. Each model card on the [Models page](/models/text) displays its tier badge.
+
+| Tier | Requests/min | Tokens/min |
+|:-----|-------------:|-----------:|
+| XS | 500 | 1,000,000 |
+| S | 75 | 750,000 |
+| M | 50 | 750,000 |
+| L | 20 | 500,000 |
+
+<Accordion title="Which models are in each tier?">
+
+**XS** `qwen3-4b` `llama-3.2-3b`
+
+**S** `mistral-31-24b` `venice-uncensored`
+
+**M** `llama-3.3-70b` `qwen3-next-80b` `google-gemma-3-27b-it`
+
+**L** `qwen3-235b-a22b-instruct-2507` `qwen3-235b-a22b-thinking-2507` `deepseek-ai-DeepSeek-R1` `grok-41-fast` `kimi-k2-thinking` `gemini-3-pro-preview` `hermes-3-llama-3.1-405b` `qwen3-coder-480b-a35b-instruct` `zai-org-glm-4.7` `openai-gpt-oss-120b`
+
+</Accordion>
+
+### Other Models
+
+| Type | Requests/min |
+|:-----|-------------:|
+| Image | 20 |
+| Audio | 60 |
+| Embedding | 500 |
+| Video (queue) | 40 |
+| Video (retrieve) | 120 |
+
+## Handling Errors
+
+Failed requests (500, 503, 429) should be retried with exponential backoff.
+
+For 429 errors specifically, check the `x-ratelimit-reset-requests` header for the exact Unix timestamp when you can retry. Most HTTP libraries have built-in retry mechanisms that handle this automatically.
+
+### Abuse Protection
+
+If you generate more than 20 failed requests in 30 seconds, the API will block further requests for 30 seconds:
+
+```
+Too many failed attempts (> 20) resulting in a non-success status code. Please wait 30s and try again.
+```
+
+## Response Headers
+
+Every response includes these headers:
+
+| Header | Description |
+|:-------|:------------|
+| `x-ratelimit-limit-requests` | Max requests allowed in current window |
+| `x-ratelimit-remaining-requests` | Requests remaining in current window |
+| `x-ratelimit-reset-requests` | Unix timestamp when window resets |
+| `x-ratelimit-limit-tokens` | Max tokens allowed per minute |
+| `x-ratelimit-remaining-tokens` | Tokens remaining in current minute |
+| `x-ratelimit-reset-tokens` | Seconds until token limit resets |
+
+## Partner Tier
+
+Partners get significantly higher rate limits:
+
+| Tier | Requests/min | Tokens/min |
+|:-----|-------------:|-----------:|
+| XS | 500 | 2,000,000 |
+| S | 150 | 1,500,000 |
+| M | 100 | 1,500,000 |
+| L | 60 | 1,000,000 |
+
+| Type | Requests/min |
+|:-----|-------------:|
+| Image | 60 |
+| Audio | 120 |
+| Embedding | 500 |
+
+If you're consistently hitting your rate limits and your usage patterns show **sustained demand over time**, reach out to discuss partner access: [api@venice.ai](mailto:api@venice.ai).
+
+Partner tier limits can be adjusted based on your specific needs.

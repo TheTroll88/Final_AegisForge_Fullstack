@@ -1,0 +1,99 @@
+# ============================================================================
+#  MISSION CONTROL — PIPELINE WORKFLOW
+#  Builder → Tester → Reviewer → Verifier → Done
+# ============================================================================
+
+## PIPELINE STAGES
+
+### 1. INBOX
+Task enters the system (created by human, autopilot, or API).
+Orchestrator picks it up on next heartbeat.
+
+### 2. ASSIGNED
+Task assigned to Builder agent.
+If this is a REWORK (failed QA), the activity log contains failure reasons.
+
+### 3. IN_PROGRESS
+Builder is actively working.
+Builder creates files, registers deliverables via API.
+Builder logs progress activities along the way.
+
+### 4. TESTING (Front-End QA)
+Tester Agent (🧪) tests from user's perspective:
+  - Click UI elements — do they respond?
+  - Visual rendering — layout, spacing, colors correct?
+  - Images — do they load? Correct ones?
+  - Links — navigate correctly?
+  - Forms — submit? Validation works?
+  - Responsive — works on mobile?
+  - Console — no JavaScript errors?
+
+Auto-test endpoint also runs:
+  POST /api/tasks/{id}/test
+  - Headless Playwright browser
+  - JS console errors
+  - CSS syntax validation (css-tree)
+  - Broken resource detection
+  - Screenshot capture
+
+If PASS → REVIEW
+If FAIL → ASSIGNED (back to Builder with error details)
+
+### 5. REVIEW (Queue)
+Tasks wait here until Reviewer is free.
+Only ONE task at a time in review.
+
+Reviewer Agent (🔍) — Code QC:
+  - Code quality
+  - Best practices
+  - Correctness
+  - Completeness
+  - Security issues
+  - Performance concerns
+
+Decision: approved → VERIFICATION | changes_requested → ASSIGNED
+
+### 6. VERIFICATION
+Final quality gate.
+Verifier does deep check of the finished work.
+If pass → DONE
+If fail → ASSIGNED (back to Builder)
+
+### 7. DONE
+Task complete. Learner Agent (📚) captures lessons learned.
+
+## REWORK LOOP
+  TESTING (fail) → ASSIGNED → IN_PROGRESS → TESTING
+  VERIFICATION (fail) → ASSIGNED → IN_PROGRESS → TESTING → REVIEW → VERIFICATION
+
+Builder MUST read ALL failure reasons and fix EVERY issue — no partial fixes.
+
+## CONCURRENCY RULES
+- Multiple tasks can be IN_PROGRESS simultaneously
+- Testing queue processes one at a time
+- Review queue: one at a time
+- Verification: one at a time
+- Convoy Mode enables parallel building across multiple tasks
+
+## LEARNER AGENT
+Observes ALL transitions. Records:
+  - What patterns lead to first-pass success
+  - What causes rework loops
+  - Common failure types
+  - Improvement suggestions
+Feeds knowledge back to improve future cycles.
+
+## AUTOPILOT MODE (Fully Autonomous)
+When autopilot is enabled, the pipeline runs end-to-end:
+  1. Research: scan product for improvement opportunities
+  2. Ideation: generate task ideas from research
+  3. Swipe: user approves/rejects ideas (or auto-approve in full_auto)
+  4. Build: pipeline executes approved tasks
+  5. PR: create pull request with changes
+  6. Monitor: watch health after merge
+  7. Rollback: auto-revert if health degrades
+
+Automation tiers:
+  - supervised: human approves every step
+  - semi_auto: human approves ideas, rest is automated
+  - full_auto: everything automated, human reviews post-hoc

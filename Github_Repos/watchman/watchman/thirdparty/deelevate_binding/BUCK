@@ -1,0 +1,15 @@
+load("@fbcode_macros//build_defs:cpp_library.bzl", "cpp_library")
+
+oncall("scm_client_infra")
+
+cpp_library(
+    name = "deelevate_binding",
+    headers = ["include/deelevate.h"],
+    exported_deps = select({
+        "DEFAULT": [],
+        "ovr_config//os:windows": [
+            "fbsource//third-party/rust:deelevate",
+            "fbsource//third-party/toolchains/win:ntdll.lib",
+        ],
+    }),
+)

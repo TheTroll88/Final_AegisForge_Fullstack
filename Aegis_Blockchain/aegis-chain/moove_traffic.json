@@ -1,0 +1,835 @@
+[
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://moove.xyz/@thetroll/refer"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/@thetroll/refer"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/css/546e2d18a2a795ef.css"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/webpack-26ece4775bc9237e.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/c7cf295c-80c63f0353d46f45.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8604-fa5859fb452b3610.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/main-app-30ff34a5343385ad.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8871-eec794c16cd7b6ec.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2353-c6c275e77a445a50.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8134-4203ddacb7ccc71b.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6749-f59a5d568850b14c.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/app/layout-b4588f69353d95de.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/5399-cde1332edb992f00.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/7864-0981618089e42a93.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6070-506683ec37a61c6b.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/7858-3403580e7345bad8.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2094-5919ee22e3191cb7.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6739-4322d0276742bb7f.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8345-099d3b4451cecdfd.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/1066-41a23b1327804445.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6276-ae7359208928749e.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2615-0709467f79546787.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/5017-7a65ad0ecd7daaf1.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/1993-a8dc11bb9e89d4b5.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6902-dc36221830c14548.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/318-5c27926ff05ced26.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/7775-7c3eab67f3609339.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8599-7b0252f2c2038e32.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/975-c13d99ac948e47f3.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/4374-b9e58742ebadf4a9.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6801-cbaaafefa0319280.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6075-9f90856028f77ae0.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6081-373fb120ce0c551a.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/app/user/%5B_handle%5D/refer/page-27b594ef0274d2fe.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/assets/fonts/satoshi-variable.woff2"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/main-app-30ff34a5343385ad.js",
+    "body": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7358],{44760:()=>{},98070:(e,s,n)=>{Promise.resolve().then(n.t.bind(n,56913,23)),Promise.resolve().then(n.t.bind(n,52038,23)),Promise.resolve().then(n.t.bind(n,36546,23)),Promise.resolve().then(n.t.bind(n,28375,23)),Promise.resolve().then(n.t."
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/assets/images/heroes/moove_profile.jpg"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/eebe4a7f-7166-402f-92e0-1f64ca2aa800?projectId=34357d3c125c2bcf2ce2bc3"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/b6ec7b81-bb4f-427d-e290-7631e6e50d00?projectId=34357d3c125c2bcf2ce2bc3"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/7677b54f-3486-46e2-4e37-bf8747814f00?projectId=950e5de04fd5acec33569ef"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/04c88bf0-f115-4686-8c29-90a3d018a400?projectId=950e5de04fd5acec33569ef"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/34c0e38d-66c4-470e-1aed-a6fabe2d1e00?projectId=950e5de04fd5acec33569ef"
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client&sv=3.26.0&",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�SMo�0\f�+\u0006O-����r/+�a+�\u0016\u0003ڮ�a\b\u0018���Ȗ!�N�,�}�\u0013d+��:� C��{�#�@=5l!�����bM�\u0003v�\u0017\u0002[�\f�y�+Z��6�C��s\u0011\u0015sk�(�l6a�uO���K�+b���\f�d���\u0018\u000bd�|\u000b�������\u001c��i9�MD���8ȲL\u0004(FIP��t<Z\u0016\"�\n�a��z\u0007#KVN�\u0011�d�K&�=����\u001d߂\u000f�3�"
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client&sv=3.26.0&",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�S[O�0\u0014�+�y\u001aR.N����\u0010L\u001bb�I�x���uN\u001a��\u001d�'-��OI�nh<��\u000f������\u001d�\u0006\ryȿ���\u001bQ#� Z�\u000b)\u001aj\u001d�G�5\u000bO�\u0011\u0004�\u0011���*���q��n���\rF�O��{����:vX��\u0000j$Q\b\u0012���\u0010��\u0002r\u0018ϧ�h6�a:Jy�e�\f�\u001c%a1��x�,d�\u0015\u0010@#V�h�~CFR��\n�\bSf�\b={�-�Ɏ�\u0010�l�"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/app/user/%5B_handle%5D/refer/page-27b594ef0274d2fe.js",
+    "body": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[369],{},_=>{_.O(0,[5399,7864,8871,2353,6070,7858,2094,8134,6739,8345,1066,6276,2615,5017,1993,6902,318,7775,8599,975,4374,6801,6075,6081,2181,8604,7358],()=>_(_.s=11612)),_N_E=_.O()}]);"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/_icons/favicon_32x32.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/12336b57.69d6f7739c31a73a.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6037.27e48de5c98cbb7a.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.relay.link/icons/square/1/light.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.relay.link/icons/square/792703809/light.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.relay.link/icons/square/56/light.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.relay.link/icons/square/137/light.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.relay.link/icons/square/8453/light.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.relay.link/icons/1/light.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x6c3ea9036406852006290770bedfcaba0e23a0e8.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeA"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.1stdigital.com/icon/fdusd.svg"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.optimism.io/data/OP/logo.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.debank.com/image/matic_token/logo_url/matic/6f5a6b6f0732a7a235131bd7804d357c.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.debank.com/image/avax_token/logo_url/avax/0b9c84359c84d6bdd5bfda9c2d4c4a82.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://ethena.fi/shared/usde.svg"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.jup.ag/jup/icon.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://xstocks-metadata.backed.fi/logos/tokens/TSLAx.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://xstocks-metadata.backed.fi/logos/tokens/GOOGLx.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.meteora.ag/met-token.svg"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.debank.com/image/eth_token/logo_url/0x68749665ff8d2d112fa859aa293f07a622782f38/a100487c27e4e6e5557ef77023"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://arbitrum.foundation/logo.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x57e114b691db790c35207b2e685d4a43181e6061.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.debank.com/image/eth_token/logo_url/0x152649ea73beab28c5b49b26eb48f7ead6d4c898/9003539eb61139bd494b7412b7"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.debank.com/image/eth_token/logo_url/0xd2a530170d71a9cfe1651fb468e2b98f7ed7456b/f3a524932c6f3e1fcf68411609"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.debank.com/image/eth_token/logo_url/0x6418c0dd099a9fda397c766304cdd918233e8847/425ba00e9d76dea0775279de45"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://s2.coinmarketcap.com/static/img/coins/64x64/20947.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.sei.io/sei-app/sei-icon.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://static.debank.com/image/hyper_token/logo_url/hyper/0b3e288cfe418e9ce69eef4c96374583.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://app.hyperliquid.xyz/coins/USDT_spot.svg"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://raw.githubusercontent.com/onflow/assets/main/tokens/registry/0xd3bF53DAC106A0290B0483EcBC89d40FcC961f3e/logo.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.relay.link/icons/square/130/light.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.relay.link/icons/square/10/light.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.relay.link/icons/square/43114/light.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.relay.link/icons/square/42161/light.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/?_rsc=16775"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/profile?_rsc=16775"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/dashboard?_rsc=16775"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/refer?_rsc=16775"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2927.24adafd01638ff86.js"
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�T�n�@\u0010��y���&�>\u0001j�F\b��T*\bY��qjj�Z�㤡�uCi�>P��_ly�gΙ;�\u001d\u0019� ����Ǟ@\u0002�lk�\u0003���\u001c�5��h\u0014A\u0004;���s�<xyr���\u0017��;Z�\u001e~���kbg���QC\u000e\"�Q##�;��}k��\u0014$\u0014ժI˥\u0012Y��\"�s%P���E�\u0015�F�$�\u0010��[�G׽�bgQ���T�\u001ed\u001c��}�\u001a&���\u001d����xQV"
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�RMo�0\f�/<ˉ��+>�\u001e\u0002���\u0002�0\u0004�L;Zeِ(�Y��>�\u001b���a�I�#�\u001e��+�D�\u001dT_�?��'�\u0000=\u000fG�#{KU5bG�I��H�\u0001\u0001\u0013j\u001f�Ṇ�������a������\r������RK\u0016\u0004��� #TWp�\u001a�a\u000f\u0015d��M�\\F�d\u001bGi��\be���,�fI��M\u001a�\u0016yo�+\u00145:�(\u0003�\u0019�X@��O�·d%\u0019Ǝ��{��\u0005�"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://moove.xyz/profile"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/profile"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/css/546e2d18a2a795ef.css"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/webpack-26ece4775bc9237e.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/c7cf295c-80c63f0353d46f45.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8604-fa5859fb452b3610.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/main-app-30ff34a5343385ad.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8871-eec794c16cd7b6ec.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2353-c6c275e77a445a50.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8134-4203ddacb7ccc71b.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6749-f59a5d568850b14c.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/app/layout-b4588f69353d95de.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/5399-cde1332edb992f00.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/7864-0981618089e42a93.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6070-506683ec37a61c6b.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/7858-3403580e7345bad8.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2094-5919ee22e3191cb7.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6739-4322d0276742bb7f.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8345-099d3b4451cecdfd.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/1066-41a23b1327804445.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6276-ae7359208928749e.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2615-0709467f79546787.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/5017-7a65ad0ecd7daaf1.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/1993-a8dc11bb9e89d4b5.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6902-dc36221830c14548.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/318-5c27926ff05ced26.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8599-7b0252f2c2038e32.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/975-c13d99ac948e47f3.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/4374-b9e58742ebadf4a9.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6801-cbaaafefa0319280.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6075-9f90856028f77ae0.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/app/(widget)/layout-9f65f64295a2814c.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/app/not-found-a5395debcb4b0e37.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/assets/fonts/satoshi-variable.woff2"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/main-app-30ff34a5343385ad.js",
+    "body": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7358],{44760:()=>{},98070:(e,s,n)=>{Promise.resolve().then(n.t.bind(n,56913,23)),Promise.resolve().then(n.t.bind(n,52038,23)),Promise.resolve().then(n.t.bind(n,36546,23)),Promise.resolve().then(n.t.bind(n,28375,23)),Promise.resolve().then(n.t."
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client&sv=3.26.0&",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�S�j�@\u0010��e�\u0012�d]}Q�BRڐ\u000b�$5�\u00143^���WZ����8����q\u0013\u001ahZ� 13:�̜�\rЊ\u001ak ���}�`M�\u0003vV�8��Ӕ�-.h�\u0012�\u0006\u000fV(;WQYۚ|0X��A�Ԋ�ǧ�A�U)$�\u00075Y,�\"�\u001b0d�P��9�MFe<\u001er?���OӔ����/�0��y���\u0000\u000fz�N�\u000f0Ya�St�r�v\u0017g/��4��<9ĮD�d/�\u0000\u0002\u001e�Nk"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/app/not-found-a5395debcb4b0e37.js",
+    "body": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4345],{1799:(e,r,s)=>{Promise.resolve().then(s.bind(s,36939)),Promise.resolve().then(s.t.bind(s,77858,23))},36939:(e,r,s)=>{\"use strict\";s.d(r,{default:()=>t});var l=s(22353),o=s(45022);function t(e){let{locale:r,...s}=e;if(!r)throw Error(void"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/_icons/favicon_32x32.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/?_rsc=10b1h"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/dashboard?_rsc=10b1h"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.moove.xyz/refer?_rsc=10b1h"
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�Tkk�0\u0014�/����\u001d[�6Rh\u0018+c�\u0006�(�F�N�ڒ��i�\u001fr�.��\u001e\f�/2܇�9�\u001c�6��\u0005�m��Ǝ�\u0003\u000eNW\u0002{7\u0018�'Skӡ\u0012\u0004\u0001l�\u001d|νs��\u0017\u0017��v�i������7�nZ�בC�\u000e������V�\u0005p��y\u001d\u0017�`I��,MS�P�\u0011�Y�d�J�(�\u0010@�k�\u0006���M�FY�������\u0000��F92(\\��_�(�gyx���\f�8"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://api.moove.xyz/v1/registration-check?handle=troll_test_001"
+  },
+  {
+    "type": "RES",
+    "status": 200,
+    "url": "https://api.moove.xyz/v1/registration-check?handle=troll_test_001",
+    "body": "{\"isAvailable\":true}"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8059.b5e771f470d29f61.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/6257.2d3f7c7cf890c52b.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.google.com/recaptcha/enterprise.js?render=6LfGrhksAAAAAI_buI_Xi2uZhLKSl1XVK9VZiL5g"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/eebe4a7f-7166-402f-92e0-1f64ca2aa800?projectId=34357d3c125c2bcf2ce2bc3"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.relay.link/icons/square/1/light.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://assets.relay.link/icons/square/792703809/light.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/b6ec7b81-bb4f-427d-e290-7631e6e50d00?projectId=34357d3c125c2bcf2ce2bc3"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/04c88bf0-f115-4686-8c29-90a3d018a400?projectId=950e5de04fd5acec33569ef"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/7677b54f-3486-46e2-4e37-bf8747814f00?projectId=950e5de04fd5acec33569ef"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/34c0e38d-66c4-470e-1aed-a6fabe2d1e00?projectId=950e5de04fd5acec33569ef"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://explorer-api.walletconnect.com/v3/logo/sm/71ca9daf-a31e-4d2a-fd01-f5dc2dc66900?projectId=950e5de04fd5acec33569ef"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.gstatic.com/recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.google.com/recaptcha/enterprise/anchor?ar=1&k=6LfGrhksAAAAAI_buI_Xi2uZhLKSl1XVK9VZiL5g&co=aHR0cHM6Ly93d3cubW"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.gstatic.com/recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/styles__ltr.css"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.gstatic.com/recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.google.com/recaptcha/enterprise/webworker.js?hl=en&v=kUYUkUlSyqkjTSMaN2w3RaOh"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.gstatic.com/recaptcha/api2/logo_48.png"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://www.gstatic.com/recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/874.555ff86b95f65fc3.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/7939.a7b5fe224ed95508.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/8674.e7e5d72018ed804c.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/2613.655d750eeb63b62c.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/7540.dce9fa711b0d7380.js"
+  },
+  {
+    "type": "REQ",
+    "method": "GET",
+    "url": "https://cdn.moove.xyz/apps/web/_next/static/chunks/4284.e697a0cc71328ec9.js"
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�[}k�8\u001c�*B�O\u000b����K=8\u0018�q7֎��+G)E��D�\"\u0019I�K�~�Cv��M��u\\v\u0013�&�d�=�~ϣ��\u001d�s*����]��\r�Q\u0018CR\u0018y���\u0014��q�Y2�\u001e�\u0013^�ډ1��;��b�gR�)^�n;��\u0019�\u0014zpF\rI�!0���jͤx�\u0012ưw6Ȃa?Aa\u0010�(��\u0004�$袴燽`�&�(�\u001e�ɘ�\u0014��H�\u0019ngta��۪\u001c|\u0002��B�K:\n"
+  },
+  {
+    "type": "REQ",
+    "method": "POST",
+    "url": "https://prodregistryv2.org/v1/rgstr?k=client-GlkYvx036VjRuWFwOOa25CQrurErqI9HigucmSPABJu&st=javascript-client-react&sv=3",
+    "body": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\n�U[o�6\u0014�+\u0002��\u0000\"-��M\u0005\n\u0014��\u0015M�\u0002M\u0017\fEa\u001c�G\u0012k��Hʲ���\u0017�\u001c�F3�\u001b�`�\\�s��G�[�ޑ���p|\u000f5��@�͚C�[�Yƕ�\u001b\u0012�-�6h+�\u001b��F]ױژ-���a�XSH�$&5z\u0010��d�ġs��oHFf�E1Y�9�N�\tMӔS��1\u0015�d:�䂏SAb�@��֪���W!�۠�>\f��[��imt���$��z\u0013}�N $&�"
+  }
+]

@@ -1,0 +1,12 @@
+**/node_modules/
+**/.hermes/
+**/bin/
+*.7z
+*.so
+*.node
+**/node_modules/
+**/.hermes/
+**/bin/
+*.7z
+*.so
+*.node
